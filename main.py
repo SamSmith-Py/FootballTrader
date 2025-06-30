@@ -48,7 +48,7 @@ class MatchFinder:
         if continuos == 'on':
             self.hours = hours
 
-    def get_match_details(self):
+    def get_betfair_details(self):
         """
         Query Betfair's market catalogue api for all football matches within the time range given. Saves all data to a
         df and sqlite database. This data will then later be used to grab additional required stats. The data includes 
@@ -79,9 +79,10 @@ class MatchFinder:
         self.df = pd.DataFrame(catalogue)
 
         # Extract required data
-        # self.df['home_team'] = [d[0].get('runnerName') for d in self.df['runners']]
+        
+        self.df['home_team'] = [d[0].get('runnerName') for d in self.df['runners']]
         # self.df['home_odds_id'] = [d[0].get('selectionId') for d in self.df['runners']]
-        # self.df['away_team'] = [d[1].get('runnerName') for d in self.df['runners']]
+        self.df['away_team'] = [d[1].get('runnerName') for d in self.df['runners']]
         # self.df['away_odds_id'] = [d[1].get('selectionId') for d in self.df['runners']]
         self.df['event_name'] = [d.get('name') for d in self.df['event']]
         self.df['event_id'] = [d.get('id') for d in self.df['event']]
@@ -106,57 +107,28 @@ class MatchFinder:
         print(pivot_df)
 
         # Drop duplicate event_ids in the original dataframe (keep first occurrence)
-        merged_df = self.df.drop_duplicates(subset='event_id', keep='first')
+        merged_df = self.df.sort_values('marketName', ascending=True).drop_duplicates(subset='event_id', keep='first')
 
         # Merge with the pivoted market ID data
         self.df = pd.merge(merged_df, pivot_df, on='event_id', how='left')
 
         # Clean data
         self.df.dropna(inplace=True)
-        self.df.drop(columns=['runners', 'event', 'competition'], inplace=True)
+        self.df.drop(columns=['runners', 'event', 'competition', 'marketName', 'marketId'], inplace=True)
 
         # Save data to sqlite database.
         cnx = sqlite3.connect(autotrader_db_path, check_same_thread=False)
         self.df.to_sql(name='betfair_matches', con=cnx, if_exists='replace')
         cnx.close()
+
+        # Placeholder for merged dataframes
+        self.merge_data_match_odds = None
         
         print(self.df)
 
     def get_daily_sheets(self):
         print('\nQuerying Daily Sheets for stats...')
-        # Path to your .xlsm file
-        file_path = r'C:\Users\Sam\FootballTrader v0.3.1\DailySheets\TTM Football Selection Tool V4.xlsm'
-
-        # Macro name (ensure it includes the module name if it's within a module)
-        macro_name = 'Module1.Refresh_Data'
-
-        # Initialize COM
-        pythoncom.CoInitialize()
-
-        # Open Excel application
-        excel_app = win32com.client.Dispatch('Excel.Application')
-        excel_app.Application.DisplayAlerts = False
-
-        try:
-            # Open the .xlsm file
-            workbook = excel_app.Workbooks.Open(file_path)
-
-            # Run the macro
-            excel_app.Application.Run(macro_name)
-
-            # Save and close the workbook
-            workbook.Save()
-            workbook.Close()
-        finally:
-            # Quit the Excel application
-            excel_app.Quit()
-
-            # Ensure COM is uninitialized
-            pythoncom.CoUninitialize()
-
-        self.df_sheets = pd.read_excel(
-            r'C:\Users\Sam\FootballTrader v0.3.2\DailySheets\TTM Football Selection Tool V4.xlsm',
-            sheet_name='Sheet1').dropna()
+        ###############################################
         self.df_sheets.columns = self.df_sheets.iloc[0]
 
         self.df_sheets = self.df_sheets.drop(self.df_sheets.index[0])
@@ -170,6 +142,101 @@ class MatchFinder:
         cnx = sqlite3.connect(autotrader_db_path, check_same_thread=False)
         self.df_sheets.to_sql(name='daily_sheet_stats', con=cnx, if_exists='replace')
         cnx.close()
+
+    def merge_data(self):
+        """
+        Merge data found from Betfair Market Catalogue with the stats found from Daily Sheets for selected strategies.
+        This is done by matching the event_name from self.df to event from self.df_sheets then merging the data.
+        Returns merged df for selected strategies.
+        :return: merge_data_match_odds
+        """
+        market_name_select = {'MATCH_ODDS': 'Match Odds', 'OVER_UNDER_45': 'Over/Under 4.5 Goals'}
+
+        # Dataframe for Match Odds market only.
+        df_match_odds = self.df.copy()
+        # Create list of all event names to add to temp df.
+        event_name_list = df_match_odds['event_name'].to_list()
+        # Temp df from daily sheets of event.
+        df_temp = self.df_sheets[['Date', 'event']].copy()
+
+        print(event_name_list)
+        print(df_temp)
+
+        # Empty temp df where the matching will take place.
+        df_temp_2 = pd.DataFrame(columns=['Date', 'event', 'seq_score', 'event_name'])
+        # Iterate through event name list and match to temp df event.
+        while True:
+            for event in event_name_list:
+                df_temp['seq_score'] = df_temp['event'].apply(lambda e: SequenceMatcher(None, event, e).ratio())
+                # Sort so best match is at index 0.
+                df_temp.sort_values('seq_score', inplace=True, ascending=False, ignore_index=True)
+                # If score below threshold then remove from list as match not found.
+                if df_temp.loc[0, 'seq_score'] < 0.8:
+                    event_name_list.remove(event)
+                # Score above threshold event and sequence match score to temp df.
+                else:
+                    df_temp.loc[0, 'event_name'] = event
+                    data_df = pd.DataFrame({'Date': [df_temp.loc[0, 'Date']],
+                                            'event': [df_temp.loc[0, 'event']],
+                                            'seq_score': [df_temp.loc[0, 'seq_score']],
+                                            'event_name': [df_temp.loc[0, 'event_name']]})
+                    # Continually add matched events to empty df.
+                    df_temp_2 = pd.concat([df_temp_2, data_df], ignore_index=True, axis=0)
+                    # Event can then be removed from list as match has been found.
+                    event_name_list.remove(event)
+                break
+            if len(event_name_list) == 0:
+                break
+        # Merge matched events to self.df_sheets. Now self.df_sheets will have a column exactly matching event_name
+        # from self.df.
+        merge_data = pd.merge(self.df_sheets, df_temp_2, on='event', how='inner')
+        # Merge self.df and self.df_sheets at event_name.
+        self.merge_data_match_odds = pd.merge(df_match_odds, merge_data, on='event_name', how='inner')
+        print(self.merge_data_match_odds)
+
+    def get_match_prices(self):
+        marketid_list = self.merge_data_match_odds['marketId'].to_list()
+        print('TEST', marketid_list)
+        # Get market prices
+        while True:
+            try:
+                book = api.betting.list_market_book(market_ids=marketid_list,
+                                                    lightweight=True)
+                break
+            except betfairlightweight.exceptions.APIError:     
+                mid = len(marketid_list) // 2
+                marketid_list, second_half = np.split(marketid_list, [mid])
+                marketid_list = marketid_list.tolist()
+                print('TEST2', marketid_list)
+        if self.market_code == 'MATCH_ODDS':
+            df = pd.DataFrame(
+                {'marketId': [d.get('marketId') for d in book],
+                'home_price': [d['runners'][0].get('lastPriceTraded') for d in book],
+                'away_price': [d['runners'][1].get('lastPriceTraded') for d in book],
+                'draw_price': [d['runners'][2].get('lastPriceTraded') for d in book]
+                })
+        if self.market_code == 'OVER_UNDER_45':
+            df = pd.DataFrame(
+                {'marketId': [d.get('marketId') for d in book],
+                'home_price': [d['runners'][0].get('lastPriceTraded') for d in book],
+                'away_price': [d['runners'][1].get('lastPriceTraded') for d in book],
+                })
+        merge_data_match_odds['marketId'] = merge_data_match_odds['marketId'].astype(str)
+        df['marketId'] = df['marketId'].astype(str)
+        merge = pd.merge(merge_data_match_odds, df, on='marketId', how='inner')
+        
+        # Add paper and favourite columns
+        merge['paper'] = True
+        merge['favourite'] = np.where(merge['home_price'] < merge['away_price'], 1, 2)
+        print(merge.sort_values('seq_score', ascending=False, ignore_index=True))
+        print(f'\n{len(merge)} matches found for {self.market_code} market.')
+        return merge
+
+    def add_matches_to_db(self):
+        pass
+
+    def remove_duplicates(self):
+        pass
 
 
 class AutoTrader:
@@ -185,4 +252,6 @@ if __name__ == '__main__':
     pd.set_option('display.max_rows', None)
     # pd.set_option('expand_frame_repr', False)
     mf = MatchFinder(continuos='off')
-    mf.get_match_details()
+    mf.get_betfair_details()
+    mf.get_daily_sheets()
+    # mf.merge_data()
