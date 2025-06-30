@@ -11,6 +11,14 @@ import time
 edge_options = Options()
 # edge_options.add_argument("--headless")  # Run headless Edge to avoid opening a browser window
 
+prefs = {
+        "download.default_directory": r"C:\Users\Sam\FootballTrader v0.3.2",  # Change to your desired directory
+        "download.prompt_for_download": False,  # Disable download prompt
+        "download.directory_upgrade": True,
+        "safebrowsing.enabled": True  # Enable safe browsing
+        }
+edge_options.add_experimental_option("prefs", prefs)
+
 service = EdgeService(executable_path=r'C:/Program Files (x86)/msedgedriver.exe')
 driver = webdriver.Edge(service=service, options=edge_options)
 
@@ -49,6 +57,13 @@ while True:
             EC.presence_of_element_located((By.XPATH, "//*[contains(@class, 'table_name') and text()='Football Data']"))
         )
         football_table.click()
+
+        excel_export = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, "//*[contains(@class, 'btn btn-secondary buttons-excel buttons-html5 ms-3 btn-sm btn-outline-default')]"))
+        )
+        excel_export.click()
+
+        
 
         break
     except Exception as e:
