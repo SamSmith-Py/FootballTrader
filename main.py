@@ -33,7 +33,7 @@ api.login_interactive()
 autotrader_db_path = r'C:\Users\Sam\FootballTrader v0.3.2\database\autotrader_data.db'
 
 class MatchFinder:
-    def __init__(self, hours=12, continuos='off'):
+    def __init__(self, hours=24, continuos='on'):
         print('\nMatchFinder')
         # Market projection list to grab data required.
         self.market_projection_list = ['COMPETITION', 'EVENT', 'MARKET_START_TIME',
@@ -131,7 +131,7 @@ class MatchFinder:
         cnx.close()
 
         # Placeholder for merged dataframes
-        self.merge_data_match_odds = None
+        self.df_merge_data_and_stats = None
         
         print(self.df)
 
@@ -143,13 +143,13 @@ class MatchFinder:
         edge_options.add_argument("--window-size=1920,1080")  # needed if elements aren't visible
 
         # Delete file download if it already exists
-        data_file_path = r"C:\Users\Sam\FootballTrader v0.3.2\Football Data Fixtures.xlsx"
+        data_file_path = r"C:\Users\Sam\FootballTrader v0.3.2\sports-iq\Football Data Fixtures.xlsx"
         if os.path.exists(data_file_path):
             os.remove(data_file_path)
 
 
         prefs = {
-                "download.default_directory": r"C:\Users\Sam\FootballTrader v0.3.2",  # Change to your desired directory
+                "download.default_directory": r"C:\Users\Sam\FootballTrader v0.3.2\sports-iq",  # Change to your desired directory
                 "download.prompt_for_download": False,  # Disable download prompt
                 "download.directory_upgrade": True,
                 "safebrowsing.enabled": True  # Enable safe browsing
@@ -157,15 +157,16 @@ class MatchFinder:
         edge_options.add_experimental_option("prefs", prefs)
 
         service = EdgeService(executable_path=r'C:/Program Files (x86)/msedgedriver.exe')
-        driver = webdriver.Edge(service=service, options=edge_options)
-
-        # Load the login page
-        url = 'https://sports-iq.co.uk/login/'
-        driver.get(url)
+        
 
         # Wait for the login form to be loaded and enter login details
         while True:
             try:
+                driver = webdriver.Edge(service=service, options=edge_options)
+
+                # Load the login page
+                url = 'https://sports-iq.co.uk/login/'
+                driver.get(url)
                 # Make instances of input boxes for login
                 username_input = WebDriverWait(driver, 10).until(
                     EC.presence_of_element_located((By.ID, 'login_email')))  # Adjust selector as needed
@@ -203,33 +204,34 @@ class MatchFinder:
                 driver.quit()
                 time.sleep(10)
                 print('Re-attempting connection with driver.')
-        time.sleep(1)
+        
+        time.sleep(2)
+        driver.quit()
 
     def merge_data(self):
         """
-        Merge data found from Betfair Market Catalogue with the stats found from Daily Sheets for selected strategies.
-        This is done by matching the event_name from self.df to event from self.df_sheets then merging the data.
+        Merge data found from Betfair Market Catalogue with the stats found from Sports-IQ for selected strategies.
+        This is done by matching the event_name from self.df to Fixtures from Sports-IQ then merging the data.
         Returns merged df for selected strategies.
         :return: merge_data_match_odds
         """
-        market_name_select = {'MATCH_ODDS': 'Match Odds', 'OVER_UNDER_45': 'Over/Under 4.5 Goals'}
+
+        # Get Sports-IQ stats as dataframe
+        df_sportsiq = pd.read_excel(r'C:\Users\Sam\FootballTrader v0.3.2\sports-iq\Football Data Fixtures.xlsx', engine='openpyxl', header=1)
 
         # Dataframe for Match Odds market only.
         df_match_odds = self.df.copy()
         # Create list of all event names to add to temp df.
         event_name_list = df_match_odds['event_name'].to_list()
         # Temp df from daily sheets of event.
-        df_temp = self.df_sheets[['Date', 'event']].copy()
-
-        print(event_name_list)
-        print(df_temp)
+        df_temp = df_sportsiq[['Kickoff', 'Fixture']].copy()
 
         # Empty temp df where the matching will take place.
-        df_temp_2 = pd.DataFrame(columns=['Date', 'event', 'seq_score', 'event_name'])
+        df_temp_2 = pd.DataFrame(columns=['Fixture', 'seq_score', 'event_name'])
         # Iterate through event name list and match to temp df event.
         while True:
             for event in event_name_list:
-                df_temp['seq_score'] = df_temp['event'].apply(lambda e: SequenceMatcher(None, event, e).ratio())
+                df_temp['seq_score'] = df_temp['Fixture'].apply(lambda e: SequenceMatcher(None, event, e).ratio())
                 # Sort so best match is at index 0.
                 df_temp.sort_values('seq_score', inplace=True, ascending=False, ignore_index=True)
                 # If score below threshold then remove from list as match not found.
@@ -238,8 +240,8 @@ class MatchFinder:
                 # Score above threshold event and sequence match score to temp df.
                 else:
                     df_temp.loc[0, 'event_name'] = event
-                    data_df = pd.DataFrame({'Date': [df_temp.loc[0, 'Date']],
-                                            'event': [df_temp.loc[0, 'event']],
+                    data_df = pd.DataFrame({
+                                            'Fixture': [df_temp.loc[0, 'Fixture']],
                                             'seq_score': [df_temp.loc[0, 'seq_score']],
                                             'event_name': [df_temp.loc[0, 'event_name']]})
                     # Continually add matched events to empty df.
@@ -249,57 +251,60 @@ class MatchFinder:
                 break
             if len(event_name_list) == 0:
                 break
-        # Merge matched events to self.df_sheets. Now self.df_sheets will have a column exactly matching event_name
+        # Merge matched events to df_sportsiq. Now df_sportsiq will have a column exactly matching event_name
         # from self.df.
-        merge_data = pd.merge(self.df_sheets, df_temp_2, on='event', how='inner')
-        # Merge self.df and self.df_sheets at event_name.
-        self.merge_data_match_odds = pd.merge(df_match_odds, merge_data, on='event_name', how='inner')
-        print(self.merge_data_match_odds)
+        merge_data = pd.merge(df_sportsiq, df_temp_2, on='Fixture', how='inner')
+        # Merge self.df and df_sportsiq at event_name.
+        self.df_merge_data_and_stats = pd.merge(df_match_odds, merge_data, on='event_name', how='inner')
 
-    def get_match_prices(self):
-        marketid_list = self.merge_data_match_odds['marketId'].to_list()
-        print('TEST', marketid_list)
-        # Get market prices
-        while True:
-            try:
-                book = api.betting.list_market_book(market_ids=marketid_list,
-                                                    lightweight=True)
-                break
-            except betfairlightweight.exceptions.APIError:     
-                mid = len(marketid_list) // 2
-                marketid_list, second_half = np.split(marketid_list, [mid])
-                marketid_list = marketid_list.tolist()
-                print('TEST2', marketid_list)
-        if self.market_code == 'MATCH_ODDS':
-            df = pd.DataFrame(
-                {'marketId': [d.get('marketId') for d in book],
-                'home_price': [d['runners'][0].get('lastPriceTraded') for d in book],
-                'away_price': [d['runners'][1].get('lastPriceTraded') for d in book],
-                'draw_price': [d['runners'][2].get('lastPriceTraded') for d in book]
-                })
-        if self.market_code == 'OVER_UNDER_45':
-            df = pd.DataFrame(
-                {'marketId': [d.get('marketId') for d in book],
-                'home_price': [d['runners'][0].get('lastPriceTraded') for d in book],
-                'away_price': [d['runners'][1].get('lastPriceTraded') for d in book],
-                })
-        merge_data_match_odds['marketId'] = merge_data_match_odds['marketId'].astype(str)
-        df['marketId'] = df['marketId'].astype(str)
-        merge = pd.merge(merge_data_match_odds, df, on='marketId', how='inner')
-        
-        # Add paper and favourite columns
-        merge['paper'] = True
-        merge['favourite'] = np.where(merge['home_price'] < merge['away_price'], 1, 2)
-        print(merge.sort_values('seq_score', ascending=False, ignore_index=True))
-        print(f'\n{len(merge)} matches found for {self.market_code} market.')
-        return merge
+        # Remove any unnecessary columns
+        self.df_merge_data_and_stats.drop(columns=['Kickoff', 'Fixture', 'seq_score'], inplace=True)
+
+        # Find favourite
+        self.df_merge_data_and_stats['favourite'] = np.where(self.df_merge_data_and_stats['Odds Betfair Home'] < self.df_merge_data_and_stats['Odds Betfair Away'], 1, 2)
+
+        print(self.df_merge_data_and_stats.columns)
 
     def add_matches_to_db(self):
-        pass
+        """
+        This method will add alll the information obtained from Betfair and SPorts-IQ to the AutoTrader SQLite database. Firstly it will add all the required columns needed for 
+        live trading and betting. The user wil alos determine whether the events found will be traded using a live or paper method, pending criteria being matched to a strategy."""
+        
+        # Create df with the required columns for the AutoTrader
+        cols = ['live/paper', 'strategy', 'market', 'inplay_state', 'market_state', 'time_elapsed',
+                'home_score', 'away_score', 'score', 'lay_price', 'back_price', 'entry_condition', 'entry_ordered',
+                'entry_status', 'entry_price_avg', 'entry_amount_matched', 'entry_amount_remaining', 'exit_condition',
+                'exit_ordered', 'exit_status', 'exit_price_avg', 'exit_amount_matched', 'exit_amount_remaining',
+                'current_order_status', 'current_order_side', 'current_order_betid', 'potential_pnl', 'cleared_pnl',
+                'ht_score', 'ft_score', 'goals_15', 'goals_30', 'goals_45', 'goals_60', 'goals_75', 'goals_90', ]
+        df_autotrader = pd.DataFrame(columns=cols)
+
+        # Add new columns to the df created from Betfair details and Sports-IQ
+        df_autotrader = pd.concat([df_autotrader, self.df_merge_data_and_stats], axis=1)
+
+        df_autotrader['entry_condition'] = 0
+        df_autotrader['entry_ordered'] = 0
+        df_autotrader['entry_amount_matched'] = 0
+        df_autotrader['exit_condition'] = 0
+        df_autotrader['exit_ordered'] = 0
+        df_autotrader.dropna(subset=['event_id'], inplace=True)
+        values = {'goals_15': 0, 'goals_30': 0, 'goals_45': 0, 'goals_60': 0, 'goals_75': 0, 'goals_90': 0,
+                  'home_score': 0, 'away_score': 0}
+        df_autotrader.fillna(value=values, inplace=True)
+
+        # Save the dataframe to AutoTrader database
+        cnx = sqlite3.connect(autotrader_db_path, check_same_thread=False)
+        df_autotrader.to_sql(name='autotrader_matches_v3', con=cnx, if_exists='append', index=False) # Change to append once testing is complete
+        cnx.close()
+        self.remove_duplicates()
 
     def remove_duplicates(self):
-        pass
-
+        cnx = sqlite3.connect(autotrader_db_path, check_same_thread=False)
+        df = pd.read_sql_query(f"SELECT * from autotrader_matches_v3", cnx, dtype=self.col_dtypes)
+        df.drop_duplicates(ignore_index=True, subset=['event_name', 'start_date'], inplace=True)
+        df.to_sql(name='autotrader_matches_v3', con=cnx, if_exists='replace', index=False,
+                    dtype=self.col_dtypes)
+        cnx.close()
 
 class AutoTrader:
     def __init__(self):
@@ -310,10 +315,11 @@ class BackTester:
         pass
 
 if __name__ == '__main__':
-    pd.set_option('display.max_columns', None)
+    #pd.set_option('display.max_columns', None)
     pd.set_option('display.max_rows', None)
-    # pd.set_option('expand_frame_repr', False)
-    mf = MatchFinder(continuos='off')
+    #pd.set_option('expand_frame_repr', False)
+    mf = MatchFinder(continuos='on')
     mf.get_betfair_details()
     mf.get_sports_iq_stats()
-    # mf.merge_data()
+    mf.merge_data()
+    mf.add_matches_to_db()

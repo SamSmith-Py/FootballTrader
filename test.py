@@ -12,9 +12,9 @@ import os
 def get_sports_iq_stats():
     # Initialize Selenium WebDriver with Edge options
     edge_options = Options()
-    edge_options.add_argument("--headless=new")  # or "--headless" if "new" doesn't work
+    # edge_options.add_argument("--headless=new")  # or "--headless" if "new" doesn't work
     # edge_options.add_argument("--disable-gpu")   # (optional) improves compatibility
-    edge_options.add_argument("--window-size=1920,1080")  # needed if elements aren't visible
+    # edge_options.add_argument("--window-size=1920,1080")  # needed if elements aren't visible
 
     
     # Delete file download if it already exists
@@ -32,12 +32,13 @@ def get_sports_iq_stats():
     edge_options.add_experimental_option("prefs", prefs)
 
     service = EdgeService(executable_path=r'C:/Program Files (x86)/msedgedriver.exe')
-    driver = webdriver.Edge(service=service, options=edge_options)
+    
 
 
     # Wait for the login form to be loaded and enter login details
     while True:
         try:
+            driver = webdriver.Edge(service=service, options=edge_options)
             # Load the login page
             url = 'https://sports-iq.co.uk/login/'
             driver.get(url)
@@ -82,7 +83,7 @@ def get_sports_iq_stats():
             driver.quit()
             time.sleep(10)
             print('Re-attempting connection with driver.')  
-
-    time.sleep(5)
-
+     
+    time.sleep(2)
+    driver.quit()  
 get_sports_iq_stats()
