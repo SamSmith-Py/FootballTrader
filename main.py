@@ -86,7 +86,8 @@ class MatchFinder:
         
         # Save data to data frame.
         self.df = pd.DataFrame(catalogue)
-
+        self.df.dropna(inplace=True)
+        
         # Extract required data
         
         self.df['home_team'] = [d[0].get('runnerName') for d in self.df['runners']]
@@ -99,8 +100,6 @@ class MatchFinder:
         self.df['start_date'] = self.df['marketStartTime'].dt.strftime('%d.%m.%Y')
         self.df['start_time'] = self.df['marketStartTime'].dt.strftime('%H:%M')
         self.df['comp'] = [d.get('name') for d in self.df['competition']]
-
-        print(self.df)
 
         market_df = self.df[['event_id', 'marketName', 'marketId']]
 
@@ -319,7 +318,7 @@ class AutoTrader:
         self.col_dtypes = {}   
         self.max_lay_the_draw_price = 5
         self.ltd_paper_stake_size = 100
-        self.ltd_live_stake_size = None
+        self.ltd_live_stake_size = 1
 
         # Time required to wait for next run_autotrader run through
         self.wait_time = 10  # Seconds
@@ -368,25 +367,25 @@ class AutoTrader:
             self.connect_autotrader_db()
         # Get LTD strategy criteria
         df_LTD_strat = pd.read_sql_query("SELECT * from LTD_strategy_criteria", self.cnx, dtype=self.col_dtypes)
-        print(df_LTD_strat)
-        print(df_LTD_strat.dtypes)
-
-        print(self.df[['GP Avg', 'Form H v A', 'Form Goal Edge', 'Goals 2.5+ L8 Avg']])
-        print(self.df[['GP Avg', 'Form H v A', 'Form Goal Edge', 'Goals 2.5+ L8 Avg']].dtypes)
         # Assign strategy to any events applicable
-        self.df['strategy'].loc[
-                                (self.df['GP Avg'] >= 8)
-                                ] = 'LTD'
-        """self.df['strategy'].loc[
-                                (self.df['GP Avg'] >= 8) & 
-                                ((self.df['Form H v A'] >= float(df_LTD_strat.loc[0, 'hva_pos'])) | (self.df['Form H v A'] <= float(df_LTD_strat.loc[0, 'hva_neg']))) &
-                                (self.df['Form Goal Edge'] <= df_LTD_strat.loc[0, 'goal_edge_pos']) &
-                                (self.df['Form Goal Edge'] >= float(df_LTD_strat.loc[0, 'goal_edge_neg'])) & 
-                                (self.df['Goals 2.5+ L8 Avg'] >= df_LTD_strat.loc[0, 'last8_25']) 
-                                ] = 'LTD'"""
-
+        for row in self.df.index:
+            if int(self.df.loc[row, 'GP Avg']) >= 8 and \
+                (int(self.df.loc[row, 'Form H v A']) >= df_LTD_strat.loc[0, 'hva_pos'] or int(self.df.loc[row, 'Form H v A']) <= df_LTD_strat.loc[0, 'hva_neg']) and \
+                int(self.df.loc[row, 'Form Goal Edge']) <= df_LTD_strat.loc[0, 'goal_edge_pos'] and \
+                int(self.df.loc[row, 'Form Goal Edge']) >= float(df_LTD_strat.loc[0, 'goal_edge_neg']) and \
+                int(self.df.loc[row, 'Goals 2.5+ L8 Avg']) >= df_LTD_strat.loc[0, 'last8_25']:
+                    self.df.loc[row, 'strategy'] = 'LTD'
+        
         # Decide if live or paper betting for strategy
         self.df['live/paper'].loc[(self.df['strategy'] == 'LTD')] = betting
+
+        # Save all updates to database
+        self.df.to_sql(name='autotrader_matches_v3', con=self.cnx, if_exists='replace', index=False,
+                        dtype=self.col_dtypes)
+        self.close_connection_db()
+
+    def calculate_LTD_stake(self):
+        balance = api.account.get_account_funds()
 
     def run_autotrader(self, continuous='off'):
         """
@@ -441,8 +440,8 @@ class AutoTrader:
             self.close_connection_db()
 
             # TESTING
-            print(self.df[['event_name', 'live/paper', 'strategy', 'start_date', 'start_time', 'inplay_state', 'time_elapsed', 'market_state',
-                           'score',]])
+            print(self.df[['event_name', 'live/paper', 'strategy', 'marketStartTime', 'start_date', 'start_time', 'inplay_state', 'time_elapsed', 'market_state',
+                           'score', 'entry_ordered']].sort_values(by=['start_date', 'start_time']))
 
             self.continuos_match_finder(activate=continuous)
 
@@ -482,7 +481,6 @@ class AutoTrader:
             self.check_paper_bet_result(idx)
             self.check_cleared_orders_pnl(idx=idx)
             self.archive_autotrader_match(idx)
-            # self.update_match_trading_log()
             self.remove_finished_matches_autotrader(idx)
             return True
         return False
@@ -523,36 +521,33 @@ class AutoTrader:
                 self.df.loc[idx, 'away_score'] = int(x.score.away.score)
                 self.df.loc[idx, 'score'] = f'{int(x.score.home.score)} - {int(x.score.away.score)}'
             try:
+                
                 # Get score for first 15 minutes
                 if self.df.loc[idx, 'time_elapsed'] <= 15:
                     self.df.loc[idx, 'goals_15'] = f"{self.df.loc[idx, 'home_score']} - {self.df.loc[idx, 'away_score']}"            
                 # Get score within 15 - 30 minutes
                 if 15 < self.df.loc[idx, 'time_elapsed'] <= 30 and self.df.loc[idx, 'goals_15'] is not None:
-                    self.df.loc[idx, 'goals_30'] = f"{int(self.df.loc[idx, 'home_score']) - int(self.df.loc[idx, 'goals_15'][0])} - \
-                                                     {int(self.df.loc[idx, 'away_score']) - int(self.df.loc[idx, 'goals_15'][4])}"
+                    self.df.loc[idx, 'goals_30'] = f"{int(self.df.loc[idx, 'home_score'])} - {int(self.df.loc[idx, 'away_score'])}"
                 # Get score within 30 - 45 minutes    
                 if 30 < self.df.loc[idx, 'time_elapsed'] <= 60 and \
                         self.df.loc[idx, 'inplay_state'] == 'KickOff' and \
                         self.df.loc[idx, 'goals_15'] is not None and \
                         self.df.loc[idx, 'goals_30'] is not None:
-                    self.df.loc[idx, 'goals_45'] = f"{int(self.df.loc[idx, 'home_score']) - int(self.df.loc[idx, 'goals_15'][0]) - int(self.df.loc[idx, 'goals_30'][0])} - \
-                                                     {int(self.df.loc[idx, 'away_score']) - int(self.df.loc[idx, 'goals_15'][4]) - int(self.df.loc[idx, 'goals_30'][4])}"
+                    self.df.loc[idx, 'goals_45'] = f"{int(self.df.loc[idx, 'home_score'])} - {int(self.df.loc[idx, 'away_score'])}"
                 # Get score within 45 - 60 minutes     
                 if 45 <= self.df.loc[idx, 'time_elapsed'] <= 60 and \
                         self.df.loc[idx, 'inplay_state'] == 'SecondHalfKickOff' and \
                         self.df.loc[idx, 'goals_15'] is not None and \
                         self.df.loc[idx, 'goals_30'] is not None and \
                         self.df.loc[idx, 'goals_45'] is not None:
-                    self.df.loc[idx, 'goals_60'] = f"{int(self.df.loc[idx, 'home_score']) - int(self.df.loc[idx, 'goals_15'][0]) - int(self.df.loc[idx, 'goals_30'][0]) - int(self.df.loc[idx, 'goals_45'][0])} - \
-                                                     {int(self.df.loc[idx, 'away_score']) - int(self.df.loc[idx, 'goals_15'][4]) - int(self.df.loc[idx, 'goals_30'][4]) - int(self.df.loc[idx, 'goals_45'][4])}"
-                # Get score within 60 - 75 minutes   
+                    self.df.loc[idx, 'goals_60'] = f"{int(self.df.loc[idx, 'home_score'])} - {int(self.df.loc[idx, 'away_score'])}"
+                 # Get score within 60 - 75 minutes   
                 if 60 < self.df.loc[idx, 'time_elapsed'] <= 75 and \
                         self.df.loc[idx, 'goals_15'] is not None and \
                         self.df.loc[idx, 'goals_30'] is not None and \
                         self.df.loc[idx, 'goals_45'] is not None and \
                         self.df.loc[idx, 'goals_60'] is not None:
-                    self.df.loc[idx, 'goals_75'] = f"{int(self.df.loc[idx, 'home_score']) - int(self.df.loc[idx, 'goals_15'][0]) - int(self.df.loc[idx, 'goals_30'][0]) - int(self.df.loc[idx, 'goals_45'][0]) - int(self.df.loc[idx, 'goals_60'][0])} - \
-                                                     {int(self.df.loc[idx, 'away_score']) - int(self.df.loc[idx, 'goals_15'][4]) - int(self.df.loc[idx, 'goals_30'][4]) - int(self.df.loc[idx, 'goals_45'][4]) - int(self.df.loc[idx, 'goals_60'][4])}"
+                    self.df.loc[idx, 'goals_75'] = f"{int(self.df.loc[idx, 'home_score'])} - {int(self.df.loc[idx, 'away_score'])}"
                 # Get score within 75 - 90 minutes
                 if 75 < self.df.loc[idx, 'time_elapsed'] <= 120 and \
                         self.df.loc[idx, 'goals_15'] is not None and \
@@ -560,14 +555,13 @@ class AutoTrader:
                         self.df.loc[idx, 'goals_45'] is not None and \
                         self.df.loc[idx, 'goals_60'] is not None and \
                         self.df.loc[idx, 'goals_75'] is not None:
-                    self.df.loc[idx, 'goals_90'] = f"{int(self.df.loc[idx, 'home_score']) - int(self.df.loc[idx, 'goals_15'][0]) - int(self.df.loc[idx, 'goals_30'][0]) - int(self.df.loc[idx, 'goals_45'][0]) - int(self.df.loc[idx, 'goals_60'][0]) - int(self.df.loc[idx, 'goals_75'][0])} - \
-                                                     {int(self.df.loc[idx, 'away_score']) - int(self.df.loc[idx, 'goals_15'][4]) - int(self.df.loc[idx, 'goals_30'][4]) - int(self.df.loc[idx, 'goals_45'][4]) - int(self.df.loc[idx, 'goals_60'][4]) - int(self.df.loc[idx, 'goals_75'][4])}"
-                    
+                    self.df.loc[idx, 'goals_90'] = f"{int(self.df.loc[idx, 'home_score'])} - {int(self.df.loc[idx, 'away_score'])}"
+
                 if self.df.loc[idx, 'inplay_state'] == 'FirstHalfEnd':
                     self.df.loc[idx, 'ht_score'] = self.df.loc[idx, 'score']    
 
             except TypeError:
-                pass
+                logging.exception()
 
     def check_lay_price(self, idx):
         """
@@ -705,10 +699,12 @@ class AutoTrader:
         """
 
     def check_cleared_orders_pnl(self, idx):
-        if self.df.loc[idx, 'strategy'] == 'LTD' and self.df.loc[idx, 'entry_amount_matched'] > 0:
+        if self.df.loc[idx, 'strategy'] == 'LTD' and int(self.df.loc[idx, 'entry_amount_matched']) > 0 and self.df.loc[idx, 'live/paper'] == 'live':
             cleared = api.betting.list_cleared_orders(market_ids=[self.df.loc[idx, 'marketID_match_odds']], group_by='MARKET',
                                                       lightweight=True)
-            self.df.loc[idx, 'cleared_pnl'] = cleared.orders[0].profit
+            print(cleared)
+            if len(cleared['clearedOrders']) > 0:
+                self.df.loc[idx, 'cleared_pnl'] = cleared.orders[0].profit
 
     def place_lay_order(self, size, price, ptype, idx, side):
         selection_id = {'LTD': 58805}
@@ -729,7 +725,7 @@ class AutoTrader:
                 self.check_current_orders(idx=idx)
             if place_orders.place_instruction_reports[0].status == 'FAILURE':
                 self.df.loc[idx, 'entry_ordered'] = 0
-        if self.df.loc['strategy'] == 'LTD' and self.df.loc['live/paper'] == 'paper':
+        if self.df.loc[idx, 'strategy'] == 'LTD' and self.df.loc[idx, 'live/paper'] == 'paper':
             self.df.loc[idx, 'entry_ordered'] = 1
             self.df.loc[idx, 'entry_status'] = 'EXECUTION_COMPLETE'
             self.df.loc[idx, 'entry_price_avg'] = self.df.loc[idx, 'lay_price']
@@ -810,7 +806,7 @@ class AutoTrader:
                     if datetime.now(timezone.utc) > latest_kickoff:
                         self.stop_autotrader()
                         
-                        mf = MatchFinder(continuos=activate)
+                        mf = MatchFinder(continuous=activate)
                         mf.get_betfair_details()
                         mf.get_sports_iq_stats()
                         df = mf.merge_data()
@@ -818,28 +814,40 @@ class AutoTrader:
                             mf.add_matches_to_db()
                             self.initialise_data()
                             self.assign_strategy()
-                        self.run_autotrader(continuos=activate)
+                        self.run_autotrader(continuous=activate)
 
     def adjust_paper_account(self, amount, adjustment):
         if not self.is_database_connected():
             self.connect_autotrader_db()
         paper_account_df = pd.read_sql_query("SELECT * from paper_account", self.cnx)
+        print(paper_account_df, amount, adjustment)
         if adjustment == 'decrease':
-            paper_account_df['balance'] - amount
+            print('test', 'decrease')
+            paper_account_df['balance'] = paper_account_df['balance'].astype(int) - amount
         if adjustment == 'increase':
-            paper_account_df['balance'] + amount
+            print('test', 'increase')
+            paper_account_df['balance'] = paper_account_df['balance'].astype(int) + amount
+        print(paper_account_df)
         paper_account_df.to_sql(name='paper_account', con=self.cnx, if_exists='replace', index=False)
 
     def check_paper_bet_result(self, idx):
         if self.df.loc[idx, 'strategy'] == 'LTD' and self.df.loc[idx, 'live/paper'] == 'paper':
-            if self.df.loc[idx, 'entry_ordered'] == 1:
+            if int(self.df.loc[idx, 'entry_ordered']) == 1:
                 if self.df.loc[idx, 'home_score'] != self.df.loc[idx, 'away_score']:
                     paper_profit = (self.ltd_paper_stake_size * 3.5) + (self.ltd_paper_stake_size - (self.ltd_paper_stake_size * 0.02))
                     self.adjust_paper_account(amount=paper_profit , adjustment='increase')
 
     def strategy_ltd(self, idx):
-        pass
-        
+        if self.df.loc[idx, 'strategy'] == 'LTD' and int(self.df.loc[idx, 'entry_ordered']) == 0:
+            self.df['marketStartTime'] = pd.to_datetime(self.df['marketStartTime'])
+            if datetime.now(timezone.utc) > self.df.loc[idx, 'marketStartTime'] - timedelta(minutes=5):
+                print(f"ENTRY ORDER PLACED for LTD: {self.df.loc[idx, 'event_name']}")
+                self.place_lay_order(size=self.ltd_live_stake_size, 
+                                     price=self.df.loc[idx, 'lay_price'], 
+                                     ptype='PERSIST',
+                                     idx=idx,
+                                     side='LAY')
+       
 class BackTester:
     def __init__(self):
         self.con = sqlite3.connect(autotrader_db_path, check_same_thread=False)

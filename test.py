@@ -88,11 +88,11 @@ def get_sports_iq_stats():
     time.sleep(2)
     driver.quit()  
 
-# Connect to Betfair API
+"""# Connect to Betfair API
 api = betfairlightweight.APIClient('smudge2049', 'Dex17@£141117', '4oAYsDJiYA7P5Wej')
 api.login_interactive()
 cleared = api.betting.list_cleared_orders(market_ids=[1.245350965], group_by='MARKET',
                                                       lightweight=True)
 print(cleared)
 c = cleared.orders[0].profit
-print(c)
+print(c)"""
