@@ -835,7 +835,7 @@ class AutoTrader:
         if self.df.loc[idx, 'strategy'] == 'LTD' and self.df.loc[idx, 'live/paper'] == 'paper':
             if int(self.df.loc[idx, 'entry_ordered']) == 1:
                 if self.df.loc[idx, 'home_score'] != self.df.loc[idx, 'away_score']:
-                    paper_profit = (self.ltd_paper_stake_size * (self.df.loc[idx, 'lay_price'] - 1)) + (self.ltd_paper_stake_size - (self.ltd_paper_stake_size * 0.02))
+                    paper_profit = (self.ltd_paper_stake_size * (self.df.loc[idx, 'entry_price_avg'] - 1)) + (self.ltd_paper_stake_size - (self.ltd_paper_stake_size * 0.02))
                     self.adjust_paper_account(amount=paper_profit , adjustment='increase')
 
     def strategy_ltd(self, idx):
@@ -856,7 +856,6 @@ class AutoTrader:
                                      idx=idx,
                                      side='LAY')
 
-       
 class BackTester:
     def __init__(self):
         self.con = sqlite3.connect(autotrader_db_path, check_same_thread=False)
@@ -966,7 +965,6 @@ class BackTester:
         league_data = leagues_pnl.merge(leagues_win, on='League', how='inner').merge(leagues_lose, on='League', how='inner')
         league_data['win_rate'] = round(league_data['win']/(league_data['win'] + league_data['loss'])*100, 2)
         league_data.sort_values('pnl', ascending=False).to_html(r'C:\Users\Sam\FootballTrader v0.3.2\backtest\strategy\LTD\no_strategy_validated_LTD_league_performance.html')
-
 
 
     def optimise_ltd_strategy(self, train_data, df=None):
