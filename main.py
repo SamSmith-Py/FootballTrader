@@ -146,6 +146,8 @@ class MatchFinder:
         if os.path.exists(data_file_path):
             os.remove(data_file_path)
 
+        directory = r"C:\Users\Sam\FootballTrader v0.3.2\sports-iq"
+
 
         prefs = {
                 "download.default_directory": r"C:\Users\Sam\FootballTrader v0.3.2\sports-iq",  # Change to your desired directory
@@ -196,8 +198,18 @@ class MatchFinder:
                     EC.presence_of_element_located((By.XPATH, "//*[contains(@class, 'btn btn-secondary buttons-excel buttons-html5 ms-3 btn-sm btn-outline-default')]"))
                 )
                 excel_export.click()
+                
+                # If correct file present then break loop
+                if os.path.exists(data_file_path):
+                    break
+                # If wrong file name loaded then delete file and retry
+                else:
+                    for filename in os.listdir(directory):
+                        file_path = os.path.join(directory, filename)
+                        if file_path != data_file_path:
+                            os.remove(file_path)
+                    time.sleep(10)
 
-                break
             except Exception as e:
                 print(f"\nAn error occurred: {e}\n")
                 driver.quit()
@@ -372,7 +384,7 @@ class AutoTrader:
             self.connect_autotrader_db()
 
         # Get list of leagues that are eligible to assign.
-        leagues = pd.read_excel(r'C:\Users\Sam\FootballTrader v0.3.2\league_strike_rate.xlsx', index_col=0)['League'].to_list()
+        leagues = pd.read_excel(r'C:\Users\Sam\FootballTrader v0.3.2\backtest\strategy\LTD\Q1 + 2 2025\league_strike_rate.xlsx', index_col=0)['League'].to_list()
 
         # Get LTD strategy criteria
         df_LTD_strat = pd.read_sql_query("SELECT * from LTD_strategy_criteria", self.cnx, dtype=self.col_dtypes)
@@ -440,8 +452,20 @@ class AutoTrader:
                         logging.exception('API ERROR')
                         time.sleep(10)
                         continue
-            elif len(self.df) == 0:  # If no data, stop auto trader.
-                self.stop_autotrader()
+            elif len(self.df) == 0:  
+                # If no data, wait until next hour for continous MatchFinder
+                if continuous == 'on': 
+                    # Get the current time
+                    now = datetime.now()
+                    # Calculate the next hour
+                    next_hour = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+                    # Calculate the time difference in seconds
+                    time_to_sleep = (next_hour - now).total_seconds()
+                    # Sleep until the next hour
+                    time.sleep(time_to_sleep)
+                # If continuous MatchFinder is off then stop autotrader
+                else:
+                    self.stop_autotrader()
             
             # Connect to autotrader database and set to data frame.
             if not self.is_database_connected():
