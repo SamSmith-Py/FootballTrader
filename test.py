@@ -95,6 +95,6 @@ def get_sports_iq_stats():
 
 
 
-
-leagues = pd.read_excel(r'C:\Users\Sam\FootballTrader v0.3.2\league_strike_rate.xlsx', index_col=0)['League'].to_list()
+leagues = pd.read_html(r'C:\Users\Sam\FootballTrader v0.3.2\backtest\strategy\LTD\Q1 + 2 2025\Optimised_Strategy_Results\optimised_LTD_league_performance.html', index_col=0)[0]
+leagues = leagues.loc[leagues['win_rate']>=75, 'League'].to_list()
 print(leagues)

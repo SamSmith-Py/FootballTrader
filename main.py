@@ -339,7 +339,7 @@ class AutoTrader:
         self.col_dtypes = {}   
         self.max_lay_the_draw_price = 5
         self.ltd_paper_stake_size = 100
-        self.ltd_live_stake_size = 1
+        self.ltd_live_stake_size = 1.5
 
         # Time required to wait for next run_autotrader run through
         self.wait_time = 10  # Seconds
@@ -379,7 +379,7 @@ class AutoTrader:
         except AttributeError:
             return False
 
-    def assign_strategy(self, betting='paper'):
+    def assign_strategy(self, betting='live'):
         """
         Assign's strategies to events and gives the option to bet on them live or paper.
         """
@@ -388,14 +388,16 @@ class AutoTrader:
         if not self.is_database_connected():
             self.connect_autotrader_db()
 
-        # Get list of leagues that are eligible to assign.
-        leagues = pd.read_excel(r'C:\Users\Sam\FootballTrader v0.3.2\backtest\strategy\LTD\Q1 + 2 2025\league_strike_rate.xlsx', index_col=0)['League'].to_list()
+        # Get list of leagues that are eligible to assign. These leagues are filtered first from the league strike rate and then from the optimised league performance results, then filtered again to get leagues with more than 75% strike rate.
+        # This leaves only leagues that have a track record of low drawing matches and proven to work with the current strategy criteria.
+        leagues = pd.read_html(r'C:\Users\Sam\FootballTrader v0.3.2\backtest\strategy\LTD\Q1 + 2 2025\Optimised_Strategy_Results\optimised_LTD_league_performance.html', index_col=0)[0]
+        leagues = leagues.loc[leagues['win_rate']>=75, 'League'].to_list()
 
         # Get LTD strategy criteria
         df_LTD_strat = pd.read_sql_query("SELECT * from LTD_strategy_criteria", self.cnx, dtype=self.col_dtypes)
         # Assign strategy to any events applicable
         for row in self.df.index:
-            if int(self.df.loc[row, 'GP Avg']) >= 8 and \
+            if int(self.df.loc[row, 'GP Avg']) >= 0 and \
                 (int(self.df.loc[row, 'Form H v A']) >= df_LTD_strat.loc[0, 'hva_pos'] or int(self.df.loc[row, 'Form H v A']) <= df_LTD_strat.loc[0, 'hva_neg']) and \
                 float(self.df.loc[row, 'Form Goal Edge']) <= df_LTD_strat.loc[0, 'goal_edge_pos'] and \
                 float(self.df.loc[row, 'Form Goal Edge']) >= float(df_LTD_strat.loc[0, 'goal_edge_neg']) and \
@@ -481,7 +483,11 @@ class AutoTrader:
             self.close_connection_db()
 
             # TESTING
-            print(self.df[['event_name', 'League', 'live/paper', 'strategy', 'marketStartTime', 'start_date', 'start_time', 'inplay_state', 'time_elapsed', 'market_state',
+            if len(self.df.loc[self.df['live/paper'] == 'live']) > 0:
+                print(self.df.loc[self.df['live/paper'] == 'live', ['event_name', 'League', 'live/paper', 'strategy', 'marketStartTime', 'start_date', 'start_time', 'inplay_state', 'time_elapsed', 'market_state',
+                           'score', 'entry_ordered', 'GP Avg', 'Form H v A', 'Form Goal Edge', 'favourite']].sort_values(by=['start_date', 'start_time']))
+            else: 
+                 print(self.df[['event_name', 'League', 'live/paper', 'strategy', 'marketStartTime', 'start_date', 'start_time', 'inplay_state', 'time_elapsed', 'market_state',
                            'score', 'entry_ordered', 'GP Avg', 'Form H v A', 'Form Goal Edge']].sort_values(by=['start_date', 'start_time']))
 
             self.continuos_match_finder(activate=continuous)
@@ -687,47 +693,50 @@ class AutoTrader:
         """
         if self.df.loc[idx, 'live/paper'] == 'live' and self.df.loc[idx, 'strategy'] == 'LTD':
             orders = api.betting.list_current_orders(market_ids=[self.df.loc[idx, 'marketID_match_odds']],
-                                                     sort_dir='LATEST_TO_EARLIEST', lightweight=True)
-            self.df.loc[idx, 'current_order_side'] = orders.orders[0].side
-            self.df.loc[idx, 'current_order_status'] = orders.orders[0].status
-            self.df.loc[idx, 'current_order_betid'] = orders.orders[0].bet_id
-            for order in orders['currentOrders']:
-                # Check if any Lay orders.
-                if order['side'] == 'LAY':
-                    # Update if entry ordered.
-                    self.df.loc[idx, 'entry_ordered'] = 1
-                    # Update entry order status.
-                    self.df.loc[idx, 'entry_status'] = order['status']
-                    # get average price of entry's.
-                    self.df.loc[idx, 'entry_price_avg'] = round(order['averagePriceMatched'], 2)
-                    # Update entry size matched and remaining.
-                    self.df.loc[idx, 'entry_amount_matched'] = order['sizeMatched']
-                    self.df.loc[idx, 'entry_amount_remaining'] = order['sizeRemaining']
-                # Check if any Back orders. - No current need for BACK ORDERS this will need to be revised in the future.
-                """if order['side'] == 'BACK':
-                    # Update if exit ordered.
-                    self.df.loc[idx, 'exit_ordered'] = 1
-                    # Update exit order status.
-                    self.df.loc[idx, 'exit_status'] = order['status']
-                    # get average price of exit's.
-                    self.df.loc[idx, 'exit_price_avg'] = round(order['averagePriceMatched'], 2)
-                    # Update exit size matched and remaining.
-                    self.df.loc[idx, 'exit_amount_matched'] = order['sizeMatched']
-                    self.df.loc[idx, 'exit_amount_remaining'] = order['sizeRemaining']"""
-            # Check if no orders.
-            if len(orders['currentOrders']) == 0:
-                self.df.loc[idx, 'entry_ordered'] = 0
-                self.df.loc[idx, 'exit_ordered'] = 0
+                                                     sort_dir='LATEST_TO_EARLIEST')
+            
+            if len(orders.orders) > 0:
+                self.df.loc[idx, 'current_order_side'] = orders.orders[0].side
+                self.df.loc[idx, 'current_order_status'] = orders.orders[0].status
+                self.df.loc[idx, 'current_order_betid'] = orders.orders[0].bet_id
+                for order in orders['currentOrders']:
+                    # Check if any Lay orders.
+                    if order['side'] == 'LAY':
+                        # Update if entry ordered.
+                        self.df.loc[idx, 'entry_ordered'] = 1
+                        # Update entry order status.
+                        self.df.loc[idx, 'entry_status'] = order['status']
+                        # get average price of entry's.
+                        self.df.loc[idx, 'entry_price_avg'] = round(order['averagePriceMatched'], 2)
+                        # Update entry size matched and remaining.
+                        self.df.loc[idx, 'entry_amount_matched'] = order['sizeMatched']
+                        self.df.loc[idx, 'entry_amount_remaining'] = order['sizeRemaining']
+                    # Check if any Back orders. - No current need for BACK ORDERS this will need to be revised in the future.
+                    """if order['side'] == 'BACK':
+                        # Update if exit ordered.
+                        self.df.loc[idx, 'exit_ordered'] = 1
+                        # Update exit order status.
+                        self.df.loc[idx, 'exit_status'] = order['status']
+                        # get average price of exit's.
+                        self.df.loc[idx, 'exit_price_avg'] = round(order['averagePriceMatched'], 2)
+                        # Update exit size matched and remaining.
+                        self.df.loc[idx, 'exit_amount_matched'] = order['sizeMatched']
+                        self.df.loc[idx, 'exit_amount_remaining'] = order['sizeRemaining']"""
+                # Check if no orders.
+                if len(orders['currentOrders']) == 0:
+                    self.df.loc[idx, 'entry_ordered'] = 0
+                    self.df.loc[idx, 'exit_ordered'] = 0
 
-            # Check if orders partially matched and update.
-            if check == 1:
-                if self.df.loc[idx, 'entry_amount_remaining'] >= 1.0:
-                    self.update_current_orders(idx, self.df.loc[idx, 'lay_price'],
-                                               self.df.loc[idx, 'current_order_betid'])
-                # No current need for BACK ORDERS this will need to be revised in the future.
-                """if self.df.loc[idx, 'exit_amount_remaining'] >= 1.0:
-                    self.update_current_orders(idx, self.df.loc[idx, 'lay_price'],
-                                               self.df.loc[idx, 'current_order_betid'])"""
+                # Check if orders partially matched and update.
+                if check == 1:
+                    # E
+                    if self.df.loc[idx, 'entry_amount_remaining'] >= 1.0 and self.df.loc[idx, 'entry_amount_remaining'] <= self.ltd_live_stake_size * 0.25:
+                        self.update_current_orders(idx, self.df.loc[idx, 'lay_price'],
+                                                self.df.loc[idx, 'current_order_betid'])
+                    # No current need for BACK ORDERS this will need to be revised in the future.
+                    """if self.df.loc[idx, 'exit_amount_remaining'] >= 1.0:
+                        self.update_current_orders(idx, self.df.loc[idx, 'lay_price'],
+                                                self.df.loc[idx, 'current_order_betid'])"""
                     
     def update_current_orders(self, idx, price, betid):
         if self.df.loc[idx, 'strategy'] == 'LTD':
@@ -749,9 +758,8 @@ class AutoTrader:
         """
 
     def check_cleared_orders_pnl(self, idx):
-        if self.df.loc[idx, 'strategy'] == 'LTD' and int(self.df.loc[idx, 'entry_amount_matched']) > 0 and self.df.loc[idx, 'live/paper'] == 'live':
-            cleared = api.betting.list_cleared_orders(market_ids=[self.df.loc[idx, 'marketID_match_odds']], group_by='MARKET',
-                                                      lightweight=True)
+        if self.df.loc[idx, 'strategy'] == 'LTD' and float(self.df.loc[idx, 'entry_amount_matched']) > 0 and self.df.loc[idx, 'live/paper'] == 'live':
+            cleared = api.betting.list_cleared_orders(market_ids=[self.df.loc[idx, 'marketID_match_odds']], group_by='MARKET')
             print(cleared)
             if len(cleared['clearedOrders']) > 0:
                 self.df.loc[idx, 'cleared_pnl'] = cleared.orders[0].profit
@@ -766,7 +774,7 @@ class AutoTrader:
                 side=side,
                 limit_order=limit_order)
             place_orders = api.betting.place_orders(
-                market_id=str(self.df.loc[idx, 'marketID_match_odds']), instructions=[instruction], lightweight=True)
+                market_id=str(self.df.loc[idx, 'marketID_match_odds']), instructions=[instruction])
             if place_orders.place_instruction_reports[0].status == 'SUCCESS':
                 self.check_current_orders(idx=idx)
                 self.df.loc[idx, 'entry_status'] = place_orders.place_instruction_reports[0].order_status
@@ -887,23 +895,35 @@ class AutoTrader:
                     paper_profit = (self.ltd_paper_stake_size * (self.df.loc[idx, 'entry_price_avg'] - 1)) + (self.ltd_paper_stake_size - (self.ltd_paper_stake_size * 0.02))
                     self.adjust_paper_account(amount=paper_profit , adjustment='increase')
 
+    def offset_tick_to_lay(self, cur_price, idx):
+        offset_lay_price = cur_price
+        if cur_price > 2 and cur_price <= 3:  # 0.02 increments
+            offset_lay_price = cur_price - 0.04
+        if cur_price > 3 and cur_price <= 4:  # 0.05 increments
+            offset_lay_price = cur_price - 0.1  
+        if cur_price > 4 and cur_price <= 5:  # 0.1 increments
+            offset_lay_price = cur_price - 0.2
+        if float(self.df.loc[idx, 'back_price']) > 5:
+            offset_lay_price = 4.8
+        print(offset_lay_price)
+        return offset_lay_price
+    
     def strategy_ltd(self, idx):
         if self.df.loc[idx, 'strategy'] == 'LTD' and int(self.df.loc[idx, 'entry_ordered']) == 0:
             self.df['marketStartTime'] = pd.to_datetime(self.df['marketStartTime'])
-            if datetime.now(timezone.utc) > self.df.loc[idx, 'marketStartTime'] - timedelta(minutes=5):
-                print(f"ENTRY ORDER PLACED for LTD: {self.df.loc[idx, 'event_name']}")
+
+            # Enter a lay order 10 minutes out from kick off
+            if datetime.now(timezone.utc) > self.df.loc[idx, 'marketStartTime'] - timedelta(minutes=10):
+                # Place lay order 1 tick below current price
+                offset_lay_price = self.offset_tick_to_lay(self.df.loc[idx, 'lay_price'], idx)
                 self.place_lay_order(size=self.ltd_live_stake_size, 
-                                     price=self.df.loc[idx, 'lay_price'], 
+                                     price=offset_lay_price, 
                                      ptype='PERSIST',
                                      idx=idx,
                                      side='LAY')
-            if datetime.now(timezone.utc) < self.df.loc[idx, 'marketStartTime'] and float(self.df.loc[idx, 'lay_price']) < 3.4:
                 print(f"ENTRY ORDER PLACED for LTD: {self.df.loc[idx, 'event_name']}")
-                self.place_lay_order(size=self.ltd_live_stake_size, 
-                                     price=self.df.loc[idx, 'lay_price'], 
-                                     ptype='PERSIST',
-                                     idx=idx,
-                                     side='LAY')
+    
+        
 
 class BackTester:
     def __init__(self):
@@ -1389,6 +1409,7 @@ class BackTester_v2:
             # Set strategy criteria to be optimised 
             hva = [-5, -6, -7, -8, -9, -10, -11, -12]
             goal_edge = [-3, -4, -5]
+            gp = [0, 8]
             
             # Create list of combination lists
             combinations = list(product(hva, goal_edge))
@@ -1396,6 +1417,7 @@ class BackTester_v2:
             # Empty list to append results to display in a df 
             hva_col = []
             goal_edge_col = []
+            gp_col = []
             draw_perc_col = []
             total_matches_col = []
             total_no_draw_col = []
@@ -1448,7 +1470,6 @@ class BackTester_v2:
 
             return optimised_df
 
-        
 
         def train_strategy(train_data, optimised_df):
             # Apply general strategy to train data    
