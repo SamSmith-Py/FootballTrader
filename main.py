@@ -339,7 +339,7 @@ class AutoTrader:
         self.col_dtypes = {}   
         self.max_lay_the_draw_price = 5
         self.ltd_paper_stake_size = 100
-        self.ltd_live_stake_size = 1.5
+        self.ltd_live_stake_size = 2
 
         # Time required to wait for next run_autotrader run through
         self.wait_time = 10  # Seconds
@@ -898,15 +898,17 @@ class AutoTrader:
     def offset_tick_to_lay(self, cur_price, idx):
         offset_lay_price = cur_price
         if cur_price > 2 and cur_price <= 3:  # 0.02 increments
-            offset_lay_price = cur_price - 0.04
-        if cur_price > 3 and cur_price <= 4:  # 0.05 increments
-            offset_lay_price = cur_price - 0.1  
+            offset_lay_price = cur_price - 0.12
+        if cur_price > 3 and cur_price <= 3.30:
+            offset_lay_price = 2.9
+        if cur_price > 3.30 and cur_price <= 4:  # 0.05 increments
+            offset_lay_price = cur_price - 0.30  
         if cur_price > 4 and cur_price <= 5:  # 0.1 increments
-            offset_lay_price = cur_price - 0.2
-        if float(self.df.loc[idx, 'back_price']) > 5:
-            offset_lay_price = 4.8
-        print(offset_lay_price)
-        return offset_lay_price
+            offset_lay_price = cur_price - 0.6
+        if float(self.df.loc[idx, 'back_price']) > 5 or float(self.df.loc[idx, 'lay_price']) > 5:
+            offset_lay_price = 4.2
+        print('Offset Lay Price: ', round(offset_lay_price, 2))
+        return round(offset_lay_price, 2)
     
     def strategy_ltd(self, idx):
         if self.df.loc[idx, 'strategy'] == 'LTD' and int(self.df.loc[idx, 'entry_ordered']) == 0:
@@ -1551,6 +1553,7 @@ if __name__ == '__main__':
         print('\nCurrent tools available:\n- MatchFinder = mf\n- AutoTrader(WiP) = at\n- BackTester(WiP) = bt')
         print('Continuos MatchFinder setting is currently:', continuous)
         tool = input('Select Tool: ')
+
         if tool == 'MatchFinder' or tool == 'mf':
             
             mf = MatchFinder(continuous=continuous)
@@ -1576,6 +1579,12 @@ if __name__ == '__main__':
                             logging.exception('API ERROR')
                             print('Betfair API Error...')
                             time.sleep(10)
+                        finally:
+                            print('Logging out Betfair API')
+                            api.logout()
+                            time.sleep(5)
+                            print('Logging in Betfair API')
+                            api.login_interactive()
 
         if tool == 'AutoTrader'or tool == 'at':
             print('<AutoTrader Running>')
@@ -1592,6 +1601,12 @@ if __name__ == '__main__':
                     logging.exception('API ERROR')
                     print('Betfair API Error...')
                     time.sleep(10)
+                finally:
+                    print('Logging out Betfair API')
+                    api.logout()
+                    time.sleep(5)
+                    print('Logging in Betfair API')
+                    api.login_interactive()
 
         if tool == 'BackTester' or tool == 'bt':
             print('<BackTester>')

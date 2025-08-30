@@ -94,7 +94,39 @@ def get_sports_iq_stats():
     driver.quit()  
 
 
+def open_db_get_results():
+    autotrader_db_path = r'C:\Users\Sam\FootballTrader v0.3.2\database\autotrader_data.db'
+    cnx = sqlite3.connect(autotrader_db_path, check_same_thread=False)
 
-leagues = pd.read_html(r'C:\Users\Sam\FootballTrader v0.3.2\backtest\strategy\LTD\Q1 + 2 2025\Optimised_Strategy_Results\optimised_LTD_league_performance.html', index_col=0)[0]
-leagues = leagues.loc[leagues['win_rate']>=75, 'League'].to_list()
-print(leagues)
+    df = pd.read_sql_query("SELECT * from archive_v2", cnx) 
+
+    df = df.loc[df['live/paper'] == 'live']
+
+    df.replace('None', np.nan, inplace=True)
+
+   
+    df = df.dropna(subset=['score'])
+
+    df['result'] = np.where(df['home_score'] != df['away_score'], 1, 0)
+
+    print(df)
+    print(df['result'].value_counts().to_list())
+    print(df['result'].value_counts(normalize=True))
+
+    wins_count = df['result'].value_counts().to_list()[0]
+    loss_count = df['result'].value_counts().to_list()[1]
+    price = 3.5
+    profit = wins_count*0.98
+    loss = loss_count * (price - 1)
+    profit_and_loss = profit - loss
+
+    print('Profit', wins_count*0.98)
+    print('Loss', loss_count * (price - 1))
+    print('Total PnL', profit_and_loss)
+    
+    df = df.loc[df['entry_price_avg'].astype(float) < 100]
+    print(df['entry_price_avg'].astype(float).mean())
+    print(df['entry_price_avg'].to_list())
+
+
+open_db_get_results()
