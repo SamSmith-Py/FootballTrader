@@ -466,13 +466,20 @@ class AutoTrader:
                     now = datetime.now()
                     # Calculate the next hour
                     next_hour = (now + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+                    print(next_hour)
                     # Calculate the time difference in seconds
                     time_to_sleep = (next_hour - now).total_seconds()
+                    print(time_to_sleep)
                     # Sleep until the next hour
+                    print('Waiting.')
                     time.sleep(time_to_sleep)
+                    print('Running MatchFinder after wait.')
+                    self.continuos_match_finder(activate=continuous)
+                    print('MatchFinder complete after wait.')
                 # If continuous MatchFinder is off then stop autotrader
                 else:
                     self.stop_autotrader()
+                    print('Stopping 1')
             
             # Connect to autotrader database and set to data frame.
             if not self.is_database_connected():
@@ -853,8 +860,8 @@ class AutoTrader:
     def continuos_match_finder(self, activate='off'):
         
             # This is the Continuos MAtchFinder feature. When this is activated it will stop the AutoTrader tool, run the MatchFinder tool then restart the AutoTrader.
-            self.df['marketStartTime'] = pd.to_datetime(self.df['marketStartTime'])
-            latest_kickoff  = self.df['marketStartTime'].max()
+            # self.df['marketStartTime'] = pd.to_datetime(self.df['marketStartTime'])
+            # latest_kickoff  = self.df['marketStartTime'].max()
             if activate == 'on':
                 # Check if time is half past or on the hour
                 if pd.Timestamp.now().minute == 0 or pd.Timestamp.now().minute == 30:
@@ -1339,7 +1346,7 @@ class BackTester_v2:
             final_df['strike'] = round(final_df['Won'] / final_df['GP'] * 100, 2)
             final_df['pnl 4'] = round(final_df['Won'] * 98 - (final_df['Draw'] * 300), 2)
             final_df['pnl 3.5'] = round(final_df['Won'] * 98 - (final_df['Draw'] * 250), 2)
-            final_df = final_df.loc[(final_df['GP'] > 10) & (final_df['strike'] > 50)]
+            final_df = final_df.loc[(final_df['GP'] > 10) & (final_df['strike'] > 75)]
 
             final_df.to_excel('league_strike_rate.xlsx')
 
@@ -1498,7 +1505,7 @@ class BackTester_v2:
             leagues_win.rename(columns={'ft_result': 'win'}, inplace=True)
             league_data = leagues_pnl.merge(leagues_win, on='League', how='inner').merge(leagues_lose, on='League', how='inner')
             league_data['win_rate'] = round(league_data['win']/(league_data['win'] + league_data['loss'])*100, 2)
-            league_data.sort_values('pnl', ascending=False).to_html(r'C:\Users\Sam\FootballTrader v0.3.2\backtest\strategy\LTD\Optimised_Strategy_Results\optimised_LTD_league_performance.html')
+            league_data.sort_values('win_rate', ascending=False).to_html(r'C:\Users\Sam\FootballTrader v0.3.2\backtest\strategy\LTD\Optimised_Strategy_Results\optimised_LTD_league_performance.html')
 
         def validate_strategy(validate_data, optimised_df):
             idx=0
@@ -1531,17 +1538,17 @@ class BackTester_v2:
 
         selected_leagues = select_leagues(df)
 
-        #train_data, validate_data = split_data(selected_leagues, df)
+        train_data, validate_data = split_data(selected_leagues, df)
 
-        #optimised_df = optimise_strategy(train_data)
+        optimised_df = optimise_strategy(train_data)
 
-        #train_strategy(train_data, optimised_df)
+        train_strategy(train_data, optimised_df)
 
-        #randomise_strategy_test(df, selected_leagues, optimised_df)
+        randomise_strategy_test(df, selected_leagues, optimised_df)
 
-        #reverse_strategy(train_data, optimised_df)
+        reverse_strategy(train_data, optimised_df)
 
-       # validate_strategy(validate_data, optimised_df)
+        validate_strategy(validate_data, optimised_df)
 
 
 if __name__ == '__main__':

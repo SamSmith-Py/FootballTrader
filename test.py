@@ -115,7 +115,7 @@ def open_db_get_results():
 
     wins_count = df['result'].value_counts().to_list()[0]
     loss_count = df['result'].value_counts().to_list()[1]
-    price = 3.88
+    price = 4.1
     profit = wins_count*0.98
     loss = loss_count * (price - 1)
     profit_and_loss = profit - loss
@@ -124,7 +124,8 @@ def open_db_get_results():
     print('Loss', loss_count * (price - 1))
     print('Total PnL', profit_and_loss)
     
-    df = df.loc[df['entry_price_avg'].astype(float) < 100]
+    df = df.loc[df['entry_price_avg'].astype(float) < 20]
+    df = df.loc[df['entry_price_avg'].astype(float) > 0]
     print(df['entry_price_avg'].astype(float).mean())
     print(df['entry_price_avg'].to_list())
 
