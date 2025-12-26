@@ -14,7 +14,9 @@ from core.settings import (
     TABLE_CURRENT,
     PAPER_MODE,
     BOT_VERSION,
-    CONFIG_PATH
+    CONFIG_PATH,
+    SP_CAPTURE_WINDOW_SEC,
+    SP_FALLBACK_INPLAY
 )
 from core.db_helper import DBHelper
 from core.betfair_session import BetfairSession
@@ -248,57 +250,83 @@ class AutoTrader:
             )
 
         # ---- SP + fav one-time updater ----
-        # Only attempt if those fields are still NULL in the DB row
-        # (use the ev snapshot first; if you want perfect accuracy, fetch current row from DB)
+        # ---- PRE-KO SNAPSHOT "SP" + fav one-time updater ----
         row = db.fetch_current(event_id)
         h_sp_cur = row["h_SP"] if row else None
         a_sp_cur = row["a_SP"] if row else None
         d_sp_cur = row["d_SP"] if row else None
         fav_cur  = row["fav"]  if row else None
+        kickoff_iso = row["kickoff"] if row else None
 
+        needs_sp = (h_sp_cur is None or a_sp_cur is None or d_sp_cur is None)
+        needs_fav = (fav_cur is None)
 
-        needs_sp = (h_sp_cur is None or a_sp_cur is None or d_sp_cur is None or fav_cur is None)
-        if needs_sp and len(runners) >= 3:
+        def _parse_kickoff_dt(iso_str: str):
+            if not iso_str:
+                return None
+            try:
+                return datetime.fromisoformat(iso_str.replace("Z", "+00:00"))
+            except Exception:
+                return None
 
-            def actual_sp(r):
-                sp = getattr(r, "sp", None)
-                if sp is None:
-                    return None
-                # betfairlightweight sometimes uses actual_sp; sometimes actualSp
-                val = getattr(sp, "actual_sp", None)
-                if val is None:
-                    val = getattr(sp, "actualSp", None)
-                return val
+        def _best_back_price(r):
+            ex = getattr(r, "ex", None)
+            atb = getattr(ex, "available_to_back", None) if ex else None
+            if atb and len(atb) > 0:
+                return atb[0].price
+            return None
 
-            h_sp = actual_sp(runners[0])
-            a_sp = actual_sp(runners[1])
-            d_sp = actual_sp(runners[2])
+        # Determine whether we are allowed to capture a snapshot now
+        capture_now = False
 
-            # Only write SPs if they exist (don’t overwrite existing values)
+        ko_dt = _parse_kickoff_dt(kickoff_iso)
+        now_utc = datetime.now(timezone.utc)
+
+        # 1) Pre-kickoff window capture (preferred)
+        if ko_dt is not None:
+            seconds_to_ko = (ko_dt - now_utc).total_seconds()
+            if 0 <= seconds_to_ko <= SP_CAPTURE_WINDOW_SEC:
+                capture_now = True
+
+        # 2) Fallback: first in-play capture if we missed the window
+        # (only if still NULL and you want this behaviour)
+        if not capture_now and SP_FALLBACK_INPLAY and needs_sp:
+            # Use either time_elapsed or inplay_status as your "in play started" signal
+            te = ev.get("time_elapsed")
+            ips = ev.get("inplay_status")
+            if (isinstance(te, (int, float)) and int(te) >= 0) or (ips in ("KickOff", "InPlay", "SecondHalfKickOff")):
+                capture_now = True
+
+        if capture_now and len(runners) >= 3:
+            h_snap = _best_back_price(runners[0])
+            a_snap = _best_back_price(runners[1])
+            d_snap = _best_back_price(runners[2])
+
             updates = {}
-            if h_sp_cur is None and h_sp is not None:
-                updates["h_SP"] = float(h_sp)
-            if a_sp_cur is None and a_sp is not None:
-                updates["a_SP"] = float(a_sp)
-            if d_sp_cur is None and d_sp is not None:
-                updates["d_SP"] = float(d_sp)
 
-            # Determine favourite (home vs away only) once we have both
-            # Use newly obtained values if existing were NULL
-            effective_h_sp = h_sp_cur if h_sp_cur is not None else h_sp
-            effective_a_sp = a_sp_cur if a_sp_cur is not None else a_sp
+            # Only write once
+            if h_sp_cur is None and h_snap is not None:
+                updates["h_SP"] = float(h_snap)
+            if a_sp_cur is None and a_snap is not None:
+                updates["a_SP"] = float(a_snap)
+            if d_sp_cur is None and d_snap is not None:
+                updates["d_SP"] = float(d_snap)
 
-            if fav_cur is None and effective_h_sp is not None and effective_a_sp is not None:
-                # Lower price = favourite
-                if float(effective_h_sp) < float(effective_a_sp):
-                    updates["fav"] = 1
-                elif float(effective_a_sp) < float(effective_h_sp):
-                    updates["fav"] = 2
+            # Favourite derived from (effective) snapshot prices (home vs away)
+            effective_h = h_sp_cur if h_sp_cur is not None else h_snap
+            effective_a = a_sp_cur if a_sp_cur is not None else a_snap
+
+            if needs_fav and effective_h is not None and effective_a is not None:
+                if float(effective_h) < float(effective_a):
+                    updates["fav"] = 1  # home fav
+                elif float(effective_a) < float(effective_h):
+                    updates["fav"] = 2  # away fav
                 else:
-                    updates["fav"] = 0
+                    updates["fav"] = 0  # equal
 
             if updates:
                 db.update_current(event_id, **updates)
+
         
         kickoff = row["kickoff"] if row else None
         if kickoff and inplay_status not in ("Finished", "Cancelled", "Abandoned"):

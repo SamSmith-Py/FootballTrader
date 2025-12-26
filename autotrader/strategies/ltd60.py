@@ -46,8 +46,8 @@ class LTD60(BaseStrategy):
     requires_api = True
 
     # strategy-specific league lists — produced by your backtester for LTD60 only
-    filtered_leagues_csv = str(BASE_DIR / "backtest" / "strategy" / "LTD" / "Q4 2025" / "data_analysis" / "filtered_leagues.csv")
-    late_goal_leagues_csv = str(BASE_DIR / "backtest" / "strategy" / "LTD" / "Q4 2025" / "data_analysis" / "late_goal_leagues.csv")
+    filtered_leagues_csv = str(BASE_DIR / "backtest" / "strategy" / "LTD" / "Q4 2025" / "data_analysis" / "filtered_leagues_v2.csv")
+    late_goal_leagues_csv = str(BASE_DIR / "backtest" / "strategy" / "LTD" / "Q4 2025" / "data_analysis" / "late_goal_leagues_v2.csv")
 
     def __init__(self):
         self._filtered: Set[str] = self._load_leagues(self.filtered_leagues_csv)

@@ -55,6 +55,38 @@ EARLY_1GOAL_PROFIT = 50.0
 os.makedirs(OUT_DIR, exist_ok=True)
 
 # 2) Helpers
+def parse_ht_score_to_pair(x):
+    """
+    Parses ht_score like '0-0', '1 - 0', '0:0' into (home, away).
+    Returns (np.nan, np.nan) if parsing fails.
+    """
+    if x is None or (isinstance(x, float) and np.isnan(x)):
+        return (np.nan, np.nan)
+
+    s = str(x).strip()
+    if not s:
+        return (np.nan, np.nan)
+
+    # normalize separators
+    s = s.replace(":", "-").replace(" ", "")
+    if "-" not in s:
+        return (np.nan, np.nan)
+
+    left, right = s.split("-", 1)
+    try:
+        return (int(left), int(right))
+    except Exception:
+        return (np.nan, np.nan)
+
+def to_int_safe(x):
+    """Converts band goal counts to int where possible, else NaN."""
+    if x is None or (isinstance(x, float) and np.isnan(x)):
+        return np.nan
+    try:
+        # Handles "0", "1", 0, 1.0 etc.
+        return int(float(str(x).strip()))
+    except Exception:
+        return np.nan
 def parse_score_pair(s):
     if pd.isna(s):
         return (np.nan, np.nan)
@@ -182,7 +214,9 @@ if "league" not in df.columns:
 if "odds_draw" not in df.columns:
     raise KeyError(f"Odds column '{ODDS_COL}' not found and no alternative detected.")
 
+# -----------------------------
 # 5) Preprocess (dates/scores)
+# -----------------------------
 if "match_date" in df.columns:
     df["match_date_parsed"] = pd.to_datetime(df["match_date"], errors="coerce", dayfirst=True)
     before = len(df)
@@ -192,31 +226,76 @@ else:
     df["match_date_parsed"] = pd.NaT
     print("No match_date column detected; date-based features limited.")
 
+# FT scores
 df["ft_home"] = pd.to_numeric(df.get("ft_home"), errors="coerce")
 df["ft_away"] = pd.to_numeric(df.get("ft_away"), errors="coerce")
 df = df.dropna(subset=["league","home_team","away_team","ft_home","ft_away"]).copy()
 df["ft_home"] = df["ft_home"].astype(int)
 df["ft_away"] = df["ft_away"].astype(int)
 
-if "goals_60_raw" in df.columns:
-    parsed = df["goals_60_raw"].apply(parse_score_pair)
-    df["g60_home"], df["g60_away"] = zip(*parsed)
-else:
-    df["g60_home"], df["g60_away"] = np.nan, np.nan
+# Decisive result
+df["decisive"] = (df["ft_home"] != df["ft_away"]).astype(int)
 
-if "goals_15_raw" in df.columns:
-    parsed15 = df["goals_15_raw"].apply(parse_score_pair)
-    df["g15_home"], df["g15_away"] = zip(*parsed15)
+# --- HT score parsing (needed for proxy) ---
+if "ht_score" in df.columns:
+    ht_parsed = df["ht_score"].apply(parse_ht_score_to_pair)
+    df["ht_home"], df["ht_away"] = zip(*ht_parsed)
 else:
-    df["g15_home"], df["g15_away"] = np.nan, np.nan
+    df["ht_home"], df["ht_away"] = np.nan, np.nan
 
-df["odds_draw"] = pd.to_numeric(df["odds_draw"], errors="coerce")
+df["is_00_at_ht"] = ((df["ht_home"] == 0) & (df["ht_away"] == 0))
+
+# --- Band goals: we only need the 45-60 band for the proxy ---
+# IMPORTANT: ensure this column name matches your v2 schema
+# You referred to "goals_60" as a band (45-60). If your actual column is "goals_60_raw", use that.
+band60_col = None
+for c in ["goals_60", "goals_60_raw", "g60", "goals60"]:
+    if c in df.columns:
+        band60_col = c
+        break
+
+if band60_col:
+    df["goals_in_45_60"] = df[band60_col].apply(to_int_safe)
+else:
+    df["goals_in_45_60"] = np.nan
+
+# If goals_in_45_60 is NaN, we *cannot* safely assume 0 goals; treat as unknown (False)
+df["no_goal_45_60"] = (df["goals_in_45_60"] == 0)
+
+# --- LTD60 proxy: 0-0 at 60 if HT was 0-0 AND no goals in 45-60 band ---
+df["is_00_at60_proxy"] = df["is_00_at_ht"] & df["no_goal_45_60"]
+
+# If you want "draw at 60" for LTD60, this proxy implies draw (0-0) when true:
+df["draw_at_60_proxy"] = df["is_00_at60_proxy"].astype(int)
+
+# Keep odds parsing
+df["odds_draw"] = pd.to_numeric(df.get("odds_draw"), errors="coerce")
+
+# --- 0-15 band goals (v2 is a band count, not a scoreline) ---
+band15_col = None
+for c in ["goals_15", "goals_15_raw", "g15", "goals15"]:
+    if c in df.columns:
+        band15_col = c
+        break
+
+if band15_col:
+    df["goals_in_0_15"] = df[band15_col].apply(to_int_safe)
+else:
+    df["goals_in_0_15"] = np.nan
+
+# Maintain old column names so the rest of your script doesn't break
+df["g15_home"] = np.nan
+df["g15_away"] = np.nan
+
+# Replace your old any_goal_0_15 definition with this:
+df["any_goal_0_15"] = (df["goals_in_0_15"].fillna(0) > 0)
 
 df["decisive"] = (df["ft_home"] != df["ft_away"]).astype(int)
 df["any_goal_0_15"] = ((df["g15_home"].fillna(0) + df["g15_away"].fillna(0)) > 0)
-df["is_00_at60"] = ((df["g60_home"] == 0) & (df["g60_away"] == 0))
-df["draw_at_60"] = (df["g60_home"] == df["g60_away"])
-df["lead_diff_60"] = df["g60_home"] - df["g60_away"]
+df["is_00_at60"] = df["is_00_at60_proxy"]
+df["draw_at_60"] = df["is_00_at60_proxy"]  # for LTD60 you only care about 0-0
+df["lead_diff_60"] = 0  # not meaningful in v2 with band-only data
+
 
 # 6) League summary + filtered leagues
 league_summary = df.groupby("league").agg(
@@ -291,6 +370,11 @@ def first15_scoring_team_win(row):
     if gh>0 and (pd.isna(ga) or ga==0): return 1 if row["ft_home"] > row["ft_away"] else 0
     if ga>0 and (pd.isna(gh) or gh==0): return 1 if row["ft_away"] > row["ft_home"] else 0
     return np.nan
+if subset_first15.empty:
+    df["first15_team_wins"] = False  # or np.nan, whichever you prefer
+else:
+    subset_first15["first15_team_wins"] = subset_first15.apply(first15_scoring_team_win, axis=1)
+    df.loc[subset_first15.index, "first15_team_wins"] = subset_first15["first15_team_wins"]
 
 subset_first15["first15_team_wins"] = subset_first15.apply(first15_scoring_team_win, axis=1)
 p_first15_team_wins = subset_first15["first15_team_wins"].dropna().mean()

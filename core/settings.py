@@ -12,8 +12,8 @@ CONFIG_PATH =  BASE_DIR / "config" / "config.ini"
 
 # Backtest outputs (used for strategy assignment)
 BACKTEST_DIR          = BASE_DIR / "data_analysis"
-FILTERED_LEAGUES_CSV  = BACKTEST_DIR / "filtered_leagues.csv"
-LATE_GOAL_LEAGUES_CSV = BACKTEST_DIR / "late_goal_leagues.csv"
+FILTERED_LEAGUES_CSV  = BACKTEST_DIR / "filtered_leagues_2.csv"
+LATE_GOAL_LEAGUES_CSV = BACKTEST_DIR / "late_goal_leagues_2.csv"
 
 # ================= LOGGING ==================
 LOG_DIR = BASE_DIR / "logs"
@@ -34,6 +34,11 @@ SCHEDULE_MATCHFINDER_MIN = 30  # How often to run MatchFinder
 MARKETS_REQUIRED = ["MATCH_ODDS", "OVER_UNDER_45", "CORRECT_SCORE"]
 # Optional: pagination cap for catalogue results
 BETFAIR_CATALOGUE_MAX_RESULTS = 1000
+
+# ================= AUTOTRADER ===============
+SP_CAPTURE_WINDOW_SEC = 90   # take snapshot inside last 90s pre-KO
+SP_FALLBACK_INPLAY = True    # if missed pre-KO, capture once at first in-play
+
 
 # ================= STRATEGIES ===============
 # Keep these strings — they’re used in DB rows
