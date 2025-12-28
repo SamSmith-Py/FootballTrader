@@ -26,11 +26,17 @@ from core.settings import (
     STAKE_LTD_PAPER,
     STAKE_LTD_LIVE,
     DRAW_SELECTION_ID,
-    LTD60_SECOND_ENTRY_ODDS
+    LTD60_MAX_SECOND_ENTRY_ODDS,
+    LOG_DIR
     
 )
 from core.db_helper import DBHelper
 from autotrader.strategies.base_strategy import BaseStrategy
+
+# Logging Setup
+from core.logging_setup import setup_LTD60_logging
+
+logger = setup_LTD60_logging(log_dir=LOG_DIR / "logs")
 
 #   # Betfair's global selection id for "The Draw" in Match Odds
 # MAX_KO_LAY_ODDS = 4.0      # hard-cap for entry
@@ -105,7 +111,7 @@ class LTD60(BaseStrategy):
         # Keep prices fresh (and optionally log stream)
         h, d, a = self._fetch_mo_prices(api, market_id)
         if any(p is not None for p in (h, d, a)):
-            self._set_prices(db, ev_id, h=h, a=a, d=d)
+            self._set_lay_prices(db, ev_id, h=h, a=a, d=d)
             # Optionally log simple stream snapshot
             self._log_stream(db, ev, h=h, a=a, d=d, inplay_time=None)
 
@@ -135,9 +141,6 @@ class LTD60(BaseStrategy):
 
         if d_price is None or d_price <= 0:
             return
-        if d_price > LTD60_MAX_ODDS_ACCEPT:
-            # You could place PERSIST order at 4.0 here if you want.
-            return
 
         size = STAKE_LTD_PAPER if PAPER_MODE else STAKE_LTD_LIVE
         if PAPER_MODE:
@@ -152,7 +155,12 @@ class LTD60(BaseStrategy):
         else:
             # Live: place order
             try:
-                limit_order = filters.limit_order(size=size, price=float(d_price), persistence_type="PERSIST")
+                if d_price > LTD60_MAX_ODDS_ACCEPT:
+                    price = LTD60_MAX_ODDS_ACCEPT
+                else:
+                    price = d_price
+
+                limit_order = filters.limit_order(size=size, price=float(price), persistence_type="PERSIST")
                 instruction = filters.place_instruction(
                     order_type="LIMIT",
                     selection_id=DRAW_SELECTION_ID,
@@ -166,15 +174,15 @@ class LTD60(BaseStrategy):
                 matched = getattr(rep, "size_matched", 0.0) or 0.0
 
                 self._order_snapshot(
-                    db, ev["event_id"], side="LAY", price=float(d_price), size=size,
+                    db, ev["event_id"], side="LAY", price=float(price), size=size,
                     status=status, matched=matched, remaining=max(0.0, size - matched), betid=betid
                 )
-                liability = max(0.0, (float(d_price) - 1.0) * size)
+                liability = max(0.0, (float(price) - 1.0) * size)
                 db.update_current(ev["event_id"], liability=liability)
             except Exception as e:
                 # Record the attempt even if failed
                 self._order_snapshot(
-                    db, ev["event_id"], side="LAY", price=float(d_price), size=size,
+                    db, ev["event_id"], side="LAY", price=float(price), size=size,
                     status=f"ERROR:{e}", matched=0.0, remaining=size, betid=None
                 )
 
@@ -212,7 +220,7 @@ class LTD60(BaseStrategy):
         if PAPER_MODE:
             # Mark second entry logically by stacking stake/liability
             prev_stake = float(ev.get("e_stake") or 0.0)
-            new_stake = prev_stake + second_size
+            new_stake = second_size
             liability = max(0.0, (float(ev.get("e_price") or d_price) - 1.0) * new_stake)
             db.update_current(
                 ev["event_id"],
@@ -223,7 +231,7 @@ class LTD60(BaseStrategy):
             )
         else:
             try:
-                limit_order = filters.limit_order(size=second_size, price=float(LTD60_SECOND_ENTRY_ODDS), persistence_type="PERSIST")
+                limit_order = filters.limit_order(size=second_size, price=float(LTD60_MAX_SECOND_ENTRY_ODDS), persistence_type="PERSIST")
                 instruction = filters.place_instruction(
                     order_type="LIMIT",
                     selection_id=DRAW_SELECTION_ID,
@@ -268,7 +276,7 @@ class LTD60(BaseStrategy):
             return None
 
     def _fetch_mo_prices(self, api, market_id: str):
-        """Return (home_back, draw_back, away_back) simplified from list_runner_book."""
+        """Return (home_lay, draw_lay, away_lay) simplified from list_runner_book."""
         if api is None:
             return (None, None, None)
         try:
@@ -281,13 +289,13 @@ class LTD60(BaseStrategy):
             runners = books[0].runners or []
             # Assumption: runner 0 = Home, 1 = Draw, 2 = Away (common ordering)
             # Safer approach is to map by selection_id; for now we follow your previous draw id usage.
-            def best_back(r):
-                probs = getattr(r.ex, "available_to_back", None) or []
+            def best_lay(r):
+                probs = getattr(r.ex, "available_to_lay", None) or []
                 return float(probs[0].price) if probs else None
 
-            home = best_back(runners[0]) if len(runners) > 0 else None
-            draw = best_back(runners[1]) if len(runners) > 1 else None
-            away = best_back(runners[2]) if len(runners) > 2 else None
+            home = best_lay(runners[0]) if len(runners) > 0 else None
+            draw = best_lay(runners[1]) if len(runners) > 1 else None
+            away = best_lay(runners[2]) if len(runners) > 2 else None
             return (home, draw, away)
         except Exception:
             return (None, None, None)

@@ -1,0 +1,614 @@
+2025-12-28 08:38:11,104 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 08:38:11,104 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 08:38:11,540 [INFO] AutoTrader | KICKOFF | 35094113 | Lopburi City FC v Nakhon Ratchasima | SP(H/D/A)=3.650/4.400/1.600 | fav=2 | strat=None
+2025-12-28 08:38:11,540 [INFO] AutoTrader | BAND 30' | 36 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:38:11,691 [INFO] AutoTrader | KICKOFF | 35078713 | Melbourne City v Perth Glory | SP(H/D/A)=1.690/4.100/5.700 | fav=1 | strat=None
+2025-12-28 08:38:11,692 [INFO] AutoTrader | BAND 30' | 37 | 35078713 | Melbourne City v Perth Glory | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:38:11,830 [INFO] AutoTrader | KICKOFF | 35094431 | Uttaradit FC v BG Pathumthani United | SP(H/D/A)=16.000/7.200/1.220 | fav=2 | strat=None
+2025-12-28 08:38:11,830 [INFO] AutoTrader | BAND 30' | 37 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:38:11,980 [INFO] AutoTrader | KICKOFF | 35085338 | Persebaya Surabaya v Persijap Jepara | SP(H/D/A)=-1.000/-1.000/-1.000 | fav=None | strat=None
+2025-12-28 08:38:11,980 [INFO] AutoTrader | BAND 90' | 7 | 35085338 | Persebaya Surabaya v Persijap Jepara | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:38:21,157 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:39:21,325 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:40:21,513 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:41:41,200 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:43:00,836 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:44:01,998 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:45:21,773 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:45:32,342 [INFO] AutoTrader | BAND 45' | 45 | 35078713 | Melbourne City v Perth Glory | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:45:52,496 [INFO] AutoTrader | BAND 45' | 45 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:45:52,655 [INFO] AutoTrader | BAND 15' | 15 | 35085338 | Persebaya Surabaya v Persijap Jepara | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:46:12,172 [INFO] AutoTrader | BAND 45' | 45 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:46:41,655 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:47:41,668 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:48:42,315 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:50:02,044 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:51:02,184 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:52:21,795 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:53:22,022 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:54:22,714 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:55:42,159 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:57:01,590 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:58:01,746 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:59:21,109 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 09:00:31,761 [INFO] AutoTrader | BAND 30' | 30 | 35085338 | Persebaya Surabaya v Persijap Jepara | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:00:40,620 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 09:00:52,073 [INFO] AutoTrader | KICKOFF | 35095038 | Yangon City v YB United FC | SP(H/D/A)=1.010/1.100/22.000 | fav=1 | strat=None
+2025-12-28 09:00:52,073 [INFO] AutoTrader | BAND 90' | 0 | 35095038 | Yangon City v YB United FC | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:01:11,684 [INFO] AutoTrader | KICKOFF | 35094309 | Yreo FC (W) v Shan United FC (W) | SP(H/D/A)=2.040/1.110/1.160 | fav=2 | strat=None
+2025-12-28 09:01:11,684 [INFO] AutoTrader | BAND 90' | 0 | 35094309 | Yreo FC (W) v Shan United FC (W) | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:02:00,183 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=0
+2025-12-28 09:02:11,205 [INFO] AutoTrader | KICKOFF | 35094261 | Satun United FC v Lamphun Warrior | SP(H/D/A)=7.000/3.800/1.600 | fav=2 | strat=None
+2025-12-28 09:02:11,205 [INFO] AutoTrader | BAND 90' | 0 | 35094261 | Satun United FC v Lamphun Warrior | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:03:19,879 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=7 with_strategy=0
+2025-12-28 09:04:20,088 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=7 with_strategy=0
+2025-12-28 09:05:20,129 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=7 with_strategy=0
+2025-12-28 09:06:39,286 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=7 with_strategy=0
+2025-12-28 09:07:02,953 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 09:07:02,954 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 09:07:03,433 [INFO] AutoTrader | KICKOFF | 35094113 | Lopburi City FC v Nakhon Ratchasima | SP(H/D/A)=3.650/4.400/1.600 | fav=2 | strat=None
+2025-12-28 09:07:03,434 [INFO] AutoTrader | BAND 45' | 45 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:07:03,563 [INFO] AutoTrader | KICKOFF | 35078713 | Melbourne City v Perth Glory | SP(H/D/A)=1.690/4.100/5.700 | fav=1 | strat=None
+2025-12-28 09:07:03,563 [INFO] AutoTrader | BAND 45' | 48 | 35078713 | Melbourne City v Perth Glory | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:07:03,713 [INFO] AutoTrader | KICKOFF | 35094431 | Uttaradit FC v BG Pathumthani United | SP(H/D/A)=16.000/7.200/1.220 | fav=2 | strat=None
+2025-12-28 09:07:03,713 [INFO] AutoTrader | BAND 45' | 47 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:07:03,884 [INFO] AutoTrader | KICKOFF | 35085338 | Persebaya Surabaya v Persijap Jepara | SP(H/D/A)=1.900/3.700/4.600 | fav=1 | strat=None
+2025-12-28 09:07:03,884 [INFO] AutoTrader | BAND 30' | 36 | 35085338 | Persebaya Surabaya v Persijap Jepara | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:07:04,016 [INFO] AutoTrader | KICKOFF | 35094261 | Satun United FC v Lamphun Warrior | SP(H/D/A)=7.000/3.800/1.600 | fav=2 | strat=None
+2025-12-28 09:07:04,167 [INFO] AutoTrader | KICKOFF | 35094309 | Yreo FC (W) v Shan United FC (W) | SP(H/D/A)=2.040/1.110/1.160 | fav=2 | strat=None
+2025-12-28 09:07:04,448 [INFO] AutoTrader | KICKOFF | 35095038 | Yangon City v YB United FC | SP(H/D/A)=1.010/1.100/22.000 | fav=1 | strat=None
+2025-12-28 09:07:12,876 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=7 with_strategy=0
+2025-12-28 09:08:12,557 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 09:08:12,557 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 09:08:13,003 [INFO] AutoTrader | KICKOFF | 35094113 | Lopburi City FC v Nakhon Ratchasima | SP(H/D/A)=3.650/4.400/1.600 | fav=2 | strat=None
+2025-12-28 09:08:13,003 [INFO] AutoTrader | BAND 45' | 46 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:08:13,166 [INFO] AutoTrader | KICKOFF | 35078713 | Melbourne City v Perth Glory | SP(H/D/A)=1.690/4.100/5.700 | fav=1 | strat=None
+2025-12-28 09:08:13,166 [INFO] AutoTrader | BAND 45' | 49 | 35078713 | Melbourne City v Perth Glory | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:08:13,291 [INFO] AutoTrader | KICKOFF | 35094431 | Uttaradit FC v BG Pathumthani United | SP(H/D/A)=16.000/7.200/1.220 | fav=2 | strat=None
+2025-12-28 09:08:13,291 [INFO] AutoTrader | BAND 45' | 48 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:08:13,433 [INFO] AutoTrader | KICKOFF | 35085338 | Persebaya Surabaya v Persijap Jepara | SP(H/D/A)=1.900/3.700/4.600 | fav=1 | strat=None
+2025-12-28 09:08:13,433 [INFO] AutoTrader | BAND 30' | 37 | 35085338 | Persebaya Surabaya v Persijap Jepara | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:08:13,579 [INFO] AutoTrader | KICKOFF | 35094261 | Satun United FC v Lamphun Warrior | SP(H/D/A)=7.000/3.800/1.600 | fav=2 | strat=None
+2025-12-28 09:08:13,713 [INFO] AutoTrader | KICKOFF | 35094309 | Yreo FC (W) v Shan United FC (W) | SP(H/D/A)=2.040/1.110/1.160 | fav=2 | strat=None
+2025-12-28 09:08:14,011 [INFO] AutoTrader | KICKOFF | 35095038 | Yangon City v YB United FC | SP(H/D/A)=1.010/1.100/22.000 | fav=1 | strat=None
+2025-12-28 09:08:23,355 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=7 with_strategy=0
+2025-12-28 09:08:34,745 [INFO] AutoTrader | KICKOFF | 35094323 | Silver Stars FC v Chinland FC | SP(H/D/A)=2.660/1.400/1.070 | fav=2 | strat=None
+2025-12-28 09:09:25,614 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:10:28,163 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:11:30,922 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:12:33,258 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:13:35,873 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:14:38,159 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:15:40,488 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:15:51,346 [INFO] AutoTrader | BAND 45' | 45 | 35085338 | Persebaya Surabaya v Persijap Jepara | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:15:51,777 [INFO] AutoTrader | BAND 15' | 15 | 35094323 | Silver Stars FC v Chinland FC | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:15:51,920 [INFO] AutoTrader | BAND 15' | 15 | 35095038 | Yangon City v YB United FC | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:16:33,303 [INFO] AutoTrader | BAND 15' | 15 | 35094309 | Yreo FC (W) v Shan United FC (W) | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:16:43,310 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:17:36,235 [INFO] AutoTrader | BAND 15' | 15 | 35094261 | Satun United FC v Lamphun Warrior | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:17:45,952 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:18:37,932 [INFO] AutoTrader | BAND 60' | 60 | 35078713 | Melbourne City v Perth Glory | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:18:48,199 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:19:51,156 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:20:01,891 [INFO] AutoTrader | BAND 60' | 60 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:20:53,790 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:21:56,202 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:22:48,112 [INFO] AutoTrader | BAND 60' | 60 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:22:58,454 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:24:00,733 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:25:02,756 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:26:05,620 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:27:09,122 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:28:12,930 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:29:16,338 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:30:19,632 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:30:52,039 [INFO] AutoTrader | BAND 30' | 30 | 35095038 | Yangon City v YB United FC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:31:13,181 [INFO] AutoTrader | BAND 30' | 30 | 35094323 | Silver Stars FC v Chinland FC | 0-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:31:23,038 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:32:16,362 [INFO] AutoTrader | BAND 30' | 30 | 35094261 | Satun United FC v Lamphun Warrior | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:32:16,490 [INFO] AutoTrader | BAND 30' | 30 | 35094309 | Yreo FC (W) v Shan United FC (W) | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:32:26,602 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:33:31,141 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:34:02,993 [INFO] AutoTrader | BAND 75' | 75 | 35078713 | Melbourne City v Perth Glory | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:34:34,649 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:35:06,637 [INFO] AutoTrader | BAND 75' | 75 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:35:38,523 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:36:42,813 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:37:35,387 [INFO] AutoTrader | BAND 75' | 75 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:37:45,784 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=8 with_strategy=0
+2025-12-28 09:38:49,705 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:39:54,313 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:41:00,049 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:42:04,552 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:43:09,594 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:44:15,066 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:45:20,973 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:45:54,329 [INFO] AutoTrader | BAND 45' | 45 | 35094323 | Silver Stars FC v Chinland FC | 0-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:45:54,505 [INFO] AutoTrader | BAND 45' | 45 | 35095038 | Yangon City v YB United FC | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:46:26,553 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:46:59,049 [INFO] AutoTrader | BAND 45' | 45 | 35094261 | Satun United FC v Lamphun Warrior | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:46:59,182 [INFO] AutoTrader | BAND 45' | 45 | 35094309 | Yreo FC (W) v Shan United FC (W) | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:47:30,852 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:48:25,099 [INFO] AutoTrader | BAND 90' | 90 | 35078713 | Melbourne City v Perth Glory | 0-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:48:36,429 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:49:42,997 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:49:53,742 [INFO] AutoTrader | BAND 90' | 90 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:50:47,039 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:51:51,842 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:52:02,854 [INFO] AutoTrader | BAND 60' | 61 | 35085338 | Persebaya Surabaya v Persijap Jepara | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:52:24,135 [INFO] AutoTrader | BAND 90' | 90 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 09:52:56,762 [INFO] AutoTrader | HEARTBEAT | total=77 inplay=8 with_strategy=0
+2025-12-28 09:53:50,730 [INFO] AutoTrader | FINISH | 35094431 | Uttaradit FC v BG Pathumthani United | FT=0-4 | result=1 | pnl=None | strat=None | remaining_current=76
+2025-12-28 09:54:01,796 [INFO] AutoTrader | HEARTBEAT | total=76 inplay=7 with_strategy=0
+2025-12-28 09:55:06,193 [INFO] AutoTrader | HEARTBEAT | total=76 inplay=7 with_strategy=0
+2025-12-28 09:55:38,137 [INFO] AutoTrader | FINISH | 35078713 | Melbourne City v Perth Glory | FT=1-3 | result=1 | pnl=None | strat=None | remaining_current=75
+2025-12-28 09:56:10,801 [INFO] AutoTrader | HEARTBEAT | total=75 inplay=6 with_strategy=0
+2025-12-28 09:57:14,350 [INFO] AutoTrader | HEARTBEAT | total=75 inplay=6 with_strategy=0
+2025-12-28 09:58:07,295 [INFO] AutoTrader | FINISH | 35094113 | Lopburi City FC v Nakhon Ratchasima | FT=1-2 | result=1 | pnl=None | strat=None | remaining_current=74
+2025-12-28 09:58:18,448 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=5 with_strategy=0
+2025-12-28 09:59:21,567 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=5 with_strategy=0
+2025-12-28 10:00:25,115 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=5 with_strategy=0
+2025-12-28 10:00:36,600 [INFO] AutoTrader | KICKOFF | 35094871 | FC Samut Sakhon v Prachuap | SP(H/D/A)=8.200/5.300/1.430 | fav=2 | strat=None
+2025-12-28 10:00:57,566 [INFO] AutoTrader | KICKOFF | 35094263 | Customs United v Sukhothai | SP(H/D/A)=6.800/4.700/1.490 | fav=2 | strat=None
+2025-12-28 10:01:18,584 [INFO] AutoTrader | KICKOFF | 35087672 | Iskenderunspor v Ankaragucu | SP(H/D/A)=2.600/3.100/3.250 | fav=1 | strat=None
+2025-12-28 10:01:19,067 [INFO] AutoTrader | KICKOFF | 35087673 | Kepez Belediyespor v Batman Petrolspor | SP(H/D/A)=15.500/7.400/1.220 | fav=2 | strat=None
+2025-12-28 10:01:28,740 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:02:00,583 [INFO] AutoTrader | BAND 60' | 60 | 35094309 | Yreo FC (W) v Shan United FC (W) | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:02:21,839 [INFO] AutoTrader | BAND 45' | 59 | 35094309 | Yreo FC (W) v Shan United FC (W) | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:02:32,223 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:03:36,327 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:04:40,620 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:05:44,504 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:05:54,903 [INFO] AutoTrader | BAND 75' | 75 | 35085338 | Persebaya Surabaya v Persijap Jepara | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:06:48,857 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:07:53,051 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:08:57,172 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:10:00,988 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:11:04,612 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:12:08,270 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:13:11,550 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:14:15,306 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:15:18,707 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:15:51,233 [INFO] AutoTrader | BAND 15' | 15 | 35094871 | FC Samut Sakhon v Prachuap | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:16:21,893 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:16:54,468 [INFO] AutoTrader | BAND 15' | 15 | 35094263 | Customs United v Sukhothai | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:17:25,622 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:17:36,510 [INFO] AutoTrader | BAND 60' | 60 | 35094323 | Silver Stars FC v Chinland FC | 0-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:17:36,648 [INFO] AutoTrader | BAND 60' | 60 | 35095038 | Yangon City v YB United FC | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:17:36,797 [INFO] AutoTrader | BAND 15' | 16 | 35087672 | Iskenderunspor v Ankaragucu | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:17:37,279 [INFO] AutoTrader | BAND 15' | 16 | 35087673 | Kepez Belediyespor v Batman Petrolspor | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:18:29,410 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:19:33,769 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:19:44,512 [INFO] AutoTrader | BAND 60' | 60 | 35094309 | Yreo FC (W) v Shan United FC (W) | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:20:37,518 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:20:47,943 [INFO] AutoTrader | BAND 90' | 90 | 35085338 | Persebaya Surabaya v Persijap Jepara | 4-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:21:41,188 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:21:51,940 [INFO] AutoTrader | BAND 60' | 60 | 35094261 | Satun United FC v Lamphun Warrior | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:22:44,831 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:23:47,872 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:24:50,798 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:25:54,754 [INFO] AutoTrader | HEARTBEAT | total=74 inplay=9 with_strategy=0
+2025-12-28 10:26:05,132 [INFO] AutoTrader | FINISH | 35085338 | Persebaya Surabaya v Persijap Jepara | FT=4-0 | result=1 | pnl=None | strat=None | remaining_current=73
+2025-12-28 10:26:58,545 [INFO] AutoTrader | HEARTBEAT | total=73 inplay=8 with_strategy=0
+2025-12-28 10:28:45,549 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 10:28:45,549 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 10:28:46,011 [INFO] AutoTrader | KICKOFF | 35094261 | Satun United FC v Lamphun Warrior | SP(H/D/A)=7.000/3.800/1.600 | fav=2 | strat=None
+2025-12-28 10:28:46,011 [INFO] AutoTrader | BAND 60' | 67 | Thai, League Cup | Satun United FC v Lamphun Warrior | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:28:46,179 [INFO] AutoTrader | KICKOFF | 35094309 | Yreo FC (W) v Shan United FC (W) | SP(H/D/A)=2.040/1.110/1.160 | fav=2 | strat=None
+2025-12-28 10:28:46,180 [INFO] AutoTrader | BAND 60' | 69 | Myanmar, Ladies League | Yreo FC (W) v Shan United FC (W) | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:28:46,342 [INFO] AutoTrader | KICKOFF | 35094323 | Silver Stars FC v Chinland FC | SP(H/D/A)=2.660/1.400/1.070 | fav=2 | strat=None
+2025-12-28 10:28:46,342 [INFO] AutoTrader | BAND 60' | 71 | Myanmar, National League 2 | Silver Stars FC v Chinland FC | 0-4 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:28:46,476 [INFO] AutoTrader | KICKOFF | 35095038 | Yangon City v YB United FC | SP(H/D/A)=1.010/1.100/22.000 | fav=1 | strat=None
+2025-12-28 10:28:46,476 [INFO] AutoTrader | BAND 60' | 71 | Myanmar, National League 2 | Yangon City v YB United FC | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:28:46,636 [INFO] AutoTrader | KICKOFF | 35087672 | Iskenderunspor v Ankaragucu | SP(H/D/A)=2.600/3.100/3.250 | fav=1 | strat=None
+2025-12-28 10:28:46,636 [INFO] AutoTrader | BAND 15' | 27 | Turkish, 2 Lig | Iskenderunspor v Ankaragucu | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:28:46,799 [INFO] AutoTrader | KICKOFF | 35094263 | Customs United v Sukhothai | SP(H/D/A)=6.800/4.700/1.490 | fav=2 | strat=None
+2025-12-28 10:28:46,799 [INFO] AutoTrader | BAND 15' | 27 | Thai, League Cup | Customs United v Sukhothai | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:28:46,962 [INFO] AutoTrader | KICKOFF | 35094871 | FC Samut Sakhon v Prachuap | SP(H/D/A)=8.200/5.300/1.430 | fav=2 | strat=None
+2025-12-28 10:28:46,962 [INFO] AutoTrader | BAND 15' | 27 | Thai, League Cup | FC Samut Sakhon v Prachuap | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:28:47,115 [INFO] AutoTrader | KICKOFF | 35087673 | Kepez Belediyespor v Batman Petrolspor | SP(H/D/A)=15.500/7.400/1.220 | fav=2 | strat=None
+2025-12-28 10:28:47,119 [INFO] AutoTrader | BAND 15' | 27 | Turkish, 2 Lig | Kepez Belediyespor v Batman Petrolspor | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 10:28:56,282 [INFO] AutoTrader | HEARTBEAT | total=73 inplay=8 with_strategy=0
+2025-12-28 10:29:34,147 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 10:29:34,147 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 10:30:24,178 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 10:30:24,178 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 11:14:09,696 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 11:14:09,698 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 11:14:09,698 [INFO] AutoTrader | AutoTrader | PURGED stale rows | count=1
+2025-12-28 11:14:09,933 [INFO] AutoTrader | FINISH | 35094261 | Satun United FC v Lamphun Warrior | FT=0-2 | result=1 | pnl=None | strat=None | remaining_current=71
+2025-12-28 11:14:10,090 [INFO] AutoTrader | FINISH | 35094309 | Yreo FC (W) v Shan United FC (W) | FT=0-3 | result=1 | pnl=None | strat=None | remaining_current=71
+2025-12-28 11:14:10,268 [INFO] AutoTrader | FINISH | 35094323 | Silver Stars FC v Chinland FC | FT=0-6 | result=1 | pnl=None | strat=None | remaining_current=70
+2025-12-28 11:14:10,415 [INFO] AutoTrader | FINISH | 35095038 | Yangon City v YB United FC | FT=6-0 | result=1 | pnl=None | strat=None | remaining_current=69
+2025-12-28 11:14:10,652 [INFO] AutoTrader | KICKOFF | 35087672 | Iskenderunspor v Ankaragucu | SP(H/D/A)=2.600/3.100/3.250 | fav=1 | strat=None
+2025-12-28 11:14:10,652 [INFO] AutoTrader | BAND 45' | 53 | Turkish, 2 Lig | Iskenderunspor v Ankaragucu | 2-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:14:10,807 [INFO] AutoTrader | KICKOFF | 35094263 | Customs United v Sukhothai | SP(H/D/A)=6.800/4.700/1.490 | fav=2 | strat=None
+2025-12-28 11:14:10,807 [INFO] AutoTrader | BAND 45' | 54 | Thai, League Cup | Customs United v Sukhothai | 2-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:14:10,950 [INFO] AutoTrader | KICKOFF | 35094871 | FC Samut Sakhon v Prachuap | SP(H/D/A)=8.200/5.300/1.430 | fav=2 | strat=None
+2025-12-28 11:14:10,950 [INFO] AutoTrader | BAND 45' | 53 | Thai, League Cup | FC Samut Sakhon v Prachuap | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:14:11,094 [INFO] AutoTrader | KICKOFF | 35087673 | Kepez Belediyespor v Batman Petrolspor | SP(H/D/A)=15.500/7.400/1.220 | fav=2 | strat=None
+2025-12-28 11:14:11,094 [INFO] AutoTrader | BAND 45' | 53 | Turkish, 2 Lig | Kepez Belediyespor v Batman Petrolspor | 0-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:14:11,416 [INFO] AutoTrader | KICKOFF | 35079540 | Serik Belediyespor v Boluspor | SP(H/D/A)=6.600/4.500/1.580 | fav=2 | strat=None
+2025-12-28 11:14:11,416 [INFO] AutoTrader | BAND 30' | 42 | Turkish, 1 Lig | Serik Belediyespor v Boluspor | 1-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:14:11,573 [INFO] AutoTrader | KICKOFF | 35079796 | Keciorengucu v Umraniyespor | SP(H/D/A)=1.520/4.500/7.200 | fav=1 | strat=None
+2025-12-28 11:14:11,573 [INFO] AutoTrader | BAND 30' | 39 | Turkish, 1 Lig | Keciorengucu v Umraniyespor | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:14:11,716 [INFO] AutoTrader | KICKOFF | 35093373 | Angkor Tiger FC v Kirivong Sok Sen Chey | SP(H/D/A)=-1.000/-1.000/-1.000 | fav=None | strat=None
+2025-12-28 11:14:11,875 [INFO] AutoTrader | KICKOFF | 35083782 | Academico de Viseu v Benfica B | SP(H/D/A)=-1.000/-1.000/-1.000 | fav=None | strat=None
+2025-12-28 11:14:12,050 [INFO] AutoTrader | KICKOFF | 35094162 | Mahasarakham Sam Bai Tao FC v Rayong FC | SP(H/D/A)=-1.000/-1.000/-1.000 | fav=None | strat=None
+2025-12-28 11:14:12,193 [INFO] AutoTrader | KICKOFF | 35093517 | Nagaworld FC v ISI Dangkor Senchey FC | SP(H/D/A)=-1.000/-1.000/-1.000 | fav=None | strat=None
+2025-12-28 11:14:12,337 [INFO] AutoTrader | KICKOFF | 35094163 | Esan Pattaya v Bangkok Utd | SP(H/D/A)=-1.000/-1.000/-1.000 | fav=None | strat=None
+2025-12-28 11:14:20,502 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:14:52,811 [INFO] AutoTrader | BAND 15' | 15 | Cambodian, Premier League | Nagaworld FC v ISI Dangkor Senchey FC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:15:21,392 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:15:52,865 [INFO] AutoTrader | BAND 15' | 15 | Cambodian, Premier League | Angkor Tiger FC v Kirivong Sok Sen Chey | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:15:53,153 [INFO] AutoTrader | BAND 15' | 15 | Thai, League Cup | Mahasarakham Sam Bai Tao FC v Rayong FC | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:16:22,263 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:16:53,495 [INFO] AutoTrader | BAND 45' | 45 | Turkish, 1 Lig | Serik Belediyespor v Boluspor | 1-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:16:54,418 [INFO] AutoTrader | BAND 15' | 15 | Thai, League Cup | Esan Pattaya v Bangkok Utd | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:17:23,157 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:18:15,345 [INFO] AutoTrader | BAND 45' | 45 | Turkish, 1 Lig | Keciorengucu v Umraniyespor | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:18:24,485 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:19:25,416 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:20:16,489 [INFO] AutoTrader | BAND 60' | 60 | Thai, League Cup | Customs United v Sukhothai | 2-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:20:26,341 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:21:17,604 [INFO] AutoTrader | BAND 60' | 60 | Thai, League Cup | FC Samut Sakhon v Prachuap | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:21:18,494 [INFO] AutoTrader | BAND 15' | 15 | Portuguese, Segunda Liga | Academico de Viseu v Benfica B | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:21:27,363 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:21:38,156 [INFO] AutoTrader | BAND 60' | 61 | Turkish, 2 Lig | Kepez Belediyespor v Batman Petrolspor | 1-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:22:29,141 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:22:39,401 [INFO] AutoTrader | BAND 60' | 62 | Turkish, 2 Lig | Iskenderunspor v Ankaragucu | 2-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:23:29,895 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:24:31,026 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:25:31,841 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:26:32,605 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:27:33,690 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:28:34,793 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:29:35,738 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=11 with_strategy=0
+2025-12-28 11:30:08,050 [INFO] AutoTrader | BAND 30' | 30 | Cambodian, Premier League | Nagaworld FC v ISI Dangkor Senchey FC | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:30:08,374 [INFO] AutoTrader | KICKOFF | 35094234 | Chainat Hornbill v Port FC | SP(H/D/A)=8.200/4.800/1.430 | fav=2 | strat=None
+2025-12-28 11:30:36,768 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=12 with_strategy=0
+2025-12-28 11:30:48,446 [INFO] AutoTrader | BAND 30' | 30 | Thai, League Cup | Mahasarakham Sam Bai Tao FC v Rayong FC | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:31:38,109 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=12 with_strategy=0
+2025-12-28 11:32:09,877 [INFO] AutoTrader | BAND 30' | 30 | Cambodian, Premier League | Angkor Tiger FC v Kirivong Sok Sen Chey | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:32:10,604 [INFO] AutoTrader | BAND 30' | 30 | Thai, League Cup | Esan Pattaya v Bangkok Utd | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:32:40,568 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=12 with_strategy=0
+2025-12-28 11:33:41,703 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=12 with_strategy=0
+2025-12-28 11:34:14,149 [INFO] AutoTrader | KICKOFF | 35059687 | AC Milan v Verona | SP(H/D/A)=1.410/5.200/9.800 | fav=1 | strat=None
+2025-12-28 11:34:42,688 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:34:53,159 [INFO] AutoTrader | BAND 75' | 75 | Thai, League Cup | Customs United v Sukhothai | 2-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:35:14,037 [INFO] AutoTrader | BAND 75' | 75 | Turkish, 2 Lig | Kepez Belediyespor v Batman Petrolspor | 1-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:35:43,834 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:35:54,128 [INFO] AutoTrader | BAND 75' | 75 | Turkish, 2 Lig | Iskenderunspor v Ankaragucu | 3-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:35:55,301 [INFO] AutoTrader | BAND 30' | 30 | Portuguese, Segunda Liga | Academico de Viseu v Benfica B | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:36:35,155 [INFO] AutoTrader | BAND 75' | 76 | Thai, League Cup | FC Samut Sakhon v Prachuap | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:36:45,009 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:37:45,885 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:38:46,831 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:39:48,216 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:40:49,510 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:41:50,563 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:42:51,588 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:43:51,930 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:44:52,495 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:45:04,356 [INFO] AutoTrader | BAND 45' | 45 | Cambodian, Premier League | Nagaworld FC v ISI Dangkor Senchey FC | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:45:45,203 [INFO] AutoTrader | BAND 15' | 15 | Thai, League Cup | Chainat Hornbill v Port FC | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:45:53,422 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:46:04,836 [INFO] AutoTrader | BAND 45' | 45 | Cambodian, Premier League | Angkor Tiger FC v Kirivong Sok Sen Chey | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:46:05,141 [INFO] AutoTrader | BAND 45' | 45 | Thai, League Cup | Mahasarakham Sam Bai Tao FC v Rayong FC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:46:46,536 [INFO] AutoTrader | BAND 45' | 45 | Thai, League Cup | Esan Pattaya v Bangkok Utd | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:46:54,773 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:47:55,766 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:48:56,755 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:49:08,898 [INFO] AutoTrader | BAND 15' | 15 | Italian, Serie A | AC Milan v Verona | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:49:47,486 [INFO] AutoTrader | BAND 90' | 90 | Thai, League Cup | Customs United v Sukhothai | 2-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:49:57,274 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:50:08,025 [INFO] AutoTrader | BAND 90' | 90 | Turkish, 2 Lig | Kepez Belediyespor v Batman Petrolspor | 1-4 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:50:48,805 [INFO] AutoTrader | BAND 90' | 90 | Thai, League Cup | FC Samut Sakhon v Prachuap | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:50:49,657 [INFO] AutoTrader | BAND 45' | 45 | Portuguese, Segunda Liga | Academico de Viseu v Benfica B | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:50:58,423 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:51:08,715 [INFO] AutoTrader | BAND 90' | 90 | Turkish, 2 Lig | Iskenderunspor v Ankaragucu | 4-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:51:59,129 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:53:00,210 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=13 with_strategy=0
+2025-12-28 11:53:26,731 [WARNING] AutoTrader | Skipping live update for 35094871: SportsAPING/v1.0/listMarketBook 
+Params: {'marketIds': ['1.252112105'], 'priceProjection': {'priceData': ['EX_ALL_OFFERS']}} 
+Exception: HTTPSConnectionPool(host='api.betfair.com', port=443): Read timed out. (read timeout=16)
+2025-12-28 11:53:27,290 [INFO] AutoTrader | BAND 60' | 60 | Turkish, 1 Lig | Keciorengucu v Umraniyespor | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:53:46,894 [INFO] AutoTrader | FINISH | 35087673 | Kepez Belediyespor v Batman Petrolspor | FT=1-4 | result=1 | pnl=None | strat=None | remaining_current=68
+2025-12-28 11:54:16,627 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=12 with_strategy=0
+2025-12-28 11:55:16,923 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=12 with_strategy=0
+2025-12-28 11:55:27,134 [INFO] AutoTrader | FINISH | 35087672 | Iskenderunspor v Ankaragucu | FT=4-2 | result=1 | pnl=None | strat=None | remaining_current=67
+2025-12-28 11:55:27,270 [INFO] AutoTrader | FINISH | 35094263 | Customs United v Sukhothai | FT=2-3 | result=1 | pnl=None | strat=None | remaining_current=66
+2025-12-28 11:55:47,206 [INFO] AutoTrader | FINISH | 35094871 | FC Samut Sakhon v Prachuap | FT=0-2 | result=1 | pnl=None | strat=None | remaining_current=65
+2025-12-28 11:56:36,183 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=9 with_strategy=0
+2025-12-28 11:56:46,611 [INFO] AutoTrader | BAND 60' | 60 | Turkish, 1 Lig | Serik Belediyespor v Boluspor | 1-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 11:57:55,224 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=9 with_strategy=0
+2025-12-28 11:58:26,944 [INFO] AutoTrader | KICKOFF | 35085352 | Inegolspor v Altinordu | SP(H/D/A)=-1.000/-1.000/-1.000 | fav=None | strat=None
+2025-12-28 11:59:06,752 [INFO] AutoTrader | KICKOFF | 35085353 | Muglaspor v Kastamonuspor | SP(H/D/A)=1.670/4.000/5.700 | fav=1 | strat=None
+2025-12-28 11:59:14,163 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=11 with_strategy=0
+2025-12-28 12:00:24,630 [INFO] AutoTrader | BAND 30' | 30 | Thai, League Cup | Chainat Hornbill v Port FC | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:00:25,236 [INFO] AutoTrader | KICKOFF | 35093848 | Pss Sleman v Persipal FC | SP(H/D/A)=1.130/9.600/32.000 | fav=1 | strat=None
+2025-12-28 12:00:32,869 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=12 with_strategy=0
+2025-12-28 12:00:44,657 [INFO] AutoTrader | KICKOFF | 35084718 | Madura Utd v Semen Padang | SP(H/D/A)=2.100/3.450/4.000 | fav=1 | strat=None
+2025-12-28 12:00:45,370 [INFO] AutoTrader | KICKOFF | 35085349 | Erzincanspor v Elazigspor | SP(H/D/A)=8.000/5.200/1.370 | fav=2 | strat=None
+2025-12-28 12:01:34,693 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=14 with_strategy=0
+2025-12-28 12:01:46,641 [INFO] AutoTrader | KICKOFF | 35090400 | Racing Beirut v Al Riyadi Al Abassiya | SP(H/D/A)=11.000/4.400/1.370 | fav=2 | strat=None
+2025-12-28 12:01:47,516 [INFO] AutoTrader | KICKOFF | 35085348 | Bucaspor v Karacabey Belediyespor AS | SP(H/D/A)=5.900/4.000/1.600 | fav=2 | strat=None
+2025-12-28 12:02:26,390 [INFO] AutoTrader | KICKOFF | 35094252 | Pattani FC v Ratchaburi | SP(H/D/A)=5.800/4.000/1.610 | fav=2 | strat=None
+2025-12-28 12:02:53,486 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=17 with_strategy=0
+2025-12-28 12:04:06,341 [INFO] AutoTrader | KICKOFF | 35085356 | Beykoz Anadolu Spor v Karaman Belediyespor | SP(H/D/A)=2.200/3.500/3.450 | fav=1 | strat=None
+2025-12-28 12:04:13,321 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=18 with_strategy=0
+2025-12-28 12:04:44,844 [INFO] AutoTrader | BAND 30' | 30 | Italian, Serie A | AC Milan v Verona | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:05:32,710 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=18 with_strategy=0
+2025-12-28 12:06:51,639 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=18 with_strategy=0
+2025-12-28 12:07:41,973 [INFO] AutoTrader | BAND 75' | 75 | Turkish, 1 Lig | Keciorengucu v Umraniyespor | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:08:11,374 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=18 with_strategy=0
+2025-12-28 12:09:31,620 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=18 with_strategy=0
+2025-12-28 12:10:31,664 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=18 with_strategy=0
+2025-12-28 12:11:21,754 [INFO] AutoTrader | BAND 75' | 75 | Turkish, 1 Lig | Serik Belediyespor v Boluspor | 1-3 | RC(H/A)=1/0 | strat=None
+2025-12-28 12:11:51,123 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=18 with_strategy=0
+2025-12-28 12:13:11,092 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=18 with_strategy=0
+2025-12-28 12:13:43,406 [INFO] AutoTrader | BAND 15' | 15 | Turkish, 2 Lig | Inegolspor v Altinordu | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:14:03,516 [INFO] AutoTrader | BAND 15' | 15 | Turkish, 2 Lig | Muglaspor v Kastamonuspor | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:14:30,601 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=18 with_strategy=0
+2025-12-28 12:15:21,989 [INFO] AutoTrader | BAND 45' | 45 | Thai, League Cup | Chainat Hornbill v Port FC | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:15:23,621 [INFO] AutoTrader | KICKOFF | 35091273 | Selangor FA v Melaka FC | SP(H/D/A)=1.120/11.500/30.000 | fav=1 | strat=None
+2025-12-28 12:15:50,657 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:16:02,355 [INFO] AutoTrader | BAND 15' | 15 | Indonesian, Super League | Madura Utd v Semen Padang | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:16:02,655 [INFO] AutoTrader | BAND 15' | 15 | Indonesian, Championship | Pss Sleman v Persipal FC | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:16:03,101 [INFO] AutoTrader | BAND 15' | 15 | Turkish, 2 Lig | Erzincanspor v Elazigspor | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:16:43,271 [INFO] AutoTrader | BAND 15' | 15 | Turkish, 2 Lig | Bucaspor v Karacabey Belediyespor AS | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:17:01,103 [INFO] AutoTrader | BAND 60' | 60 | Cambodian, Premier League | Angkor Tiger FC v Kirivong Sok Sen Chey | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:17:02,331 [INFO] AutoTrader | BAND 15' | 15 | Lebanese, Premier League | Racing Beirut v Al Riyadi Al Abassiya | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:17:10,588 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:17:42,924 [INFO] AutoTrader | BAND 15' | 15 | Thai, League Cup | Pattani FC v Ratchaburi | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:18:30,659 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:19:41,494 [INFO] AutoTrader | BAND 60' | 60 | Thai, League Cup | Mahasarakham Sam Bai Tao FC v Rayong FC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:19:42,060 [INFO] AutoTrader | BAND 45' | 45 | Italian, Serie A | AC Milan v Verona | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:19:50,564 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:20:03,676 [INFO] AutoTrader | BAND 15' | 15 | Turkish, 2 Lig | Beykoz Anadolu Spor v Karaman Belediyespor | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:21:10,438 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:21:41,557 [INFO] AutoTrader | BAND 60' | 60 | Cambodian, Premier League | Nagaworld FC v ISI Dangkor Senchey FC | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:22:30,099 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:23:01,328 [INFO] AutoTrader | BAND 60' | 60 | Thai, League Cup | Esan Pattaya v Bangkok Utd | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:23:20,707 [INFO] AutoTrader | BAND 90' | 90 | Turkish, 1 Lig | Keciorengucu v Umraniyespor | 3-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:23:49,818 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:24:50,172 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:26:00,468 [INFO] AutoTrader | BAND 90' | 90 | Turkish, 1 Lig | Serik Belediyespor v Boluspor | 1-3 | RC(H/A)=1/0 | strat=None
+2025-12-28 12:26:10,309 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:27:10,588 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:28:01,493 [INFO] AutoTrader | BAND 60' | 60 | Portuguese, Segunda Liga | Academico de Viseu v Benfica B | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:28:10,733 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:29:11,074 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:29:23,818 [INFO] AutoTrader | BAND 30' | 30 | Turkish, 2 Lig | Muglaspor v Kastamonuspor | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:29:43,308 [INFO] AutoTrader | BAND 30' | 31 | Turkish, 2 Lig | Inegolspor v Altinordu | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:30:11,274 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=19 with_strategy=0
+2025-12-28 12:30:24,691 [INFO] AutoTrader | KICKOFF | 35077852 | Gabon v Mozambique | SP(H/D/A)=1.990/3.300/5.000 | fav=1 | strat=None
+2025-12-28 12:30:43,215 [INFO] AutoTrader | BAND 30' | 30 | Indonesian, Super League | Madura Utd v Semen Padang | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:30:43,503 [INFO] AutoTrader | BAND 30' | 30 | Indonesian, Championship | Pss Sleman v Persipal FC | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:30:43,946 [INFO] AutoTrader | BAND 30' | 30 | Turkish, 2 Lig | Erzincanspor v Elazigspor | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:31:02,093 [INFO] AutoTrader | FINISH | 35079796 | Keciorengucu v Umraniyespor | FT=3-1 | result=1 | pnl=None | strat=None | remaining_current=65
+2025-12-28 12:31:11,638 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=19 with_strategy=0
+2025-12-28 12:31:24,732 [INFO] AutoTrader | BAND 15' | 15 | Malaysian, Super League | Selangor FA v Melaka FC | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:31:41,887 [INFO] AutoTrader | FINISH | 35079540 | Serik Belediyespor v Boluspor | FT=1-4 | result=1 | pnl=None | strat=None | remaining_current=64
+2025-12-28 12:31:42,130 [INFO] AutoTrader | BAND 75' | 75 | Cambodian, Premier League | Angkor Tiger FC v Kirivong Sok Sen Chey | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:32:03,356 [INFO] AutoTrader | BAND 30' | 30 | Lebanese, Premier League | Racing Beirut v Al Riyadi Al Abassiya | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:32:04,255 [INFO] AutoTrader | BAND 30' | 30 | Turkish, 2 Lig | Bucaspor v Karacabey Belediyespor AS | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:32:12,057 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=18 with_strategy=0
+2025-12-28 12:32:23,986 [INFO] AutoTrader | BAND 30' | 30 | Thai, League Cup | Pattani FC v Ratchaburi | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:32:44,922 [INFO] AutoTrader | KICKOFF | 35093407 | National Bank v ENPPI | SP(H/D/A)=2.360/3.200/3.600 | fav=1 | strat=None
+2025-12-28 12:33:31,378 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=19 with_strategy=0
+2025-12-28 12:34:21,969 [INFO] AutoTrader | BAND 75' | 75 | Thai, League Cup | Mahasarakham Sam Bai Tao FC v Rayong FC | 1-1 | RC(H/A)=0/1 | strat=None
+2025-12-28 12:34:24,676 [INFO] AutoTrader | KICKOFF | 35093499 | Zamalek v Baladeyet Al-Mahalla | SP(H/D/A)=1.230/6.600/17.500 | fav=1 | strat=None
+2025-12-28 12:34:43,693 [INFO] AutoTrader | BAND 30' | 30 | Turkish, 2 Lig | Beykoz Anadolu Spor v Karaman Belediyespor | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:34:50,839 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:35:50,890 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:37:00,761 [INFO] AutoTrader | BAND 75' | 75 | Cambodian, Premier League | Nagaworld FC v ISI Dangkor Senchey FC | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:37:09,651 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:37:40,501 [INFO] AutoTrader | BAND 75' | 75 | Thai, League Cup | Esan Pattaya v Bangkok Utd | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:38:28,959 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:39:47,619 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:41:06,824 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:42:25,666 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:43:35,648 [INFO] AutoTrader | BAND 75' | 75 | Portuguese, Segunda Liga | Academico de Viseu v Benfica B | 1-1 | RC(H/A)=1/0 | strat=None
+2025-12-28 12:43:37,122 [INFO] AutoTrader | BAND 45' | 45 | Turkish, 2 Lig | Inegolspor v Altinordu | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:43:45,055 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:43:57,495 [INFO] AutoTrader | BAND 45' | 45 | Turkish, 2 Lig | Muglaspor v Kastamonuspor | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:45:04,570 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:45:16,429 [INFO] AutoTrader | BAND 45' | 45 | Indonesian, Championship | Pss Sleman v Persipal FC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:45:37,702 [INFO] AutoTrader | BAND 15' | 15 | Africa, Cup of Nations | Gabon v Mozambique | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:45:56,008 [INFO] AutoTrader | BAND 45' | 45 | Indonesian, Super League | Madura Utd v Semen Padang | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:45:56,748 [INFO] AutoTrader | BAND 45' | 45 | Turkish, 2 Lig | Erzincanspor v Elazigspor | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:45:57,371 [INFO] AutoTrader | BAND 30' | 30 | Malaysian, Super League | Selangor FA v Melaka FC | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:46:24,294 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:46:56,215 [INFO] AutoTrader | BAND 45' | 45 | Lebanese, Premier League | Racing Beirut v Al Riyadi Al Abassiya | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:46:57,103 [INFO] AutoTrader | BAND 45' | 45 | Turkish, 2 Lig | Bucaspor v Karacabey Belediyespor AS | 1-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:47:34,476 [INFO] AutoTrader | BAND 90' | 90 | Cambodian, Premier League | Angkor Tiger FC v Kirivong Sok Sen Chey | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:47:36,009 [INFO] AutoTrader | BAND 45' | 45 | Thai, League Cup | Pattani FC v Ratchaburi | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:47:43,935 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:47:55,156 [INFO] AutoTrader | BAND 60' | 60 | Thai, League Cup | Chainat Hornbill v Port FC | 0-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:48:17,040 [INFO] AutoTrader | BAND 15' | 15 | Egyptian, Cup | National Bank v ENPPI | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:49:03,285 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:49:13,992 [INFO] AutoTrader | BAND 90' | 90 | Thai, League Cup | Mahasarakham Sam Bai Tao FC v Rayong FC | 1-1 | RC(H/A)=0/1 | strat=None
+2025-12-28 12:49:16,668 [INFO] AutoTrader | BAND 15' | 15 | Egyptian, Cup | Zamalek v Baladeyet Al-Mahalla | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:49:35,842 [INFO] AutoTrader | BAND 45' | 45 | Turkish, 2 Lig | Beykoz Anadolu Spor v Karaman Belediyespor | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:50:22,476 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=20 with_strategy=0
+2025-12-28 12:50:35,954 [INFO] AutoTrader | KICKOFF | 35094255 | Al Wahda (Abu Dhabi) v Al-Khaleej Khor Fakkan | SP(H/D/A)=1.450/5.400/7.400 | fav=1 | strat=None
+2025-12-28 12:51:15,797 [INFO] AutoTrader | KICKOFF | 35094254 | Dibba Al Fujairah v Al Wasl | SP(H/D/A)=7.600/5.100/1.460 | fav=2 | strat=None
+2025-12-28 12:51:41,455 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=22 with_strategy=0
+2025-12-28 12:51:52,362 [INFO] AutoTrader | BAND 90' | 90 | Cambodian, Premier League | Nagaworld FC v ISI Dangkor Senchey FC | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:52:51,534 [INFO] AutoTrader | BAND 90' | 90 | Thai, League Cup | Esan Pattaya v Bangkok Utd | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:53:00,123 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=22 with_strategy=0
+2025-12-28 12:54:19,299 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=21 with_strategy=0
+2025-12-28 12:55:09,243 [INFO] AutoTrader | FINISH | 35093373 | Angkor Tiger FC v Kirivong Sok Sen Chey | FT=0-0 | result=0 | pnl=None | strat=None | remaining_current=63
+2025-12-28 12:55:38,140 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=20 with_strategy=0
+2025-12-28 12:56:28,592 [INFO] AutoTrader | BAND 60' | 60 | Italian, Serie A | AC Milan v Verona | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 12:56:56,771 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=20 with_strategy=0
+2025-12-28 12:57:46,389 [INFO] AutoTrader | BAND 90' | 90 | Portuguese, Segunda Liga | Academico de Viseu v Benfica B | 1-2 | RC(H/A)=1/0 | strat=None
+2025-12-28 12:58:14,904 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=20 with_strategy=0
+2025-12-28 12:58:25,772 [INFO] AutoTrader | FINISH | 35094163 | Esan Pattaya v Bangkok Utd | FT=0-3 | result=1 | pnl=None | strat=None | remaining_current=62
+2025-12-28 12:59:23,688 [INFO] AutoTrader | FINISH | 35093517 | Nagaworld FC v ISI Dangkor Senchey FC | FT=1-1 | result=0 | pnl=None | strat=None | remaining_current=61
+2025-12-28 12:59:32,225 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=19 with_strategy=0
+2025-12-28 13:00:42,309 [INFO] AutoTrader | BAND 45' | 45 | Malaysian, Super League | Selangor FA v Melaka FC | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:00:42,614 [INFO] AutoTrader | BAND 30' | 30 | Africa, Cup of Nations | Gabon v Mozambique | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:00:49,157 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=19 with_strategy=0
+2025-12-28 13:02:07,756 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=19 with_strategy=0
+2025-12-28 13:02:21,229 [INFO] AutoTrader | KICKOFF | 35079794 | Erzurum BB v Corum Belediyespor | SP(H/D/A)=2.340/3.300/3.450 | fav=1 | strat=None
+2025-12-28 13:03:16,379 [INFO] AutoTrader | BAND 75' | 75 | Thai, League Cup | Chainat Hornbill v Port FC | 0-4 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:03:24,894 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=20 with_strategy=0
+2025-12-28 13:03:37,516 [INFO] AutoTrader | BAND 30' | 30 | Egyptian, Cup | National Bank v ENPPI | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:03:57,261 [INFO] AutoTrader | BAND 30' | 30 | Egyptian, Cup | Zamalek v Baladeyet Al-Mahalla | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:04:41,833 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=20 with_strategy=0
+2025-12-28 13:05:14,214 [INFO] AutoTrader | BAND 15' | 15 | UAE, Arabian Gulf League | Al Wahda (Abu Dhabi) v Al-Khaleej Khor Fakkan | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:05:14,645 [INFO] AutoTrader | KICKOFF | 35091136 | Al Tadhamon v Al Arabi Kuwait | SP(H/D/A)=18.500/6.600/1.230 | fav=2 | strat=None
+2025-12-28 13:05:58,740 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:07:16,015 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:08:07,752 [INFO] AutoTrader | BAND 15' | 16 | UAE, Arabian Gulf League | Dibba Al Fujairah v Al Wasl | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:08:32,703 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:09:49,242 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:11:06,372 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:11:55,654 [INFO] AutoTrader | BAND 75' | 75 | Italian, Serie A | AC Milan v Verona | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:12:23,133 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:13:40,621 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:14:57,957 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:15:30,037 [INFO] AutoTrader | BAND 45' | 45 | Africa, Cup of Nations | Gabon v Mozambique | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:16:15,197 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:17:33,261 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:17:44,001 [INFO] AutoTrader | BAND 90' | 90 | Thai, League Cup | Chainat Hornbill v Port FC | 0-5 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:17:46,765 [INFO] AutoTrader | BAND 15' | 15 | Turkish, 1 Lig | Erzurum BB v Corum Belediyespor | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:18:05,154 [INFO] AutoTrader | BAND 45' | 45 | Egyptian, Cup | National Bank v ENPPI | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:18:23,933 [INFO] AutoTrader | BAND 60' | 60 | Turkish, 2 Lig | Inegolspor v Altinordu | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:18:51,054 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:19:02,103 [INFO] AutoTrader | BAND 60' | 60 | Indonesian, Super League | Madura Utd v Semen Padang | 3-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:19:04,310 [INFO] AutoTrader | BAND 45' | 45 | Egyptian, Cup | Zamalek v Baladeyet Al-Mahalla | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:19:21,684 [INFO] AutoTrader | BAND 45' | 59 | Indonesian, Super League | Madura Utd v Semen Padang | 3-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:20:00,458 [INFO] AutoTrader | BAND 60' | 60 | Indonesian, Super League | Madura Utd v Semen Padang | 3-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:20:01,384 [INFO] AutoTrader | BAND 60' | 60 | Turkish, 2 Lig | Muglaspor v Kastamonuspor | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:20:08,830 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:20:20,245 [INFO] AutoTrader | BAND 60' | 61 | Indonesian, Championship | Pss Sleman v Persipal FC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:20:20,692 [INFO] AutoTrader | BAND 60' | 60 | Turkish, 2 Lig | Erzincanspor v Elazigspor | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:21:00,072 [INFO] AutoTrader | BAND 60' | 60 | Turkish, 2 Lig | Bucaspor v Karacabey Belediyespor AS | 1-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:21:01,094 [INFO] AutoTrader | BAND 30' | 30 | UAE, Arabian Gulf League | Al Wahda (Abu Dhabi) v Al-Khaleej Khor Fakkan | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:21:01,526 [INFO] AutoTrader | BAND 15' | 15 | Kuwaiti, Premier League | Al Tadhamon v Al Arabi Kuwait | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:21:26,699 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:21:38,173 [INFO] AutoTrader | BAND 60' | 60 | Thai, League Cup | Pattani FC v Ratchaburi | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:21:39,961 [INFO] AutoTrader | BAND 30' | 30 | UAE, Arabian Gulf League | Dibba Al Fujairah v Al Wasl | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:22:44,360 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=21 with_strategy=0
+2025-12-28 13:23:14,462 [INFO] AutoTrader | FINISH | 35094234 | Chainat Hornbill v Port FC | FT=0-5 | result=1 | pnl=None | strat=None | remaining_current=60
+2025-12-28 13:23:34,321 [INFO] AutoTrader | BAND 60' | 60 | Lebanese, Premier League | Racing Beirut v Al Riyadi Al Abassiya | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:24:01,745 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=20 with_strategy=0
+2025-12-28 13:25:18,704 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=20 with_strategy=0
+2025-12-28 13:26:27,475 [INFO] AutoTrader | BAND 90' | 90 | Italian, Serie A | AC Milan v Verona | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:26:36,028 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=20 with_strategy=0
+2025-12-28 13:27:07,526 [INFO] AutoTrader | BAND 60' | 60 | Turkish, 2 Lig | Beykoz Anadolu Spor v Karaman Belediyespor | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:27:53,865 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=20 with_strategy=0
+2025-12-28 13:29:11,172 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=20 with_strategy=0
+2025-12-28 13:29:41,034 [INFO] AutoTrader | FINISH | 35059687 | AC Milan v Verona | FT=3-0 | result=1 | pnl=None | strat=None | remaining_current=59
+2025-12-28 13:30:27,545 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:31:43,707 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:32:16,129 [INFO] AutoTrader | BAND 30' | 30 | Turkish, 1 Lig | Erzurum BB v Corum Belediyespor | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:33:00,866 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:33:30,886 [INFO] AutoTrader | BAND 75' | 75 | Indonesian, Championship | Pss Sleman v Persipal FC | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:33:49,522 [INFO] AutoTrader | BAND 75' | 75 | Indonesian, Super League | Madura Utd v Semen Padang | 4-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:33:50,105 [INFO] AutoTrader | BAND 75' | 75 | Turkish, 2 Lig | Inegolspor v Altinordu | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:34:16,646 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:34:28,263 [INFO] AutoTrader | BAND 75' | 75 | Turkish, 2 Lig | Muglaspor v Kastamonuspor | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:34:28,729 [INFO] AutoTrader | BAND 60' | 60 | Malaysian, Super League | Selangor FA v Melaka FC | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:35:25,818 [INFO] AutoTrader | BAND 75' | 75 | Turkish, 2 Lig | Erzincanspor v Elazigspor | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:35:27,181 [INFO] AutoTrader | BAND 45' | 45 | UAE, Arabian Gulf League | Al Wahda (Abu Dhabi) v Al-Khaleej Khor Fakkan | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:35:27,648 [INFO] AutoTrader | BAND 30' | 30 | Kuwaiti, Premier League | Al Tadhamon v Al Arabi Kuwait | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:35:33,548 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:36:23,361 [INFO] AutoTrader | BAND 75' | 75 | Turkish, 2 Lig | Bucaspor v Karacabey Belediyespor AS | 1-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:36:43,811 [INFO] AutoTrader | BAND 45' | 45 | UAE, Arabian Gulf League | Dibba Al Fujairah v Al Wasl | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:36:49,812 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:37:01,034 [INFO] AutoTrader | BAND 75' | 75 | Thai, League Cup | Pattani FC v Ratchaburi | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:38:06,068 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:38:35,831 [INFO] AutoTrader | BAND 75' | 75 | Lebanese, Premier League | Racing Beirut v Al Riyadi Al Abassiya | 0-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:39:21,756 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:40:37,874 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:41:54,034 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:42:06,018 [INFO] AutoTrader | BAND 75' | 75 | Turkish, 2 Lig | Beykoz Anadolu Spor v Karaman Belediyespor | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:43:10,535 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:44:26,973 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:45:43,472 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:46:59,869 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:47:13,054 [INFO] AutoTrader | BAND 45' | 45 | Turkish, 1 Lig | Erzurum BB v Corum Belediyespor | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:48:15,990 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:48:27,086 [INFO] AutoTrader | BAND 90' | 90 | Indonesian, Championship | Pss Sleman v Persipal FC | 4-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:48:27,401 [INFO] AutoTrader | BAND 90' | 90 | Turkish, 2 Lig | Inegolspor v Altinordu | 3-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:48:45,856 [INFO] AutoTrader | BAND 90' | 90 | Indonesian, Super League | Madura Utd v Semen Padang | 5-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:49:05,825 [INFO] AutoTrader | BAND 90' | 90 | Turkish, 2 Lig | Muglaspor v Kastamonuspor | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:49:06,293 [INFO] AutoTrader | BAND 75' | 75 | Malaysian, Super League | Selangor FA v Melaka FC | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:49:32,230 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:49:43,738 [INFO] AutoTrader | BAND 90' | 90 | Turkish, 2 Lig | Erzincanspor v Elazigspor | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:50:42,859 [INFO] AutoTrader | BAND 45' | 45 | Kuwaiti, Premier League | Al Tadhamon v Al Arabi Kuwait | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:50:48,523 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:51:00,284 [INFO] AutoTrader | BAND 90' | 90 | Turkish, 2 Lig | Bucaspor v Karacabey Belediyespor AS | 1-4 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:51:57,340 [INFO] AutoTrader | BAND 90' | 90 | Thai, League Cup | Pattani FC v Ratchaburi | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:52:05,220 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=19 with_strategy=0
+2025-12-28 13:52:16,544 [INFO] AutoTrader | FINISH | 35085352 | Inegolspor v Altinordu | FT=3-1 | result=1 | pnl=None | strat=None | remaining_current=58
+2025-12-28 13:52:53,610 [INFO] AutoTrader | FINISH | 35094162 | Mahasarakham Sam Bai Tao FC v Rayong FC | FT=1-1 | result=0 | pnl=None | strat=None | remaining_current=57
+2025-12-28 13:53:12,668 [INFO] AutoTrader | BAND 90' | 90 | Lebanese, Premier League | Racing Beirut v Al Riyadi Al Abassiya | 1-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:53:13,993 [INFO] AutoTrader | BAND 60' | 60 | Africa, Cup of Nations | Gabon v Mozambique | 1-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:53:20,668 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=17 with_strategy=0
+2025-12-28 13:53:50,348 [INFO] AutoTrader | FINISH | 35093848 | Pss Sleman v Persipal FC | FT=4-0 | result=1 | pnl=None | strat=None | remaining_current=56
+2025-12-28 13:53:50,653 [INFO] AutoTrader | FINISH | 35085349 | Erzincanspor v Elazigspor | FT=1-1 | result=0 | pnl=None | strat=None | remaining_current=55
+2025-12-28 13:54:09,188 [INFO] AutoTrader | FINISH | 35085353 | Muglaspor v Kastamonuspor | FT=1-1 | result=0 | pnl=None | strat=None | remaining_current=54
+2025-12-28 13:54:34,861 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=14 with_strategy=0
+2025-12-28 13:55:22,290 [INFO] AutoTrader | FINISH | 35085348 | Bucaspor v Karacabey Belediyespor AS | FT=1-4 | result=1 | pnl=None | strat=None | remaining_current=53
+2025-12-28 13:55:23,325 [INFO] AutoTrader | BAND 60' | 60 | Egyptian, Cup | Zamalek v Baladeyet Al-Mahalla | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:55:48,041 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=13 with_strategy=0
+2025-12-28 13:55:59,412 [INFO] AutoTrader | BAND 60' | 60 | Egyptian, Cup | National Bank v ENPPI | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:56:52,811 [INFO] AutoTrader | FINISH | 35084718 | Madura Utd v Semen Padang | FT=5-1 | result=1 | pnl=None | strat=None | remaining_current=52
+2025-12-28 13:56:53,329 [INFO] AutoTrader | BAND 90' | 90 | Turkish, 2 Lig | Beykoz Anadolu Spor v Karaman Belediyespor | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 13:57:00,510 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=12 with_strategy=0
+2025-12-28 13:57:11,219 [INFO] AutoTrader | FINISH | 35094252 | Pattani FC v Ratchaburi | FT=2-0 | result=1 | pnl=None | strat=None | remaining_current=51
+2025-12-28 13:58:12,393 [INFO] AutoTrader | HEARTBEAT | total=51 inplay=11 with_strategy=0
+2025-12-28 13:59:23,964 [INFO] AutoTrader | HEARTBEAT | total=51 inplay=11 with_strategy=0
+2025-12-28 13:59:34,459 [INFO] AutoTrader | FINISH | 35090400 | Racing Beirut v Al Riyadi Al Abassiya | FT=1-3 | result=1 | pnl=None | strat=None | remaining_current=50
+2025-12-28 13:59:54,288 [INFO] AutoTrader | KICKOFF | 35080086 | Pacos Ferreira v Farense | SP(H/D/A)=4.400/3.500/1.990 | fav=2 | strat=None
+2025-12-28 14:00:35,142 [INFO] AutoTrader | HEARTBEAT | total=50 inplay=11 with_strategy=0
+2025-12-28 14:01:20,831 [INFO] AutoTrader | FINISH | 35085356 | Beykoz Anadolu Spor v Karaman Belediyespor | FT=2-0 | result=1 | pnl=None | strat=None | remaining_current=49
+2025-12-28 14:01:22,677 [INFO] AutoTrader | KICKOFF | 35057361 | Sunderland v Leeds | SP(H/D/A)=3.000/3.200/2.760 | fav=2 | strat=None
+2025-12-28 14:01:45,982 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=11 with_strategy=0
+2025-12-28 14:02:15,439 [INFO] AutoTrader | KICKOFF | 35059699 | US Cremonese v Napoli | SP(H/D/A)=7.200/3.950/1.630 | fav=2 | strat=None
+2025-12-28 14:02:55,998 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=12 with_strategy=0
+2025-12-28 14:03:59,113 [INFO] AutoTrader | BAND 90' | 90 | Malaysian, Super League | Selangor FA v Melaka FC | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:04:05,816 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=12 with_strategy=0
+2025-12-28 14:05:16,077 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=12 with_strategy=0
+2025-12-28 14:06:01,887 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 14:06:01,887 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 14:06:02,328 [INFO] AutoTrader | KICKOFF | Portuguese, Segunda Liga | Academico de Viseu v Benfica B | SP(H/D/A)=1.940/3.550/4.800 | fav=1 | strat=None
+2025-12-28 14:06:02,344 [INFO] AutoTrader | BAND 90' | 98 | Portuguese, Segunda Liga | Academico de Viseu v Benfica B | 1-2 | RC(H/A)=1/0 | strat=None
+2025-12-28 14:06:02,492 [INFO] AutoTrader | KICKOFF | Malaysian, Super League | Selangor FA v Melaka FC | SP(H/D/A)=1.120/11.500/30.000 | fav=1 | strat=None
+2025-12-28 14:06:02,493 [INFO] AutoTrader | BAND 90' | 92 | Malaysian, Super League | Selangor FA v Melaka FC | 3-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:06:02,653 [INFO] AutoTrader | KICKOFF | Egyptian, Cup | National Bank v ENPPI | SP(H/D/A)=2.360/3.200/3.600 | fav=1 | strat=None
+2025-12-28 14:06:02,653 [INFO] AutoTrader | BAND 60' | 70 | Egyptian, Cup | National Bank v ENPPI | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:06:02,798 [INFO] AutoTrader | KICKOFF | Africa, Cup of Nations | Gabon v Mozambique | SP(H/D/A)=1.990/3.300/5.000 | fav=1 | strat=None
+2025-12-28 14:06:02,798 [INFO] AutoTrader | BAND 60' | 73 | Africa, Cup of Nations | Gabon v Mozambique | 1-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:06:03,161 [INFO] AutoTrader | KICKOFF | Egyptian, Cup | Zamalek v Baladeyet Al-Mahalla | SP(H/D/A)=1.230/6.600/17.500 | fav=1 | strat=None
+2025-12-28 14:06:03,161 [INFO] AutoTrader | BAND 60' | 70 | Egyptian, Cup | Zamalek v Baladeyet Al-Mahalla | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:06:03,325 [INFO] AutoTrader | KICKOFF | UAE, Arabian Gulf League | Al Wahda (Abu Dhabi) v Al-Khaleej Khor Fakkan | SP(H/D/A)=1.450/5.400/7.400 | fav=1 | strat=None
+2025-12-28 14:06:03,325 [INFO] AutoTrader | BAND 45' | 55 | UAE, Arabian Gulf League | Al Wahda (Abu Dhabi) v Al-Khaleej Khor Fakkan | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:06:03,480 [INFO] AutoTrader | KICKOFF | UAE, Arabian Gulf League | Dibba Al Fujairah v Al Wasl | SP(H/D/A)=7.600/5.100/1.460 | fav=2 | strat=None
+2025-12-28 14:06:03,480 [INFO] AutoTrader | BAND 45' | 52 | UAE, Arabian Gulf League | Dibba Al Fujairah v Al Wasl | 1-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:06:03,950 [INFO] AutoTrader | KICKOFF | Italian, Serie A | US Cremonese v Napoli | SP(H/D/A)=7.200/3.950/1.630 | fav=2 | strat=None
+2025-12-28 14:06:04,099 [INFO] AutoTrader | KICKOFF | English, Premier League | Sunderland v Leeds | SP(H/D/A)=3.000/3.200/2.760 | fav=2 | strat=None
+2025-12-28 14:06:04,243 [INFO] AutoTrader | KICKOFF | Portuguese, Segunda Liga | Pacos Ferreira v Farense | SP(H/D/A)=4.400/3.500/1.990 | fav=2 | strat=None
+2025-12-28 14:06:09,545 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=12 with_strategy=0
+2025-12-28 14:07:20,100 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=12 with_strategy=0
+2025-12-28 14:07:48,424 [INFO] AutoTrader | BAND 75' | 75 | Africa, Cup of Nations | Gabon v Mozambique | 1-3 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:08:05,339 [INFO] AutoTrader | FINISH | 35091273 | Selangor FA v Melaka FC | FT=3-0 | result=1 | pnl=None | strat=None | remaining_current=48
+2025-12-28 14:08:30,059 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=11 with_strategy=0
+2025-12-28 14:08:59,290 [INFO] AutoTrader | KICKOFF | Turkish, 1 Lig | Erzurum BB v Corum Belediyespor | SP(H/D/A)=2.340/3.300/3.450 | fav=1 | strat=None
+2025-12-28 14:08:59,291 [INFO] AutoTrader | BAND 45' | 45 | Turkish, 1 Lig | Erzurum BB v Corum Belediyespor | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:09:40,498 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=11 with_strategy=0
+2025-12-28 14:10:44,140 [INFO] AutoTrader | BAND 75' | 75 | Egyptian, Cup | Zamalek v Baladeyet Al-Mahalla | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:10:44,284 [INFO] AutoTrader | BAND 60' | 60 | UAE, Arabian Gulf League | Al Wahda (Abu Dhabi) v Al-Khaleej Khor Fakkan | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:10:50,810 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=11 with_strategy=0
+2025-12-28 14:11:19,143 [INFO] AutoTrader | BAND 75' | 75 | Egyptian, Cup | National Bank v ENPPI | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:12:01,267 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=11 with_strategy=0
+2025-12-28 14:12:13,001 [INFO] AutoTrader | KICKOFF | Kuwaiti, Premier League | Al Tadhamon v Al Arabi Kuwait | SP(H/D/A)=18.500/6.600/1.230 | fav=2 | strat=None
+2025-12-28 14:12:13,002 [INFO] AutoTrader | BAND 45' | 45 | Kuwaiti, Premier League | Al Tadhamon v Al Arabi Kuwait | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:13:11,837 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=11 with_strategy=0
+2025-12-28 14:14:15,636 [INFO] AutoTrader | BAND 60' | 61 | UAE, Arabian Gulf League | Dibba Al Fujairah v Al Wasl | 1-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 14:14:22,132 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=11 with_strategy=0

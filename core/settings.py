@@ -17,7 +17,9 @@ LATE_GOAL_LEAGUES_CSV = BACKTEST_DIR / "late_goal_leagues_2.csv"
 
 # ================= LOGGING ==================
 LOG_DIR = BASE_DIR / "logs"
-LOG_FILE = LOG_DIR / "matchfinder.log"
+LOG_MATCHFINDER_FILE = LOG_DIR / "matchfinder.log"
+LOG_AUTOTRADER_FILE = LOG_DIR / "autotrader.log"
+LOG_STRATEGY_FILE = LOG_DIR / "strategy.log"
 LOG_LEVEL = "INFO"          # DEBUG/INFO/WARNING/ERROR
 LOG_ROTATION_WHEN = "midnight"   # daily rotation
 LOG_ROTATION_BACKUPS = 10        # keep last 10 days
@@ -50,7 +52,7 @@ STAKE_LTD_LIVE  = 3.0
 
 # LTD60 config
 LTD60_MAX_ODDS_ACCEPT = 4.0        # max draw odds for entry
-LTD60_SECOND_ENTRY_ODDS = 2.0      # assumed odds for second lay at 60'
+LTD60_MAX_SECOND_ENTRY_ODDS = 2.0      # assumed odds for second lay at 60'
 LTD60_FT_COMMISSION = 0.02         # 2% commission
 LTD60_KO_WINDOW_MINUTES = 12 
 

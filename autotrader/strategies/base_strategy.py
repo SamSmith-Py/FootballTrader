@@ -45,11 +45,11 @@ class BaseStrategy:
             paper=PAPER_MODE,
         )
 
-    def _set_prices(self, db: DBHelper, ev_id: str, h=None, a=None, d=None) -> None:
+    def _set_lay_prices(self, db: DBHelper, ev_id: str, h=None, a=None, d=None) -> None:
         updates = {}
-        if h is not None: updates["h_price"] = h
-        if a is not None: updates["a_price"] = a
-        if d is not None: updates["d_price"] = d
+        if h is not None: updates["h_lay_price"] = h
+        if a is not None: updates["a_lay_price"] = a
+        if d is not None: updates["d_lay_price"] = d
         if updates:
             db.update_current(ev_id, **updates)
 
@@ -74,9 +74,9 @@ class BaseStrategy:
             "league": ev.get("league"),
             "event_name": ev.get("event_name"),
             "event_id": ev.get("event_id"),
-            "h_price": h,
-            "a_price": a,
-            "d_price": d,
+            "h_lay_price": h,
+            "a_lay_price": a,
+            "d_lay_price": d,
             "h_score": ev.get("h_score"),
             "a_score": ev.get("a_score"),
             "inplay_time": inplay_time,

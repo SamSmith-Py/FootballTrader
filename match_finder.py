@@ -13,7 +13,7 @@ from betfairlightweight import filters
 from core.settings import (
     BOT_VERSION, PAPER_MODE,
     DB_PATH, CONFIG_PATH,
-    LOG_DIR, LOG_FILE, LOG_LEVEL, LOG_ROTATION_WHEN, LOG_ROTATION_BACKUPS,
+    LOG_DIR, LOG_MATCHFINDER_FILE, LOG_LEVEL, LOG_ROTATION_WHEN, LOG_ROTATION_BACKUPS,
     BETFAIR_HOURS_LOOKAHEAD, MARKETS_REQUIRED, BETFAIR_CATALOGUE_MAX_RESULTS,
     TABLE_CURRENT
 )
@@ -38,7 +38,7 @@ ch.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] %(message)s"))
 
 # Timed rotating file handler (midnight rollover)
 fh = TimedRotatingFileHandler(
-    filename=str(LOG_FILE),
+    filename=str(LOG_MATCHFINDER_FILE),
     when=LOG_ROTATION_WHEN,  # e.g., 'midnight'
     backupCount=LOG_ROTATION_BACKUPS,
     encoding="utf-8",

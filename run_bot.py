@@ -50,8 +50,8 @@ def safe_start_scheduler():
 # -----------------------------------------------------------------------------
 def main():
     logger.info("Bot starting... (FootballTrader %s)", BOT_VERSION)
-    cwd = os.getcwd()
-    logger.info("CWD = %s", cwd)
+    # cwd = os.getcwd()
+    # logger.info("CWD = %s", cwd)
 
     # Prefer absolute path anchored to this file, not the shell working directory
     base_dir = Path(__file__).resolve().parent

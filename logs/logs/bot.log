@@ -1,0 +1,649 @@
+2025-12-27 22:02:13,505 [INFO] run_bot | Bot starting... (FootballTrader v0.3.3)
+2025-12-27 22:02:13,505 [INFO] run_bot | CWD = C:\Users\Sam\FootballTrader v0.3.3
+2025-12-27 22:02:13,506 [INFO] run_bot | config.ini exists = True
+2025-12-27 22:02:13,507 [INFO] scheduler | MatchFinder scheduled run starting...
+2025-12-27 22:02:13,507 [INFO] scheduler | Scheduler started: MatchFinder every 30 minutes.
+2025-12-27 22:02:13,508 [INFO] matchfinder | MatchFinder run started
+2025-12-27 22:02:13,508 [INFO] run_bot | Scheduler active: MatchFinder every 30 minutes.
+2025-12-27 22:02:13,509 [INFO] core.betfair_session | Opening Betfair API session...
+2025-12-27 22:02:13,509 [INFO] root | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-27 22:02:13,510 [INFO] root | AutoTrader run started. Waiting for matches...
+2025-12-27 22:02:13,641 [INFO] core.betfair_session | Betfair API session established.
+2025-12-27 22:02:13,642 [INFO] matchfinder | Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2025-12-27 22:02:13,760 [INFO] matchfinder | Catalogue rows fetched: 52
+2025-12-27 22:02:13,784 [INFO] matchfinder | Upserting 18 rows into current_matches...
+2025-12-27 22:02:14,058 [INFO] root | KICKOFF | 35083830 | Estoril Praia v Alverca | SP(H/D/A)=2.240/3.500/3.700 | fav=1 | strat=None
+2025-12-27 22:02:14,208 [INFO] root | KICKOFF | 35094157 | Real Espana (Res) v CD Platense (Res) | SP(H/D/A)=1.330/5.700/7.400 | fav=1 | strat=None
+2025-12-27 22:02:16,410 [INFO] matchfinder | Upsert complete.
+2025-12-27 22:02:16,411 [INFO] matchfinder | MatchFinder run finished.
+2025-12-27 22:02:16,487 [INFO] core.betfair_session | Betfair API session closed.
+2025-12-27 22:02:16,488 [INFO] scheduler | MatchFinder completed successfully (0 rows refreshed).
+2025-12-27 22:02:26,315 [ERROR] run_bot | AutoTrader crashed: Cannot operate on a closed database.
+Traceback (most recent call last):
+  File "c:\Users\Sam\FootballTrader v0.3.3\run_bot.py", line 74, in main
+    trader.start()
+  File "c:\Users\Sam\FootballTrader v0.3.3\autotrader\autotrader.py", line 175, in start
+    total = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
+sqlite3.ProgrammingError: Cannot operate on a closed database.
+2025-12-27 22:02:26,317 [INFO] scheduler | Stopping scheduler thread...
+2025-12-27 22:02:26,581 [INFO] scheduler | Scheduler stopped.
+2025-12-27 22:02:26,582 [INFO] run_bot | FootballTrader shutting down.
+2025-12-27 22:04:27,341 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-27 22:04:27,342 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-27 22:04:27,876 [INFO] AutoTrader | KICKOFF | 35083830 | Estoril Praia v Alverca | SP(H/D/A)=2.240/3.500/3.700 | fav=1 | strat=None
+2025-12-27 22:04:28,022 [INFO] AutoTrader | KICKOFF | 35094157 | Real Espana (Res) v CD Platense (Res) | SP(H/D/A)=1.330/5.700/7.400 | fav=1 | strat=None
+2025-12-27 22:12:47,918 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-27 22:12:47,919 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-27 22:12:48,545 [INFO] AutoTrader | KICKOFF | 35083830 | Estoril Praia v Alverca | SP(H/D/A)=2.240/3.500/3.700 | fav=1 | strat=None
+2025-12-27 22:12:48,722 [INFO] AutoTrader | KICKOFF | 35094157 | Real Espana (Res) v CD Platense (Res) | SP(H/D/A)=1.330/5.700/7.400 | fav=1 | strat=None
+2025-12-27 22:12:51,477 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=2 with_strategy=0
+2025-12-27 22:14:00,256 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=2 with_strategy=0
+2025-12-27 22:15:09,317 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=2 with_strategy=0
+2025-12-27 22:16:18,036 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=2 with_strategy=0
+2025-12-27 22:17:26,507 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=2 with_strategy=0
+2025-12-27 22:18:34,946 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=2 with_strategy=0
+2025-12-27 22:19:43,660 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=2 with_strategy=0
+2025-12-27 22:20:52,537 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=2 with_strategy=0
+2025-12-27 22:21:16,870 [INFO] AutoTrader | FINISH | 35083830 | Estoril Praia v Alverca | FT=4-1 | result=None | pnl=None | strat=None | remaining_current=22
+2025-12-27 22:22:00,979 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:23:08,733 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:24:16,609 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:25:41,732 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-27 22:25:41,733 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-27 22:25:42,317 [INFO] AutoTrader | KICKOFF | 35094157 | Real Espana (Res) v CD Platense (Res) | SP(H/D/A)=1.330/5.700/7.400 | fav=1 | strat=None
+2025-12-27 22:25:45,204 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:26:52,940 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:28:00,518 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:29:08,636 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:30:16,782 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:31:24,338 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:32:31,857 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=1 with_strategy=0
+2025-12-27 22:33:13,696 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-27 22:33:13,696 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-27 22:33:14,271 [INFO] AutoTrader | KICKOFF | 35094157 | Real Espana (Res) v CD Platense (Res) | SP(H/D/A)=1.330/5.700/7.400 | fav=1 | strat=None
+2025-12-27 22:33:17,173 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:34:26,938 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:35:36,546 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:36:46,484 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:37:56,102 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:38:05,645 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-27 22:38:05,646 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-27 22:38:06,175 [INFO] AutoTrader | KICKOFF | 35094157 | Real Espana (Res) v CD Platense (Res) | SP(H/D/A)=1.330/5.700/7.400 | fav=1 | strat=None
+2025-12-27 22:38:09,596 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:39:19,477 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:39:29,525 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-27 22:39:29,526 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-27 22:39:30,167 [INFO] AutoTrader | KICKOFF | 35094157 | Real Espana (Res) v CD Platense (Res) | SP(H/D/A)=1.330/5.700/7.400 | fav=1 | strat=None
+2025-12-27 22:39:33,485 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:40:43,000 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:41:52,682 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:43:02,405 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:44:12,438 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:45:22,175 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:46:32,246 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:47:42,452 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:48:51,534 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:50:01,495 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=1 with_strategy=0
+2025-12-27 22:51:07,565 [INFO] AutoTrader | FINISH | 35094157 | Real Espana (Res) v CD Platense (Res) | FT=3-2 | result=None | pnl=None | strat=None | remaining_current=23
+2025-12-27 22:51:11,040 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=0 with_strategy=0
+2025-12-27 23:22:57,404 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-27 23:22:57,405 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-27 23:23:01,255 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:24:14,904 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:25:26,477 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:26:37,356 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:27:46,787 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:28:56,619 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:30:06,765 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:31:16,455 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:32:26,089 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:33:36,011 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:34:46,501 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:35:56,706 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:37:07,600 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:38:17,962 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:39:27,907 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:40:37,576 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:41:48,017 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:42:57,938 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:44:07,933 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:45:18,068 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:46:31,681 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:47:41,240 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:48:51,376 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:50:01,734 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:51:11,982 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:52:23,027 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=0 with_strategy=0
+2025-12-27 23:53:33,843 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=0 with_strategy=0
+2025-12-27 23:54:45,841 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=0 with_strategy=0
+2025-12-27 23:55:57,663 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=0 with_strategy=0
+2025-12-27 23:57:09,727 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=0 with_strategy=0
+2025-12-27 23:58:21,385 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=0 with_strategy=0
+2025-12-27 23:59:33,020 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=0 with_strategy=0
+2025-12-28 00:00:44,980 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=0 with_strategy=0
+2025-12-28 00:01:38,044 [INFO] AutoTrader | KICKOFF | 35091352 | CSD Municipal v Antigua GFC | SP(H/D/A)=1.590/4.000/7.600 | fav=1 | strat=None
+2025-12-28 00:01:56,416 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=1 with_strategy=0
+2025-12-28 00:03:16,557 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 00:03:16,558 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 00:03:16,896 [INFO] AutoTrader | KICKOFF | 35091352 | CSD Municipal v Antigua GFC | SP(H/D/A)=1.590/4.000/7.600 | fav=1 | strat=None
+2025-12-28 00:03:20,954 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=1 with_strategy=0
+2025-12-28 00:04:35,427 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:05:31,080 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 00:05:31,081 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 00:05:31,371 [INFO] AutoTrader | KICKOFF | 35091352 | CSD Municipal v Antigua GFC | SP(H/D/A)=1.590/4.000/7.600 | fav=1 | strat=None
+2025-12-28 00:05:35,861 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:06:00,872 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 00:06:00,873 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 00:06:01,169 [INFO] AutoTrader | KICKOFF | 35091352 | CSD Municipal v Antigua GFC | SP(H/D/A)=1.590/4.000/7.600 | fav=1 | strat=None
+2025-12-28 00:06:05,853 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:07:01,872 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 00:07:01,873 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 00:07:02,222 [INFO] AutoTrader | KICKOFF | 35091352 | CSD Municipal v Antigua GFC | SP(H/D/A)=1.590/4.000/7.600 | fav=1 | strat=None
+2025-12-28 00:07:02,223 [INFO] AutoTrader | BAND 15' | 5 | 35091352 | CSD Municipal v Antigua GFC | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 00:07:06,867 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:07:50,935 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 00:07:50,936 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 00:07:51,295 [INFO] AutoTrader | KICKOFF | 35091352 | CSD Municipal v Antigua GFC | SP(H/D/A)=1.590/4.000/7.600 | fav=1 | strat=None
+2025-12-28 00:07:51,295 [INFO] AutoTrader | BAND 15' | 6 | 35091352 | CSD Municipal v Antigua GFC | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 00:07:55,906 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:09:10,543 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:10:10,757 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:11:25,955 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:12:40,623 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:13:55,694 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:14:55,726 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:16:10,678 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:17:25,787 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:17:50,981 [INFO] AutoTrader | BAND 30' | 16 | 35091352 | CSD Municipal v Antigua GFC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 00:18:40,313 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:19:40,521 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:20:55,256 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:21:55,380 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:23:10,145 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:24:24,990 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:25:25,054 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:26:39,832 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:27:54,199 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:29:08,575 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:30:23,318 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:31:37,629 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:32:47,583 [INFO] AutoTrader | BAND 45' | 31 | 35091352 | CSD Municipal v Antigua GFC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 00:32:52,220 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:34:06,833 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:35:21,754 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:36:36,380 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:37:36,643 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=1 with_strategy=0
+2025-12-28 00:38:38,294 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:39:40,954 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:40:43,862 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:41:46,301 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:42:48,848 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:43:51,301 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:44:53,752 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:45:56,456 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:46:59,020 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:47:40,206 [INFO] AutoTrader | BAND 60' | 46 | 35091352 | CSD Municipal v Antigua GFC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 00:48:01,269 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:49:03,571 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:50:06,207 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:51:08,284 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:52:10,830 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:53:13,105 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:54:15,679 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:55:18,311 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:56:20,660 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:57:23,127 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:58:25,502 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 00:59:28,019 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=0
+2025-12-28 01:00:09,939 [INFO] AutoTrader | KICKOFF | 35091378 | CD Olimpia v Real Espana | SP(H/D/A)=1.800/3.650/5.400 | fav=1 | strat=None
+2025-12-28 01:00:09,939 [INFO] AutoTrader | BAND 15' | 0 | 35091378 | CD Olimpia v Real Espana | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:00:30,688 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=2 with_strategy=0
+2025-12-28 01:01:33,174 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=2 with_strategy=0
+2025-12-28 01:01:59,117 [INFO] AutoTrader | KICKOFF | 35091365 | Inter San Carlos v A.D. Cofutpa | SP(H/D/A)=1.570/4.200/6.000 | fav=1 | strat=None
+2025-12-28 01:01:59,117 [INFO] AutoTrader | BAND 15' | 0 | 35091365 | Inter San Carlos v A.D. Cofutpa | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:02:35,205 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=0
+2025-12-28 01:03:37,377 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=0
+2025-12-28 01:04:40,063 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=0
+2025-12-28 01:05:42,704 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=0
+2025-12-28 01:06:45,119 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=0
+2025-12-28 01:07:11,158 [INFO] AutoTrader | BAND 45' | 45 | 35091352 | CSD Municipal v Antigua GFC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:07:48,002 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=0
+2025-12-28 01:08:13,939 [INFO] AutoTrader | BAND 60' | 46 | 35091352 | CSD Municipal v Antigua GFC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:08:51,567 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:09:56,408 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:11:01,182 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:12:06,188 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:13:11,095 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:14:15,889 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:15:20,335 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:15:47,104 [INFO] AutoTrader | BAND 30' | 16 | 35091378 | CD Olimpia v Real Espana | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:16:24,890 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:17:29,072 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:18:11,638 [INFO] AutoTrader | BAND 30' | 16 | 35091365 | Inter San Carlos v A.D. Cofutpa | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:18:33,344 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:19:38,292 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:20:42,970 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:21:48,001 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:22:53,332 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:23:19,890 [INFO] AutoTrader | BAND 75' | 61 | 35091352 | CSD Municipal v Antigua GFC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:23:58,165 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:25:02,671 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:26:07,048 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:27:11,560 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:28:16,250 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:29:21,108 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:30:25,827 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:30:52,578 [INFO] AutoTrader | BAND 45' | 31 | 35091378 | CD Olimpia v Real Espana | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:31:30,724 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:32:35,744 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:33:18,467 [INFO] AutoTrader | BAND 45' | 31 | 35091365 | Inter San Carlos v A.D. Cofutpa | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:33:40,422 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:34:45,182 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:35:49,672 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:36:54,592 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:37:59,295 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:38:25,687 [INFO] AutoTrader | BAND 90' | 76 | 35091352 | CSD Municipal v Antigua GFC | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:39:03,777 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:40:08,381 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:41:13,168 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:42:17,717 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:43:22,592 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:44:27,029 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:45:31,934 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:45:58,537 [INFO] AutoTrader | BAND 60' | 46 | 35091378 | CD Olimpia v Real Espana | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:46:36,510 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:47:41,306 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:48:07,808 [INFO] AutoTrader | BAND 60' | 46 | 35091365 | Inter San Carlos v A.D. Cofutpa | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 01:48:46,273 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:49:50,931 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:50:55,795 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:52:00,176 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:53:04,354 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:54:08,836 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:55:13,165 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:56:17,325 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:57:21,326 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=0
+2025-12-28 01:57:31,548 [INFO] AutoTrader | FINISH | 35091352 | CSD Municipal v Antigua GFC | FT=1-0 | result=1 | pnl=None | strat=None | remaining_current=40
+2025-12-28 01:58:25,310 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 01:59:29,378 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 02:00:33,260 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 02:01:37,323 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 02:02:41,247 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 02:03:45,320 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 02:04:43,653 [INFO] AutoTrader | BAND 45' | 45 | 35091378 | CD Olimpia v Real Espana | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 02:04:49,247 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 02:05:31,640 [INFO] AutoTrader | BAND 60' | 46 | 35091378 | CD Olimpia v Real Espana | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 02:05:53,355 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 02:06:57,214 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 02:08:01,042 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=0
+2025-12-28 02:09:05,832 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:10:11,746 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:10:22,033 [INFO] AutoTrader | BAND 45' | 45 | 35091365 | Inter San Carlos v A.D. Cofutpa | 2-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 02:11:11,642 [INFO] AutoTrader | BAND 60' | 46 | 35091365 | Inter San Carlos v A.D. Cofutpa | 2-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 02:11:17,714 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:12:23,635 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:13:29,685 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:14:35,282 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:15:41,188 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:16:46,978 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:17:52,672 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:18:58,089 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:20:03,561 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:21:09,290 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:21:19,720 [INFO] AutoTrader | BAND 75' | 61 | 35091378 | CD Olimpia v Real Espana | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 02:22:14,809 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:23:20,192 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:24:25,705 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:25:31,109 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:26:30,479 [INFO] AutoTrader | BAND 75' | 61 | 35091365 | Inter San Carlos v A.D. Cofutpa | 2-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 02:26:36,525 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:27:42,368 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:28:47,977 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:29:54,103 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:30:59,884 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:32:05,788 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:33:11,295 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:34:16,727 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:35:22,172 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:35:49,016 [INFO] AutoTrader | BAND 90' | 76 | 35091378 | CD Olimpia v Real Espana | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 02:36:27,323 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:37:32,460 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:38:38,030 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=2 with_strategy=0
+2025-12-28 02:39:43,897 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:40:49,984 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:41:33,457 [INFO] AutoTrader | BAND 90' | 76 | 35091365 | Inter San Carlos v A.D. Cofutpa | 2-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 02:41:56,350 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:43:02,429 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:44:08,492 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:45:14,889 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:46:21,062 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:47:27,384 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:48:33,523 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:49:39,571 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:50:45,445 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:51:51,319 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:52:57,568 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:54:03,682 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=2 with_strategy=0
+2025-12-28 02:54:14,027 [INFO] AutoTrader | FINISH | 35091378 | CD Olimpia v Real Espana | FT=1-0 | result=1 | pnl=None | strat=None | remaining_current=43
+2025-12-28 02:55:09,303 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=1 with_strategy=0
+2025-12-28 02:56:14,384 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=1 with_strategy=0
+2025-12-28 02:57:19,943 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=1 with_strategy=0
+2025-12-28 02:58:02,866 [INFO] AutoTrader | FINISH | 35091365 | Inter San Carlos v A.D. Cofutpa | FT=3-1 | result=1 | pnl=None | strat=None | remaining_current=42
+2025-12-28 02:58:25,571 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 02:59:30,637 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:00:36,227 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:01:41,397 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:02:46,555 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:03:51,810 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:04:57,140 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:06:02,599 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:07:07,881 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:08:13,069 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:09:18,085 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=0
+2025-12-28 03:10:24,286 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:11:31,709 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:12:38,616 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:13:45,490 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:14:52,200 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:15:59,149 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:17:05,582 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:18:12,113 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:19:18,691 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:20:25,128 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:21:31,681 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:22:37,992 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:23:44,747 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:24:51,071 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:25:57,567 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:27:04,107 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:28:10,518 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:29:16,920 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:30:23,831 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:31:30,578 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:32:37,190 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:33:43,707 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:34:50,206 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:35:56,760 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:37:03,425 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:38:10,285 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:39:16,940 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=0 with_strategy=0
+2025-12-28 03:40:24,298 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:41:32,389 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:42:40,174 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:43:47,612 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:44:55,263 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:46:03,424 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:47:11,079 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:48:18,877 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:49:26,939 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:50:34,705 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:51:42,626 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:52:50,305 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:53:58,049 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:55:05,781 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:56:13,923 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:57:21,657 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:58:29,562 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 03:59:37,048 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:00:44,798 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:01:52,397 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:03:00,228 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:04:07,881 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:05:15,641 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:06:23,691 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:07:31,124 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:08:38,825 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:09:46,238 [INFO] AutoTrader | HEARTBEAT | total=47 inplay=0 with_strategy=0
+2025-12-28 04:10:56,454 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:12:08,176 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:13:20,094 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:14:32,094 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:15:43,788 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:16:55,671 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:18:07,248 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:19:18,505 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:20:30,026 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:21:41,641 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:22:52,905 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:24:04,264 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:25:15,766 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:26:27,593 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:27:39,295 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:28:50,826 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:30:02,345 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:31:13,916 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:32:25,431 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:33:36,638 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:34:48,013 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:35:59,441 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:37:10,770 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:38:22,359 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:39:33,544 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=0
+2025-12-28 04:40:45,107 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:41:58,636 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:43:11,565 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:44:24,748 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:45:38,007 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:46:51,277 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:48:04,324 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:49:17,803 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:50:30,855 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:51:44,308 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:52:57,746 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:54:10,512 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:55:23,628 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:56:37,011 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:57:50,219 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 04:59:03,811 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:00:17,396 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:01:30,661 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:02:44,089 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:03:57,480 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:05:11,168 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:06:25,234 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:07:38,774 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:08:52,150 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:10:04,868 [INFO] AutoTrader | HEARTBEAT | total=57 inplay=0 with_strategy=0
+2025-12-28 05:11:18,499 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=0 with_strategy=0
+2025-12-28 05:12:32,933 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=0 with_strategy=0
+2025-12-28 05:13:47,449 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=0 with_strategy=0
+2025-12-28 05:15:02,352 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=0 with_strategy=0
+2025-12-28 05:16:17,116 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=0 with_strategy=0
+2025-12-28 05:17:05,118 [INFO] AutoTrader | KICKOFF | 35084576 | Melbourne City (W) v Perth Glory (W) | SP(H/D/A)=1.250/7.200/15.000 | fav=1 | strat=None
+2025-12-28 05:17:05,134 [INFO] AutoTrader | BAND 15' | 0 | 35084576 | Melbourne City (W) v Perth Glory (W) | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 05:17:32,041 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:18:46,696 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:20:01,603 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:21:16,098 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:22:30,420 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:23:44,637 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:24:59,136 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:26:13,273 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:27:27,947 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:28:42,311 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:29:56,743 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:31:11,044 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:32:25,518 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=1 with_strategy=0
+2025-12-28 05:32:36,079 [INFO] AutoTrader | KICKOFF | 35093483 | Supreme FC v Sham Shui Po | SP(H/D/A)=1.180/8.600/21.000 | fav=1 | strat=None
+2025-12-28 05:32:36,079 [INFO] AutoTrader | BAND 15' | 0 | 35093483 | Supreme FC v Sham Shui Po | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 05:33:13,217 [INFO] AutoTrader | BAND 30' | 16 | 35084576 | Melbourne City (W) v Perth Glory (W) | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 05:33:40,252 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:34:54,895 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:36:09,357 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:37:24,440 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:38:39,288 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:39:53,767 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:41:08,047 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:42:23,085 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:43:37,515 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:44:52,191 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:46:06,746 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:47:21,382 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:48:27,824 [INFO] AutoTrader | BAND 45' | 31 | 35084576 | Melbourne City (W) v Perth Glory (W) | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 05:48:27,944 [INFO] AutoTrader | BAND 30' | 16 | 35093483 | Supreme FC v Sham Shui Po | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 05:48:35,966 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:49:50,375 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:51:05,084 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:52:19,771 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:53:34,491 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:54:48,924 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:56:03,667 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:57:18,052 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:58:32,674 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 05:59:47,247 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:01:02,074 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:02:17,102 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:03:04,795 [INFO] AutoTrader | BAND 60' | 46 | 35084576 | Melbourne City (W) v Perth Glory (W) | 1-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:03:31,707 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:03:42,311 [INFO] AutoTrader | BAND 45' | 31 | 35093483 | Supreme FC v Sham Shui Po | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:04:46,052 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:06:00,974 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:07:15,919 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:08:31,129 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:09:45,524 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:11:00,062 [INFO] AutoTrader | HEARTBEAT | total=59 inplay=2 with_strategy=0
+2025-12-28 06:12:15,768 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:13:31,598 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:14:48,206 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:16:04,565 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:17:20,686 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:18:36,908 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:19:53,392 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:21:09,640 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:22:16,843 [INFO] AutoTrader | BAND 45' | 45 | 35084576 | Melbourne City (W) v Perth Glory (W) | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:22:25,330 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:23:32,704 [INFO] AutoTrader | BAND 60' | 46 | 35084576 | Melbourne City (W) v Perth Glory (W) | 2-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:23:41,064 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:24:57,173 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:26:13,392 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:27:28,937 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:28:45,321 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:30:01,501 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:31:18,094 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:32:34,280 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:33:50,685 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=2 with_strategy=0
+2025-12-28 06:34:01,451 [INFO] AutoTrader | KICKOFF | 35079491 | Malut United v Pusamania Borneo FC | SP(H/D/A)=2.420/3.500/3.250 | fav=1 | strat=None
+2025-12-28 06:34:01,451 [INFO] AutoTrader | BAND 15' | 3 | 35079491 | Malut United v Pusamania Borneo FC | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:35:06,999 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:35:36,735 [INFO] AutoTrader | BAND 60' | 46 | 35093483 | Supreme FC v Sham Shui Po | 4-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:36:23,291 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:37:39,393 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:38:27,748 [INFO] AutoTrader | BAND 75' | 61 | 35084576 | Melbourne City (W) v Perth Glory (W) | 2-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:38:55,124 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:40:11,747 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:41:28,098 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:42:44,112 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:44:00,373 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:45:16,657 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:46:32,840 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:46:43,563 [INFO] AutoTrader | BAND 30' | 16 | 35079491 | Malut United v Pusamania Borneo FC | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:47:49,245 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:49:04,930 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:50:12,388 [INFO] AutoTrader | BAND 75' | 61 | 35093483 | Supreme FC v Sham Shui Po | 4-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:50:20,792 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:51:37,043 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:52:53,401 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:54:10,192 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:54:20,616 [INFO] AutoTrader | BAND 90' | 76 | 35084576 | Melbourne City (W) v Perth Glory (W) | 3-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 06:55:26,541 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:56:42,558 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:57:59,167 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 06:59:15,294 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:00:31,552 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:01:39,767 [INFO] AutoTrader | BAND 45' | 31 | 35079491 | Malut United v Pusamania Borneo FC | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 07:01:48,276 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:03:04,688 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:04:21,057 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:05:09,773 [INFO] AutoTrader | BAND 90' | 76 | 35093483 | Supreme FC v Sham Shui Po | 4-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 07:05:37,368 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:06:54,462 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:08:10,816 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:09:27,580 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:10:44,323 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:12:00,924 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:13:17,410 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:14:33,965 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=3 with_strategy=0
+2025-12-28 07:15:22,085 [INFO] AutoTrader | FINISH | 35084576 | Melbourne City (W) v Perth Glory (W) | FT=3-1 | result=1 | pnl=None | strat=None | remaining_current=61
+2025-12-28 07:15:49,711 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=2 with_strategy=0
+2025-12-28 07:16:19,281 [INFO] AutoTrader | BAND 60' | 46 | 35079491 | Malut United v Pusamania Borneo FC | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 07:17:05,492 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=2 with_strategy=0
+2025-12-28 07:18:21,303 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=2 with_strategy=0
+2025-12-28 07:19:37,068 [INFO] AutoTrader | HEARTBEAT | total=61 inplay=2 with_strategy=0
+2025-12-28 07:19:47,407 [INFO] AutoTrader | FINISH | 35093483 | Supreme FC v Sham Shui Po | FT=5-0 | result=1 | pnl=None | strat=None | remaining_current=60
+2025-12-28 07:20:52,459 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:22:08,015 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:23:23,646 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:24:39,027 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:25:54,521 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:27:10,014 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:28:25,389 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:29:40,940 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:30:56,544 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:32:12,070 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:33:27,981 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:34:42,981 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:35:58,467 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:36:46,566 [INFO] AutoTrader | BAND 45' | 45 | 35079491 | Malut United v Pusamania Borneo FC | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 07:37:05,467 [INFO] AutoTrader | BAND 60' | 48 | 35079491 | Malut United v Pusamania Borneo FC | 1-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 07:37:13,989 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:38:29,666 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:39:45,472 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:41:00,802 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:42:16,067 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:43:31,363 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:44:47,254 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:46:02,863 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:47:18,427 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:48:33,769 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:49:48,925 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:50:18,362 [INFO] AutoTrader | BAND 75' | 61 | 35079491 | Malut United v Pusamania Borneo FC | 1-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 07:51:04,596 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:52:19,799 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:53:34,845 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:54:50,377 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:56:06,034 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:57:21,783 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:58:37,300 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 07:59:53,109 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=1 with_strategy=0
+2025-12-28 08:00:22,565 [INFO] AutoTrader | KICKOFF | 35078713 | Melbourne City v Perth Glory | SP(H/D/A)=1.690/4.100/5.700 | fav=1 | strat=None
+2025-12-28 08:00:22,565 [INFO] AutoTrader | BAND 15' | 0 | 35078713 | Melbourne City v Perth Glory | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:00:22,712 [INFO] AutoTrader | KICKOFF | 35094431 | Uttaradit FC v BG Pathumthani United | SP(H/D/A)=16.000/7.200/1.220 | fav=2 | strat=None
+2025-12-28 08:00:22,712 [INFO] AutoTrader | BAND 15' | 0 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:01:08,439 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=3 with_strategy=0
+2025-12-28 08:01:18,995 [INFO] AutoTrader | KICKOFF | 35094113 | Lopburi City FC v Nakhon Ratchasima | SP(H/D/A)=3.650/4.400/1.600 | fav=2 | strat=None
+2025-12-28 08:01:18,995 [INFO] AutoTrader | BAND 15' | 0 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:02:23,845 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=4 with_strategy=0
+2025-12-28 08:03:41,063 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=4 with_strategy=0
+2025-12-28 08:04:56,664 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=4 with_strategy=0
+2025-12-28 08:05:25,845 [INFO] AutoTrader | BAND 90' | 76 | 35079491 | Malut United v Pusamania Borneo FC | 2-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:06:12,329 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=4 with_strategy=0
+2025-12-28 08:07:28,236 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=4 with_strategy=0
+2025-12-28 08:08:44,297 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=4 with_strategy=0
+2025-12-28 08:10:00,225 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=4 with_strategy=0
+2025-12-28 08:11:15,540 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=4 with_strategy=0
+2025-12-28 08:12:31,447 [INFO] AutoTrader | HEARTBEAT | total=60 inplay=4 with_strategy=0
+2025-12-28 08:13:51,025 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:15:10,617 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:16:29,968 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:16:40,678 [INFO] AutoTrader | BAND 30' | 16 | 35078713 | Melbourne City v Perth Glory | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:16:40,835 [INFO] AutoTrader | BAND 30' | 16 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-1 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:17:20,147 [INFO] AutoTrader | BAND 30' | 16 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:17:49,422 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:19:08,828 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:20:27,875 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:21:47,327 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:23:06,781 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:24:07,060 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:25:26,453 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:26:08,022 [INFO] AutoTrader | AutoTrader initialised. Paper=1 Bot=v0.3.3
+2025-12-28 08:26:08,023 [INFO] AutoTrader | AutoTrader run started. Waiting for matches...
+2025-12-28 08:26:08,446 [INFO] AutoTrader | KICKOFF | 35079491 | Malut United v Pusamania Borneo FC | SP(H/D/A)=2.420/3.500/3.250 | fav=1 | strat=None
+2025-12-28 08:26:08,446 [INFO] AutoTrader | BAND 90' | 97 | 35079491 | Malut United v Pusamania Borneo FC | 3-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:26:08,610 [INFO] AutoTrader | KICKOFF | 35094113 | Lopburi City FC v Nakhon Ratchasima | SP(H/D/A)=3.650/4.400/1.600 | fav=2 | strat=None
+2025-12-28 08:26:08,610 [INFO] AutoTrader | BAND 15' | 24 | 35094113 | Lopburi City FC v Nakhon Ratchasima | 0-0 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:26:08,764 [INFO] AutoTrader | KICKOFF | 35078713 | Melbourne City v Perth Glory | SP(H/D/A)=1.690/4.100/5.700 | fav=1 | strat=None
+2025-12-28 08:26:08,764 [INFO] AutoTrader | BAND 15' | 25 | 35078713 | Melbourne City v Perth Glory | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:26:08,929 [INFO] AutoTrader | KICKOFF | 35094431 | Uttaradit FC v BG Pathumthani United | SP(H/D/A)=16.000/7.200/1.220 | fav=2 | strat=None
+2025-12-28 08:26:08,929 [INFO] AutoTrader | BAND 15' | 25 | 35094431 | Uttaradit FC v BG Pathumthani United | 0-2 | RC(H/A)=0/0 | strat=None
+2025-12-28 08:26:17,766 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=0
+2025-12-28 08:26:28,145 [INFO] AutoTrader | FINISH | 35079491 | Malut United v Pusamania Borneo FC | FT=3-2 | result=1 | pnl=None | strat=None | remaining_current=65

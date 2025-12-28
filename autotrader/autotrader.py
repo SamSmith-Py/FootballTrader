@@ -16,8 +16,10 @@ from core.settings import (
     BOT_VERSION,
     CONFIG_PATH,
     SP_CAPTURE_WINDOW_SEC,
-    SP_FALLBACK_INPLAY
+    SP_FALLBACK_INPLAY,
+    LOG_DIR
 )
+
 from core.db_helper import DBHelper
 from core.betfair_session import BetfairSession
 from core.config_loader import load_betfair_credentials
@@ -26,23 +28,89 @@ from core.config_loader import load_betfair_credentials
 from autotrader.strategies.base_strategy import BaseStrategy
 from autotrader.strategies.ltd60 import LTD60
 
-logger = logging.getLogger("autotrader")
-logger.setLevel(logging.INFO)
-if not logger.handlers:
-    h = logging.StreamHandler()
-    h.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] %(message)s"))
-    logger.addHandler(h)
+# Logging Setup
+from core.logging_setup import setup_bot_logging
+
+logger = setup_bot_logging(log_dir=LOG_DIR / "logs")
+
+# logger = logging.getLogger("autotrader")
+# logger.setLevel(logging.INFO)
+#if not logger.handlers:
+ #   h = logging.StreamHandler()
+  #  h.setFormatter(logging.Formatter("%(asctime)s [%(levelname)s] %(message)s"))
+   # logger.addHandler(h)
 
 
 class AutoTrader:
     def __init__(self):
         self.strategies: List[BaseStrategy] = []
         self._install_strategies([LTD60])
+        self.logged_kickoff = set()
+        self.logged_finished = set()
+        self.last_logged_band = {}  # event_id -> last band logged (15/30/...)
+        self._last_heartbeat = 0
+
         logger.info("AutoTrader initialised. Paper=%s Bot=%s", PAPER_MODE, BOT_VERSION)
 
     def _install_strategies(self, strategy_types: List[Type[BaseStrategy]]):
         for cls in strategy_types:
             self.strategies.append(cls())
+    
+    # ========== helpers ============
+    def _band_for_time(self, t: int) -> int:
+        if t < 0: return -1
+        if 0 <= t < 15: return 0
+        if 15 <= t < 30: return 15  # i think this should be if t >= 15 and t < 30 OR 15 <= t < 30
+        if 30 <= t < 45: return 30
+        if 45 <= t < 60: return 45
+        if 60 <= t < 75: return 60
+        if 75 <= t < 90: return 75
+        return 90
+    
+    def _cleanup_stale_matches(self, db: DBHelper) -> None:
+        now = datetime.now(timezone.utc)
+
+        rows = db.list_current()
+        
+        to_delete = []
+
+        for r in rows:
+            ev = dict(r)
+            event_id = r["event_id"]
+            kickoff = ev.get("kickoff")
+            if not kickoff:
+                continue
+
+            # parse ISO kickoff
+            try:
+                ko = datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
+            except Exception:
+                continue
+
+            age = now - ko
+
+            inplay = ev.get("inplay_status")
+            h_score = ev.get("h_score")
+            a_score = ev.get("a_score")
+            ft = ev.get("ft_score")
+
+            # ---- Purge window (dead matches) ----
+            dead = (
+                inplay is None
+                and ft is None
+                and h_score is None
+                and a_score is None
+            )
+
+            if age >= timedelta(hours=24) and dead:
+                to_delete.append(event_id)
+
+        if to_delete:
+            with db.tx():
+                for event_id in to_delete:
+                    db.conn.execute("DELETE FROM current_matches WHERE event_id=?", (event_id,))
+            logger.info("AutoTrader | PURGED stale rows | count=%d", len(to_delete))
+
 
     # ========== MAIN LOOP ==========
     def start(self):
@@ -52,6 +120,7 @@ class AutoTrader:
 
         while True:
             with DBHelper(DB_PATH) as db:
+                self._cleanup_stale_matches(db)
                 rows = db.list_current(where_sql="", params=())
                 # then sort in Python if you want deterministic ordering:
                 rows = sorted(rows, key=lambda r: (r["kickoff"] or ""))
@@ -89,6 +158,46 @@ class AutoTrader:
                             continue  # it was archived (or removed)
                         ev = dict(fresh_after)
 
+                        #===== LOGGING KICKOFF ==================
+                        ips = ev.get("inplay_status")
+                        te = ev.get("time_elapsed")
+
+                        if ev["event_id"] not in self.logged_kickoff:
+                            # consider kickoff when time_elapsed >= 0 or status indicates kickoff
+                            if (isinstance(te, (int, float)) and int(te) >= 0) or ips in ("KickOff", "InPlay", "SecondHalfKickOff"):
+                                logger.info(
+                                    "KICKOFF | %s | %s | SP(H/D/A)=%.3f/%.3f/%.3f | fav=%s | strat=%s",
+                                    ev.get("league"),
+                                    ev.get("event_name"),
+                                    ev.get("h_SP") or -1,
+                                    ev.get("d_SP") or -1,
+                                    ev.get("a_SP") or -1,
+                                    ev.get("fav"),
+                                    ev.get("strategy"),
+                                )
+                                self.logged_kickoff.add(ev["event_id"])
+
+                        # ===== LOGGING INTERVAL =================
+                        
+                        if (isinstance(te, (int, float)) and int(te) >= 0) or ips in ("KickOff", "InPlay", "SecondHalfKickOff"):  
+                            t = int(te)
+                            band = self._band_for_time(t)
+                            last = self.last_logged_band.get(ev["event_id"])
+                            if band in (15,30,45,60,75,90) and last != band and ips not in ("Finished", "Cancelled", "Abandoned"):
+                                logger.info(
+                                    "BAND %s' | %s | %s | %s | %s-%s | RC(H/A)=%s/%s | strat=%s",
+                                    band,
+                                    ev.get("time_elapsed"),
+                                    ev.get("league"),
+                                    ev.get("event_name"),
+                                    ev.get("h_score"),
+                                    ev.get("a_score"),
+                                    ev.get("h_red_cards"),
+                                    ev.get("a_red_cards"),
+                                    ev.get("strategy"),
+                                )
+                            self.last_logged_band[ev["event_id"]] = band
+
                     except Exception as e:
                         logger.warning("Skipping live update for %s: %s", event_id, e)
 
@@ -105,9 +214,24 @@ class AutoTrader:
                         api.logout()
                     except Exception:
                         pass
+                # ===== HEARTBEAT CHECK ============
+                now = time.time()
+                if now - self._last_heartbeat > 60:
+                    total = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
+                    inplay = db.conn.execute(
+                        "SELECT COUNT(*) FROM current_matches WHERE inplay_status IS NOT NULL AND inplay_status != ''"
+                    ).fetchone()[0]
+                    with_strat = db.conn.execute(
+                        "SELECT COUNT(*) FROM current_matches WHERE strategy IS NOT NULL AND strategy != 'None'"
+                    ).fetchone()[0]
 
+                    logger.info("HEARTBEAT | total=%s inplay=%s with_strategy=%s", total, inplay, with_strat)
+                    self._last_heartbeat = now
             # Short cooldown between ticks
             time.sleep(10)
+
+            
+
 
     def _compute_result(self, h: Optional[int], a: Optional[int]) -> Optional[int]:
         if h is None or a is None:
@@ -196,6 +320,20 @@ class AutoTrader:
                     result_val = self._compute_result(fth, fta)
                     if result_val is not None:
                         db.update_current(event_id, result=result_val)
+
+                    # ===== LOGGING ARCHIVE ==========
+                    remaining = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
+
+                    logger.info(
+                        "FINISH | %s | %s | FT=%s | result=%s | pnl=%s | strat=%s | remaining_current=%s",
+                        event_id,
+                        row_now["event_name"],
+                        row_now["ft_score"],
+                        result_val,
+                        row_now["pnl"],
+                        row_now["strategy"],
+                        remaining - 1  # because we are about to remove it
+                    )
 
                     # IMPORTANT: pnl stays NULL unless a strategy sets it
                     # strategy should be 'None' if none assigned; that’s already your schema expectation
@@ -327,7 +465,7 @@ class AutoTrader:
             if updates:
                 db.update_current(event_id, **updates)
 
-        
+        # Archive if not 'Finished' but enough time has passed after kickoff
         kickoff = row["kickoff"] if row else None
         if kickoff and inplay_status not in ("Finished", "Cancelled", "Abandoned"):
             try:
@@ -339,9 +477,30 @@ class AutoTrader:
                         fth, fta = self._parse_ft(ft)
                         result_val = self._compute_result(fth, fta)
                         db.update_current(event_id, inplay_status="Finished", ft_score=ft, result=result_val)
+
+                        # ===== LOGGING ARCHIVE ==========
+                        remaining = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
+
+                        logger.info(
+                            "FINISH | %s | %s | FT=%s | result=%s | pnl=%s | strat=%s | remaining_current=%s",
+                            event_id,
+                            row_now["event_name"],
+                            row_now["ft_score"],
+                            result_val,
+                            row_now["pnl"],
+                            row_now["strategy"],
+                            remaining - 1  # because we are about to remove it
+                        )
+                        # Archive match
                         db.archive_match(event_id)
             except Exception:
                 pass
+        # Delete from current and do not archive if no data has been recorded
+        kickoff = row["kickoff"] if row else None
+        try:
+            pass
+        except Exception:
+            pass
 
     # ========== GOAL TIMELINE LOGIC ==========
     def _update_goal_timeline(

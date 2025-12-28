@@ -171,6 +171,10 @@ class DBHelper:
             # Remove from current_matches (MOVE policy)
             self.conn.execute("DELETE FROM current_matches WHERE event_id=?", (event_id,))
 
+    def delete_from_current(self, event_id: str):
+        # Remove from current_matches (DELETE policy)
+        self.conn.execute("DELETE FROM current_matches WHERE event_id=?", (event_id,))
+
     # ---------- QUERY: ARCHIVE ----------
     def fetch_archive(self, event_id: str) -> Optional[sqlite3.Row]:
         cur = self.conn.execute("SELECT * FROM archive_v3 WHERE event_id=?", (event_id,))
