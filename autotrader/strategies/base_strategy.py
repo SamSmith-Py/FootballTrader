@@ -71,7 +71,7 @@ class BaseStrategy:
     def _log_stream(self, db: DBHelper, ev: Dict[str, Any], h=None, a=None, d=None, inplay_time: int | None = None):
         """Optional: append a row to match_stream_history for odds tracking."""
         fields = {
-            "league": ev.get("league"),
+            "league": ev.get("comp"),
             "event_name": ev.get("event_name"),
             "event_id": ev.get("event_id"),
             "h_lay_price": h,
@@ -83,4 +83,101 @@ class BaseStrategy:
             "h_red_cards": ev.get("h_red_cards"),
             "a_red_cards": ev.get("a_red_cards"),
         }
-        db.insert_stream(fields)
+        db.log_stream(fields)
+
+    def _sync_order_state(
+        self,
+        db: DBHelper,
+        api,
+        logger,
+        ev: dict,
+        market_id: str,
+        prefix: str = "e",   # "e" for entry1, "x" for exit if you add later
+    ) -> dict | None:
+        """
+        Sync an existing Betfair order with DB state.
+        Returns a dict with latest order info, or None if no sync performed.
+        """
+
+        betid = ev.get(f"{prefix}_betid")
+        stake = ev.get(f"{prefix}_stake") or 0.0
+        matched = ev.get(f"{prefix}_matched") or 0.0
+
+        # No order or already fully matched → nothing to do
+        if not betid or stake <= 0 or matched >= stake:
+            return None
+
+        try:
+            resp = api.betting.list_current_orders(bet_ids=[betid])
+            orders = resp.current_orders or []
+        except Exception as e:
+            self.log.error("ORDER_SYNC_FAIL | %s | betid=%s err=%s",
+                        ev["event_id"], betid, e)
+            return None
+
+        # Order no longer exists at Betfair (fully settled/cancelled elsewhere)
+        if not orders:
+            db.update_current(
+                ev["event_id"],
+                **{
+                    f"{prefix}_status": "MISSING",
+                    f"{prefix}_remaining": 0.0,
+                }
+            )
+            return {
+                "status": "MISSING",
+                "matched": matched,
+                "remaining": 0.0,
+            }
+
+        o = orders[0]
+
+        new_matched = float(o.size_matched or 0.0)
+        new_remaining = float(o.size_remaining or 0.0)
+        new_status = o.status  # EXECUTABLE, EXECUTION_COMPLETE, etc.
+
+        # Only write if something actually changed
+        if (
+            new_matched != matched
+            or new_remaining != ev.get(f"{prefix}_remaining")
+            or new_status != ev.get(f"{prefix}_status")
+        ):
+            db.update_current(
+                ev["event_id"],
+                **{
+                    f"{prefix}_matched": new_matched,
+                    f"{prefix}_remaining": new_remaining,
+                    f"{prefix}_status": new_status,
+                }
+            )
+
+            logger.info(
+                "ORDER_SYNC | %s | betid=%s status=%s matched=%.2f remaining=%.2f",
+                ev["event_id"], betid, new_status, new_matched, new_remaining
+            )
+
+        return {
+            "status": new_status,
+            "matched": new_matched,
+            "remaining": new_remaining,
+    }
+
+    def calculate_pnl(self, logger, ev: Dict[str, Any]):
+        pnl = None
+        # Check a strategy is assigned
+        strat = ev['strategy']
+        print('PNL TEST - 1', strat, ev['event_id'])
+        if strat is not None:
+            print('PNL TEST - 2', strat, ev['event_id'])
+            try:
+                # If result is decisive win full stake
+                if ev['result'] == 1:
+                    pnl = ev['e_stake']
+                else:
+                    pnl = ev['liability']
+                print('PNL TEST - 3', strat, ev['event_id'], pnl)
+                return pnl
+            except Exception as e:
+                logger.error("PnL ERROR | %s | err=%s",
+                            ev["event_id"], e)
+                return None

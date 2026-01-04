@@ -1,86 +1,150 @@
-2025-12-28 08:38:11,104 [INFO] MatchFinder run started
-2025-12-28 08:38:11,232 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 08:38:11,341 [INFO] Catalogue rows fetched: 183
-2025-12-28 08:38:11,369 [INFO] Upserting 61 rows into current_matches...
-2025-12-28 08:38:11,383 [INFO] Upsert complete.
-2025-12-28 08:38:11,383 [INFO] MatchFinder run finished.
-2025-12-28 09:07:02,953 [INFO] MatchFinder run started
-2025-12-28 09:07:03,065 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 09:07:03,206 [INFO] Catalogue rows fetched: 195
-2025-12-28 09:07:03,227 [INFO] Upserting 65 rows into current_matches...
-2025-12-28 09:07:03,253 [INFO] Upsert complete.
-2025-12-28 09:07:03,253 [INFO] MatchFinder run finished.
-2025-12-28 09:08:12,557 [INFO] MatchFinder run started
-2025-12-28 09:08:12,683 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 09:08:12,797 [INFO] Catalogue rows fetched: 195
-2025-12-28 09:08:12,818 [INFO] Upserting 65 rows into current_matches...
-2025-12-28 09:08:12,838 [INFO] Upsert complete.
-2025-12-28 09:08:12,838 [INFO] MatchFinder run finished.
-2025-12-28 09:38:25,973 [INFO] MatchFinder run started
-2025-12-28 09:38:26,069 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 09:38:26,198 [INFO] Catalogue rows fetched: 204
-2025-12-28 09:38:26,218 [INFO] Upserting 68 rows into current_matches...
-2025-12-28 09:38:28,006 [INFO] Upsert complete.
-2025-12-28 09:38:28,006 [INFO] MatchFinder run finished.
-2025-12-28 10:08:43,075 [INFO] MatchFinder run started
-2025-12-28 10:08:43,191 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 10:08:43,310 [INFO] Catalogue rows fetched: 189
-2025-12-28 10:08:43,330 [INFO] Upserting 63 rows into current_matches...
-2025-12-28 10:08:43,347 [INFO] Upsert complete.
-2025-12-28 10:08:43,347 [INFO] MatchFinder run finished.
-2025-12-28 10:28:45,549 [INFO] MatchFinder run started
-2025-12-28 10:28:45,692 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 10:28:45,788 [INFO] Catalogue rows fetched: 189
-2025-12-28 10:28:45,820 [INFO] Upserting 63 rows into current_matches...
-2025-12-28 10:28:45,845 [INFO] Upsert complete.
-2025-12-28 10:28:45,845 [INFO] MatchFinder run finished.
-2025-12-28 10:29:34,147 [INFO] MatchFinder run started
-2025-12-28 10:29:34,274 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 10:29:34,385 [INFO] Catalogue rows fetched: 189
-2025-12-28 10:29:34,401 [INFO] Upserting 63 rows into current_matches...
-2025-12-28 10:29:34,418 [INFO] Upsert complete.
-2025-12-28 10:29:34,418 [INFO] MatchFinder run finished.
-2025-12-28 10:30:24,178 [INFO] MatchFinder run started
-2025-12-28 10:30:24,323 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 10:30:24,455 [INFO] Catalogue rows fetched: 183
-2025-12-28 10:30:24,465 [INFO] Upserting 61 rows into current_matches...
-2025-12-28 10:30:24,495 [INFO] Upsert complete.
-2025-12-28 10:30:24,495 [INFO] MatchFinder run finished.
-2025-12-28 11:14:09,696 [INFO] MatchFinder run started
-2025-12-28 11:14:09,837 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 11:14:09,980 [INFO] Catalogue rows fetched: 171
-2025-12-28 11:14:10,011 [INFO] Upserting 57 rows into current_matches...
-2025-12-28 11:14:10,027 [INFO] Upsert complete.
-2025-12-28 11:14:10,027 [INFO] MatchFinder run finished.
-2025-12-28 11:44:22,296 [INFO] MatchFinder run started
-2025-12-28 11:44:22,408 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 11:44:22,520 [INFO] Catalogue rows fetched: 168
-2025-12-28 11:44:22,534 [INFO] Upserting 56 rows into current_matches...
-2025-12-28 12:14:40,616 [INFO] MatchFinder run started
-2025-12-28 12:14:40,717 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 12:14:40,806 [INFO] Catalogue rows fetched: 141
-2025-12-28 12:14:40,822 [INFO] Upserting 47 rows into current_matches...
-2025-12-28 12:14:40,838 [INFO] Upsert complete.
-2025-12-28 12:14:40,838 [INFO] MatchFinder run finished.
-2025-12-28 12:44:52,699 [INFO] MatchFinder run started
-2025-12-28 12:44:52,828 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 12:44:52,925 [INFO] Catalogue rows fetched: 126
-2025-12-28 12:44:52,943 [INFO] Upserting 42 rows into current_matches...
-2025-12-28 12:44:52,957 [INFO] Upsert complete.
-2025-12-28 12:44:52,957 [INFO] MatchFinder run finished.
-2025-12-28 13:15:04,955 [INFO] MatchFinder run started
-2025-12-28 13:15:05,070 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 13:15:05,181 [INFO] Catalogue rows fetched: 114
-2025-12-28 13:15:05,197 [INFO] Upserting 38 rows into current_matches...
-2025-12-28 13:15:05,228 [INFO] Upsert complete.
-2025-12-28 13:15:05,228 [INFO] MatchFinder run finished.
-2025-12-28 13:45:17,202 [INFO] MatchFinder run started
-2025-12-28 13:45:17,318 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 13:45:17,430 [INFO] Catalogue rows fetched: 114
-2025-12-28 13:45:17,449 [INFO] Upserting 38 rows into current_matches...
-2025-12-28 14:06:01,887 [INFO] MatchFinder run started
-2025-12-28 14:06:02,014 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
-2025-12-28 14:06:02,115 [INFO] Catalogue rows fetched: 105
-2025-12-28 14:06:02,135 [INFO] Upserting 35 rows into current_matches...
-2025-12-28 14:06:02,156 [INFO] Upsert complete.
-2025-12-28 14:06:02,157 [INFO] MatchFinder run finished.
+2026-01-04 00:12:30,074 [INFO] MatchFinder run started
+2026-01-04 00:12:30,199 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 00:12:30,298 [INFO] Catalogue rows fetched: 149
+2026-01-04 00:12:30,325 [INFO] Upserting 51 rows into current_matches...
+2026-01-04 00:12:31,960 [INFO] Upsert complete.
+2026-01-04 00:12:31,961 [INFO] MatchFinder run finished.
+2026-01-04 00:42:48,816 [INFO] MatchFinder run started
+2026-01-04 00:42:48,944 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 00:42:49,042 [INFO] Catalogue rows fetched: 152
+2026-01-04 00:42:49,069 [INFO] Upserting 52 rows into current_matches...
+2026-01-04 00:42:51,683 [INFO] Upsert complete.
+2026-01-04 00:42:51,683 [INFO] MatchFinder run finished.
+2026-01-04 01:13:08,603 [INFO] MatchFinder run started
+2026-01-04 01:13:08,712 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 01:13:08,824 [INFO] Catalogue rows fetched: 173
+2026-01-04 01:13:08,847 [INFO] Upserting 59 rows into current_matches...
+2026-01-04 01:13:08,872 [INFO] Upsert complete.
+2026-01-04 01:13:08,873 [INFO] MatchFinder run finished.
+2026-01-04 01:43:26,142 [INFO] MatchFinder run started
+2026-01-04 01:43:26,249 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 01:43:26,359 [INFO] Catalogue rows fetched: 192
+2026-01-04 01:43:26,392 [INFO] Upserting 66 rows into current_matches...
+2026-01-04 01:43:33,478 [INFO] Upsert complete.
+2026-01-04 01:43:33,479 [INFO] MatchFinder run finished.
+2026-01-04 02:13:50,123 [INFO] MatchFinder run started
+2026-01-04 02:13:50,224 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 02:13:50,352 [INFO] Catalogue rows fetched: 198
+2026-01-04 02:13:50,368 [INFO] Upserting 68 rows into current_matches...
+2026-01-04 02:13:50,384 [INFO] Upsert complete.
+2026-01-04 02:13:50,384 [INFO] MatchFinder run finished.
+2026-01-04 02:44:03,943 [INFO] MatchFinder run started
+2026-01-04 02:44:04,150 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 02:44:04,246 [INFO] Catalogue rows fetched: 201
+2026-01-04 02:44:04,262 [INFO] Upserting 69 rows into current_matches...
+2026-01-04 02:44:15,989 [INFO] Upsert complete.
+2026-01-04 02:44:15,989 [INFO] MatchFinder run finished.
+2026-01-04 03:14:29,516 [INFO] MatchFinder run started
+2026-01-04 03:14:29,612 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 03:14:29,772 [INFO] Catalogue rows fetched: 318
+2026-01-04 03:14:29,788 [INFO] Upserting 108 rows into current_matches...
+2026-01-04 03:14:29,821 [INFO] Upsert complete.
+2026-01-04 03:14:29,821 [INFO] MatchFinder run finished.
+2026-01-04 03:44:42,487 [INFO] MatchFinder run started
+2026-01-04 03:44:42,582 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 03:44:42,725 [INFO] Catalogue rows fetched: 334
+2026-01-04 03:44:42,741 [INFO] Upserting 114 rows into current_matches...
+2026-01-04 03:44:42,835 [INFO] Upsert complete.
+2026-01-04 03:44:42,835 [INFO] MatchFinder run finished.
+2026-01-04 04:14:55,526 [INFO] MatchFinder run started
+2026-01-04 04:14:55,621 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 04:14:55,748 [INFO] Catalogue rows fetched: 337
+2026-01-04 04:14:55,764 [INFO] Upserting 115 rows into current_matches...
+2026-01-04 04:14:56,801 [INFO] Upsert complete.
+2026-01-04 04:14:56,801 [INFO] MatchFinder run finished.
+2026-01-04 04:45:09,663 [INFO] MatchFinder run started
+2026-01-04 04:45:09,790 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 04:45:09,917 [INFO] Catalogue rows fetched: 358
+2026-01-04 04:45:09,949 [INFO] Upserting 122 rows into current_matches...
+2026-01-04 04:45:26,438 [INFO] Upsert complete.
+2026-01-04 04:45:26,438 [INFO] MatchFinder run finished.
+2026-01-04 05:15:39,336 [INFO] MatchFinder run started
+2026-01-04 05:15:39,464 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 05:15:39,591 [INFO] Catalogue rows fetched: 367
+2026-01-04 05:15:39,623 [INFO] Upserting 125 rows into current_matches...
+2026-01-04 05:15:54,479 [INFO] Upsert complete.
+2026-01-04 05:15:54,479 [INFO] MatchFinder run finished.
+2026-01-04 05:46:07,155 [INFO] MatchFinder run started
+2026-01-04 05:46:07,269 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 05:46:07,394 [INFO] Catalogue rows fetched: 385
+2026-01-04 05:46:07,425 [INFO] Upserting 131 rows into current_matches...
+2026-01-04 05:46:14,677 [INFO] Upsert complete.
+2026-01-04 05:46:14,692 [INFO] MatchFinder run finished.
+2026-01-04 06:16:27,187 [INFO] MatchFinder run started
+2026-01-04 06:16:27,300 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 06:16:27,428 [INFO] Catalogue rows fetched: 391
+2026-01-04 06:16:27,444 [INFO] Upserting 133 rows into current_matches...
+2026-01-04 06:16:30,493 [INFO] Upsert complete.
+2026-01-04 06:16:30,493 [INFO] MatchFinder run finished.
+2026-01-04 06:46:43,147 [INFO] MatchFinder run started
+2026-01-04 06:46:43,259 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 06:46:43,387 [INFO] Catalogue rows fetched: 388
+2026-01-04 06:46:43,419 [INFO] Upserting 132 rows into current_matches...
+2026-01-04 06:46:43,451 [INFO] Upsert complete.
+2026-01-04 06:46:43,451 [INFO] MatchFinder run finished.
+2026-01-04 07:16:55,853 [INFO] MatchFinder run started
+2026-01-04 07:16:55,965 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 07:16:56,124 [INFO] Catalogue rows fetched: 391
+2026-01-04 07:16:56,160 [INFO] Upserting 133 rows into current_matches...
+2026-01-04 07:17:04,980 [INFO] Upsert complete.
+2026-01-04 07:17:04,996 [INFO] MatchFinder run finished.
+2026-01-04 07:47:17,535 [INFO] MatchFinder run started
+2026-01-04 07:47:17,647 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 07:47:17,774 [INFO] Catalogue rows fetched: 391
+2026-01-04 07:47:17,805 [INFO] Upserting 133 rows into current_matches...
+2026-01-04 07:47:21,853 [INFO] Upsert complete.
+2026-01-04 07:47:21,853 [INFO] MatchFinder run finished.
+2026-01-04 08:17:34,511 [INFO] MatchFinder run started
+2026-01-04 08:17:34,615 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 08:17:34,759 [INFO] Catalogue rows fetched: 406
+2026-01-04 08:17:34,791 [INFO] Upserting 138 rows into current_matches...
+2026-01-04 08:17:56,916 [INFO] Upsert complete.
+2026-01-04 08:17:56,916 [INFO] MatchFinder run finished.
+2026-01-04 08:48:09,464 [INFO] MatchFinder run started
+2026-01-04 08:48:09,569 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 08:48:09,712 [INFO] Catalogue rows fetched: 394
+2026-01-04 08:48:09,744 [INFO] Upserting 134 rows into current_matches...
+2026-01-04 08:48:30,372 [INFO] Upsert complete.
+2026-01-04 08:48:30,372 [INFO] MatchFinder run finished.
+2026-01-04 09:18:42,983 [INFO] MatchFinder run started
+2026-01-04 09:18:43,111 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 09:18:43,266 [INFO] Catalogue rows fetched: 391
+2026-01-04 09:18:43,288 [INFO] Upserting 133 rows into current_matches...
+2026-01-04 09:19:05,822 [INFO] Upsert complete.
+2026-01-04 09:19:05,822 [INFO] MatchFinder run finished.
+2026-01-04 09:49:18,766 [INFO] MatchFinder run started
+2026-01-04 09:49:18,862 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 09:49:19,005 [INFO] Catalogue rows fetched: 397
+2026-01-04 09:49:19,038 [INFO] Upserting 135 rows into current_matches...
+2026-01-04 09:49:35,887 [INFO] Upsert complete.
+2026-01-04 09:49:35,887 [INFO] MatchFinder run finished.
+2026-01-04 10:19:48,698 [INFO] MatchFinder run started
+2026-01-04 10:19:48,794 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 10:19:48,938 [INFO] Catalogue rows fetched: 397
+2026-01-04 10:19:48,970 [INFO] Upserting 135 rows into current_matches...
+2026-01-04 10:19:56,797 [INFO] Upsert complete.
+2026-01-04 10:19:56,797 [INFO] MatchFinder run finished.
+2026-01-04 10:50:10,042 [INFO] MatchFinder run started
+2026-01-04 10:50:10,153 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 10:50:10,280 [INFO] Catalogue rows fetched: 413
+2026-01-04 10:50:10,312 [INFO] Upserting 139 rows into current_matches...
+2026-01-04 10:50:25,287 [INFO] Upsert complete.
+2026-01-04 10:50:25,287 [INFO] MatchFinder run finished.
+2026-01-04 11:20:38,235 [INFO] MatchFinder run started
+2026-01-04 11:20:38,346 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 11:20:38,490 [INFO] Catalogue rows fetched: 368
+2026-01-04 11:20:38,506 [INFO] Upserting 124 rows into current_matches...
+2026-01-04 11:20:38,538 [INFO] Upsert complete.
+2026-01-04 11:20:38,538 [INFO] MatchFinder run finished.
+2026-01-04 11:50:51,676 [INFO] MatchFinder run started
+2026-01-04 11:50:51,803 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 11:50:51,945 [INFO] Catalogue rows fetched: 362
+2026-01-04 11:50:51,977 [INFO] Upserting 122 rows into current_matches...
+2026-01-04 11:51:11,976 [INFO] Upsert complete.
+2026-01-04 11:51:11,976 [INFO] MatchFinder run finished.
+2026-01-04 12:15:44,835 [INFO] MatchFinder run started
+2026-01-04 12:15:44,946 [INFO] Fetching catalogue for next 12h | markets=['MATCH_ODDS', 'OVER_UNDER_45', 'CORRECT_SCORE']
+2026-01-04 12:15:45,073 [INFO] Catalogue rows fetched: 332
+2026-01-04 12:15:45,105 [INFO] Upserting 112 rows into current_matches...
+2026-01-04 12:15:45,136 [INFO] Upsert complete.
+2026-01-04 12:15:45,136 [INFO] MatchFinder run finished.

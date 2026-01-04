@@ -149,6 +149,8 @@ class AutoTrader:
                     if fresh:
                         ev = dict(fresh)
 
+
+
                     try:
                         # ===== Fetch Betfair in-play data =====
                         if api:
@@ -157,6 +159,9 @@ class AutoTrader:
                         if not fresh_after:
                             continue  # it was archived (or removed)
                         ev = dict(fresh_after)
+
+                        # ===== ARCHIVE CHECK ===================
+                        self.decide_to_archive(db, api, ev)
 
                         #===== LOGGING KICKOFF ==================
                         ips = ev.get("inplay_status")
@@ -167,7 +172,7 @@ class AutoTrader:
                             if (isinstance(te, (int, float)) and int(te) >= 0) or ips in ("KickOff", "InPlay", "SecondHalfKickOff"):
                                 logger.info(
                                     "KICKOFF | %s | %s | SP(H/D/A)=%.3f/%.3f/%.3f | fav=%s | strat=%s",
-                                    ev.get("league"),
+                                    ev.get("comp"),
                                     ev.get("event_name"),
                                     ev.get("h_SP") or -1,
                                     ev.get("d_SP") or -1,
@@ -188,7 +193,7 @@ class AutoTrader:
                                     "BAND %s' | %s | %s | %s | %s-%s | RC(H/A)=%s/%s | strat=%s",
                                     band,
                                     ev.get("time_elapsed"),
-                                    ev.get("league"),
+                                    ev.get("comp"),
                                     ev.get("event_name"),
                                     ev.get("h_score"),
                                     ev.get("a_score"),
@@ -204,6 +209,7 @@ class AutoTrader:
                     # ===== Run strategy logic =====
                     for strat in self.strategies:
                         try:
+                            
                             strat.assign_if_applicable(db, ev)
                             strat.on_tick(db, ev, api=api)
                         except Exception as e:
@@ -291,54 +297,6 @@ class AutoTrader:
                 a_score=a_score,
                 ft_score=ev.get("ft_score"),
             )
-
-            # If finished, set FT score (once)
-            if inplay_status == "Finished" and h_score is not None and a_score is not None:
-                db.update_current(event_id, ft_score=f"{int(h_score)}-{int(a_score)}")
-            # ---- ARCHIVE ON FINISH ----
-            if inplay_status == "Finished":
-                # Re-read row to ensure ft_score exists (DBHelper enforces ft_score for archive)
-                row_now = db.fetch_current(event_id)
-                if row_now and row_now["ft_score"]:
-                    ft = row_now["ft_score"]
-                    if ft and "-" in ft:
-                        try:
-                            left, right = ft.split("-", 1)
-                            fth, fta = int(left.strip()), int(right.strip())
-                        except Exception:
-                            fth, fta = None, None
-                    else:
-                        fth, fta = None, None
-
-                    # If parsing failed but we have live scores, use them
-                    if (fth is None or fta is None) and h_score is not None and a_score is not None:
-                        fth, fta = int(h_score), int(a_score)
-                        ft = f"{fth}-{fta}"
-                        db.update_current(event_id, ft_score=ft)
-
-                    # Set result (1 decisive, 0 draw) and archive
-                    result_val = self._compute_result(fth, fta)
-                    if result_val is not None:
-                        db.update_current(event_id, result=result_val)
-
-                    # ===== LOGGING ARCHIVE ==========
-                    remaining = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
-
-                    logger.info(
-                        "FINISH | %s | %s | FT=%s | result=%s | pnl=%s | strat=%s | remaining_current=%s",
-                        event_id,
-                        row_now["event_name"],
-                        row_now["ft_score"],
-                        result_val,
-                        row_now["pnl"],
-                        row_now["strategy"],
-                        remaining - 1  # because we are about to remove it
-                    )
-
-                    # IMPORTANT: pnl stays NULL unless a strategy sets it
-                    # strategy should be 'None' if none assigned; that’s already your schema expectation
-                    db.archive_match(event_id)
-
 
         # 2) Market prices + market state + Starting Prices (once) + fav (once)
         if not market_id:
@@ -465,43 +423,6 @@ class AutoTrader:
             if updates:
                 db.update_current(event_id, **updates)
 
-        # Archive if not 'Finished' but enough time has passed after kickoff
-        kickoff = row["kickoff"] if row else None
-        if kickoff and inplay_status not in ("Finished", "Cancelled", "Abandoned"):
-            try:
-                ko_dt = datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
-                if datetime.now(timezone.utc) - ko_dt > timedelta(hours=4):
-                    # Force finish using last known score
-                    ft = row["ft_score"] or (f"{int(h_score)}-{int(a_score)}" if h_score is not None and a_score is not None else None)
-                    if ft:
-                        fth, fta = self._parse_ft(ft)
-                        result_val = self._compute_result(fth, fta)
-                        db.update_current(event_id, inplay_status="Finished", ft_score=ft, result=result_val)
-
-                        # ===== LOGGING ARCHIVE ==========
-                        remaining = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
-
-                        logger.info(
-                            "FINISH | %s | %s | FT=%s | result=%s | pnl=%s | strat=%s | remaining_current=%s",
-                            event_id,
-                            row_now["event_name"],
-                            row_now["ft_score"],
-                            result_val,
-                            row_now["pnl"],
-                            row_now["strategy"],
-                            remaining - 1  # because we are about to remove it
-                        )
-                        # Archive match
-                        db.archive_match(event_id)
-            except Exception:
-                pass
-        # Delete from current and do not archive if no data has been recorded
-        kickoff = row["kickoff"] if row else None
-        try:
-            pass
-        except Exception:
-            pass
-
     # ========== GOAL TIMELINE LOGIC ==========
     def _update_goal_timeline(
         self,
@@ -585,7 +506,123 @@ class AutoTrader:
         except Exception:
             return None, None
 
+    # ========== ARCHIVE LOGIC ===========
+    def decide_to_archive(self, db: DBHelper, api, ev: Dict[str, Any]):
+        inplay_status = ev["inplay_status"]
+        event_id = ev["event_id"]
+        h_score = ev["h_score"]
+        a_score = ev["a_score"]
 
+        # If finished, set FT score (once)
+        if inplay_status == "Finished" and h_score is not None and a_score is not None:
+            db.update_current(event_id, ft_score=f"{int(h_score)}-{int(a_score)}")
+
+        # ---- ARCHIVE ON FINISH ----
+        if inplay_status == "Finished":
+            # Re-read row to ensure ft_score exists (DBHelper enforces ft_score for archive)
+            row_now = db.fetch_current(event_id)
+            if row_now and row_now["ft_score"]:
+                ft = row_now["ft_score"]
+                if ft and "-" in ft:
+                    try:
+                        left, right = ft.split("-", 1)
+                        fth, fta = int(left.strip()), int(right.strip())
+                    except Exception:
+                        fth, fta = None, None
+                else:
+                    fth, fta = None, None
+
+                # If parsing failed but we have live scores, use them
+                if (fth is None or fta is None) and h_score is not None and a_score is not None:
+                    fth, fta = int(h_score), int(a_score)
+                    ft = f"{fth}-{fta}"
+                    db.update_current(event_id, ft_score=ft)
+
+                # Set result (1 decisive, 0 draw) and archive
+                result_val = self._compute_result(fth, fta)
+                if result_val is not None:
+                    db.update_current(event_id, result=result_val)
+
+                # Calculate PnL
+                pnl = BaseStrategy.calculate_pnl(self, logger=logger, ev=ev)
+
+                # ===== LOGGING ARCHIVE ==========
+                remaining = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
+
+                logger.info(
+                    "FINISH | %s | %s | FT=%s | result=%s | pnl=%s | strat=%s | remaining_current=%s",
+                    row_now["comp"],
+                    row_now["event_name"],
+                    row_now["ft_score"],
+                    result_val,
+                    pnl,
+                    row_now["strategy"],
+                    remaining - 1  # because we are about to remove it
+                )
+
+                # IMPORTANT: pnl stays NULL unless a strategy sets it
+                # strategy should be 'None' if none assigned; that’s already your schema expectation
+                db.archive_match(event_id)
+
+        # ========== ARCHIVE IF COMPLETE BUT NOT 'FINISHED' ==========
+        # Archive if not 'Finished' but enough time has passed after kickoff and data recorded.
+        kickoff = ev["kickoff"] if ev else None
+        if kickoff and inplay_status not in ("Finished", "Cancelled", "Abandoned"):
+            try:
+                ko_dt = datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
+                if datetime.now(timezone.utc) - ko_dt > timedelta(hours=4):
+                    # print('test 3 not finished archive', ev['event_id'])
+                    # Force finish using last known score
+                    ft = ev["ft_score"] or (f"{int(h_score)}-{int(a_score)}" if h_score is not None and a_score is not None else None)
+                    if ft:
+                        fth, fta = self._parse_ft(ft)
+                        result_val = self._compute_result(fth, fta)
+                        db.update_current(event_id, inplay_status="Finished", ft_score=ft, result=result_val)
+
+                        # Calculate PnL
+                        pnl = BaseStrategy.calculate_pnl(self, logger=logger, ev=ev)
+
+                        # ===== LOGGING ARCHIVE ==========
+                        remaining = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
+
+                        logger.info(
+                            "FINISH | %s | %s | FT=%s | result=%s | pnl=%s | strat=%s | remaining_current=%s",
+                            event_id,
+                            ev["event_name"],
+                            ev["ft_score"],
+                            result_val,
+                            pnl,
+                            ev["strategy"],
+                            remaining - 1  # because we are about to remove it
+                        )
+                        # Archive match
+                        db.archive_match(event_id)
+            except Exception:
+                pass
+        
+        # ========== DELETE IF UNUSEABLE ==========
+        # Delete from current and do not archive if no data has been recorded or partially recorded and unuseable.
+        
+        # Check if 2 days after kickoff, ft_score = NULL, only partial or none of intervals recorded.
+        try:
+            ko_dt = datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
+            if datetime.now(timezone.utc) - ko_dt > timedelta(days=1):
+                print('TEST - DECIDE TO ARCHIVE: DELETE 1')
+                if kickoff and (inplay_status not in ("Finished", "Cancelled", "Abandoned") or inplay_status == None) and not ev['ft_score'] and ((ev['time_elapsed'] and int(ev['time_elapsed']) < 90 ) or not ev['time_elapsed']):
+                    print('TEST - DECIDE TO ARCHIVE: DELETE 2')
+                    # ===== LOGGING ARCHIVE ==========
+                    remaining = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
+
+                    logger.info(
+                        "DELETE | %s | %s | reason=NO DATA| remaining_current=%s",
+                        event_id,
+                        ev["event_name"],
+                        remaining - 1  # because we are about to remove it
+                    )
+                    # Archive match
+                    db.delete_from_current(event_id)
+        except Exception:
+            pass
 
 
 if __name__ == "__main__":

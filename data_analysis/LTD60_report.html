@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LTD60 Strategy Data Analysis</title>
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/datatables.net-dt@2.1.8/css/dataTables.dataTables.min.css">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 24px; color: #111; }
+    h1 { margin: 0 0 6px 0; }
+    .muted { color: #555; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px; }
+    .card { border: 1px solid #e5e5e5; border-radius: 12px; padding: 14px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+    .card h2 { font-size: 16px; margin: 0 0 10px 0; }
+    .kpis { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
+    .kpi { border: 1px solid #eee; border-radius: 10px; padding: 10px; background: #fafafa; }
+    .kpi .label { font-size: 12px; color: #666; }
+    .kpi .value { font-size: 18px; font-weight: 700; margin-top: 3px; }
+    .table-wrap { max-height: 380px; overflow: auto; }
+    canvas { width: 100% !important; height: 340px !important; }
+    .row { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 16px; }
+    .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .links a { display: inline-block; margin-right: 12px; }
+    .diff-box { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+      font-size: 12px; background: #0b1020; color: #d6e0ff; padding: 10px; border-radius: 10px; overflow: auto;
+      max-height: 220px; white-space: pre; }
+    .small { font-size: 12px; }
+  </style>
+</head>
+
+<body>
+  <h1>LTD60 Strategy Data Analysis</h1>
+  <div class="muted small">
+    Generated: <span id="generatedTs"></span> |
+    Backtest last run: <span id="lastBacktestTs">N/A</span> |
+    Quarter: <span id="lastQuarter">N/A</span>
+  </div>
+
+  <div class="row">
+    <div class="card">
+      <h2>Backtest change log (last two runs)</h2>
+      <div class="grid">
+        <div>
+          <div class="muted small">Filtered leagues changes</div>
+          <div id="diffFiltered" class="diff-box"></div>
+        </div>
+        <div>
+          <div class="muted small">Late-goal leagues changes</div>
+          <div id="diffLate" class="diff-box"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card">
+        <h2>Filtered leagues (decisive-rate qualifier)</h2>
+        <div class="table-wrap"><table id="tblFiltered" class="display" style="width:100%"></table></div>
+      </div>
+      <div class="card">
+        <h2>Filtered leagues decisive rate</h2>
+        <canvas id="chartFiltered"></canvas>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card">
+        <h2>Late-goal leagues (0-0 @60 to decisive)</h2>
+        <div class="table-wrap"><table id="tblLate" class="display" style="width:100%"></table></div>
+      </div>
+      <div class="card">
+        <h2>Late-goal decisive rate (0-0 @60 sample)</h2>
+        <canvas id="chartLate"></canvas>
+      </div>
+    </div>
+
+    <div class="two">
+      <div class="card">
+        <h2>League PnL summary (Backtest)</h2>
+        <div class="table-wrap"><table id="tblPnl" class="display" style="width:100%"></table></div>
+      </div>
+      <div class="card">
+        <h2>Cumulative PnL (Backtest): Entry 1 vs Entry 1+2</h2>
+        <canvas id="chartCumOverall"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Backtest cumulative PnL by competition (select competition)</h2>
+      <div style="display:flex; gap:10px; align-items:center; margin-bottom:10px;">
+        <div class="muted small">Competition</div>
+        <select id="compSelect"></select>
+      </div>
+      <canvas id="chartCumComp"></canvas>
+    </div>
+
+    <div class="card">
+      <h2>Backtest performance summary</h2>
+      <div class="kpis" id="kpisBacktest"></div>
+    </div>
+
+    <div class="card">
+      <h2>Strategy live performance (archive_v3, strategy='LTD60')</h2>
+      <div class="kpis" id="kpisLive"></div>
+      <div class="two" style="margin-top:16px;">
+        <div>
+          <h3 style="margin:0 0 8px 0; font-size:14px;">Competition breakdown</h3>
+          <div class="table-wrap"><table id="tblLiveByComp" class="display" style="width:100%"></table></div>
+        </div>
+        <div>
+          <h3 style="margin:0 0 8px 0; font-size:14px;">Cumulative PnL: Live vs Backtest (matched length)</h3>
+          <canvas id="chartLiveVsBacktest"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="card links">
+      <h2>Outputs</h2>
+      <div>
+        <a id="lnkFiltered" href="#" target="_blank" rel="noopener">filtered_leagues_v2.csv</a>
+        <a id="lnkLate" href="#" target="_blank" rel="noopener">late_goal_leagues_v2.csv</a>
+      </div>
+      <div class="muted small" style="margin-top:8px;">
+        Links point to local files; depending on where you open the HTML, your browser may block local file links.
+        If so, open the folder and double-click the CSVs, or serve the report via a small local web server.
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/datatables.net@2.1.8/js/dataTables.min.js"></script>
+
+  <script>
+    const DATA = {"generated_ts": "2025-12-29T22:01:04Z", "paths": {"filtered_csv": "C:\\Users\\Sam\\FootballTrader v0.3.3\\data_analysis\\filtered_leagues_v2.csv", "late_csv": "C:\\Users\\Sam\\FootballTrader v0.3.3\\data_analysis\\late_goal_leagues_v2.csv"}, "backtest": {"last_run_ts": "2025-12-29T12:42:41Z", "quarter_key": "2025Q4", "diff_filtered": {"added": ["Belgian First Division A", "Belgian First Division B", "Bolivian Liga de Futbol Profesional", "Brazilian Serie A", "Chilean Primera Division", "Chilean Segunda Division", "Croatian 1 HNL", "Cypriot 1st Division", "Danish Superliga", "Dutch Eerste Divisie", "Dutch Eredivisie", "Ecuadorian Serie B", "English National League North", "English Premier League 2 - Div 1", "English Sky Bet League 1", "English Sky Bet League 2", "English WSL", "Estonian Premier League", "Finnish Kakkonen", "French Ligue 1", "German 3 Liga", "German Bundesliga", "German Bundesliga 2", "Greek Super League", "Icelandic 1 Deild", "Indonesian Super League", "Irish Division 1", "Japanese J League 3", "Jordanian Premier League", "Kazakhstan Premier League", "Lithuanian 1 Lyga", "Northern Irish Premiership", "Norwegian 2nd Division", "Norwegian Eliteserien", "Romanian Liga II", "Saudi Professional League", "Scottish League One", "Serbian Super League", "Slovenian Premier League", "Swedish Allsvenskan", "Swedish Division 1", "Swedish Superettan", "Swiss Challenge League", "Swiss Super League", "Venezuelan Primera Division"], "removed": ["Belgium, Challenger Pro League", "Bolivia, Primera División", "Brazil, Serie A", "Chile, Primera División", "Chile, Segunda División", "Croatia, HNL", "Cyprus, 1. Division", "Denmark, Superliga", "Ecuador, Liga Pro Serie B", "England, FA WSL", "England, League One", "England, League Two", "England, National League - North", "England, Premier League 2 Division One", "Estonia, Meistriliiga", "France, Ligue 1", "Germany, 2. Bundesliga", "Germany, 3. Liga", "Germany, Bundesliga", "Greece, Super League 1", "Iceland, 1. Deild", "Indonesia, Liga 1", "Ireland, First Division", "Japan, J3 League", "Jordan, League", "Kazakhstan, Premier League", "Lithuania, 1 Lyga", "Netherlands, Eerste Divisie", "Netherlands, Eredivisie", "Northern-Ireland, Premiership", "Norway, 2. Division - Group 1", "Norway, Eliteserien", "Romania, Liga II", "Saudi-Arabia, Pro League", "Scotland, League One", "Serbia, Super Liga", "Slovenia, 1. SNL", "Sweden, Allsvenskan", "Sweden, Ettan - Norra", "Sweden, Ettan - Södra", "Sweden, Superettan", "Switzerland, Challenge League", "Switzerland, Super League", "Venezuela, Primera División"]}, "diff_late": {"added": ["Belgian First Division B", "Bolivian Liga de Futbol Profesional", "Chilean Primera Division", "Cypriot 1st Division", "Danish Superliga", "Dutch Eerste Divisie", "Dutch Eredivisie", "English Premier League 2 - Div 1", "English Sky Bet League 1", "English Sky Bet League 2", "French Ligue 1", "German Bundesliga 2", "Greek Super League", "Japanese J League 3", "Jordanian Premier League", "Kazakhstan Premier League", "Northern Irish Premiership", "Slovenian Premier League", "Swedish Allsvenskan", "Swiss Challenge League", "Swiss Super League", "Venezuelan Primera Division"], "removed": ["Bolivia, Primera División", "Chile, Primera División", "Cyprus, 1. Division", "Denmark, Superliga", "England, League One", "England, League Two", "England, Premier League 2 Division One", "France, Ligue 1", "Germany, 2. Bundesliga", "Greece, Super League 1", "Japan, J3 League", "Jordan, League", "Kazakhstan, Premier League", "Netherlands, Eerste Divisie", "Netherlands, Eredivisie", "Northern-Ireland, Premiership", "Slovenia, 1. SNL", "Sweden, Allsvenskan", "Switzerland, Challenge League", "Switzerland, Super League", "Venezuela, Primera División"]}, "cum_for_compare": {"labels": [], "total": []}}, "filtered_leagues": [{"comp": "Bolivian Liga de Futbol Profesional", "matches": 52, "decisive_rate": 0.9230769230769232}, {"comp": "Ecuadorian Serie B", "matches": 10, "decisive_rate": 0.9}, {"comp": "Jordanian Premier League", "matches": 19, "decisive_rate": 0.8947368421052632}, {"comp": "Lithuanian 1 Lyga", "matches": 19, "decisive_rate": 0.8947368421052632}, {"comp": "Northern Irish Premiership", "matches": 47, "decisive_rate": 0.8936170212765957}, {"comp": "Saudi Professional League", "matches": 18, "decisive_rate": 0.8888888888888888}, {"comp": "Estonian Premier League", "matches": 23, "decisive_rate": 0.8695652173913043}, {"comp": "Swiss Super League", "matches": 38, "decisive_rate": 0.868421052631579}, {"comp": "Danish Superliga", "matches": 44, "decisive_rate": 0.8636363636363636}, {"comp": "Cypriot 1st Division", "matches": 14, "decisive_rate": 0.8571428571428571}, {"comp": "English WSL", "matches": 26, "decisive_rate": 0.8461538461538461}, {"comp": "Venezuelan Primera Division", "matches": 57, "decisive_rate": 0.8421052631578947}, {"comp": "Scottish League One", "matches": 31, "decisive_rate": 0.8387096774193549}, {"comp": "Norwegian Eliteserien", "matches": 83, "decisive_rate": 0.8313253012048193}, {"comp": "Belgian First Division B", "matches": 27, "decisive_rate": 0.8148148148148148}, {"comp": "Japanese J League 3", "matches": 96, "decisive_rate": 0.8125}, {"comp": "German Bundesliga", "matches": 47, "decisive_rate": 0.8085106382978723}, {"comp": "Swiss Challenge League", "matches": 31, "decisive_rate": 0.8064516129032258}, {"comp": "French Ligue 1", "matches": 51, "decisive_rate": 0.803921568627451}, {"comp": "Chilean Primera Division", "matches": 61, "decisive_rate": 0.8032786885245902}, {"comp": "Slovenian Premier League", "matches": 45, "decisive_rate": 0.8}, {"comp": "Romanian Liga II", "matches": 35, "decisive_rate": 0.8}, {"comp": "Indonesian Super League", "matches": 25, "decisive_rate": 0.8}, {"comp": "German Bundesliga 2", "matches": 58, "decisive_rate": 0.7931034482758621}, {"comp": "English Sky Bet League 1", "matches": 133, "decisive_rate": 0.7894736842105263}, {"comp": "Icelandic 1 Deild", "matches": 47, "decisive_rate": 0.7872340425531915}, {"comp": "Greek Super League", "matches": 28, "decisive_rate": 0.7857142857142857}, {"comp": "Dutch Eerste Divisie", "matches": 55, "decisive_rate": 0.7818181818181819}, {"comp": "Croatian 1 HNL", "matches": 32, "decisive_rate": 0.78125}, {"comp": "Swedish Allsvenskan", "matches": 68, "decisive_rate": 0.7794117647058824}, {"comp": "German 3 Liga", "matches": 63, "decisive_rate": 0.7777777777777778}, {"comp": "Brazilian Serie A", "matches": 125, "decisive_rate": 0.776}, {"comp": "Finnish Kakkonen", "matches": 22, "decisive_rate": 0.7727272727272727}, {"comp": "Dutch Eredivisie", "matches": 65, "decisive_rate": 0.7692307692307693}, {"comp": "Chilean Segunda Division", "matches": 13, "decisive_rate": 0.7692307692307693}, {"comp": "English Sky Bet League 2", "matches": 129, "decisive_rate": 0.7674418604651163}, {"comp": "Swedish Division 1", "matches": 73, "decisive_rate": 0.7671232876712328}, {"comp": "Belgian First Division A", "matches": 51, "decisive_rate": 0.7647058823529411}, {"comp": "Norwegian 2nd Division", "matches": 34, "decisive_rate": 0.7647058823529411}, {"comp": "English National League North", "matches": 126, "decisive_rate": 0.7619047619047619}, {"comp": "Kazakhstan Premier League", "matches": 21, "decisive_rate": 0.7619047619047619}, {"comp": "English Premier League 2 - Div 1", "matches": 62, "decisive_rate": 0.7580645161290323}, {"comp": "Swedish Superettan", "matches": 92, "decisive_rate": 0.75}, {"comp": "Serbian Super League", "matches": 60, "decisive_rate": 0.75}, {"comp": "Irish Division 1", "matches": 56, "decisive_rate": 0.75}], "late_goal_leagues": [{"comp": "Dutch Eredivisie", "samples": 7, "decisive_rate_from_00at60": 1.0}, {"comp": "Greek Super League", "samples": 10, "decisive_rate_from_00at60": 0.9}, {"comp": "Swiss Challenge League", "samples": 8, "decisive_rate_from_00at60": 0.875}, {"comp": "Bolivian Liga de Futbol Profesional", "samples": 13, "decisive_rate_from_00at60": 0.8461538461538461}, {"comp": "French Ligue 1", "samples": 19, "decisive_rate_from_00at60": 0.8421052631578947}, {"comp": "Danish Superliga", "samples": 12, "decisive_rate_from_00at60": 0.8333333333333334}, {"comp": "English Premier League 2 - Div 1", "samples": 12, "decisive_rate_from_00at60": 0.8333333333333334}, {"comp": "Jordanian Premier League", "samples": 6, "decisive_rate_from_00at60": 0.8333333333333334}, {"comp": "Swiss Super League", "samples": 10, "decisive_rate_from_00at60": 0.8}, {"comp": "Cypriot 1st Division", "samples": 5, "decisive_rate_from_00at60": 0.8}, {"comp": "Dutch Eerste Divisie", "samples": 14, "decisive_rate_from_00at60": 0.7857142857142857}, {"comp": "Japanese J League 3", "samples": 29, "decisive_rate_from_00at60": 0.7586206896551724}, {"comp": "English Sky Bet League 2", "samples": 36, "decisive_rate_from_00at60": 0.75}, {"comp": "Swedish Allsvenskan", "samples": 24, "decisive_rate_from_00at60": 0.75}, {"comp": "Kazakhstan Premier League", "samples": 8, "decisive_rate_from_00at60": 0.75}, {"comp": "German Bundesliga 2", "samples": 19, "decisive_rate_from_00at60": 0.7368421052631579}, {"comp": "Northern Irish Premiership", "samples": 11, "decisive_rate_from_00at60": 0.7272727272727273}, {"comp": "Chilean Primera Division", "samples": 21, "decisive_rate_from_00at60": 0.7142857142857143}, {"comp": "Slovenian Premier League", "samples": 7, "decisive_rate_from_00at60": 0.7142857142857143}, {"comp": "Venezuelan Primera Division", "samples": 17, "decisive_rate_from_00at60": 0.7058823529411765}, {"comp": "English Sky Bet League 1", "samples": 47, "decisive_rate_from_00at60": 0.7021276595744681}, {"comp": "Belgian First Division B", "samples": 10, "decisive_rate_from_00at60": 0.7}], "league_pnl": [{"comp": "Japanese J League 3", "matches": 96, "wins": 78, "draws": 18, "decisive_rate": 0.8125, "decisive_rate_from_00at60": 0.7586206896551724, "pnl_entry1": 2720.0, "pnl_entry2": 630.0, "pnl_total": 3350.0, "entry2_count": 26}, {"comp": "Bolivian Liga de Futbol Profesional", "matches": 52, "wins": 48, "draws": 4, "decisive_rate": 0.9230769230769232, "decisive_rate_from_00at60": 0.8461538461538461, "pnl_entry1": 2540.0, "pnl_entry2": 40.00000000000006, "pnl_total": 2580.0, "entry2_count": 7}, {"comp": "Norwegian Eliteserien", "matches": 83, "wins": 69, "draws": 14, "decisive_rate": 0.8313253012048193, "decisive_rate_from_00at60": 0.6842105263157895, "pnl_entry1": 2295.0, "pnl_entry2": 0.0, "pnl_total": 2295.0, "entry2_count": 0}, {"comp": "Danish Superliga", "matches": 44, "wins": 38, "draws": 6, "decisive_rate": 0.8636363636363636, "decisive_rate_from_00at60": 0.8333333333333334, "pnl_entry1": 1960.0, "pnl_entry2": 320.0, "pnl_total": 2280.0, "entry2_count": 10}, {"comp": "Brazilian Serie A", "matches": 125, "wins": 97, "draws": 28, "decisive_rate": 0.776, "decisive_rate_from_00at60": 0.6111111111111112, "pnl_entry1": 2275.0, "pnl_entry2": 0.0, "pnl_total": 2275.0, "entry2_count": 0}, {"comp": "English National League North", "matches": 126, "wins": 96, "draws": 30, "decisive_rate": 0.7619047619047619, "decisive_rate_from_00at60": 0.6785714285714286, "pnl_entry1": 1560.0000000000002, "pnl_entry2": 0.0, "pnl_total": 1560.0000000000002, "entry2_count": 0}, {"comp": "Northern Irish Premiership", "matches": 47, "wins": 42, "draws": 5, "decisive_rate": 0.8936170212765957, "decisive_rate_from_00at60": 0.7272727272727273, "pnl_entry1": 1365.0, "pnl_entry2": 175.0, "pnl_total": 1540.0, "entry2_count": 5}, {"comp": "Venezuelan Primera Division", "matches": 57, "wins": 48, "draws": 9, "decisive_rate": 0.8421052631578947, "decisive_rate_from_00at60": 0.7058823529411765, "pnl_entry1": 1650.0, "pnl_entry2": -119.99999999999996, "pnl_total": 1530.0, "entry2_count": 11}, {"comp": "English Sky Bet League 1", "matches": 133, "wins": 105, "draws": 28, "decisive_rate": 0.7894736842105263, "decisive_rate_from_00at60": 0.7021276595744681, "pnl_entry1": 1530.0, "pnl_entry2": -9.999999999999972, "pnl_total": 1520.0000000000002, "entry2_count": 34}, {"comp": "Swiss Super League", "matches": 38, "wins": 33, "draws": 5, "decisive_rate": 0.868421052631579, "decisive_rate_from_00at60": 0.8, "pnl_entry1": 1195.0, "pnl_entry2": 325.0, "pnl_total": 1520.0, "entry2_count": 7}, {"comp": "English Sky Bet League 2", "matches": 129, "wins": 99, "draws": 30, "decisive_rate": 0.7674418604651163, "decisive_rate_from_00at60": 0.75, "pnl_entry1": 1560.0, "pnl_entry2": -120.0, "pnl_total": 1440.0, "entry2_count": 26}, {"comp": "French Ligue 1", "matches": 51, "wins": 41, "draws": 10, "decisive_rate": 0.803921568627451, "decisive_rate_from_00at60": 0.8421052631578947, "pnl_entry1": 560.0, "pnl_entry2": 720.0, "pnl_total": 1280.0, "entry2_count": 14}, {"comp": "Chilean Primera Division", "matches": 61, "wins": 49, "draws": 12, "decisive_rate": 0.8032786885245902, "decisive_rate_from_00at60": 0.7142857142857143, "pnl_entry1": 1120.0, "pnl_entry2": 0.0, "pnl_total": 1120.0, "entry2_count": 16}, {"comp": "Scottish League One", "matches": 31, "wins": 26, "draws": 5, "decisive_rate": 0.8387096774193549, "decisive_rate_from_00at60": 0.6666666666666666, "pnl_entry1": 1120.0, "pnl_entry2": 0.0, "pnl_total": 1120.0, "entry2_count": 0}, {"comp": "German Bundesliga 2", "matches": 58, "wins": 46, "draws": 12, "decisive_rate": 0.7931034482758621, "decisive_rate_from_00at60": 0.7368421052631579, "pnl_entry1": 1260.0, "pnl_entry2": -210.0, "pnl_total": 1050.0, "entry2_count": 12}, {"comp": "Icelandic 1 Deild", "matches": 47, "wins": 37, "draws": 10, "decisive_rate": 0.7872340425531915, "decisive_rate_from_00at60": 0.6666666666666666, "pnl_entry1": 1035.0, "pnl_entry2": 0.0, "pnl_total": 1035.0, "entry2_count": 0}, {"comp": "Swedish Allsvenskan", "matches": 68, "wins": 53, "draws": 15, "decisive_rate": 0.7794117647058824, "decisive_rate_from_00at60": 0.75, "pnl_entry1": 1155.0, "pnl_entry2": -340.0, "pnl_total": 815.0, "entry2_count": 18}, {"comp": "Cypriot 1st Division", "matches": 14, "wins": 12, "draws": 2, "decisive_rate": 0.8571428571428571, "decisive_rate_from_00at60": 0.8, "pnl_entry1": 600.0, "pnl_entry2": 200.0, "pnl_total": 800.0, "entry2_count": 2}, {"comp": "Dutch Eredivisie", "matches": 65, "wins": 50, "draws": 15, "decisive_rate": 0.7692307692307693, "decisive_rate_from_00at60": 1.0, "pnl_entry1": 360.0, "pnl_entry2": 400.0, "pnl_total": 760.0, "entry2_count": 4}, {"comp": "Greek Super League", "matches": 28, "wins": 22, "draws": 6, "decisive_rate": 0.7857142857142857, "decisive_rate_from_00at60": 0.9, "pnl_entry1": 330.0, "pnl_entry2": 300.0, "pnl_total": 630.0, "entry2_count": 3}, {"comp": "Dutch Eerste Divisie", "matches": 55, "wins": 43, "draws": 12, "decisive_rate": 0.7818181818181819, "decisive_rate_from_00at60": 0.7857142857142857, "pnl_entry1": 570.0, "pnl_entry2": 50.0, "pnl_total": 620.0, "entry2_count": 8}, {"comp": "Slovenian Premier League", "matches": 45, "wins": 36, "draws": 9, "decisive_rate": 0.8, "decisive_rate_from_00at60": 0.7142857142857143, "pnl_entry1": 430.0, "pnl_entry2": 140.0, "pnl_total": 570.0, "entry2_count": 5}, {"comp": "German Bundesliga", "matches": 47, "wins": 38, "draws": 9, "decisive_rate": 0.8085106382978723, "decisive_rate_from_00at60": 0.4285714285714285, "pnl_entry1": 550.0, "pnl_entry2": 0.0, "pnl_total": 550.0, "entry2_count": 0}, {"comp": "English WSL", "matches": 26, "wins": 22, "draws": 4, "decisive_rate": 0.8461538461538461, "decisive_rate_from_00at60": 0.625, "pnl_entry1": 505.0, "pnl_entry2": 0.0, "pnl_total": 505.0, "entry2_count": 0}, {"comp": "Croatian 1 HNL", "matches": 32, "wins": 25, "draws": 7, "decisive_rate": 0.78125, "decisive_rate_from_00at60": 0.6666666666666666, "pnl_entry1": 500.00000000000006, "pnl_entry2": 0.0, "pnl_total": 500.00000000000006, "entry2_count": 0}, {"comp": "Ecuadorian Serie B", "matches": 10, "wins": 9, "draws": 1, "decisive_rate": 0.9, "decisive_rate_from_00at60": 1.0, "pnl_entry1": 475.0, "pnl_entry2": 0.0, "pnl_total": 475.0, "entry2_count": 0}, {"comp": "Romanian Liga II", "matches": 35, "wins": 28, "draws": 7, "decisive_rate": 0.8, "decisive_rate_from_00at60": 0.6363636363636364, "pnl_entry1": 465.0, "pnl_entry2": 0.0, "pnl_total": 465.0, "entry2_count": 0}, {"comp": "German 3 Liga", "matches": 63, "wins": 49, "draws": 14, "decisive_rate": 0.7777777777777778, "decisive_rate_from_00at60": 0.5, "pnl_entry1": 455.0000000000001, "pnl_entry2": 0.0, "pnl_total": 455.0000000000001, "entry2_count": 0}, {"comp": "Irish Division 1", "matches": 56, "wins": 42, "draws": 14, "decisive_rate": 0.75, "decisive_rate_from_00at60": 0.5384615384615384, "pnl_entry1": 420.0, "pnl_entry2": 0.0, "pnl_total": 420.0, "entry2_count": 0}, {"comp": "Swedish Division 1", "matches": 73, "wins": 56, "draws": 17, "decisive_rate": 0.7671232876712328, "decisive_rate_from_00at60": 0.5714285714285714, "pnl_entry1": 300.0000000000001, "pnl_entry2": 0.0, "pnl_total": 300.0000000000001, "entry2_count": 0}, {"comp": "Estonian Premier League", "matches": 23, "wins": 20, "draws": 3, "decisive_rate": 0.8695652173913043, "decisive_rate_from_00at60": 0.3333333333333333, "pnl_entry1": 280.0, "pnl_entry2": 0.0, "pnl_total": 280.0, "entry2_count": 0}, {"comp": "Indonesian Super League", "matches": 25, "wins": 20, "draws": 5, "decisive_rate": 0.8, "decisive_rate_from_00at60": 0.6363636363636364, "pnl_entry1": 245.0, "pnl_entry2": 0.0, "pnl_total": 245.0, "entry2_count": 0}, {"comp": "Swedish Superettan", "matches": 92, "wins": 69, "draws": 23, "decisive_rate": 0.75, "decisive_rate_from_00at60": 0.5, "pnl_entry1": 205.00000000000003, "pnl_entry2": 0.0, "pnl_total": 205.00000000000003, "entry2_count": 0}, {"comp": "Norwegian 2nd Division", "matches": 34, "wins": 26, "draws": 8, "decisive_rate": 0.7647058823529411, "decisive_rate_from_00at60": 0.75, "pnl_entry1": 175.0, "pnl_entry2": 0.0, "pnl_total": 175.0, "entry2_count": 0}, {"comp": "Kazakhstan Premier League", "matches": 21, "wins": 16, "draws": 5, "decisive_rate": 0.7619047619047619, "decisive_rate_from_00at60": 0.75, "pnl_entry1": 125.00000000000004, "pnl_entry2": 15.0, "pnl_total": 140.0, "entry2_count": 6}, {"comp": "Jordanian Premier League", "matches": 19, "wins": 17, "draws": 2, "decisive_rate": 0.8947368421052632, "decisive_rate_from_00at60": 0.8333333333333334, "pnl_entry1": 260.0, "pnl_entry2": -140.0, "pnl_total": 120.0, "entry2_count": 2}, {"comp": "Swiss Challenge League", "matches": 31, "wins": 25, "draws": 6, "decisive_rate": 0.8064516129032258, "decisive_rate_from_00at60": 0.875, "pnl_entry1": -30.0, "pnl_entry2": 140.0, "pnl_total": 110.0, "entry2_count": 5}, {"comp": "Lithuanian 1 Lyga", "matches": 19, "wins": 17, "draws": 2, "decisive_rate": 0.8947368421052632, "decisive_rate_from_00at60": 0.75, "pnl_entry1": 100.0, "pnl_entry2": 0.0, "pnl_total": 100.0, "entry2_count": 0}, {"comp": "Chilean Segunda Division", "matches": 13, "wins": 10, "draws": 3, "decisive_rate": 0.7692307692307693, "decisive_rate_from_00at60": 1.0, "pnl_entry1": 70.0, "pnl_entry2": 0.0, "pnl_total": 70.0, "entry2_count": 0}, {"comp": "Belgian First Division A", "matches": 51, "wins": 39, "draws": 12, "decisive_rate": 0.7647058823529411, "decisive_rate_from_00at60": 0.6, "pnl_entry1": 30.00000000000003, "pnl_entry2": 0.0, "pnl_total": 30.00000000000003, "entry2_count": 0}, {"comp": "Serbian Super League", "matches": 60, "wins": 45, "draws": 15, "decisive_rate": 0.75, "decisive_rate_from_00at60": 0.6153846153846154, "pnl_entry1": -25.0, "pnl_entry2": 0.0, "pnl_total": -25.0, "entry2_count": 0}, {"comp": "Saudi Professional League", "matches": 18, "wins": 16, "draws": 2, "decisive_rate": 0.8888888888888888, "decisive_rate_from_00at60": 0.6666666666666666, "pnl_entry1": -90.0, "pnl_entry2": 0.0, "pnl_total": -90.0, "entry2_count": 0}, {"comp": "Belgian First Division B", "matches": 27, "wins": 22, "draws": 5, "decisive_rate": 0.8148148148148148, "decisive_rate_from_00at60": 0.7, "pnl_entry1": 60.0, "pnl_entry2": -154.99999999999997, "pnl_total": -94.99999999999994, "entry2_count": 5}, {"comp": "English Premier League 2 - Div 1", "matches": 62, "wins": 47, "draws": 15, "decisive_rate": 0.7580645161290323, "decisive_rate_from_00at60": 0.8333333333333334, "pnl_entry1": -30.0, "pnl_entry2": -80.0, "pnl_total": -110.0, "entry2_count": 3}, {"comp": "Finnish Kakkonen", "matches": 22, "wins": 17, "draws": 5, "decisive_rate": 0.7727272727272727, "decisive_rate_from_00at60": 0.6666666666666666, "pnl_entry1": -240.0, "pnl_entry2": 0.0, "pnl_total": -240.0, "entry2_count": 0}], "cum_overall": {"labels": [], "entry1": [], "total": []}, "cum_by_comp": {}, "kpis_backtest": [{"label": "Total matches", "value": "2312"}, {"label": "Entry1 PnL", "value": "33995.00"}, {"label": "Entry2 PnL", "value": "2280.00"}, {"label": "Total PnL", "value": "36275.00"}, {"label": "Max drawdown", "value": "0.00"}, {"label": "Win / lose streak", "value": "0 / 0"}], "kpis_live": [{"label": "Total matches", "value": "32"}, {"label": "Wins / draws", "value": "26 / 6"}, {"label": "Hit rate", "value": "0.812"}, {"label": "Total PnL", "value": "0.00"}, {"label": "Max drawdown", "value": "0.00"}, {"label": "Win / lose streak", "value": "0 / 0"}], "live": {"by_comp": [{"comp": "Africa Cup of Nations", "matches": 2, "wins": 1, "draws": 1, "pnl_total": 0.0, "hit_rate": 0.5}, {"comp": "Elite Friendlies", "matches": 1, "wins": 1, "draws": 0, "pnl_total": 0.0, "hit_rate": 1.0}, {"comp": "English Sky Bet League 1", "matches": 12, "wins": 10, "draws": 2, "pnl_total": 0.0, "hit_rate": 0.8333333333333334}, {"comp": "English Sky Bet League 2", "matches": 12, "wins": 9, "draws": 3, "pnl_total": 0.0, "hit_rate": 0.75}, {"comp": "Indonesian Super League", "matches": 1, "wins": 1, "draws": 0, "pnl_total": 0.0, "hit_rate": 1.0}, {"comp": "Portuguese Primeira Liga", "matches": 1, "wins": 1, "draws": 0, "pnl_total": 0.0, "hit_rate": 1.0}, {"comp": "Saudi Professional League", "matches": 3, "wins": 3, "draws": 0, "pnl_total": 0.0, "hit_rate": 1.0}], "cum": {"labels": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32], "total": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}};
+
+    function fmtNum(x, dp=2) {
+      if (x === null || x === undefined || x === "") return "";
+      const n = Number(x);
+      if (Number.isNaN(n)) return String(x);
+      return n.toFixed(dp);
+    }
+
+    function setText(id, value) {
+      const el = document.getElementById(id);
+      if (el) el.textContent = value ?? "";
+    }
+
+    function diffText(diffObj) {
+      const added = diffObj?.added ?? [];
+      const removed = diffObj?.removed ?? [];
+      const lines = [];
+      lines.push("ADDED (" + added.length + "):");
+      lines.push(...added.map(x => "  + " + x));
+      lines.push("");
+      lines.push("REMOVED (" + removed.length + "):");
+      lines.push(...removed.map(x => "  - " + x));
+      return lines.join("\n");
+    }
+
+    function renderTable(tableId, rows, columns) {
+      const el = document.getElementById(tableId);
+      if (!el) return;
+      const dtCols = columns.map(c => ({ title: c.title, data: c.key, render: c.render }));
+      new DataTable(el, {
+        data: rows,
+        columns: dtCols,
+        pageLength: 10,
+        lengthChange: false,
+        searching: true,
+        info: true,
+        order: [],
+      });
+    }
+
+    function barChart(canvasId, labels, values, yLabel) {
+      const ctx = document.getElementById(canvasId);
+      if (!ctx) return null;
+      return new Chart(ctx, {
+        type: 'bar',
+        data: { labels, datasets: [{ label: yLabel, data: values }] },
+        options: { responsive: true, plugins: { legend: { display: true } }, scales: { y: { beginAtZero: true } } }
+      });
+    }
+
+    function lineChart(canvasId, labels, series, dashedSecond=false) {
+      const ctx = document.getElementById(canvasId);
+      if (!ctx) return null;
+      const datasets = series.map((s, idx) => {
+        const ds = { label: s.label, data: s.data, tension: 0.2, pointRadius: 0 };
+        if (dashedSecond && idx === 1) ds.borderDash = [6,6];
+        return ds;
+      });
+      return new Chart(ctx, {
+        type: 'line',
+        data: { labels, datasets },
+        options: { responsive: true, plugins: { legend: { display: true } }, scales: { x: { ticks: { maxTicksLimit: 10 } } } }
+      });
+    }
+
+    function renderKpis(containerId, kpis) {
+      const el = document.getElementById(containerId);
+      if (!el) return;
+      el.innerHTML = "";
+      for (const k of kpis) {
+        const div = document.createElement("div");
+        div.className = "kpi";
+        div.innerHTML = `<div class="label">${k.label}</div><div class="value">${k.value}</div>`;
+        el.appendChild(div);
+      }
+    }
+
+    setText("generatedTs", DATA.generated_ts);
+    setText("lastBacktestTs", DATA.backtest?.last_run_ts ?? "N/A");
+    setText("lastQuarter", DATA.backtest?.quarter_key ?? "N/A");
+    document.getElementById("diffFiltered").textContent = diffText(DATA.backtest?.diff_filtered ?? {});
+    document.getElementById("diffLate").textContent = diffText(DATA.backtest?.diff_late ?? {});
+
+    const l1 = document.getElementById("lnkFiltered");
+    const l2 = document.getElementById("lnkLate");
+    if (l1) l1.href = DATA.paths?.filtered_csv ?? "#";
+    if (l2) l2.href = DATA.paths?.late_csv ?? "#";
+
+    renderTable("tblFiltered", DATA.filtered_leagues ?? [], [
+      { key: "comp", title: "comp" },
+      { key: "matches", title: "matches" },
+      { key: "decisive_rate", title: "decisive_rate", render: (d)=>fmtNum(d, 3) },
+    ]);
+
+    renderTable("tblLate", DATA.late_goal_leagues ?? [], [
+      { key: "comp", title: "comp" },
+      { key: "samples", title: "samples" },
+      { key: "decisive_rate_from_00at60", title: "decisive_rate_from_00at60", render: (d)=>fmtNum(d, 3) },
+    ]);
+
+    renderTable("tblPnl", DATA.league_pnl ?? [], [
+      { key: "comp", title: "comp" },
+      { key: "matches", title: "matches" },
+      { key: "decisive_rate", title: "decisive_rate", render: (d)=>fmtNum(d,3) },
+      { key: "00at60_samples", title: "00at60_samples" },
+      { key: "00at60_decisive_rate", title: "00at60_decisive_rate", render: (d)=>fmtNum(d,3) },
+      { key: "entry1_count", title: "entry1_count" },
+      { key: "entry2_count", title: "entry2_count" },
+      { key: "pnl_entry1_sum", title: "pnl_entry1_sum", render: (d)=>fmtNum(d,2) },
+      { key: "pnl_entry2_sum", title: "pnl_entry2_sum", render: (d)=>fmtNum(d,2) },
+      { key: "pnl_total_sum", title: "pnl_total_sum", render: (d)=>fmtNum(d,2) },
+      { key: "pnl_entry1_avg_on_bets", title: "pnl_entry1_avg_on_bets", render: (d)=>fmtNum(d,2) },
+      { key: "pnl_entry2_avg_on_bets", title: "pnl_entry2_avg_on_bets", render: (d)=>fmtNum(d,2) },
+    ]);
+renderTable("tblLiveByComp", DATA.live?.by_comp ?? [], [
+      { key: "comp", title: "comp" },
+      { key: "matches", title: "matches" },
+      { key: "wins", title: "wins" },
+      { key: "draws", title: "draws" },
+      { key: "hit_rate", title: "hit_rate", render: (d)=>fmtNum(d,3) },
+      { key: "pnl_total", title: "pnl_total", render: (d)=>fmtNum(d,2) },
+    ]);
+
+    if ((DATA.filtered_leagues ?? []).length) {
+      barChart("chartFiltered", DATA.filtered_leagues.map(r => r.comp), DATA.filtered_leagues.map(r => Number(r.decisive_rate ?? 0)), "decisive_rate");
+    }
+    if ((DATA.late_goal_leagues ?? []).length) {
+      barChart("chartLate", DATA.late_goal_leagues.map(r => r.comp), DATA.late_goal_leagues.map(r => Number(r.decisive_rate_from_00at60 ?? 0)), "decisive_rate_from_00at60");
+    }
+    if (DATA.cum_overall?.labels?.length) {
+      lineChart("chartCumOverall", DATA.cum_overall.labels, [
+        { label: "Entry 1 cum pnl", data: DATA.cum_overall.entry1 },
+        { label: "Entry 1+2 cum pnl", data: DATA.cum_overall.total },
+      ]);
+    }
+
+    let compChart = null;
+    const compSel = document.getElementById("compSelect");
+    const compSeries = DATA.cum_by_comp ?? {};
+    const comps = Object.keys(compSeries).sort();
+    if (compSel && comps.length) {
+      for (const c of comps) {
+        const opt = document.createElement("option");
+        opt.value = c; opt.textContent = c;
+        compSel.appendChild(opt);
+      }
+      function renderComp(c) {
+        const s = compSeries[c];
+        if (!s) return;
+        if (compChart) compChart.destroy();
+        compChart = lineChart("chartCumComp", s.labels, [
+          { label: "Entry 1 cum pnl", data: s.entry1 },
+          { label: "Entry 1+2 cum pnl", data: s.total },
+        ]);
+      }
+      compSel.addEventListener("change", (e)=>renderComp(e.target.value));
+      renderComp(comps[0]);
+    }
+
+    if (DATA.live?.cum?.labels?.length && DATA.backtest?.cum_for_compare?.labels?.length) {
+      lineChart("chartLiveVsBacktest", DATA.live.cum.labels, [
+        { label: "Live cum pnl", data: DATA.live.cum.total },
+        { label: "Backtest cum pnl (matched)", data: DATA.backtest.cum_for_compare.total },
+      ], true);
+    }
+
+    renderKpis("kpisBacktest", DATA.kpis_backtest ?? []);
+    renderKpis("kpisLive", DATA.kpis_live ?? []);
+  </script>
+</body>
+</html>

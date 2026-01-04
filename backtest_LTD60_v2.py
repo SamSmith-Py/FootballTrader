@@ -98,7 +98,7 @@ def export_cumulative_pnl(
     df_filt: pd.DataFrame,
     out_dir: str,
     date_col_candidates=("match_date_parsed", "kickoff", "match_date"),
-    league_col="League",
+    league_col="comp",
     pnl_ltd_col="pnl_entry1",   # LTD only
     pnl_ltd60_col="pnl_total",  # LTD + second entry at 60'
 ):
@@ -226,7 +226,7 @@ def main():
 
     # Drop rows without FT scores (can’t determine decisive)
     before = len(df)
-    df = df.dropna(subset=["League", "ft_home", "ft_away"]).copy()
+    df = df.dropna(subset=["comp", "ft_home", "ft_away"]).copy()
     df["ft_home"] = df["ft_home"].astype(int)
     df["ft_away"] = df["ft_away"].astype(int)
     print(f"Dropped rows without parsable FT score: {before} -> {len(df)}")
@@ -237,7 +237,7 @@ def main():
 
     # --- Filtered leagues: decisive rate >= 75% with >=10 matches ---
     league_stats = (
-        df.groupby("League")
+        df.groupby("comp")
           .agg(matches=("decisive", "size"), decisive_rate=("decisive", "mean"))
           .reset_index()
     )
@@ -247,7 +247,7 @@ def main():
         (league_stats["decisive_rate"] >= DECISIVE_THRESHOLD)
     ].copy()
 
-    filtered_leagues = filtered["League"].sort_values().tolist()
+    filtered_leagues = filtered["comp"].sort_values().tolist()
     print(f"Filtered leagues: {len(filtered_leagues)}")
 
     # Save filtered leagues CSV
@@ -260,18 +260,18 @@ def main():
     df["is_00_ht"] = (df["ht_home"] == 0) & (df["ht_away"] == 0)
     df["is_00_at60"] = df["is_00_ht"] & (df["goals_60_num"] == 0)
 
-    df_filt = df[df["League"].isin(filtered_leagues)].copy()
+    df_filt = df[df["comp"].isin(filtered_leagues)].copy()
 
     late_pool = df_filt[df_filt["is_00_at60"]].copy()
     late_stats = (
-        late_pool.groupby("League")
+        late_pool.groupby("comp")
                  .agg(samples=("decisive", "size"), decisive_rate_from_00at60=("decisive", "mean"))
                  .reset_index()
     )
     late_stats = late_stats[late_stats["samples"] >= MIN_00AT60_MATCHES].copy()
 
     late_goal = late_stats[late_stats["decisive_rate_from_00at60"] >= LATE_GOAL_THRESHOLD].copy()
-    late_goal_leagues = late_goal["League"].sort_values().tolist()
+    late_goal_leagues = late_goal["comp"].sort_values().tolist()
     print(f"Late-goal leagues: {len(late_goal_leagues)}")
 
     late_goal.sort_values(["decisive_rate_from_00at60", "samples"], ascending=[False, False]) \
@@ -303,7 +303,7 @@ def main():
     )
 
     # Entry 2: only if league is late-goal league AND 0-0 at 60
-    df_filt["entry2_ok"] = df_filt["bet_ok"] & df_filt["League"].isin(late_goal_leagues) & df_filt["is_00_at60"]
+    df_filt["entry2_ok"] = df_filt["bet_ok"] & df_filt["comp"].isin(late_goal_leagues) & df_filt["is_00_at60"]
 
     df_filt["pnl_entry2"] = np.where(
         df_filt["entry2_ok"],
@@ -332,7 +332,7 @@ def main():
     # -----------------------------
     at60 = (
         df_filt[df_filt["is_00_at60"]]
-        .groupby("League")
+        .groupby("comp")
         .agg(
             _00at60_samples=("decisive", "size"),
             _00at60_decisive_rate=("decisive", "mean"),
@@ -341,9 +341,9 @@ def main():
     )
 
     league_pnl = (
-        df_filt.groupby("League")
+        df_filt.groupby("comp")
             .agg(
-                matches=("League", "size"),
+                matches=("comp", "size"),
                 decisive_rate=("decisive", "mean"),
 
                 entry1_count=("bet_ok", "sum"),
@@ -362,7 +362,7 @@ def main():
 
     entry1_onbets = (
         df_filt[df_filt["bet_ok"]]
-        .groupby("League")["pnl_entry1"]
+        .groupby("comp")["pnl_entry1"]
         .mean()
         .rename("pnl_entry1_avg_on_bets")
         .reset_index()
@@ -370,7 +370,7 @@ def main():
 
     entry2_onbets = (
         df_filt[df_filt["entry2_ok"]]
-        .groupby("League")["pnl_entry2"]
+        .groupby("comp")["pnl_entry2"]
         .mean()
         .rename("pnl_entry2_avg_on_bets")
         .reset_index()
@@ -378,9 +378,9 @@ def main():
 
     league_pnl = (
         league_pnl
-            .merge(at60, on="League", how="left")
-            .merge(entry1_onbets, on="League", how="left")
-            .merge(entry2_onbets, on="League", how="left")
+            .merge(at60, on="comp", how="left")
+            .merge(entry1_onbets, on="comp", how="left")
+            .merge(entry2_onbets, on="comp", how="left")
             .rename(columns={
                 "_00at60_samples": "00at60_samples",
                 "_00at60_decisive_rate": "00at60_decisive_rate",
@@ -395,7 +395,7 @@ def main():
     df_filt=df_filt,
     out_dir=OUT_DIR,
     date_col_candidates=("_date_parsed",),  # use your parsed date column first
-    league_col="League",
+    league_col="comp",
     pnl_ltd_col="pnl_entry1",
     pnl_ltd60_col="pnl_total",
     )

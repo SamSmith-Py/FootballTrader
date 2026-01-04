@@ -1,0 +1,48 @@
+2026-01-01 03:22:55,206 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Notts Co v Accrington
+2026-01-01 03:22:55,331 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Rotherham v Peterborough
+2026-01-01 03:22:55,458 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Fleetwood Town v Grimsby
+2026-01-01 03:22:55,602 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Lincoln v Huddersfield
+2026-01-01 03:22:55,777 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Cambridge Utd v Walsall
+2026-01-01 03:22:55,920 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Doncaster v Bolton
+2026-01-01 03:22:56,461 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Harrogate Town v Tranmere
+2026-01-01 03:22:56,595 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Stevenage v Plymouth
+2026-01-01 03:22:56,716 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Colchester v MK Dons
+2026-01-01 03:22:56,844 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Leyton Orient v AFC Wimbledon
+2026-01-01 03:22:56,985 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Mansfield v Bradford
+2026-01-01 03:22:57,241 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Barnet v Crawley Town
+2026-01-01 03:22:57,378 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Port Vale v Blackpool
+2026-01-01 03:22:57,768 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Barrow v Salford City
+2026-01-01 03:22:57,923 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Oldham v Chesterfield
+2026-01-01 03:22:58,188 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Swindon v Gillingham
+2026-01-01 03:22:58,484 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Shrewsbury v Bristol Rovers
+2026-01-01 03:22:58,628 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Crewe v Cheltenham
+2026-01-01 03:22:58,763 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Reading v Burton Albion
+2026-01-01 03:22:58,907 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Northampton v Stockport
+2026-01-01 03:22:59,035 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Wycombe v Cardiff
+2026-01-01 03:22:59,544 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Exeter v Luton
+2026-01-01 03:22:59,688 [INFO] LTD60 | ASSIGNED | English Sky Bet League 2 | Bromley v Newport County
+2026-01-01 03:23:00,086 [INFO] LTD60 | ASSIGNED | English Sky Bet League 1 | Wigan v Barnsley
+2026-01-01 14:48:01,035 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Notts Co v Accrington | price=3.95 size=100.0
+2026-01-01 14:48:01,258 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Rotherham v Peterborough | price=3.7 size=100.0
+2026-01-01 14:48:01,465 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Fleetwood Town v Grimsby | price=3.7 size=100.0
+2026-01-01 14:48:01,688 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Lincoln v Huddersfield | price=3.55 size=100.0
+2026-01-01 14:48:01,927 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Cambridge Utd v Walsall | price=3.2 size=100.0
+2026-01-01 14:48:02,150 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Doncaster v Bolton | price=4.1 size=100.0
+2026-01-01 14:48:02,787 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Harrogate Town v Tranmere | price=3.75 size=100.0
+2026-01-01 14:48:03,002 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Stevenage v Plymouth | price=3.55 size=100.0
+2026-01-01 14:48:03,249 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Colchester v MK Dons | price=3.45 size=100.0
+2026-01-01 14:48:03,440 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Leyton Orient v AFC Wimbledon | price=3.5 size=100.0
+2026-01-01 14:48:03,648 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Mansfield v Bradford | price=3.55 size=100.0
+2026-01-01 14:48:04,016 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Barnet v Crawley Town | price=4.6 size=100.0
+2026-01-01 14:48:04,255 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Port Vale v Blackpool | price=3.55 size=100.0
+2026-01-01 14:48:04,739 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Barrow v Salford City | price=3.85 size=100.0
+2026-01-01 14:48:04,955 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Oldham v Chesterfield | price=3.6 size=100.0
+2026-01-01 14:48:05,292 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Swindon v Gillingham | price=3.6 size=100.0
+2026-01-01 14:48:05,632 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Shrewsbury v Bristol Rovers | price=3.45 size=100.0
+2026-01-01 14:48:05,852 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Crewe v Cheltenham | price=3.95 size=100.0
+2026-01-01 14:48:06,061 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Reading v Burton Albion | price=3.8 size=100.0
+2026-01-01 14:48:06,265 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Northampton v Stockport | price=3.7 size=100.0
+2026-01-01 14:48:06,508 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Wycombe v Cardiff | price=3.8 size=100.0
+2026-01-01 14:48:07,180 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Exeter v Luton | price=3.55 size=100.0
+2026-01-01 14:48:07,403 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 2 | Bromley v Newport County | price=5.4 size=100.0
+2026-01-01 14:48:07,869 [INFO] LTD60 | ENTRY1_PAPER_EXEC | English Sky Bet League 1 | Wigan v Barnsley | price=3.55 size=100.0

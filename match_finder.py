@@ -80,7 +80,6 @@ class MatchFinder:
 
             # Merge on event_id (preserve union of all events seen)
             base = self._build_base_df([df_mo, df_ou45, df_cs])
-
             # Upsert
             self._upsert_into_current_matches(base)
 
@@ -111,9 +110,10 @@ class MatchFinder:
         for mc in cats:
             # 'mc' is MarketCatalogue (obj); turn into dict shape we need
             try:
-                raw_comp = getattr(mc.competition, "name", None)
-                comp_name = self._clean_league_name(raw_comp)
-
+                comp_name = getattr(mc.competition, "name", None)
+                # comp_name = self._clean_league_name(raw_comp)
+                comp_id = getattr(getattr(mc, "competition", None), "id", None)
+                country_code = getattr(getattr(mc, "event", None), "country_code", None)
                 event_name = getattr(mc.event, "name", None)
                 event_id = getattr(mc.event, "id", None)
                 market_id = getattr(mc, "market_id", None)
@@ -135,6 +135,8 @@ class MatchFinder:
 
                 rows.append({
                     "competition": comp_name,
+                    "comp_id": comp_id,
+                    "country_code": country_code,
                     "event_name": event_name,
                     "event_id": event_id,
                     "market_id": market_id,
@@ -149,6 +151,7 @@ class MatchFinder:
                 continue
 
         logger.info(f"Catalogue rows fetched: {len(rows)}")
+        
         return rows
 
     # ---------- Build a DataFrame for a specific market ----------
@@ -161,6 +164,7 @@ class MatchFinder:
                          market_id_<TARGET>
         """
         df = pd.DataFrame(rows)
+        
         if df.empty:
             return pd.DataFrame(columns=["event_id"])
 
@@ -182,10 +186,10 @@ class MatchFinder:
             logger.info(f"No {target} markets in this window; leaving empty frame.")
 
         # Normalize core columns
-        mdf["league"] = mdf["competition"]
+        mdf["comp"] = mdf["competition"]
         mdf["kickoff"] = pd.to_datetime(mdf["market_start_time"], errors="coerce", utc=True)
 
-        out_cols = ["event_id", "league", "event_name", "kickoff"]
+        out_cols = ["event_id", "comp", "comp_id", "country_code", "event_name", "kickoff"]
 
         # Teams (only from MATCH_ODDS reliably)
         if target == "MATCH_ODDS":
@@ -222,7 +226,7 @@ class MatchFinder:
         base = df_mo if df_mo is not None else (df_ou if df_ou is not None else (df_cs if df_cs is not None else None))
         if base is None:
             return pd.DataFrame(columns=[
-                "event_id", "league", "event_name", "kickoff", "h_team", "a_team",
+                "event_id", "comp", "comp_id", "country_code", "event_name", "kickoff", "h_team", "a_team",
                 "market_id_MATCH_ODDS", "market_id_OU45", "market_id_CS"
             ])
 
@@ -233,7 +237,7 @@ class MatchFinder:
                 out = out.merge(other, on="event_id", how="outer", suffixes=("", "_dup"))
 
                 # Fill missing core fields from the newly merged chunk if base had NA
-                for col in ["league", "event_name", "kickoff", "h_team", "a_team"]:
+                for col in ["comp", "comp_id", "country_code", "event_name", "kickoff", "h_team", "a_team"]:
                     if col in out.columns and f"{col}_dup" in out.columns:
                         out[col] = out[col].where(out[col].notna(), out[f"{col}_dup"])
                         out.drop(columns=[f"{col}_dup"], inplace=True, errors="ignore")
@@ -251,7 +255,7 @@ class MatchFinder:
 
         # Ensure final column order
         out = out[[
-            "event_id", "league", "event_name", "kickoff",
+            "event_id", "comp", "comp_id", "country_code", "event_name", "kickoff",
             "h_team", "a_team",
             "market_id_MATCH_ODDS", "market_id_OU45", "market_id_CS"
         ]].drop_duplicates("event_id")
@@ -263,7 +267,7 @@ class MatchFinder:
         if df.empty:
             logger.info("No rows to upsert into current_matches.")
             return
-        df = df[df["league"].notna()].copy()
+        df = df[df["comp"].notna()].copy()
 
         logger.info(f"Upserting {len(df)} rows into {TABLE_CURRENT}...")
         with DBHelper(DB_PATH) as db:
@@ -271,7 +275,9 @@ class MatchFinder:
             for _, row in df.iterrows():
                 payload = {
                     "event_id": str(row["event_id"]),
-                    "league": (row.get("league") or None),
+                    "comp": (row.get("comp") or None),
+                    "comp_id":  (row.get("comp_id") or None),
+                    "country_code": (row.get("country_code") or None), 
                     "event_name": (row.get("event_name") or None),
                     "kickoff": (row.get("kickoff").isoformat() if pd.notna(row.get("kickoff")) else None),
                     "h_team": (row.get("h_team") or None),
@@ -285,9 +291,9 @@ class MatchFinder:
                     "bot_v": BOT_VERSION,
 
                     # Placeholders the bot fills later
-                    "strategy": None,
-                    "market": None,
-                    "market_state": None,
+                    # "strategy": None,
+                    # "market": None,
+                    # "market_state": None,
                 }
                 
                 db.upsert_current(payload)

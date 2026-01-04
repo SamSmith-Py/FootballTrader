@@ -7,7 +7,9 @@ DB_PATH = r"C:\Users\Sam\FootballTrader v0.3.3\database\autotrader_data.db"
 SCHEMA = {
     "archive_v3": """
     CREATE TABLE IF NOT EXISTS archive_v3 (
-        league        TEXT NOT NULL,
+        comp        TEXT NOT NULL,
+        comp_id       INTEGER,
+        country_code    TEXT,
         event_name    TEXT NOT NULL,
         event_id      TEXT NOT NULL UNIQUE,   -- Betfair event id (unique)
         kickoff       TEXT NOT NULL,          -- ISO8601 UTC
@@ -42,7 +44,9 @@ SCHEMA = {
 
     "current_matches": """
     CREATE TABLE IF NOT EXISTS current_matches (
-        league        TEXT NOT NULL,
+        comp        TEXT NOT NULL,
+        comp_id       INTEGER,
+        country_code  TEXT,
         event_name    TEXT NOT NULL,
         event_id      TEXT NOT NULL UNIQUE,   -- Unique while match is live
         kickoff       TEXT NOT NULL,          -- ISO8601 UTC
@@ -106,7 +110,7 @@ SCHEMA = {
 
     "match_stream_history": """
     CREATE TABLE IF NOT EXISTS match_stream_history (
-        league      TEXT,
+        comp      TEXT,
         event_name  TEXT,
         event_id    TEXT NOT NULL,
         h_price     REAL,
@@ -125,7 +129,7 @@ SCHEMA = {
 INDEXES = [
     # Helpful read paths
     "CREATE INDEX IF NOT EXISTS idx_current_kickoff ON current_matches(kickoff);",
-    "CREATE INDEX IF NOT EXISTS idx_current_league ON current_matches(league);",
+    "CREATE INDEX IF NOT EXISTS idx_current_comp ON current_matches(comp);",
     "CREATE INDEX IF NOT EXISTS idx_stream_event_ts ON match_stream_history(event_id, timestamp);",
     "CREATE INDEX IF NOT EXISTS idx_archive_kickoff ON archive_v3(kickoff);",
 ]

@@ -56,6 +56,8 @@ LTD60_MAX_SECOND_ENTRY_ODDS = 2.0      # assumed odds for second lay at 60'
 LTD60_FT_COMMISSION = 0.02         # 2% commission
 LTD60_KO_WINDOW_MINUTES = 12 
 
+LTD60_SECOND_ENTRY_TIME = 60  # Time in play to trigger second entry
+
 # ================= STREAMING =================
 # How often to poll prices/scores for history logging
 STREAM_POLL_SECONDS = 10  # change here any time

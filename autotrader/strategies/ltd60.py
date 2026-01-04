@@ -27,7 +27,8 @@ from core.settings import (
     STAKE_LTD_LIVE,
     DRAW_SELECTION_ID,
     LTD60_MAX_SECOND_ENTRY_ODDS,
-    LOG_DIR
+    LOG_DIR,
+    LTD60_SECOND_ENTRY_TIME
     
 )
 from core.db_helper import DBHelper
@@ -52,15 +53,28 @@ class LTD60(BaseStrategy):
     requires_api = True
 
     # strategy-specific league lists — produced by your backtester for LTD60 only
-    filtered_leagues_csv = str(BASE_DIR / "backtest" / "strategy" / "LTD" / "Q4 2025" / "data_analysis" / "filtered_leagues_v2.csv")
-    late_goal_leagues_csv = str(BASE_DIR / "backtest" / "strategy" / "LTD" / "Q4 2025" / "data_analysis" / "late_goal_leagues_v2.csv")
+    filtered_leagues_csv = str(BASE_DIR / "data_analysis" / "filtered_leagues_v2.csv")
+    late_goal_leagues_csv = str(BASE_DIR / "data_analysis" / "late_goal_leagues_v2.csv")
 
     def __init__(self):
         self._filtered: Set[str] = self._load_leagues(self.filtered_leagues_csv)
+        
         self._late_goals: Set[str] = self._load_leagues(self.late_goal_leagues_csv)
         # normalise names to allow simple membership checks
         self._filtered = {self._normalise(lg) for lg in self._filtered}
+        
         self._late_goals = {self._normalise(lg) for lg in self._late_goals}
+
+    # ---------- Logging Helpers -------------
+    def _ev_tag(self, ev: dict) -> str:
+        return f'{ev.get("comp")} | {ev.get("event_name")}'
+
+    def _log_order(self, level, action: str, ev: dict, **extra):
+        # Example output: "ENTRY1_PLACED | 123 | TeamA v TeamB | price=4.0 size=3 betid=..."
+        msg = f"{action} | {self._ev_tag(ev)}"
+        if extra:
+            msg += " | " + " ".join([f"{k}={v}" for k, v in extra.items()])
+        logger.log(20, msg)
 
     # ---------- league list helpers ----------
     def _load_leagues(self, path: str) -> Set[str]:
@@ -69,9 +83,9 @@ class LTD60(BaseStrategy):
             with open(path, "r", newline="", encoding="utf-8") as fh:
                 reader = csv.DictReader(fh)
                 # Flexible: accept 'league' or first column
-                if "league" in reader.fieldnames:
+                if "comp" in reader.fieldnames:
                     for r in reader:
-                        lg = (r.get("league") or "").strip()
+                        lg = (r.get("comp") or "").strip()
                         if lg:
                             out.add(lg)
                 else:
@@ -91,12 +105,16 @@ class LTD60(BaseStrategy):
 
     # ---------- assignment ----------
     def assign_if_applicable(self, db: DBHelper, ev: Dict[str, Any]) -> None:
-        if ev.get("strategy") in (self.name, None, ""):
-            league_ok = self._normalise(ev.get("league")) in self._filtered
+        if not ev.get("strategy"):
+        
+            league_ok = self._normalise(ev.get("comp")) in self._filtered
+            
             has_mo = bool(ev.get("market_id_MATCH_ODDS"))
             if league_ok and has_mo:
                 # Assign once — market is Match Odds
                 self._mark_strategy(db, ev["event_id"], strategy=self.name, market="MATCH_ODDS")
+                # ------ LOGGING ASSIGNMENT ------------
+                self._log_order(logger.info, "ASSIGNED", ev)
 
     # ---------- per tick ----------
     def on_tick(self, db: DBHelper, ev: Dict[str, Any], api=None) -> None:
@@ -108,26 +126,86 @@ class LTD60(BaseStrategy):
         if not market_id:
             return
 
+        # Always refresh from DB so we have latest h_score/a_score/time_elapsed/e_* fields
+        row0 = db.fetch_current(ev_id)
+        if not row0:
+            return
+        ev = dict(row0)
+
         # Keep prices fresh (and optionally log stream)
         h, d, a = self._fetch_mo_prices(api, market_id)
         if any(p is not None for p in (h, d, a)):
             self._set_lay_prices(db, ev_id, h=h, a=a, d=d)
-            # Optionally log simple stream snapshot
-            self._log_stream(db, ev, h=h, a=a, d=d, inplay_time=None)
+
+            # refresh again so stream/log sees latest state
+            row1 = db.fetch_current(ev_id)
+            if row1:
+                ev = dict(row1)
+
+            # Optional stream snapshot
+            self._log_stream(db, ev, h=h, a=a, d=d, inplay_time=ev.get("time_elapsed"))
 
         # Decide entry timing
         kickoff = self._parse_dt(ev.get("kickoff"))
         now = datetime.now(timezone.utc)
         minutes_to_ko = None
         if kickoff:
-            delta = (kickoff - now).total_seconds() / 60.0
-            minutes_to_ko = delta
+            minutes_to_ko = (kickoff - now).total_seconds() / 60.0
 
         # Entry 1: near KO
         self._maybe_entry1(db, ev, d_price=d, minutes_to_ko=minutes_to_ko, api=api, market_id=market_id)
 
+        # Refresh after entry1 so we have e_betid/e_status/e_matched updated
+        row2 = db.fetch_current(ev_id)
+        if not row2:
+            return
+        ev = dict(row2)
+
+        # --- sync entry 1 order state ---
+        sync = self._sync_order_state(
+            db=db,
+            api=api,
+            logger=logger,
+            ev=ev,
+            market_id=market_id,
+            prefix="e"
+        )
+
+        # Refresh ev snapshot if anything changed
+        if sync:
+            fresh = db.fetch_current(ev["event_id"])
+            if fresh:
+                ev = dict(fresh)
+
+        # Cancel unmatched capped entry1 if goal OR 60' (but ONLY if 0 matched)
+        self._maybe_cancel_entry1(
+            db=db,
+            ev=ev,
+            api=api,
+            market_id=market_id,
+            time_elapsed=ev.get("time_elapsed"),
+            h_score=ev.get("h_score"),
+            a_score=ev.get("a_score"),
+        )
+        self._maybe_cancel_entry2(
+            db=db,
+            ev=ev,
+            api=api,
+            market_id=market_id,
+            time_elapsed=ev.get("time_elapsed"),
+            h_score=ev.get("h_score"),
+            a_score=ev.get("a_score"),
+        )
+
+        # Refresh after potential cancel
+        row3 = db.fetch_current(ev_id)
+        if not row3:
+            return
+        ev = dict(row3)
+
         # Entry 2: at 60' if draw and league is late-goal
         self._maybe_entry2(db, ev, d_price=d, api=api, market_id=market_id)
+
 
     # ---------- entries ----------
     def _maybe_entry1(self, db: DBHelper, ev: Dict[str, Any], d_price: Optional[float],
@@ -143,23 +221,27 @@ class LTD60(BaseStrategy):
             return
 
         size = STAKE_LTD_PAPER if PAPER_MODE else STAKE_LTD_LIVE
+        price = float(LTD60_MAX_ODDS_ACCEPT if d_price > LTD60_MAX_ODDS_ACCEPT else d_price)
+
         if PAPER_MODE:
+
             # Record paper entry instantly
             self._order_snapshot(
-                db, ev["event_id"], side="LAY", price=float(d_price), size=size,
+                db, ev["event_id"], side="LAY", price=float(price), size=size,
                 status="PAPER_EXECUTED", matched=size, remaining=0.0, betid=None
             )
             # Compute nominal liability
-            liability = max(0.0, (float(d_price) - 1.0) * size)
+            liability = max(0.0, (float(price) - 1.0) * size)
             db.update_current(ev["event_id"], liability=liability)
+
+            # --------- LOGGING PAPER ENTRY 1 PLACED ---------
+            self._log_order(logger.info, "ENTRY1_PAPER_EXEC", ev, price=price, size=size)
+
+
         else:
             # Live: place order
             try:
-                if d_price > LTD60_MAX_ODDS_ACCEPT:
-                    price = LTD60_MAX_ODDS_ACCEPT
-                else:
-                    price = d_price
-
+                
                 limit_order = filters.limit_order(size=size, price=float(price), persistence_type="PERSIST")
                 instruction = filters.place_instruction(
                     order_type="LIMIT",
@@ -179,6 +261,11 @@ class LTD60(BaseStrategy):
                 )
                 liability = max(0.0, (float(price) - 1.0) * size)
                 db.update_current(ev["event_id"], liability=liability)
+
+                # ---------LOGGING LIVE ENTRY 1 PLACED ------------
+                self._log_order(logger.info, "ENTRY1_PLACED", ev,
+                price=price, size=size, betid=betid, status=status, matched=matched)
+
             except Exception as e:
                 # Record the attempt even if failed
                 self._order_snapshot(
@@ -188,8 +275,18 @@ class LTD60(BaseStrategy):
 
     def _maybe_entry2(self, db: DBHelper, ev: Dict[str, Any], d_price: Optional[float], api, market_id: str) -> None:
         # Only allowed if league in late-goal set
-        if self._normalise(ev.get("league")) not in self._late_goals:
+        if self._normalise(ev.get("comp")) not in self._late_goals:
             return
+
+
+        # Check no entry 2 already ordered
+        if ev.get('e_ordered'):              
+            already_ordered = int(ev.get('e_ordered')) == 2 
+            if already_ordered:
+                return
+        else:
+            return
+        
 
         # Needs to be draw at 60 — for now, infer from scores if available
         try:
@@ -201,13 +298,25 @@ class LTD60(BaseStrategy):
         # If we don’t have in-play time tracking yet, a safe proxy is to only allow second entry
         # when e_ordered == 1 already AND we’re in-play & prices are populated.
         # You can wire in precise time_elapsed later.
-        draw_now = (h_sc is not None and a_sc is not None and h_sc == a_sc)
+        draw_now = (h_sc is not None and a_sc is not None and h_sc == 0 == a_sc)
         if not draw_now:
             return
+        
+        # Check if time reached to trigger second entry
+        if ev.get("time_elapsed"):
+            time_elapsed = int(ev.get("time_elapsed"))
+             
+            time_reached = time_elapsed > LTD60_SECOND_ENTRY_TIME
+            if not time_reached:
+                return
+        else:
+            return
+        
 
         # Avoid re-triggering: if x_ordered exists you can gate on that in the future.
         # Here we'll only add a second "paper" flag by bumping e_ordered to 2 and aggregating stake.
         second_size = STAKE_LTD_PAPER if PAPER_MODE else STAKE_LTD_LIVE
+        price = float(LTD60_MAX_SECOND_ENTRY_ODDS if d_price > LTD60_MAX_SECOND_ENTRY_ODDS else d_price)
 
         # If price missing, try to pull quickly
         if d_price is None and api:
@@ -220,8 +329,8 @@ class LTD60(BaseStrategy):
         if PAPER_MODE:
             # Mark second entry logically by stacking stake/liability
             prev_stake = float(ev.get("e_stake") or 0.0)
-            new_stake = second_size
-            liability = max(0.0, (float(ev.get("e_price") or d_price) - 1.0) * new_stake)
+            new_stake = prev_stake + second_size
+            liability = max(0.0, (float(ev.get("e_price") or price) - 1.0) * new_stake)
             db.update_current(
                 ev["event_id"],
                 e_ordered=2,
@@ -229,9 +338,15 @@ class LTD60(BaseStrategy):
                 e_status="PAPER_SECOND",
                 liability=liability,
             )
+
+            # --------- LOGGING PAPER ENTRY 2 PLACED ---------
+            self._log_order(logger.info, "ENTRY2_PAPER_EXEC", ev, price=price, size=new_stake)
+            
         else:
             try:
-                limit_order = filters.limit_order(size=second_size, price=float(LTD60_MAX_SECOND_ENTRY_ODDS), persistence_type="PERSIST")
+                
+
+                limit_order = filters.limit_order(size=second_size, price=float(price), persistence_type="PERSIST")
                 instruction = filters.place_instruction(
                     order_type="LIMIT",
                     selection_id=DRAW_SELECTION_ID,
@@ -241,6 +356,7 @@ class LTD60(BaseStrategy):
                 resp = api.betting.place_orders(market_id=str(market_id), instructions=[instruction])
                 rep = resp.place_instruction_reports[0]
                 status = rep.status
+                betid = getattr(rep, "bet_id", None)
                 matched = getattr(rep, "size_matched", 0.0) or 0.0
                 prev_stake = float(ev.get("e_stake") or 0.0)
                 new_stake = prev_stake + second_size
@@ -250,17 +366,180 @@ class LTD60(BaseStrategy):
                     e_status=status,
                     e_stake=new_stake,
                     e_matched=(float(ev.get("e_matched") or 0.0) + matched),
+                    e_betid=betid
                 )
                 # recompute liability using avg price if you want; we keep it simple:
-                effective_price = float(ev.get("e_price") or d_price)
+                effective_price = float(ev.get("e_price") or price)
                 liability = max(0.0, (effective_price - 1.0) * new_stake)
                 db.update_current(ev["event_id"], liability=liability)
+
+                # ---------- LOGGING LIVE ENTRY 2 PLACED -----------
+                self._log_order(logger.info, "ENTRY2_PLACED", ev,
+                price=price, size=second_size, betid=betid, status=status, matched=matched)
+
             except Exception as e:
                 # Log attempt
                 db.update_current(
                     ev["event_id"],
                     e_status=f"SECOND_ERROR:{e}",
                 )
+
+    # ----------cancel entrys -------
+    def _maybe_cancel_entry1(
+        self,
+        db: DBHelper,
+        ev: Dict[str, Any],
+        api,
+        market_id: str,
+        time_elapsed: Optional[int],
+        h_score: Optional[int],
+        a_score: Optional[int],
+    ) -> None:
+        """
+        Cancel entry1 ONLY if:
+        - Live mode
+        - entry1 is a capped limit (e_price == LTD60_MAX_ODDS_ACCEPT)
+        - 0 matched
+        - and (goal scored OR time_elapsed >= 60)
+        """
+
+        if PAPER_MODE:
+            return
+        if api is None:
+            return
+
+        if not ev.get("e_ordered"):
+            return
+
+        betid = ev.get("e_betid")
+        if not betid:
+            return
+
+        # Status guards
+        status = (ev.get("e_status") or "").upper()
+        if "CANCEL" in status or "EXECUTION_COMPLETE" in status:
+            return
+
+        # Only cancel capped orders
+        e_price = ev.get("e_price")
+        if e_price is None or float(e_price) != float(LTD60_MAX_ODDS_ACCEPT):
+            return
+
+        matched = float(ev.get("e_matched") or 0.0)
+        if matched > 0.0:
+            return  # IMPORTANT: do not cancel if any matched
+
+        # Cancel triggers
+        goals = (int(h_score or 0) + int(a_score or 0))
+        cancel_for_goal = goals > 0
+        cancel_for_60 = (time_elapsed is not None and int(time_elapsed) >= 60)
+
+        if not (cancel_for_goal or cancel_for_60):
+            return
+
+        reason = "GOAL" if cancel_for_goal else "60MIN"
+
+        # -----LOGGING CANCEL ENTRY 1 TRIGGER ----------
+        self._log_order(logger.WARNING, "ENTRY1_CANCEL_TRIGGER", ev,
+                        reason=reason, betid=ev.get("e_betid"), price=ev.get("e_price"))
+        try:
+            instr = filters.cancel_instruction(bet_id=str(betid))
+            api.betting.cancel_orders(market_id=str(market_id), instructions=[instr])
+
+            # Mark cancelled in DB. Keep e_ordered=1 to indicate "attempted" (recommended).
+            db.update_current(
+                ev["event_id"],
+                e_status=f"CANCELLED_{reason}",
+                e_remaining=0.0,
+            )
+
+            # ---------- LOGGING CANCELLED ENTRY 1 ----------
+            self._log_order(logger.info, "ENTRY1_CANCELLED", ev, reason=reason, betid=ev.get("e_betid"))
+        except Exception as e:
+            db.update_current(ev["event_id"], e_status=f"CANCEL_ERR_{reason}:{e}")
+
+            # -----LOGGING FAIL CANCEL ENTRY 1 TRIGGER ----------
+            self._log_order(logger.info, "ENTRY1_CANCEL_FAIL", ev, reason=reason, err=str(e))
+
+    def _maybe_cancel_entry2(
+        self,
+        db: DBHelper,
+        ev: Dict[str, Any],
+        api,
+        market_id: str,
+        time_elapsed: Optional[int],
+        h_score: Optional[int],
+        a_score: Optional[int],
+    ) -> None:
+        """
+        Cancel entry2 ONLY if:
+        - Live mode
+        - entry2 is a capped limit (e_price == LTD60_MAX_SECOND_ENTRY_ODDS)
+        - 0 matched
+        - and (goal scored OR time_elapsed >= 75)
+        """
+
+        if PAPER_MODE:
+            return
+        if api is None:
+            return
+
+        # Check entry 2 has been ordered
+        if int(ev.get("e_ordered")) == 2:
+            return
+
+        betid = ev.get("e_betid")
+        if not betid:
+            return
+
+        # Status guards
+        status = (ev.get("e_status") or "").upper()
+        if "CANCEL" in status or "EXECUTION_COMPLETE" in status:
+            return
+
+        # Only cancel capped orders
+        e_price = ev.get("e_price")
+        if e_price is None or float(e_price) != float(LTD60_MAX_SECOND_ENTRY_ODDS):
+            return
+
+        # Check if mathced minus the second stake 
+        second_stake = float(ev.get("e_stake") or 0.0) / 2
+        matched = float(ev.get("e_matched") or 0.0) - second_stake
+        if matched > 0.0:
+            return  # IMPORTANT: do not cancel if any matched
+
+        # Cancel triggers
+        goals = (int(h_score or 0) + int(a_score or 0))
+        cancel_for_goal = goals > 0
+        cancel_for_75 = (time_elapsed is not None and int(time_elapsed) >= 75)
+
+        if not (cancel_for_goal or cancel_for_75):
+            return
+
+        reason = "GOAL" if cancel_for_goal else "75MIN"
+
+        # -----LOGGING CANCEL ENTRY 1 TRIGGER ----------
+        self._log_order(logger.WARNING, "ENTRY2_CANCEL_TRIGGER", ev,
+                        reason=reason, betid=ev.get("e_betid"), price=ev.get("e_price"))
+        try:
+            instr = filters.cancel_instruction(bet_id=str(betid))
+            api.betting.cancel_orders(market_id=str(market_id), instructions=[instr])
+
+            # Mark cancelled in DB. Keep e_ordered=1 to indicate "attempted" (recommended).
+            db.update_current(
+                ev["event_id"],
+                e_status=f"CANCELLED_{reason}",
+                e_remaining=0.0,
+            )
+
+            # ---------- LOGGING CANCELLED ENTRY 1 ----------
+            self._log_order(logger.info, "ENTRY2_CANCELLED", ev, reason=reason, betid=ev.get("e_betid"))
+        except Exception as e:
+            db.update_current(ev["event_id"], e_status=f"CANCEL_ERR_{reason}:{e}")
+
+            # -----LOGGING FAIL CANCEL ENTRY 1 TRIGGER ----------
+            self._log_order(logger.info, "ENTRY2_CANCEL_FAIL", ev, reason=reason, err=str(e))
+
 
     # ---------- utilities ----------
     def _parse_dt(self, s) -> Optional[datetime]:
@@ -294,8 +573,8 @@ class LTD60(BaseStrategy):
                 return float(probs[0].price) if probs else None
 
             home = best_lay(runners[0]) if len(runners) > 0 else None
-            draw = best_lay(runners[1]) if len(runners) > 1 else None
-            away = best_lay(runners[2]) if len(runners) > 2 else None
+            away = best_lay(runners[1]) if len(runners) > 1 else None
+            draw = best_lay(runners[2]) if len(runners) > 2 else None
             return (home, draw, away)
         except Exception:
             return (None, None, None)

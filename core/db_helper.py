@@ -14,19 +14,29 @@ class DBHelper:
     - event_id is UNIQUE in current_matches and archive_v3.
     - archive_match() MOVES row from current_matches -> archive_v3.
     """
-    def __init__(self, db_path: str, check_same_thread: bool = False):
+    def __init__(self, db_path: str, check_same_thread: bool = False, timeout: float = 30.0):
         self.db_path = db_path
-        self.conn = sqlite3.connect(db_path, check_same_thread=check_same_thread)
+        self.conn = sqlite3.connect(
+            db_path,
+            check_same_thread=check_same_thread,
+            timeout=timeout,   # <-- IMPORTANT
+        )
         self.conn.row_factory = sqlite3.Row
         self._boot()
 
     def _boot(self):
         cur = self.conn.cursor()
+
+        # Safe per-connection PRAGMAs
         cur.execute("PRAGMA foreign_keys = ON;")
-        cur.execute("PRAGMA journal_mode = WAL;")
+        cur.execute("PRAGMA busy_timeout = 30000;")      # <-- IMPORTANT (ms)
         cur.execute("PRAGMA synchronous = NORMAL;")
-        cur.execute("PRAGMA wal_autocheckpoint = 1000;")
-        cur.execute("PRAGMA auto_vacuum = FULL;")
+
+        # DO NOT do these here (remove them):
+        # cur.execute("PRAGMA journal_mode = WAL;")
+        # cur.execute("PRAGMA wal_autocheckpoint = 1000;")
+        # cur.execute("PRAGMA auto_vacuum = FULL;")
+
         self.conn.commit()
 
     def close(self):

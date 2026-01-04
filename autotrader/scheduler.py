@@ -12,6 +12,7 @@ import logging
 import threading
 import time
 from datetime import datetime, timedelta
+import sqlite3
 
 from core.settings import SCHEDULE_MATCHFINDER_MIN
 from match_finder import MatchFinder
@@ -34,14 +35,24 @@ _scheduler_thread: threading.Thread | None = None
 
 
 def _run_matchfinder_job():
-    """Execute a single MatchFinder run safely."""
-    try:
-        logger.info("MatchFinder scheduled run starting...")
-        mf = MatchFinder()
-        rows = mf.run()
-        logger.info(f"MatchFinder completed successfully ({rows or 0} rows refreshed).")
-    except Exception as e:
-        logger.exception(f"MatchFinder job failed: {e}")
+    """Execute a single MatchFinder run safely. Retry if failed."""
+    for attempt in range(1, 6):
+        try:
+            logger.info("MatchFinder scheduled run starting...")
+            mf = MatchFinder()
+            rows = mf.run()
+            logger.info("MatchFinder completed successfully (%s rows refreshed).", rows or 0)
+            return
+        except sqlite3.OperationalError as e:
+            if "database is locked" in str(e).lower():
+                wait = 0.5 * attempt
+                logger.warning("DB locked. Retry %s/5 in %.1fs", attempt, wait)
+                time.sleep(wait)
+                continue
+            raise
+        except Exception as e:
+            logger.exception("MatchFinder job failed: %s", e)
+            return
 
 
 def _scheduler_loop():
