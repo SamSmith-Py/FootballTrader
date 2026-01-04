@@ -102,82 +102,98 @@ class BaseStrategy:
         betid = ev.get(f"{prefix}_betid")
         stake = ev.get(f"{prefix}_stake") or 0.0
         matched = ev.get(f"{prefix}_matched") or 0.0
+        price = ev.get(f"{prefix}_price") or 0.0
+        cur_d_lay_price = ev.get("d_lay_price") or 0.0
+        
 
-        # No order or already fully matched → nothing to do
-        if not betid or stake <= 0 or matched >= stake:
-            return None
+        if PAPER_MODE:
+            # No order or already fully matched → nothing to do
+            if stake <= 0 or matched == stake or stake == None:
+                return None 
+            # For LAY side Strats 
+            if cur_d_lay_price <= price:
+                # Calculate liability
+                liab = max(0.0, (float(price) - 1.0) * stake)
+                # Update current tables
+                db.update_current(
+                    ev["event_id"],
+                    e_matched=stake,
+                    e_remaining=0.0,
+                    liability=liab)
 
-        try:
-            resp = api.betting.list_current_orders(bet_ids=[betid])
-            orders = resp.current_orders or []
-        except Exception as e:
-            self.log.error("ORDER_SYNC_FAIL | %s | betid=%s err=%s",
-                        ev["event_id"], betid, e)
-            return None
-
-        # Order no longer exists at Betfair (fully settled/cancelled elsewhere)
-        if not orders:
-            db.update_current(
-                ev["event_id"],
-                **{
-                    f"{prefix}_status": "MISSING",
-                    f"{prefix}_remaining": 0.0,
-                }
-            )
-            return {
-                "status": "MISSING",
-                "matched": matched,
-                "remaining": 0.0,
-            }
-
-        o = orders[0]
-
-        new_matched = float(o.size_matched or 0.0)
-        new_remaining = float(o.size_remaining or 0.0)
-        new_status = o.status  # EXECUTABLE, EXECUTION_COMPLETE, etc.
-
-        # Only write if something actually changed
-        if (
-            new_matched != matched
-            or new_remaining != ev.get(f"{prefix}_remaining")
-            or new_status != ev.get(f"{prefix}_status")
-        ):
-            db.update_current(
-                ev["event_id"],
-                **{
-                    f"{prefix}_matched": new_matched,
-                    f"{prefix}_remaining": new_remaining,
-                    f"{prefix}_status": new_status,
-                }
-            )
-
-            logger.info(
-                "ORDER_SYNC | %s | betid=%s status=%s matched=%.2f remaining=%.2f",
-                ev["event_id"], betid, new_status, new_matched, new_remaining
-            )
-
-        return {
-            "status": new_status,
-            "matched": new_matched,
-            "remaining": new_remaining,
-    }
-
-    def calculate_pnl(self, logger, ev: Dict[str, Any]):
-        pnl = None
-        # Check a strategy is assigned
-        strat = ev['strategy']
-        print('PNL TEST - 1', strat, ev['event_id'])
-        if strat is not None:
-            print('PNL TEST - 2', strat, ev['event_id'])
-            try:
-                # If result is decisive win full stake
-                if ev['result'] == 1:
-                    pnl = ev['e_stake']
-                else:
-                    pnl = ev['liability']
-                print('PNL TEST - 3', strat, ev['event_id'], pnl)
-                return pnl
-            except Exception as e:
-                logger.error("PnL ERROR | %s | err=%s",
-                            ev["event_id"], e)
+        else:
+            # No order or already fully matched → nothing to do
+            if not betid or stake <= 0 or matched >= stake:
                 return None
+
+            try:
+                resp = api.betting.list_current_orders(bet_ids=[betid])
+                orders = resp.current_orders or []
+            except Exception as e:
+                self.log.error("ORDER_SYNC_FAIL | %s | betid=%s err=%s",
+                            ev["event_id"], betid, e)
+                return None
+
+            # Order no longer exists at Betfair (fully settled/cancelled elsewhere)
+            if not orders:
+                db.update_current(
+                    ev["event_id"],
+                    **{
+                        f"{prefix}_status": "MISSING",
+                        f"{prefix}_remaining": 0.0,
+                    }
+                )
+                return {
+                    "status": "MISSING",
+                    "matched": matched,
+                    "remaining": 0.0,
+                }
+
+            o = orders[0]
+
+            new_matched = float(o.size_matched or 0.0)
+            new_remaining = float(o.size_remaining or 0.0)
+            new_status = o.status  # EXECUTABLE, EXECUTION_COMPLETE, etc.
+
+            # Only write if something actually changed
+            if (
+                new_matched != matched
+                or new_remaining != ev.get(f"{prefix}_remaining")
+                or new_status != ev.get(f"{prefix}_status")
+            ):
+                db.update_current(
+                    ev["event_id"],
+                    **{
+                        f"{prefix}_matched": new_matched,
+                        f"{prefix}_remaining": new_remaining,
+                        f"{prefix}_status": new_status,
+                    }
+                )
+
+                logger.info(
+                    "ORDER_SYNC | %s | betid=%s status=%s matched=%.2f remaining=%.2f",
+                    ev["event_id"], betid, new_status, new_matched, new_remaining
+                )
+
+            return {
+                "status": new_status,
+                "matched": new_matched,
+                "remaining": new_remaining,
+        }
+
+    def calculate_pnl(self, logger, ev: Dict[str, Any], result_val):
+        strat = ev.get("strategy")
+        if strat is None:
+            return None
+
+        result = result_val
+        stake_matched = ev.get("e_matched")
+        liab = 0 - ev.get("liability")
+
+        if result not in (0, 1) or stake_matched is None or liab is None:
+            logger.error("PnL ERROR | %s | bad inputs result=%s stake=%s liability=%s",
+                        ev.get("event_id"), result, stake_matched, liab)
+            return None
+
+        return stake_matched if result == 1 else liab
+

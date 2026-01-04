@@ -236,8 +236,6 @@ class AutoTrader:
             # Short cooldown between ticks
             time.sleep(10)
 
-            
-
 
     def _compute_result(self, h: Optional[int], a: Optional[int]) -> Optional[int]:
         if h is None or a is None:
@@ -544,7 +542,9 @@ class AutoTrader:
                     db.update_current(event_id, result=result_val)
 
                 # Calculate PnL
-                pnl = BaseStrategy.calculate_pnl(self, logger=logger, ev=ev)
+                pnl = BaseStrategy.calculate_pnl(self, logger=logger, ev=ev, result_val=result_val)
+
+                db.update_current(event_id, inplay_status="Finished", ft_score=ft, result=result_val, pnl=pnl)
 
                 # ===== LOGGING ARCHIVE ==========
                 remaining = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
@@ -577,11 +577,12 @@ class AutoTrader:
                     if ft:
                         fth, fta = self._parse_ft(ft)
                         result_val = self._compute_result(fth, fta)
-                        db.update_current(event_id, inplay_status="Finished", ft_score=ft, result=result_val)
+                        
 
                         # Calculate PnL
-                        pnl = BaseStrategy.calculate_pnl(self, logger=logger, ev=ev)
-
+                        pnl = BaseStrategy.calculate_pnl(self, logger=logger, ev=ev, result_val=result_val)
+                        
+                        db.update_current(event_id, inplay_status="Finished", ft_score=ft, result=result_val, pnl=pnl)
                         # ===== LOGGING ARCHIVE ==========
                         remaining = db.conn.execute("SELECT COUNT(*) FROM current_matches").fetchone()[0]
 

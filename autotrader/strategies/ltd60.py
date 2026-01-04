@@ -224,14 +224,23 @@ class LTD60(BaseStrategy):
         price = float(LTD60_MAX_ODDS_ACCEPT if d_price > LTD60_MAX_ODDS_ACCEPT else d_price)
 
         if PAPER_MODE:
-
+            # Simulate LIMIT order if price above accepted
+            if price >= LTD60_MAX_ODDS_ACCEPT:
+                matched = 0
+                liability = 0
+                remaining = size
+            else: 
+                matched = size
+                remaining = 0
+                # Compute nominal liability
+                liability = max(0.0, (float(price) - 1.0) * size)
             # Record paper entry instantly
             self._order_snapshot(
                 db, ev["event_id"], side="LAY", price=float(price), size=size,
-                status="PAPER_EXECUTED", matched=size, remaining=0.0, betid=None
+                status="PAPER_EXECUTED", matched=matched, remaining=remaining, betid=None
             )
-            # Compute nominal liability
-            liability = max(0.0, (float(price) - 1.0) * size)
+            
+            
             db.update_current(ev["event_id"], liability=liability)
 
             # --------- LOGGING PAPER ENTRY 1 PLACED ---------
