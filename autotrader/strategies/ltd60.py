@@ -10,6 +10,7 @@ Key points:
 from __future__ import annotations
 from typing import Dict, Any, Set, Optional
 from datetime import datetime, timezone, timedelta
+import logging
 import csv
 import os
 
@@ -28,7 +29,9 @@ from core.settings import (
     DRAW_SELECTION_ID,
     LTD60_MAX_SECOND_ENTRY_ODDS,
     LOG_DIR,
-    LTD60_SECOND_ENTRY_TIME
+    LTD60_SECOND_ENTRY_TIME,
+    FILTERED_LEAGUES_CSV_V3,
+    LATE_GOAL_LEAGUES_CSV_V3
     
 )
 from core.db_helper import DBHelper
@@ -53,8 +56,8 @@ class LTD60(BaseStrategy):
     requires_api = True
 
     # strategy-specific league lists — produced by your backtester for LTD60 only
-    filtered_leagues_csv = str(BASE_DIR / "data_analysis" / "filtered_leagues_v2.csv")
-    late_goal_leagues_csv = str(BASE_DIR / "data_analysis" / "late_goal_leagues_v2.csv")
+    filtered_leagues_csv = str(FILTERED_LEAGUES_CSV_V3)
+    late_goal_leagues_csv = str(LATE_GOAL_LEAGUES_CSV_V3)
 
     def __init__(self):
         self._filtered: Set[str] = self._load_leagues(self.filtered_leagues_csv)
@@ -336,15 +339,32 @@ class LTD60(BaseStrategy):
             return
 
         if PAPER_MODE:
-            # Mark second entry logically by stacking stake/liability
+            prev_matched = float(ev.get("e_matched") or 0.0)
+            prev_liability = float(ev.get("liability") or 0.0)
             prev_stake = float(ev.get("e_stake") or 0.0)
+            prev_remaining = float(ev.get("e_remaining") or 0.0)
+            # Simulate LIMIT order if price above accepted
+            if price >= LTD60_MAX_SECOND_ENTRY_ODDS:
+                matched = prev_matched
+                liability = prev_liability
+                remaining = prev_remaining + STAKE_LTD_PAPER
+            else: 
+                matched = prev_matched + STAKE_LTD_PAPER
+                remaining = 0
+                # Compute nominal liability
+                liability = prev_liability + max(0.0, (float(price) - 1.0) * STAKE_LTD_PAPER)
+            # Mark second entry logically by stacking stake/liability
+            
             new_stake = prev_stake + second_size
-            liability = max(0.0, (float(ev.get("e_price") or price) - 1.0) * new_stake)
+            
+            # liability = max(0.0, (float(ev.get("e_price") or price) - 1.0) * STAKE_LTD_PAPER) + prev_liability
             db.update_current(
                 ev["event_id"],
                 e_ordered=2,
                 e_stake=new_stake,
                 e_status="PAPER_SECOND",
+                e_matched=matched,
+                e_remaining=remaining,
                 liability=liability,
             )
 
@@ -354,7 +374,6 @@ class LTD60(BaseStrategy):
         else:
             try:
                 
-
                 limit_order = filters.limit_order(size=second_size, price=float(price), persistence_type="PERSIST")
                 instruction = filters.place_instruction(
                     order_type="LIMIT",
@@ -409,20 +428,19 @@ class LTD60(BaseStrategy):
         - Live mode
         - entry1 is a capped limit (e_price == LTD60_MAX_ODDS_ACCEPT)
         - 0 matched
-        - and (goal scored OR time_elapsed >= 60)
+        - and (goal scored OR time_elapsed >= LTD60_SECOND_ENTRY_TIME)
         """
 
-        if PAPER_MODE:
-            return
         if api is None:
             return
 
         if not ev.get("e_ordered"):
             return
 
-        betid = ev.get("e_betid")
-        if not betid:
-            return
+        if PAPER_MODE == 0:
+            betid = ev.get("e_betid")
+            if not betid:
+                return
 
         # Status guards
         status = (ev.get("e_status") or "").upper()
@@ -439,27 +457,29 @@ class LTD60(BaseStrategy):
             return  # IMPORTANT: do not cancel if any matched
 
         # Cancel triggers
-        goals = (int(h_score or 0) + int(a_score or 0))
-        cancel_for_goal = goals > 0
-        cancel_for_60 = (time_elapsed is not None and int(time_elapsed) >= 60)
+        # goals = (int(h_score or 0) + int(a_score or 0))
+        # cancel_for_goal = goals > 0
+        cancel_for_60 = (time_elapsed is not None and int(time_elapsed) >= LTD60_SECOND_ENTRY_TIME)
 
-        if not (cancel_for_goal or cancel_for_60):
+        if not (cancel_for_60):
             return
 
-        reason = "GOAL" if cancel_for_goal else "60MIN"
+        reason =  "UNMATCHED BY 60MIN"
 
         # -----LOGGING CANCEL ENTRY 1 TRIGGER ----------
-        self._log_order(logger.WARNING, "ENTRY1_CANCEL_TRIGGER", ev,
+        self._log_order(logging.WARNING, "ENTRY1_CANCEL_TRIGGER", ev,
                         reason=reason, betid=ev.get("e_betid"), price=ev.get("e_price"))
         try:
-            instr = filters.cancel_instruction(bet_id=str(betid))
-            api.betting.cancel_orders(market_id=str(market_id), instructions=[instr])
+            if PAPER_MODE == 0:
+                instr = filters.cancel_instruction(bet_id=str(betid))
+                api.betting.cancel_orders(market_id=str(market_id), instructions=[instr])
 
             # Mark cancelled in DB. Keep e_ordered=1 to indicate "attempted" (recommended).
             db.update_current(
                 ev["event_id"],
                 e_status=f"CANCELLED_{reason}",
                 e_remaining=0.0,
+                e_matched=0.0
             )
 
             # ---------- LOGGING CANCELLED ENTRY 1 ----------
@@ -488,18 +508,19 @@ class LTD60(BaseStrategy):
         - and (goal scored OR time_elapsed >= 75)
         """
 
-        if PAPER_MODE:
-            return
         if api is None:
             return
 
         # Check entry 2 has been ordered
-        if int(ev.get("e_ordered")) == 2:
+        e_ordered = ev.get("e_ordered")
+        if int(e_ordered or 0) != 2:
             return
 
-        betid = ev.get("e_betid")
-        if not betid:
-            return
+
+        if PAPER_MODE == 0:
+            betid = ev.get("e_betid")
+            if not betid:
+                return
 
         # Status guards
         status = (ev.get("e_status") or "").upper()
@@ -518,21 +539,22 @@ class LTD60(BaseStrategy):
             return  # IMPORTANT: do not cancel if any matched
 
         # Cancel triggers
-        goals = (int(h_score or 0) + int(a_score or 0))
-        cancel_for_goal = goals > 0
+        # goals = (int(h_score or 0) + int(a_score or 0))
+        # cancel_for_goal = goals > 0
         cancel_for_75 = (time_elapsed is not None and int(time_elapsed) >= 75)
 
-        if not (cancel_for_goal or cancel_for_75):
+        if not (cancel_for_75):
             return
 
-        reason = "GOAL" if cancel_for_goal else "75MIN"
+        reason = "UNMATCHED BY 75MIN"
 
         # -----LOGGING CANCEL ENTRY 1 TRIGGER ----------
-        self._log_order(logger.WARNING, "ENTRY2_CANCEL_TRIGGER", ev,
+        self._log_order(logging.WARNING, "ENTRY2_CANCEL_TRIGGER", ev,
                         reason=reason, betid=ev.get("e_betid"), price=ev.get("e_price"))
         try:
-            instr = filters.cancel_instruction(bet_id=str(betid))
-            api.betting.cancel_orders(market_id=str(market_id), instructions=[instr])
+            if PAPER_MODE == 0:
+                instr = filters.cancel_instruction(bet_id=str(betid))
+                api.betting.cancel_orders(market_id=str(market_id), instructions=[instr])
 
             # Mark cancelled in DB. Keep e_ordered=1 to indicate "attempted" (recommended).
             db.update_current(

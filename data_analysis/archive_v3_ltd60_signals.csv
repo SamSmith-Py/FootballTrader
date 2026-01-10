@@ -1,0 +1,1124 @@
+kickoff,comp,event_name,ft_score,h_goals60,a_goals60,d_SP,result,is_00_at60,decisive_from_00at60
+2025-12-27T05:50:00+00:00,Australian A-League Women,Adelaide United (W) v Western Sydney Wanderers (W),5-2,3.0,1.0,4.0,1,False,
+2025-12-27T06:00:00+00:00,Australian A-League Women,Central Coast Mariners (W) v Melbourne Victory (W),3-3,3.0,0.0,3.75,0,False,
+2025-12-27T06:30:00+00:00,Indonesian Championship,Persipura Jayapura v Persela Lamongan,2-0,1.0,0.0,4.5,1,False,
+2025-12-27T07:00:00+00:00,Australian A-League Women,Newcastle Jets (W) v Canberra United (W),0-1,0.0,0.0,3.9,1,True,1
+2025-12-27T07:30:00+00:00,Vietnamese U19,Ha Noi FC U19 v PVF CAND U19,1-2,0.0,1.0,3.7,1,False,
+2025-12-27T08:00:00+00:00,Vietnamese U19,Song Lam Nghe An U19 v Hong Linh Ha Tinh U19,2-1,1.0,0.0,3.65,1,False,
+2025-12-27T08:00:00+00:00,Algerian U20 League,RC Arba U20 v Ain Defla U20,6-2,1.0,2.0,3.35,1,False,
+2025-12-27T08:00:00+00:00,Algerian U20 League,RC Relizane U20 v RCG Oran U20,1-0,1.0,0.0,3.55,1,False,
+2025-12-27T08:00:00+00:00,Algerian U20 League,ASO Chlef U20 v ESM Kolea U20,2-0,2.0,0.0,3.55,1,False,
+2025-12-27T08:00:00+00:00,Algerian U20 League,MC Oran U20 v USM Bel Abbes U20,2-1,1.0,0.0,5.9,1,False,
+2025-12-27T08:00:00+00:00,Algerian U20 League,Wifak Medea U20 v USM Blida U20,2-1,1.0,1.0,3.5,1,False,
+2025-12-27T08:30:00+00:00,Indonesian Super League,Persik Kediri v Persis Solo,2-1,2.0,0.0,3.85,1,False,
+2025-12-27T08:30:00+00:00,Bangladesh Premier League,PWD Sports Club v Fakirapool Young Men,1-2,0.0,2.0,4.1,1,False,
+2025-12-27T08:30:00+00:00,Bangladesh Premier League,Mohammedan Dhaka v Rahmatganj MFS,1-1,0.0,1.0,3.65,0,False,
+2025-12-27T08:30:00+00:00,Indonesian Championship,Sriwijaya v Psms Medan,1-3,1.0,1.0,4.6,1,False,
+2025-12-27T08:30:00+00:00,Bangladesh Premier League,Brothers Union v Fortis FC Limited,1-1,1.0,0.0,3.45,0,False,
+2025-12-27T08:30:00+00:00,Indonesian Championship,Adhyaksa FC v Persekat Kabupaten Tegal,0-1,0.0,0.0,4.6,1,True,1
+2025-12-27T08:35:00+00:00,Australian A-League Men,Adelaide United v Western Sydney Wanderers,3-2,1.0,1.0,3.9,1,False,
+2025-12-27T10:30:00+00:00,Turkish 1 Lig,Sariyer G.K. v Bodrum Belediyesi Bodrumspor,1-0,1.0,0.0,3.5,1,False,
+2025-12-27T10:30:00+00:00,Turkish 1 Lig,Sivasspor v Bandirmaspor,2-0,0.0,0.0,3.3,1,True,1
+2025-12-27T11:00:00+00:00,Cambodian Premier League,Phnom Penh v Tiffy Army FC,3-2,3.0,0.0,5.6,1,False,
+2025-12-27T11:00:00+00:00,Turkish 2 Lig,Ankaraspor v Sanliurfaspor,2-1,1.0,1.0,3.35,1,False,
+2025-12-27T11:00:00+00:00,Cambodian Premier League,Boeung Ket v Svay Rieng FC,2-1,0.0,0.0,4.3,1,True,1
+2025-12-27T11:00:00+00:00,Algerian U20 League,CA Bordj Bou U20 v USM Khenchela U20,2-0,1.0,0.0,3.75,1,False,
+2025-12-27T11:30:00+00:00,Thai League Cup,Bangkok FC v Muangthong Utd,0-4,0.0,2.0,3.8,1,False,
+2025-12-27T11:30:00+00:00,Italian Serie A,Parma v Fiorentina,1-0,1.0,0.0,3.35,1,False,
+2025-12-27T11:30:00+00:00,Bangladesh Premier League,Bashundhara Kings v Dhaka Abahani,2-2,2.0,2.0,4.2,0,False,
+2025-12-27T11:30:00+00:00,Italian Serie B,Spezia v Pescara,2-1,1.0,1.0,3.65,1,False,
+2025-12-27T11:30:00+00:00,Thai League Cup,Khonkaen v Pathumwan Kanchanaburi,1-0,0.0,0.0,3.5,1,True,1
+2025-12-27T12:00:00+00:00,Thai League Cup,Nakhon Pathom v Uthai Thani,0-2,0.0,1.0,4.0,1,False,
+2025-12-27T12:00:00+00:00,Indonesian Super League,Persib Bandung v PSM Makassar,1-0,1.0,0.0,4.5,1,False,
+2025-12-27T12:00:00+00:00,Indonesian Championship,PS Barito Putera v PSIS Semarang,1-0,1.0,0.0,9.2,1,False,
+2025-12-27T12:00:00+00:00,Indonesian Championship,PSPS Pekanbaru v Persikad Depok,2-3,1.0,3.0,3.3,1,False,
+2025-12-27T12:20:00+00:00,Saudi 2nd Division,Tuwaiq v Al Shoalah,1-1,1.0,1.0,3.45,0,False,
+2025-12-27T12:30:00+00:00,English Premier League,Nottm Forest v Man City,1-2,1.0,1.0,4.3,1,False,
+2025-12-27T12:30:00+00:00,Africa Cup of Nations,Benin v Botswana,1-0,1.0,0.0,3.2,1,False,
+2025-12-27T12:30:00+00:00,Scottish Premiership,Hibernian v Hearts,3-2,3.0,0.0,3.4,1,False,
+2025-12-27T12:30:00+00:00,Saudi 2nd Division,Al-Rayyan Club v Bisha FC,2-2,1.0,0.0,3.45,0,False,
+2025-12-27T12:30:00+00:00,Belgian Pro League,Antwerp v Zulte-Waregem,2-1,2.0,1.0,3.95,1,False,
+2025-12-27T12:30:00+00:00,Egyptian Cup,Modern Sport FC v Olympic El Qanal,1-0,0.0,0.0,3.2,1,True,1
+2025-12-27T13:00:00+00:00,Israeli Cup,Maccabi Ahi Nazareth v Maccabi Haifa,1-8,0.0,7.0,6.6,1,False,
+2025-12-27T13:00:00+00:00,Algerian Ligue 2,ESM Kolea v WA Tlemcen,3-2,3.0,1.0,3.2,1,False,
+2025-12-27T13:00:00+00:00,Algerian Ligue 1,Olympique Akbou v USM Alger,1-1,0.0,0.0,3.0,0,True,0
+2025-12-27T13:00:00+00:00,Algerian Ligue 2,US Bechar Djedid v RC Arba,1-2,1.0,2.0,3.35,1,False,
+2025-12-27T13:00:00+00:00,Turkish 1 Lig,Van Buyuksehir Belediyespor v Hatayspor,4-0,2.0,0.0,10.0,1,False,
+2025-12-27T13:00:00+00:00,Saudi Professional League,Al-Quadisiya (KSA) v Dhamk,1-1,1.0,1.0,6.6,0,False,
+2025-12-27T13:00:00+00:00,Algerian Ligue 2,MC Saida v WA Mostaganem,2-0,1.0,0.0,3.15,1,False,
+2025-12-27T13:00:00+00:00,Algerian Ligue 2,CRB Adrar v JS Texraine,3-3,0.0,3.0,3.8,0,False,
+2025-12-27T13:00:00+00:00,Algerian Ligue 2,Cr Temouchent v JSM Tiaret,2-1,1.0,0.0,3.45,1,False,
+2025-12-27T13:00:00+00:00,Algerian Ligue 1,Paradou v MB Rouissat,1-0,1.0,0.0,3.3,1,False,
+2025-12-27T13:00:00+00:00,Algerian Ligue 2,RC Kouba v ASM Oran,0-0,0.0,0.0,3.4,0,True,0
+2025-12-27T13:00:00+00:00,Algerian Ligue 2,USM El Harrach v GC Mascara,4-1,3.0,0.0,7.2,1,False,
+2025-12-27T13:20:00+00:00,Bahraini Premier,Al-Shabbab (BRN) v Al Riffa,0-1,0.0,1.0,4.6,1,False,
+2025-12-27T14:00:00+00:00,Italian Serie B,Carrarese v Mantova,0-0,0.0,0.0,3.45,0,True,0
+2025-12-27T14:00:00+00:00,Italian Serie B,Venezia v Entella,1-0,1.0,0.0,4.3,1,False,
+2025-12-27T14:00:00+00:00,Italian Serie B,Empoli v Frosinone,1-1,1.0,1.0,3.3,0,False,
+2025-12-27T14:00:00+00:00,Italian Serie B,Catanzaro v Cesena,2-0,2.0,0.0,3.0,1,False,
+2025-12-27T14:00:00+00:00,Italian Serie B,Juve Stabia v Sudtirol,1-0,1.0,0.0,2.92,1,False,
+2025-12-27T14:00:00+00:00,Portuguese Cup,Lusitano v Fafe,0-1,0.0,1.0,3.0,1,False,
+2025-12-27T14:00:00+00:00,Italian Serie A,Torino v Cagliari,1-2,1.0,1.0,3.5,1,False,
+2025-12-27T14:00:00+00:00,Italian Serie A,Lecce v Como,0-3,0.0,1.0,3.45,1,False,
+2025-12-27T14:00:00+00:00,Italian Serie B,Sampdoria v Reggiana,2-1,1.0,1.0,3.35,1,False,
+2025-12-27T14:30:00+00:00,Welsh Premiership,Caernarfon Town v Colwyn Bay,1-2,0.0,1.0,3.8,1,False,
+2025-12-27T14:30:00+00:00,Qatari Stars League,Al Shahaniya v Al Gharafa,3-0,2.0,0.0,4.3,1,False,
+2025-12-27T14:50:00+00:00,Saudi Professional League,Al Nassr v Al-Akhdoud,3-0,2.0,0.0,14.5,1,False,
+2025-12-27T15:00:00+00:00,Scottish League One,Alloa v Stenhousemuir,0-0,0.0,0.0,3.35,0,True,0
+2025-12-27T15:00:00+00:00,Scottish Championship,Morton v Ayr,1-1,1.0,1.0,3.2,0,False,
+2025-12-27T15:00:00+00:00,English Premier League,West Ham v Fulham,0-1,0.0,0.0,3.5,1,True,1
+2025-12-27T15:00:00+00:00,Scottish League One,Peterhead v Cove Rangers,0-4,0.0,2.0,3.45,1,False,
+2025-12-27T15:00:00+00:00,Scottish League Two,East Kilbride v Clyde,1-1,1.0,0.0,3.95,0,False,
+2025-12-27T15:00:00+00:00,Africa Cup of Nations,Senegal v DR Congo,1-1,0.0,1.0,3.6,0,False,
+2025-12-27T15:00:00+00:00,Scottish League Two,Edinburgh City v Spartans,1-3,1.0,2.0,3.85,1,False,
+2025-12-27T15:00:00+00:00,Scottish League One,East Fife v Kelty Hearts,0-1,0.0,1.0,3.95,1,False,
+2025-12-27T15:00:00+00:00,Scottish Premiership,St Mirren v Kilmarnock,0-0,0.0,0.0,4.0,0,True,0
+2025-12-27T15:00:00+00:00,Scottish Championship,Ross Co v St Johnstone,0-0,0.0,0.0,4.2,0,True,0
+2025-12-27T15:00:00+00:00,Scottish Premiership,Livingston v Celtic,2-4,2.0,4.0,5.6,1,False,
+2025-12-27T15:00:00+00:00,Scottish League Two,Dumbarton v Stirling,1-2,0.0,1.0,3.85,1,False,
+2025-12-27T15:00:00+00:00,English Premier League,Arsenal v Brighton,2-1,2.0,0.0,5.8,1,False,
+2025-12-27T15:00:00+00:00,English Premier League,Liverpool v Wolves,2-1,2.0,1.0,7.4,1,False,
+2025-12-27T15:00:00+00:00,Scottish Championship,Arbroath v Airdrieonians,1-1,0.0,0.0,3.7,0,True,0
+2025-12-27T15:00:00+00:00,Scottish Premiership,Rangers v Motherwell,1-0,0.0,0.0,3.9,1,True,1
+2025-12-27T15:00:00+00:00,Scottish League Two,Annan v Stranraer,2-2,2.0,2.0,3.7,0,False,
+2025-12-27T15:00:00+00:00,Scottish Championship,Raith v Dunfermline,1-2,1.0,2.0,3.3,1,False,
+2025-12-27T15:00:00+00:00,Scottish League Two,Forfar v Elgin City FC,4-2,2.0,1.0,3.6,1,False,
+2025-12-27T15:00:00+00:00,Scottish League One,Montrose v Inverness CT,2-1,0.0,1.0,4.3,1,False,
+2025-12-27T15:00:00+00:00,English Premier League,Burnley v Everton,0-0,0.0,0.0,3.25,0,True,0
+2025-12-27T15:00:00+00:00,Scottish Championship,Queens Park v Partick,2-2,1.0,2.0,3.95,0,False,
+2025-12-27T15:00:00+00:00,English Premier League,Brentford v Bournemouth,4-1,3.0,0.0,3.65,1,False,
+2025-12-27T15:00:00+00:00,Belgian Pro League,RAAL La Louviere v Oud-Heverlee Leuven,0-0,0.0,0.0,3.05,0,True,0
+2025-12-27T15:00:00+00:00,Scottish Premiership,Dundee v Falkirk,1-0,1.0,0.0,3.3,1,False,
+2025-12-27T15:00:00+00:00,Egyptian Cup,Al Ahly Cairo v Telecom Egypt SC,1-2,1.0,0.0,5.0,1,False,
+2025-12-27T15:00:00+00:00,Egyptian Cup,El Geish v Kahraba Ismailia,1-1,1.0,0.0,2.96,0,False,
+2025-12-27T15:00:00+00:00,Scottish League One,Queen of South v Hamilton,4-1,3.0,1.0,3.85,1,False,
+2025-12-27T15:30:00+00:00,Israeli Cup,Maccabi Tel Aviv v Hapoel Haifa,5-0,4.0,0.0,3.65,1,False,
+2025-12-27T15:45:00+00:00,UAE Super Cup,Al Ahli (UAE) v Al Sharjah,2-3,2.0,2.0,3.5,1,False,
+2025-12-27T16:00:00+00:00,Malian Premiere Division,Binga FC v FC Diarra,1-1,1.0,0.0,2.52,0,False,
+2025-12-27T16:00:00+00:00,Malian Premiere Division,US Bougouni v Djoliba,0-2,0.0,0.0,3.9,1,True,1
+2025-12-27T16:00:00+00:00,Malian Premiere Division,Stade Malien de Bamako v Derby Academie,3-0,3.0,0.0,4.0,1,False,
+2025-12-27T16:00:00+00:00,Turkish 1 Lig,Pendikspor v Erokspor A.S,0-0,0.0,0.0,3.55,0,True,0
+2025-12-27T16:00:00+00:00,Algerian Ligue 1,Kabylie v ASO Chlef,2-1,2.0,1.0,3.7,1,False,
+2025-12-27T16:15:00+00:00,Italian Serie B,Palermo v Padova,1-0,1.0,0.0,4.2,1,False,
+2025-12-27T17:00:00+00:00,Italian Serie A,Udinese v Lazio,1-1,0.0,0.0,3.0,0,True,0
+2025-12-27T17:15:00+00:00,Belgian Pro League,Yellow-Red Mechelen v FCV Dender,1-1,1.0,1.0,3.5,0,False,
+2025-12-27T17:30:00+00:00,English Premier League,Chelsea v Aston Villa,1-2,1.0,0.0,4.3,1,False,
+2025-12-27T17:30:00+00:00,Saudi Professional League,Al-Ittihad v Al-Shabab (KSA),2-0,1.0,0.0,5.3,1,False,
+2025-12-27T17:30:00+00:00,Africa Cup of Nations,Uganda v Tanzania,1-1,0.0,1.0,2.74,0,False,
+2025-12-27T17:45:00+00:00,Scottish Premiership,Aberdeen v Dundee Utd,1-1,1.0,1.0,4.0,0,False,
+2025-12-27T18:00:00+00:00,Malian Premiere Division,AS Bakaridjan v AS Real Bamako,0-0,0.0,0.0,3.3,0,True,0
+2025-12-27T18:00:00+00:00,Israeli Cup,Hapoel Beer Sheva v Sderot FC,2-1,1.0,0.0,32.0,1,False,
+2025-12-27T18:00:00+00:00,Portuguese Primeira Liga,Famalicao v Club Football Estrela,2-3,2.0,3.0,4.6,1,False,
+2025-12-27T18:30:00+00:00,Italian Serie B,SSD Bari v Calcio Avellino SSD,1-1,1.0,0.0,3.1,0,False,
+2025-12-27T18:30:00+00:00,Israeli Cup,Ironi Tiberias v Beitar Jerusalem,1-2,1.0,1.0,5.1,1,False,
+2025-12-27T19:45:00+00:00,Belgian Pro League,Gent v Westerlo,2-0,2.0,0.0,3.75,1,False,
+2025-12-27T19:45:00+00:00,Italian Serie A,Pisa v Juventus,0-2,0.0,0.0,4.5,1,True,1
+2025-12-27T20:00:00+00:00,Africa Cup of Nations,Nigeria v Tunisia,3-2,2.0,0.0,3.05,1,False,
+2025-12-27T20:30:00+00:00,Portuguese Primeira Liga,Estoril Praia v Alverca,4-1,4.0,0.0,3.5,1,False,
+2025-12-27T21:00:00+00:00,Honduras Reserve League,Real Espana (Res) v CD Platense (Res),3-2,2.0,1.0,5.7,1,False,
+2025-12-28T00:00:00+00:00,Guatemalan Liga Nacional,CSD Municipal v Antigua GFC,1-0,1.0,0.0,4.0,1,False,
+2025-12-28T01:00:00+00:00,Honduras Liga Nacional,CD Olimpia v Real Espana,1-0,0.0,0.0,3.65,1,True,1
+2025-12-28T01:00:00+00:00,Costa Rican Liga de Ascenso,Inter San Carlos v A.D. Cofutpa,3-1,2.0,1.0,4.2,1,False,
+2025-12-28T05:15:00+00:00,Australian A-League Women,Melbourne City (W) v Perth Glory (W),3-1,2.0,1.0,7.2,1,False,
+2025-12-28T05:30:00+00:00,Hong Kong 1st Division League,Supreme FC v Sham Shui Po,5-0,4.0,0.0,8.6,1,False,
+2025-12-28T06:30:00+00:00,Indonesian Super League,Malut United v Pusamania Borneo FC,3-2,1.0,2.0,3.5,1,False,
+2025-12-28T08:00:00+00:00,Thai League Cup,Uttaradit FC v BG Pathumthani United,0-4,0.0,2.0,7.2,1,False,
+2025-12-28T08:00:00+00:00,Australian A-League Men,Melbourne City v Perth Glory,1-3,0.0,2.0,4.1,1,False,
+2025-12-28T08:00:00+00:00,Thai League Cup,Lopburi City FC v Nakhon Ratchasima,1-2,1.0,1.0,4.4,1,False,
+2025-12-28T08:30:00+00:00,Indonesian Super League,Persebaya Surabaya v Persijap Jepara,4-0,2.0,1.0,3.7,1,False,
+2025-12-28T09:00:00+00:00,Thai League Cup,Satun United FC v Lamphun Warrior,0-2,0.0,2.0,3.8,1,False,
+2025-12-28T09:00:00+00:00,Myanmar Ladies League,Yreo FC (W) v Shan United FC (W),0-3,0.0,2.0,1.11,1,False,
+2025-12-28T09:00:00+00:00,Myanmar National League 2,Silver Stars FC v Chinland FC,0-6,0.0,3.0,1.4,1,False,
+2025-12-28T09:00:00+00:00,Myanmar National League 2,Yangon City v YB United FC,6-0,2.0,0.0,1.1,1,False,
+2025-12-28T10:00:00+00:00,Turkish 2 Lig,Kepez Belediyespor v Batman Petrolspor,1-4,1.0,3.0,7.4,1,False,
+2025-12-28T10:00:00+00:00,Turkish 2 Lig,Iskenderunspor v Ankaragucu,4-2,2.0,1.0,3.1,1,False,
+2025-12-28T10:00:00+00:00,Thai League Cup,Customs United v Sukhothai,2-3,2.0,1.0,4.7,1,False,
+2025-12-28T10:00:00+00:00,Thai League Cup,FC Samut Sakhon v Prachuap,0-2,0.0,2.0,5.3,1,False,
+2025-12-28T10:30:00+00:00,Turkish 1 Lig,Keciorengucu v Umraniyespor,3-1,3.0,0.0,4.5,1,False,
+2025-12-28T10:30:00+00:00,Turkish 1 Lig,Serik Belediyespor v Boluspor,1-4,1.0,2.0,4.5,1,False,
+2025-12-28T11:00:00+00:00,Cambodian Premier League,Angkor Tiger FC v Kirivong Sok Sen Chey,0-0,0.0,0.0,1.02,0,True,0
+2025-12-28T11:00:00+00:00,Thai League Cup,Esan Pattaya v Bangkok Utd,0-3,0.0,1.0,4.4,1,False,
+2025-12-28T11:00:00+00:00,Cambodian Premier League,Nagaworld FC v ISI Dangkor Senchey FC,1-1,1.0,1.0,7.2,0,False,
+2025-12-28T11:00:00+00:00,Thai League Cup,Mahasarakham Sam Bai Tao FC v Rayong FC,1-1,1.0,0.0,4.2,0,False,
+2025-12-28T11:00:00+00:00,Portuguese Segunda Liga,Academico de Viseu v Benfica B,1-2,1.0,1.0,3.55,1,False,
+2025-12-28T11:30:00+00:00,Thai League Cup,Chainat Hornbill v Port FC,0-5,0.0,3.0,4.8,1,False,
+2025-12-28T11:30:00+00:00,Italian Serie A,AC Milan v Verona,3-0,3.0,0.0,5.2,1,False,
+2025-12-28T12:00:00+00:00,Turkish 2 Lig,Inegolspor v Altinordu,3-1,2.0,0.0,4.3,1,False,
+2025-12-28T12:00:00+00:00,Indonesian Championship,Pss Sleman v Persipal FC,4-0,1.0,0.0,9.6,1,False,
+2025-12-28T12:00:00+00:00,Turkish 2 Lig,Erzincanspor v Elazigspor,1-1,0.0,1.0,5.2,0,False,
+2025-12-28T12:00:00+00:00,Turkish 2 Lig,Muglaspor v Kastamonuspor,1-1,1.0,0.0,4.0,0,False,
+2025-12-28T12:00:00+00:00,Turkish 2 Lig,Bucaspor v Karacabey Belediyespor AS,1-4,1.0,3.0,4.0,1,False,
+2025-12-28T12:00:00+00:00,Indonesian Super League,Madura Utd v Semen Padang,5-1,3.0,1.0,3.45,1,False,
+2025-12-28T12:00:00+00:00,Thai League Cup,Pattani FC v Ratchaburi,2-0,2.0,0.0,4.0,1,False,
+2025-12-28T12:00:00+00:00,Lebanese Premier League,Racing Beirut v Al Riyadi Al Abassiya,1-3,0.0,3.0,4.4,1,False,
+2025-12-28T12:00:00+00:00,Turkish 2 Lig,Beykoz Anadolu Spor v Karaman Belediyespor,2-0,1.0,0.0,3.5,1,False,
+2025-12-28T12:15:00+00:00,Malaysian Super League,Selangor FA v Melaka FC,3-0,3.0,0.0,11.5,1,False,
+2025-12-28T12:30:00+00:00,Africa Cup of Nations,Gabon v Mozambique,2-3,1.0,3.0,3.3,1,False,
+2025-12-28T12:30:00+00:00,Egyptian Cup,Zamalek v Baladeyet Al-Mahalla,1-0,1.0,0.0,6.6,1,False,
+2025-12-28T12:30:00+00:00,Egyptian Cup,National Bank v ENPPI,0-1,0.0,0.0,3.2,1,True,1
+2025-12-28T12:50:00+00:00,UAE Arabian Gulf League,Al Wahda (Abu Dhabi) v Al-Khaleej Khor Fakkan,1-0,1.0,0.0,5.4,1,False,
+2025-12-28T12:50:00+00:00,UAE Arabian Gulf League,Dibba Al Fujairah v Al Wasl,1-3,1.0,2.0,5.1,1,False,
+2025-12-28T13:00:00+00:00,Turkish 1 Lig,Erzurum BB v Corum Belediyespor,1-0,1.0,0.0,3.3,1,False,
+2025-12-28T13:05:00+00:00,Kuwaiti Premier League,Al Tadhamon v Al Arabi Kuwait,1-2,0.0,1.0,6.6,1,False,
+2025-12-28T14:00:00+00:00,Portuguese Segunda Liga,Pacos Ferreira v Farense,0-0,0.0,0.0,3.5,0,True,0
+2025-12-28T14:00:00+00:00,English Premier League,Sunderland v Leeds,1-1,1.0,1.0,3.2,0,False,
+2025-12-28T14:00:00+00:00,Italian Serie A,US Cremonese v Napoli,0-2,0.0,2.0,3.95,1,False,
+2025-12-28T14:30:00+00:00,Qatari Stars League,Al Sailiya v Al-Wakra,0-0,0.0,0.0,4.1,0,True,0
+2025-12-28T14:30:00+00:00,Qatari Stars League,Al-Duhail SC v Qatar SC,1-0,1.0,0.0,5.2,1,False,
+2025-12-28T15:00:00+00:00,Nigerian Premier League,Kun Khalifat FC v Katsina United,0-1,0.0,1.0,3.6,1,False,
+2025-12-28T15:00:00+00:00,Africa Cup of Nations,Equatorial Guinea v Sudan,0-1,0.0,0.0,2.96,1,True,1
+2025-12-28T15:00:00+00:00,Nigerian Premier League,Enyimba v Shooting Stars,3-0,1.0,0.0,3.6,1,False,
+2025-12-28T15:30:00+00:00,Portuguese Primeira Liga,Casa Pia v Guimaraes,0-0,0.0,0.0,3.1,0,True,0
+2025-12-28T15:30:00+00:00,Portuguese Primeira Liga,Arouca v Gil Vicente,2-2,2.0,2.0,3.5,0,False,
+2025-12-28T15:45:00+00:00,UAE Arabian Gulf League,Al Nasr (UAE) v Al Ain,2-2,1.0,2.0,4.2,0,False,
+2025-12-28T15:45:00+00:00,Kuwaiti Premier League,Kuwait SC v Al Fahaheel FC,5-0,4.0,0.0,7.2,1,False,
+2025-12-28T16:00:00+00:00,Jordanian Cup,Shabab Al Ordon v Al Salt,1-2,0.0,2.0,2.98,1,False,
+2025-12-28T16:00:00+00:00,Jordanian Cup,Al Faisaly Amman v Al-Wehdat,1-0,0.0,0.0,3.3,1,True,1
+2025-12-28T16:00:00+00:00,Turkish 1 Lig,Amed Sportif Faaliyetler v 76 Igdir Belediyespor,3-0,2.0,0.0,3.95,1,False,
+2025-12-28T16:00:00+00:00,Gambian GFA League 1st Division,Brikama Utd v Gambia Ports Authority,0-1,0.0,1.0,2.64,1,False,
+2025-12-28T16:00:00+00:00,Mauritanian Ligue 1,AS Douanes Nouakchott v Kaedi FC,1-0,1.0,0.0,4.0,1,False,
+2025-12-28T16:00:00+00:00,Gambian GFA League 1st Division,Hart FC v Fortune FC,0-0,0.0,0.0,3.05,0,True,0
+2025-12-28T16:00:00+00:00,Bahraini Premier,Al-Muharraq v Al Najma (BRN),2-0,2.0,0.0,5.3,1,False,
+2025-12-28T16:00:00+00:00,Bahraini Premier,Al Ahli (BRN) v Sitra,1-2,1.0,2.0,3.25,1,False,
+2025-12-28T16:30:00+00:00,Senegalese Premier League,AS Dakar SC v Sonacos,5-2,2.0,2.0,2.66,1,False,
+2025-12-28T16:30:00+00:00,English Premier League,Crystal Palace v Tottenham,0-1,0.0,1.0,3.6,1,False,
+2025-12-28T16:30:00+00:00,Qatari Stars League,Al Arabi (QAT) v Al Rayyan,2-2,1.0,1.0,4.8,0,False,
+2025-12-28T17:00:00+00:00,Italian Serie A,Bologna v Sassuolo,1-1,1.0,0.0,3.35,0,False,
+2025-12-28T17:00:00+00:00,Nigerian Premier League,Ikorodu City v Remo Stars,1-0,1.0,0.0,3.75,1,False,
+2025-12-28T17:30:00+00:00,Africa Cup of Nations,Algeria v Burkina Faso,1-0,1.0,0.0,3.5,1,False,
+2025-12-28T18:00:00+00:00,Albanian Super Cup,Egnatia Rrogozhine v Dinamo Tirana,1-3,1.0,2.0,2.94,1,False,
+2025-12-28T18:00:00+00:00,Portuguese Primeira Liga,Braga v Benfica,2-2,2.0,2.0,3.45,0,False,
+2025-12-28T19:45:00+00:00,Italian Serie A,Atalanta v Inter,0-1,0.0,0.0,3.7,1,True,1
+2025-12-28T20:00:00+00:00,Africa Cup of Nations,Ivory Coast v Cameroon,1-1,1.0,1.0,2.94,0,False,
+2025-12-28T20:00:00+00:00,Jamaican Premier League,Harbour View FC v Cavalier,0-1,0.0,0.0,3.7,1,True,1
+2025-12-28T20:00:00+00:00,Jamaican Premier League,Portmore Utd v Dunbeholden FC,0-0,0.0,0.0,3.25,0,True,0
+2025-12-28T20:00:00+00:00,Jamaican Premier League,Montego Bay United v Mount Pleasant FC,0-1,0.0,1.0,3.5,1,False,
+2025-12-28T20:30:00+00:00,Portuguese Primeira Liga,Sporting Lisbon v Rio Ave,4-0,4.0,0.0,14.5,1,False,
+2025-12-28T21:00:00+00:00,Honduras Liga Nacional,CD Marathon v Olancho,2-1,1.0,1.0,4.3,1,False,
+2025-12-28T21:00:00+00:00,Jamaican Premier League,Spanish Town Police v Treasure Beach FC,1-0,1.0,0.0,4.8,1,False,
+2025-12-28T23:00:00+00:00,Elite Friendlies,Deportivo Irapuato FC v Guadalajara,0-4,0.0,4.0,4.1,1,False,
+2025-12-28T23:30:00+00:00,Jamaican Premier League,Waterhouse FC v Molynes United FC,0-2,0.0,1.0,4.2,1,False,
+2025-12-29T08:00:00+00:00,Australian A-League Men,Melbourne Victory v Wellington Phoenix,1-1,,,5.1,0,False,
+2025-12-29T08:00:00+00:00,Vietnamese U19,Cong an TP HCM U19 v Dong Nai U19,1-0,,,7.4,1,False,
+2025-12-29T08:30:00+00:00,Indonesian Super League,Bali Utd Pusam v Dewa United FC,0-0,,,3.55,0,False,
+2025-12-29T08:30:00+00:00,Indonesian Super League,Psim Yogyakarta v PSBS Biak Numfor,0-0,,,7.2,0,False,
+2025-12-29T08:30:00+00:00,Indonesian Championship,Sumset United v Bekasi City,0-0,,,3.4,0,False,
+2025-12-29T11:30:00+00:00,Turkish 1 Lig,Adana Demirspor v Istanbulspor,1-5,1.0,5.0,190.0,1,False,
+2025-12-29T12:00:00+00:00,Ethiopian Premier League,Welayta Dicha v Arba Minch,0-0,0.0,0.0,2.06,0,True,0
+2025-12-29T12:00:00+00:00,Indonesian Super League,Persija Jakarta v Bhayangkara FC,3-0,1.0,0.0,8.4,1,False,
+2025-12-29T12:30:00+00:00,Egyptian Second Division B,Fayoum FC v Tel Bani Swaif,0-1,0.0,1.0,2.8,1,False,
+2025-12-29T12:50:00+00:00,Omani Sultan Cup,Al Msnaa v Al Nahdha,1-3,0.0,3.0,3.45,1,False,
+2025-12-29T12:50:00+00:00,UAE U23,Al Ain U23 v Al Nasr U23,2-0,1.0,0.0,5.3,1,False,
+2025-12-29T12:50:00+00:00,UAE U23,Al Wasl U23 v Dibba Al Fujairah U23,2-0,1.0,0.0,4.3,1,False,
+2025-12-29T12:50:00+00:00,UAE Arabian Gulf League,Al-Ittihad Kalba v Al Jazira,1-1,1.0,1.0,3.85,0,False,
+2025-12-29T13:00:00+00:00,Ethiopian Premier League,Welwalo Adigrat University v Bahir Dar FC,0-0,0.0,0.0,2.94,0,True,0
+2025-12-29T13:00:00+00:00,Algerian Ligue 1,ES Mostaganem v ES Ben Aknoun,0-1,0.0,0.0,3.0,1,True,1
+2025-12-29T13:00:00+00:00,Rwandan National Football League,Muhanga v Al Merreikh,0-0,0.0,0.0,3.05,0,True,0
+2025-12-29T14:30:00+00:00,Qatari Stars League,Al Shamal v Al-Sadd,0-3,0.0,3.0,4.9,1,False,
+2025-12-29T14:35:00+00:00,Saudi Professional League,Al-Khaleej Saihat v Al-Fateh (KSA),0-1,0.0,1.0,4.0,1,False,
+2025-12-29T15:00:00+00:00,Ethiopian Premier League,Mekelle 70 Enderta v Saint George FC,1-1,0.0,1.0,2.82,0,False,
+2025-12-29T15:45:00+00:00,UAE Arabian Gulf League,Al Dhafra v Bani Yas,0-2,0.0,2.0,3.85,1,False,
+2025-12-29T15:50:00+00:00,Omani Sultan Cup,Al Seeb v Jaalan,2-0,1.0,0.0,20.0,1,False,
+2025-12-29T16:00:00+00:00,Rwandan National Football League,Al Hilal Omdurman v As Kigali,4-2,1.0,1.0,4.2,1,False,
+2025-12-29T16:00:00+00:00,Gambian GFA League 1st Division,Bombada FC v Real De Banjul,2-0,0.0,0.0,2.6,1,True,1
+2025-12-29T16:00:00+00:00,Africa Cup of Nations,Angola v Egypt,0-0,0.0,0.0,3.1,0,True,0
+2025-12-29T16:00:00+00:00,Africa Cup of Nations,Zimbabwe v South Africa,2-3,1.0,2.0,3.6,1,False,
+2025-12-29T16:00:00+00:00,Bahraini Premier,Al Khalidiyah v Al Budaiya,3-1,1.0,1.0,5.2,1,False,
+2025-12-29T16:00:00+00:00,Mauritanian Ligue 1,AS Pompier v ASC SNIM,1-1,1.0,1.0,3.2,0,False,
+2025-12-29T16:00:00+00:00,Gambian GFA League 1st Division,Medina United FC v Team Rhino FC,2-1,2.0,1.0,3.0,1,False,
+2025-12-29T16:30:00+00:00,Qatari Stars League,Al Ahli (QAT) v Umm Salal,0-3,0.0,1.0,4.2,1,False,
+2025-12-29T17:30:00+00:00,Saudi Professional League,Al Riyadh SC v Al-Hazm (KSA),1-2,1.0,2.0,3.3,1,False,
+2025-12-29T17:30:00+00:00,Saudi Professional League,Al-Taawoun Buraidah v Al Najma Club,1-0,0.0,0.0,5.0,1,True,1
+2025-12-29T18:00:00+00:00,English Sky Bet Championship,Coventry v Ipswich,0-2,0.0,0.0,3.7,1,True,1
+2025-12-29T18:30:00+00:00,Algerian Ligue 1,MC Alger v ES Setif,2-0,2.0,0.0,4.2,1,False,
+2025-12-29T19:00:00+00:00,Africa Cup of Nations,Comoros v Mali,0-0,0.0,0.0,3.95,0,True,0
+2025-12-29T19:00:00+00:00,Africa Cup of Nations,Zambia v Morocco,0-3,0.0,3.0,7.6,1,False,
+2025-12-29T19:30:00+00:00,English Sky Bet League 2,Newport County v Crewe,2-0,1.0,0.0,3.5,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,Oxford Utd v Swansea,0-1,0.0,1.0,3.45,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Bristol Rovers v Barnet,0-2,0.0,1.0,3.6,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Bolton v Mansfield,0-1,0.0,1.0,5.4,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Burton Albion v Wigan,0-2,0.0,0.0,3.35,1,True,1
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,West Brom v QPR,2-1,2.0,1.0,3.95,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Grimsby v Shrewsbury,1-0,0.0,0.0,3.95,1,True,1
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,Sheff Wed v Blackburn,0-0,0.0,0.0,3.85,0,True,0
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Salford City v Fleetwood Town,0-0,0.0,0.0,4.0,0,True,0
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,Middlesbrough v Hull,0-1,0.0,1.0,4.3,1,False,
+2025-12-29T19:45:00+00:00,Italian Serie A,Roma v Genoa,3-1,3.0,0.0,3.85,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Crawley Town v Bromley,1-3,1.0,3.0,3.55,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,Millwall v Bristol City,2-1,1.0,1.0,3.45,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Gillingham v Colchester,1-1,0.0,0.0,3.4,0,True,0
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Barnsley v Lincoln,0-2,0.0,1.0,3.75,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,Wrexham v Preston,2-1,1.0,0.0,3.55,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,Portsmouth v Charlton,2-1,0.0,0.0,3.2,1,True,1
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Accrington v Harrogate Town,1-0,1.0,0.0,3.9,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Luton v Leyton Orient,3-0,3.0,0.0,4.1,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,Norwich v Watford,0-1,0.0,0.0,3.6,1,True,1
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Tranmere v Barrow,1-3,1.0,3.0,3.7,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Stockport v Doncaster,4-2,2.0,1.0,4.0,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,Stoke v Sheff Utd,1-2,0.0,2.0,3.6,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Huddersfield v Northampton,2-0,1.0,0.0,4.5,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet Championship,Leicester v Derby,2-1,2.0,1.0,3.6,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Cheltenham v Swindon,0-2,0.0,1.0,3.6,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Chesterfield v Cambridge Utd,0-1,0.0,1.0,3.25,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Peterborough v Reading,1-1,0.0,1.0,3.6,0,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Cardiff v Stevenage,2-1,0.0,1.0,3.9,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,Walsall v Oldham,1-2,1.0,1.0,3.3,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 2,MK Dons v Notts Co,1-1,0.0,1.0,3.7,0,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,AFC Wimbledon v Exeter,0-1,0.0,1.0,3.25,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Plymouth v Wycombe,1-1,0.0,1.0,3.65,0,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Blackpool v Rotherham,4-0,2.0,0.0,3.75,1,False,
+2025-12-29T19:45:00+00:00,English Sky Bet League 1,Bradford v Port Vale,1-0,0.0,0.0,4.0,1,True,1
+2025-12-29T19:45:00+00:00,English National League South,Chelmsford v Dag and Red,1-4,1.0,1.0,3.55,1,False,
+2025-12-29T20:00:00+00:00,Jamaican Premier League,Tivoli Gardens v Chapelton,2-0,1.0,0.0,3.35,1,False,
+2025-12-29T20:15:00+00:00,English Sky Bet Championship,Birmingham v Southampton,1-1,1.0,0.0,3.8,0,False,
+2025-12-29T20:15:00+00:00,Portuguese Primeira Liga,Porto v AVS Futebol SAD,2-0,1.0,0.0,12.0,1,False,
+2025-12-30T00:00:00+00:00,Friendly Matches,Tlaxcala F.C v Pachuca,1-4,1.0,3.0,4.0,1,False,
+2025-12-30T00:30:00+00:00,Jamaican Premier League,Arnett Gardens FC v Racing United FC,1-1,0.0,0.0,3.85,0,True,0
+2025-12-30T08:00:00+00:00,Indonesian Liga 3,Sang Maestro v RANS Nusantara FC,3-1,2.0,1.0,3.15,1,False,
+2025-12-30T08:00:00+00:00,Australian A-League Women,Western Sydney (W) v Wellington Phoenix (W),0-3,0.0,3.0,4.7,1,False,
+2025-12-30T08:15:00+00:00,Cambodian Premier League,Kampong Speu v Battambang,0-10,0.0,6.0,4.2,1,False,
+2025-12-30T08:30:00+00:00,Indonesian Super League,Arema Cronus v Persita Tangerang,0-1,0.0,0.0,3.5,1,True,1
+2025-12-30T08:45:00+00:00,Malaysian A1 Semi-Pro League,Bunga Raya FC v Kelantan Red Warrior FC,0-2,0.0,2.0,7.8,1,False,
+2025-12-30T09:00:00+00:00,Myanmar National League,Yadanarbon v Dagon FC,2-2,2.0,2.0,4.1,0,False,
+2025-12-30T09:30:00+00:00,Myanmar National League,Dagon Port FC v Thitsar Arman FC,3-3,2.0,3.0,5.2,0,False,
+2025-12-30T10:00:00+00:00,Ethiopian Higher League,Addis Ababa City v Boditi Ketema,0-0,0.0,0.0,3.1,0,True,0
+2025-12-30T10:00:00+00:00,Ethiopian Premier League,Dire Dawa Kima FC v Negele Arsi Ketema,0-3,0.0,1.0,2.86,1,False,
+2025-12-30T12:00:00+00:00,Indonesian Liga 3,Persika Karanganyar v Persibo Bojonegoro,3-0,3.0,0.0,3.5,1,False,
+2025-12-30T12:00:00+00:00,Indonesian Liga 3,Psgc Ciamis v Pekanbaru FC,1-0,1.0,0.0,3.0,1,False,
+2025-12-30T12:00:00+00:00,Ethiopian Premier League,Hawassa Kima FC v Hadiah Hosanna FC,0-1,0.0,1.0,2.8,1,False,
+2025-12-30T12:15:00+00:00,Lebanese Premier League,Safa Sc v Shabab Sahel,1-0,0.0,0.0,3.5,1,True,1
+2025-12-30T12:15:00+00:00,Lebanese Premier League,Al-Ansar v Al-Bourj FC,4-1,2.0,0.0,8.4,1,False,
+2025-12-30T12:25:00+00:00,Saudi 1st Division,Al-Arabi Al-Saudi v Al-Wahda (KSA),0-1,0.0,0.0,3.75,1,True,1
+2025-12-30T12:30:00+00:00,Ethiopian Higher League,Soloda Adwa v Debre Birhan Ketema,0-0,0.0,0.0,2.46,0,True,0
+2025-12-30T12:30:00+00:00,Egyptian Second Division B,Banha v Nogoom El Mostakbal,0-3,0.0,1.0,2.9,1,False,
+2025-12-30T12:30:00+00:00,Egyptian Second Division B,Levels FC v Diamond FC,2-1,0.0,1.0,3.15,1,False,
+2025-12-30T12:30:00+00:00,Egyptian Second Division B,Egypt Insurance v Eastern Company SC,2-1,0.0,1.0,3.4,1,False,
+2025-12-30T12:45:00+00:00,Saudi 1st Division,Al-Ula FC v Al-Anwar Club,1-1,1.0,0.0,5.2,0,False,
+2025-12-30T12:50:00+00:00,UAE U23,Al Jazira U23 v Kalba U23,0-3,0.0,2.0,4.4,1,False,
+2025-12-30T12:50:00+00:00,UAE U23,Bani Yas U23 v Al Dhafra U23,3-3,3.0,2.0,4.3,0,False,
+2025-12-30T12:50:00+00:00,UAE U23,Ajman U23 v Shabab Al Ahli U23,1-0,1.0,0.0,3.95,1,False,
+2025-12-30T12:55:00+00:00,UAE Division 1,Al-Ittifaq Maqaba v Al Oruba,0-2,0.0,1.0,5.1,1,False,
+2025-12-30T12:55:00+00:00,UAE Division 1,Al Hamriyah v Al-Arabi Umm Quwain,2-3,1.0,2.0,3.3,1,False,
+2025-12-30T13:00:00+00:00,Ethiopian Premier League,Suhul Shire v Adama Kenema fc,0-1,0.0,0.0,2.62,1,True,1
+2025-12-30T13:00:00+00:00,Friendly Matches,Avenir S Marsa v Olympique De Beja,1-0,0.0,0.0,3.3,1,True,1
+2025-12-30T14:40:00+00:00,Saudi 1st Division,Al-Adalh v Al Jabalain,2-1,2.0,0.0,3.65,1,False,
+2025-12-30T15:00:00+00:00,Friendly Matches,UCAM Murcia v Real Murcia,3-2,2.0,1.0,3.3,1,False,
+2025-12-30T15:00:00+00:00,Egyptian League Cup,Al Ahly Cairo v Al Mokawloon,0-3,0.0,2.0,3.65,1,False,
+2025-12-30T15:00:00+00:00,Northern Irish Championship,Ballinamallard United v Queens University,1-1,1.0,0.0,3.8,0,False,
+2025-12-30T15:00:00+00:00,Ethiopian Premier League,Cafe Sidama v Sheger Ketema,2-0,1.0,0.0,3.65,1,False,
+2025-12-30T15:00:00+00:00,Egyptian League Cup,El Geish v Ghazl El Mahallah,1-0,1.0,0.0,2.58,1,False,
+2025-12-30T15:30:00+00:00,Saudi Professional League,Al Ahli v Al-Feiha,2-0,1.0,0.0,4.2,1,False,
+2025-12-30T16:00:00+00:00,Bahraini 2nd Division,Al Hala v Al Tadamun Buri,0-0,0.0,0.0,8.4,0,True,0
+2025-12-30T16:00:00+00:00,Africa Cup of Nations,Tanzania v Tunisia,1-1,1.0,1.0,3.75,0,False,
+2025-12-30T16:00:00+00:00,Bahraini 2nd Division,East Riffa v Al-Ittifaq Maqaba,1-1,0.0,1.0,3.3,0,False,
+2025-12-30T16:00:00+00:00,Africa Cup of Nations,Uganda v Nigeria,1-3,0.0,1.0,3.7,1,False,
+2025-12-30T16:00:00+00:00,Bahraini 2nd Division,Busaiteen Club v Um Al Hassam,0-0,0.0,0.0,3.55,0,True,0
+2025-12-30T16:00:00+00:00,Mauritanian Ligue 1,Nouakchott Kings v Chemal FC,1-1,0.0,1.0,3.0,0,False,
+2025-12-30T17:00:00+00:00,Israeli Premier League,Maccabi Bnei Raina v Hapoel Kiryat Shmona,3-1,3.0,1.0,3.85,1,False,
+2025-12-30T17:30:00+00:00,Saudi Professional League,Al-Ettifaq v Al Nassr,2-2,1.0,1.0,7.0,0,False,
+2025-12-30T17:30:00+00:00,Saudi Professional League,Al-Akhdoud v Dhamk,0-1,0.0,1.0,3.15,1,False,
+2025-12-30T17:30:00+00:00,Israeli Premier League,Hapoel Haifa v Bnei Sakhnin,0-2,0.0,1.0,3.65,1,False,
+2025-12-30T18:00:00+00:00,Israeli Premier League,Maccabi Tel Aviv v Ironi Tiberias,1-1,1.0,0.0,8.0,0,False,
+2025-12-30T18:00:00+00:00,Egyptian League Cup,Smouha v Kahraba Ismailia,2-2,2.0,2.0,3.6,0,False,
+2025-12-30T18:00:00+00:00,Friendly Matches,Sergipe v Coruripe,0-1,0.0,1.0,3.05,1,False,
+2025-12-30T19:00:00+00:00,Africa Cup of Nations,Botswana v DR Congo,0-3,0.0,3.0,6.4,1,False,
+2025-12-30T19:00:00+00:00,Africa Cup of Nations,Benin v Senegal,0-3,0.0,1.0,6.2,1,False,
+2025-12-30T19:30:00+00:00,English Premier League,Nottm Forest v Everton,0-2,0.0,1.0,3.65,1,False,
+2025-12-30T19:30:00+00:00,English Premier League,Burnley v Newcastle,1-3,1.0,2.0,4.5,1,False,
+2025-12-30T19:30:00+00:00,English Premier League,Chelsea v Bournemouth,2-2,2.0,2.0,4.5,0,False,
+2025-12-30T19:30:00+00:00,English Premier League,West Ham v Brighton,2-2,2.0,1.0,3.8,0,False,
+2025-12-30T19:45:00+00:00,English National League,Boreham Wood v Solihull Moors,2-1,2.0,1.0,5.3,1,False,
+2025-12-30T19:45:00+00:00,English National League,Woking v Braintree,0-1,0.0,1.0,3.95,1,False,
+2025-12-30T19:45:00+00:00,Scottish Premiership,Livingston v Dundee Utd,1-3,0.0,1.0,3.4,1,False,
+2025-12-30T19:45:00+00:00,Northern Irish Premiership,Bangor v Ballymena,2-0,1.0,0.0,3.4,1,False,
+2025-12-30T19:45:00+00:00,Scottish Premiership,Dundee v Kilmarnock,2-1,1.0,1.0,3.2,1,False,
+2025-12-30T19:45:00+00:00,English National League South,Dover v Ebbsfleet Utd,1-2,1.0,1.0,3.85,1,False,
+2025-12-30T19:45:00+00:00,English National League,Forest Green v Truro City,1-1,1.0,1.0,6.6,0,False,
+2025-12-30T19:45:00+00:00,Northern Irish Premiership,Coleraine v Linfield,3-1,1.0,0.0,3.5,1,False,
+2025-12-30T19:45:00+00:00,English National League North,Radcliffe Borough v AFC Fylde,3-3,0.0,3.0,4.0,0,False,
+2025-12-30T19:45:00+00:00,English National League North,Peterborough Sports FC v Oxford City,0-0,0.0,0.0,3.65,0,True,0
+2025-12-30T19:45:00+00:00,English National League South,AFC Totton v Chippenham,1-1,0.0,0.0,4.1,0,True,0
+2025-12-30T19:45:00+00:00,English National League North,Southport v Curzon Ashton,2-4,1.0,3.0,3.7,1,False,
+2025-12-30T19:45:00+00:00,English National League North,Merthyr Town v Hereford FC,2-2,1.0,1.0,4.6,0,False,
+2025-12-30T19:45:00+00:00,English National League North,Spennymoor Town v Scarborough Athletic,1-1,1.0,0.0,3.55,0,False,
+2025-12-30T19:45:00+00:00,English National League,Southend v Sutton Utd,1-0,1.0,0.0,5.4,1,False,
+2025-12-30T19:45:00+00:00,English National League,Tamworth FC v FC Halifax Town,0-2,0.0,2.0,3.75,1,False,
+2025-12-30T19:45:00+00:00,English National League North,Chorley v Marine FC,2-1,1.0,1.0,3.65,1,False,
+2025-12-30T19:45:00+00:00,English National League,Altrincham v York City,1-2,0.0,1.0,5.5,1,False,
+2025-12-30T19:45:00+00:00,English National League South,Slough Town v Chesham Utd,3-0,2.0,0.0,3.55,1,False,
+2025-12-30T19:45:00+00:00,English National League South,Hornchurch v Maidstone Utd,1-2,1.0,1.0,3.45,1,False,
+2025-12-30T19:45:00+00:00,Scottish Premiership,Hibernian v Aberdeen,2-0,1.0,0.0,3.85,1,False,
+2025-12-30T19:45:00+00:00,English National League,Scunthorpe v Gateshead,2-0,1.0,0.0,6.0,1,False,
+2025-12-30T19:45:00+00:00,Scottish Premiership,Rangers v St Mirren,2-1,2.0,0.0,4.4,1,False,
+2025-12-30T19:45:00+00:00,English National League North,Alfreton Town v Leamington,2-1,1.0,1.0,3.8,1,False,
+2025-12-30T19:45:00+00:00,English National League,Carlisle v Morecambe,1-0,1.0,0.0,5.6,1,False,
+2025-12-30T19:45:00+00:00,Northern Irish Premiership,Glentoran v Portadown,2-1,2.0,1.0,4.4,1,False,
+2025-12-30T19:45:00+00:00,English National League,Aldershot v Wealdstone,4-1,3.0,1.0,4.3,1,False,
+2025-12-30T19:45:00+00:00,English National League North,Darlington v South Shields,1-2,0.0,1.0,4.8,1,False,
+2025-12-30T19:45:00+00:00,English National League North,Bedford Town v Kings Lynn,4-2,1.0,1.0,3.65,1,False,
+2025-12-30T19:45:00+00:00,Northern Irish Premiership,Glenavon v Dungannon,0-1,0.0,1.0,3.55,1,False,
+2025-12-30T19:45:00+00:00,English National League,Rochdale v Hartlepool,1-2,0.0,2.0,4.9,1,False,
+2025-12-30T19:45:00+00:00,English National League South,Weston-super-Mare v Salisbury City,1-0,1.0,0.0,3.95,1,False,
+2025-12-30T19:45:00+00:00,English National League South,Horsham FC v Farnborough FC,2-2,2.0,2.0,4.2,0,False,
+2025-12-30T19:45:00+00:00,English National League,Yeovil v Eastleigh,1-1,1.0,1.0,3.4,0,False,
+2025-12-30T19:45:00+00:00,English National League South,Tonbridge Angels v Eastbourne,3-4,1.0,3.0,3.8,1,False,
+2025-12-30T19:45:00+00:00,English National League South,Worthing v Dorking Wanderers,3-2,3.0,2.0,4.5,1,False,
+2025-12-30T19:45:00+00:00,English National League North,Buxton v Worksop Town,3-1,2.0,1.0,3.9,1,False,
+2025-12-30T19:45:00+00:00,Northern Irish Premiership,Larne v Cliftonville,0-0,0.0,0.0,3.65,0,True,0
+2025-12-30T19:45:00+00:00,English National League South,Hemel Hempstead v Enfield Town,3-0,2.0,0.0,4.2,1,False,
+2025-12-30T19:45:00+00:00,English National League,Boston Utd v Brackley Town,1-2,1.0,1.0,3.7,1,False,
+2025-12-30T19:45:00+00:00,Welsh Premiership,Cardiff Metropolitan v Haverfordwest County,0-0,0.0,0.0,3.7,0,True,0
+2025-12-30T19:45:00+00:00,English National League South,Bath City v Torquay,0-0,0.0,0.0,3.65,0,True,0
+2025-12-30T19:45:00+00:00,English National League North,Kidderminster v AFC Telford,3-0,2.0,0.0,3.8,1,False,
+2025-12-30T19:45:00+00:00,English National League North,Chester v Macclesfield,2-0,1.0,0.0,3.85,1,False,
+2025-12-30T19:45:00+00:00,Northern Irish Premiership,Crusaders v Carrick Rangers,2-2,2.0,2.0,3.85,0,False,
+2025-12-30T20:00:00+00:00,Scottish Premiership,Motherwell v Celtic,2-0,2.0,0.0,4.5,1,False,
+2025-12-30T20:15:00+00:00,English Premier League,Man Utd v Wolves,1-1,1.0,1.0,5.4,0,False,
+2025-12-30T20:15:00+00:00,English Premier League,Arsenal v Aston Villa,4-1,2.0,0.0,5.5,1,False,
+2025-12-30T20:15:00+00:00,Portuguese Segunda Liga,Torreense v Lusitania Futebol Clube,0-1,0.0,1.0,3.2,1,False,
+2025-12-30T22:00:00+00:00,Friendly Matches,SC Penedense v Itabaiana,2-0,1.0,0.0,3.1,1,False,
+2025-12-30T22:30:00+00:00,Friendly Matches,ABC RN v Campinense,1-0,1.0,0.0,3.55,1,False,
+2025-12-30T23:30:00+00:00,Argentinian Cup,Arsenal de Viale v CA Union de Crespo,1-0,0.0,0.0,3.2,1,True,1
+2025-12-31T05:15:00+00:00,Australian A-League Women,Central Coast Mariners (W) v Brisbane Roar FC (W),3-2,3.0,2.0,4.1,1,False,
+2025-12-31T08:00:00+00:00,Australian A-League Men,Central Coast Mariners v Brisbane Roar,1-2,1.0,1.0,3.45,1,False,
+2025-12-31T09:00:00+00:00,Myanmar National League,Shan United v Yangon United,0-0,0.0,0.0,3.85,0,True,0
+2025-12-31T09:30:00+00:00,Myanmar National League,Mahar United FC v Hanthawaddy United FC,2-2,1.0,2.0,6.0,0,False,
+2025-12-31T10:00:00+00:00,Ethiopian Higher League,Menge Besashangul v Addis Ketema SC,1-1,0.0,0.0,4.5,0,True,0
+2025-12-31T12:00:00+00:00,Ethiopian Premier League,Defence Force FC v Ethiopian Coffee,0-1,0.0,1.0,3.05,1,False,
+2025-12-31T12:00:00+00:00,Jordanian Reserve League,Al Hussein SC (Res) v Al Baqaa Club (Res),4-0,1.0,0.0,4.1,1,False,
+2025-12-31T12:15:00+00:00,Saudi 1st Division,Al Draih v Al Jubail,5-2,4.0,0.0,7.4,1,False,
+2025-12-31T12:15:00+00:00,Saudi 1st Division,Al Batin v Abha,0-1,0.0,1.0,4.1,1,False,
+2025-12-31T12:30:00+00:00,Welsh Premiership,Bala Town v Caernarfon Town,0-1,0.0,1.0,4.4,1,False,
+2025-12-31T12:30:00+00:00,Ethiopian Higher League,Halaba City v Dessie Ketema,1-0,1.0,0.0,3.6,1,False,
+2025-12-31T12:30:00+00:00,Egyptian Second Division B,Horse Owners Club v El Olympi,1-1,1.0,1.0,3.7,0,False,
+2025-12-31T13:00:00+00:00,Ethiopian Premier League,Ethiopia Nigd Bank v Ethiopian Medhin,2-1,1.0,1.0,2.88,1,False,
+2025-12-31T13:10:00+00:00,Kuwaiti Premier League,Kazma SC v Al Salmiyah,1-1,1.0,0.0,3.55,0,False,
+2025-12-31T13:15:00+00:00,Tanzanian Matches,Mlandege FC v Uganda Revenue Authority,0-1,0.0,1.0,3.8,1,False,
+2025-12-31T13:30:00+00:00,Welsh Premiership,Briton Ferry Llansawel v Barry Town Utd,2-1,1.0,1.0,3.85,1,False,
+2025-12-31T14:30:00+00:00,Kuwaiti Division 1,Burgan Sc v Al Sahel,1-2,1.0,1.0,3.45,1,False,
+2025-12-31T14:30:00+00:00,Welsh Premiership,Connahs Quay v The New Saints,3-1,2.0,1.0,4.4,1,False,
+2025-12-31T15:00:00+00:00,Ghanain Premier League,Bibiani Gold Stars FC v Medeama SC,0-0,0.0,0.0,3.2,0,True,0
+2025-12-31T15:00:00+00:00,Egyptian League Cup,Petrojet v National Bank,2-1,2.0,0.0,2.94,1,False,
+2025-12-31T15:00:00+00:00,Egyptian League Cup,Ceramica Cleopatra v Pharco FC,2-1,1.0,0.0,3.3,1,False,
+2025-12-31T15:25:00+00:00,Saudi Professional League,NEOM Sports Club v Al-Ittihad,1-3,1.0,1.0,4.4,1,False,
+2025-12-31T15:30:00+00:00,Saudi 1st Division,Jeddah Club v Al Bukayriyah,1-1,0.0,1.0,3.0,0,False,
+2025-12-31T15:40:00+00:00,Kuwaiti Premier League,Al Nasar (KUW) v Al-Qadsia,0-0,0.0,0.0,4.7,0,True,0
+2025-12-31T16:00:00+00:00,Bahraini 2nd Division,Buri FC v Qalali,4-1,2.0,0.0,7.8,1,False,
+2025-12-31T16:00:00+00:00,Bahraini 2nd Division,Al-Ittihad (BRN) v Manama Club,1-1,1.0,1.0,3.55,0,False,
+2025-12-31T16:00:00+00:00,Bahraini 2nd Division,Isa Town FC v Etihad Al Reef,0-0,0.0,0.0,4.8,0,True,0
+2025-12-31T16:00:00+00:00,Africa Cup of Nations,Equatorial Guinea v Algeria,1-3,1.0,3.0,4.3,1,False,
+2025-12-31T16:00:00+00:00,Africa Cup of Nations,Sudan v Burkina Faso,0-2,0.0,1.0,3.25,1,False,
+2025-12-31T16:00:00+00:00,Mauritanian Ligue 1,Nouadhibou v Nouakchott Academy,0-0,0.0,0.0,3.55,0,True,0
+2025-12-31T17:15:00+00:00,Tanzanian Matches,Singida Black Stars SC v Azam FC,1-1,0.0,0.0,4.3,0,True,0
+2025-12-31T17:30:00+00:00,Saudi Professional League,Al-Shabab (KSA) v Al-Quadisiya (KSA),2-3,0.0,3.0,4.2,1,False,
+2025-12-31T17:30:00+00:00,Saudi Professional League,Al-Kholood Club v Al-Hilal,1-3,1.0,1.0,7.4,1,False,
+2025-12-31T17:30:00+00:00,Israeli Premier League,Maccabi Netanya v Hapoel Petach Tikva,0-2,0.0,2.0,4.2,1,False,
+2025-12-31T17:45:00+00:00,Israeli Premier League,FC Ashdod v Maccabi Haifa,0-4,0.0,3.0,4.7,1,False,
+2025-12-31T18:00:00+00:00,Israeli Premier League,Hapoel Beer Sheva v Hapoel Jerusalem,4-1,2.0,1.0,6.8,1,False,
+2025-12-31T18:00:00+00:00,Egyptian League Cup,ZED FC v Haras El Hodood,2-0,2.0,0.0,2.9,1,False,
+2025-12-31T19:00:00+00:00,Africa Cup of Nations,Mozambique v Cameroon,1-2,1.0,2.0,4.4,1,False,
+2025-12-31T19:00:00+00:00,Africa Cup of Nations,Gabon v Ivory Coast,2-3,2.0,1.0,4.0,1,False,
+2026-01-01T04:00:00+00:00,Australian A-League Men,Auckland FC v Newcastle Jets,1-3,1.0,2.0,4.6,1,False,
+2026-01-01T08:00:00+00:00,Australian A-League Men,Western Sydney Wanderers v Macarthur FC,0-1,0.0,1.0,4.2,1,False,
+2026-01-01T12:30:00+00:00,Welsh Premiership,Colwyn Bay v Flint Town United,1-2,0.0,1.0,4.4,1,False,
+2026-01-01T12:30:00+00:00,English Sky Bet Championship,Blackburn v Wrexham,0-2,0.0,2.0,3.5,1,False,
+2026-01-01T12:35:00+00:00,Saudi 1st Division,Al Orubah v Al-Jndal,1-0,0.0,0.0,3.9,1,True,1
+2026-01-01T12:35:00+00:00,Saudi 1st Division,Al Taee v Al-Zulfi SC,1-1,1.0,1.0,3.2,0,False,
+2026-01-01T14:00:00+00:00,Welsh Premiership,Llanelli Town v Penybont FC,0-1,0.0,1.0,6.6,1,False,
+2026-01-01T14:00:00+00:00,Welsh Championship North,Airbus UK Broughton v Flint Mountain,3-1,2.0,0.0,13.0,1,False,
+2026-01-01T14:00:00+00:00,Welsh Championship North,Denbigh Town v Gresford Athletic,2-3,1.0,2.0,6.2,1,False,
+2026-01-01T14:00:00+00:00,Welsh Championship North,Holywell Town v Holyhead Hotspur,4-1,2.0,1.0,5.9,1,False,
+2026-01-01T14:00:00+00:00,Welsh Championship South,Cambrian United v Pontypridd Town,1-0,0.0,0.0,4.8,1,True,1
+2026-01-01T14:00:00+00:00,Welsh Championship North,Buckley Town v Mold Alexandra,2-2,1.0,0.0,4.3,0,False,
+2026-01-01T14:00:00+00:00,Welsh Championship North,Caersws v Newtown,1-0,0.0,0.0,4.1,1,True,1
+2026-01-01T14:00:00+00:00,Welsh Championship North,CPD Y Rhyl 1879 v Llandudno FC,3-1,0.0,1.0,5.5,1,False,
+2026-01-01T14:30:00+00:00,Welsh Championship South,Aberystwyth v Carmarthen Town,1-1,1.0,1.0,3.65,0,False,
+2026-01-01T14:30:00+00:00,Kuwaiti Premier League,Al Fahaheel FC v Al Jahra,4-1,3.0,0.0,3.75,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Northampton v Stockport,0-0,0.0,0.0,3.65,0,True,0
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,Bristol City v Portsmouth,5-0,4.0,0.0,4.0,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,Preston v Sheff Wed,3-0,1.0,0.0,4.3,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Mansfield v Bradford,3-0,2.0,0.0,3.45,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Barrow v Salford City,1-2,1.0,1.0,3.85,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Stevenage v Plymouth,1-1,1.0,0.0,3.5,0,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Swindon v Gillingham,2-0,1.0,0.0,3.5,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,Ipswich v Oxford Utd,2-1,2.0,1.0,5.8,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Doncaster v Bolton,1-1,1.0,0.0,4.0,0,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Exeter v Luton,1-0,1.0,0.0,3.4,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Oldham v Chesterfield,1-1,1.0,1.0,3.5,0,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Bromley v Newport County,2-1,1.0,0.0,5.3,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Wigan v Barnsley,1-1,1.0,0.0,3.5,0,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Harrogate Town v Tranmere,0-2,0.0,0.0,3.7,1,True,1
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Leyton Orient v AFC Wimbledon,1-3,1.0,1.0,3.45,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Lincoln v Huddersfield,1-1,0.0,1.0,3.5,0,False,
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,Charlton v Coventry,1-1,0.0,1.0,3.75,0,False,
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,Watford v Birmingham,3-0,3.0,0.0,3.5,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,Southampton v Millwall,0-0,0.0,0.0,3.7,0,True,0
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Port Vale v Blackpool,5-1,2.0,1.0,3.55,1,False,
+2026-01-01T15:00:00+00:00,Egyptian League Cup,Al Ittihad (EGY) v Zamalek,3-0,2.0,0.0,6.0,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Crewe v Cheltenham,4-1,3.0,1.0,3.85,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Rotherham v Peterborough,0-2,0.0,0.0,3.65,1,True,1
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Fleetwood Town v Grimsby,0-1,0.0,0.0,3.65,1,True,1
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Reading v Burton Albion,2-0,2.0,0.0,3.75,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,Derby v Middlesbrough,1-0,0.0,0.0,3.55,1,True,1
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Notts Co v Accrington,0-1,0.0,0.0,3.85,1,True,1
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Colchester v MK Dons,1-0,0.0,0.0,3.35,1,True,1
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Shrewsbury v Bristol Rovers,0-3,0.0,0.0,3.35,1,True,1
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,Swansea v West Brom,1-0,0.0,0.0,3.3,1,True,1
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Barnet v Crawley Town,2-1,1.0,1.0,4.4,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,QPR v Norwich,1-2,0.0,1.0,3.75,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 2,Cambridge Utd v Walsall,2-0,2.0,0.0,3.1,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet League 1,Wycombe v Cardiff,1-1,1.0,1.0,3.8,0,False,
+2026-01-01T15:00:00+00:00,Saudi 1st Division,Al Faisaly ( KSA ) v Al-Raed (KSA),5-3,3.0,2.0,3.15,1,False,
+2026-01-01T15:00:00+00:00,Egyptian League Cup,Wadi Degla v El Gounah,0-1,0.0,1.0,3.0,1,False,
+2026-01-01T15:00:00+00:00,English Sky Bet Championship,Hull v Stoke,0-1,0.0,1.0,3.5,1,False,
+2026-01-01T16:00:00+00:00,Bahraini Premier,Al Hidd v Al Ahli (BRN),3-3,1.0,2.0,3.45,0,False,
+2026-01-01T17:30:00+00:00,English Sky Bet Championship,Sheff Utd v Leicester,3-1,2.0,0.0,4.1,1,False,
+2026-01-01T17:30:00+00:00,English Premier League,Liverpool v Leeds,0-0,0.0,0.0,4.8,0,True,0
+2026-01-01T17:30:00+00:00,English Premier League,Crystal Palace v Fulham,1-1,1.0,0.0,3.35,0,False,
+2026-01-01T18:00:00+00:00,Egyptian League Cup,Ismaily v Modern Sport FC,0-0,0.0,0.0,2.86,0,True,0
+2026-01-01T18:30:00+00:00,Israeli Premier League,Beitar Jerusalem v Hapoel Tel Aviv,1-0,1.0,0.0,3.9,1,False,
+2026-01-01T20:00:00+00:00,English Premier League,Brentford v Tottenham,0-0,0.0,0.0,3.55,0,True,0
+2026-01-01T20:00:00+00:00,English Premier League,Sunderland v Man City,0-0,0.0,0.0,5.1,0,True,0
+2026-01-01T20:00:00+00:00,Jamaican Premier League,Treasure Beach FC v Chapelton,0-1,0.0,0.0,3.35,1,True,1
+2026-01-02T08:00:00+00:00,Algerian U20 League,GC Mascara U20 v MB Ain Hadjar U20,5-0,1.0,0.0,3.85,1,False,
+2026-01-02T08:30:00+00:00,Bangladesh Premier League,Brothers Union v Mohammedan Dhaka,0-0,0.0,0.0,3.8,0,True,0
+2026-01-02T08:35:00+00:00,Australian A-League Men,Melbourne Victory v Perth Glory,3-2,2.0,1.0,4.0,1,False,
+2026-01-02T09:00:00+00:00,Myanmar National League 2,Yangon City v Silver Stars FC,8-0,7.0,0.0,23.0,1,False,
+2026-01-02T09:00:00+00:00,Myanmar National League 2,YB United FC v University FC,2-3,0.0,2.0,7.8,1,False,
+2026-01-02T11:35:00+00:00,Omani U21 Championship,Al Seeb U21 v Salalah SC U21,0-1,0.0,1.0,3.55,1,False,
+2026-01-02T11:40:00+00:00,Omani U21 Championship,Al-Suwaiq U21 v Bidiyah U21,3-2,2.0,1.0,3.65,1,False,
+2026-01-02T12:30:00+00:00,Egyptian 2nd Division,Tersana SC v El Entag El Harby,4-1,3.0,0.0,2.74,1,False,
+2026-01-02T12:30:00+00:00,Egyptian 2nd Division,El Mansurah v Tanta,1-0,1.0,0.0,2.96,1,False,
+2026-01-02T12:30:00+00:00,Egyptian 2nd Division,La Viena FC v El Seka Elhadeed,0-1,0.0,0.0,2.94,1,True,1
+2026-01-02T12:45:00+00:00,UAE U21,Al Orooba U21 v Al-Sharjah U21,3-1,2.0,1.0,6.2,1,False,
+2026-01-02T12:45:00+00:00,UAE U21,Emirates Club U21 v Shabab Al Ahli Dubai FC U21,0-2,0.0,1.0,5.0,1,False,
+2026-01-02T12:50:00+00:00,UAE U21,Gulf United U21 v Al-Wasl U21,2-4,1.0,1.0,11.5,1,False,
+2026-01-02T12:50:00+00:00,UAE U21,Al-Ain U21 v Al-Jazira Club U21,3-2,3.0,0.0,4.0,1,False,
+2026-01-02T12:55:00+00:00,UAE Arabian Gulf League,Al Wasl v Al Wahda (Abu Dhabi),1-0,0.0,0.0,3.85,1,True,1
+2026-01-02T12:55:00+00:00,UAE Arabian Gulf League,Al-Khaleej Khor Fakkan v Al Dhafra,2-3,1.0,2.0,3.95,1,False,
+2026-01-02T13:00:00+00:00,Rwandan National Football League,Marines FC v Amagaju,1-0,1.0,0.0,3.1,1,False,
+2026-01-02T13:00:00+00:00,Israeli National League,Hapoel Kfar Saba v Maccabi Petach Tikva,1-4,1.0,2.0,3.75,1,False,
+2026-01-02T13:00:00+00:00,Israeli National League,MS Kfar Kasem v Hapoel Akko,1-0,0.0,0.0,3.05,1,True,1
+2026-01-02T13:00:00+00:00,Malaysian Super League,Kelantan United v Kuching FA,0-1,0.0,1.0,5.2,1,False,
+2026-01-02T13:00:00+00:00,Israeli National League,Maccabi Herzliya v Hapoel Raanana,0-2,0.0,2.0,3.6,1,False,
+2026-01-02T13:00:00+00:00,Rwandan National Football League,Gasogi United v Musanze,0-3,0.0,3.0,3.0,1,False,
+2026-01-02T13:00:00+00:00,Israeli National League,Hapoel Rishon Lezion v Hapoel Afula,1-1,0.0,0.0,3.8,0,True,0
+2026-01-02T13:00:00+00:00,Israeli National League,Hapoel Ramat Gan v Maccabi Kabilio Jaffa,1-0,1.0,0.0,3.6,1,False,
+2026-01-02T13:10:00+00:00,Kuwaiti Premier League,Kuwait SC v Al Tadhamon,7-1,4.0,1.0,9.0,1,False,
+2026-01-02T13:20:00+00:00,Omani Sultan Cup,Al-Nasr v Sohar,0-0,0.0,0.0,3.05,0,True,0
+2026-01-02T13:25:00+00:00,Bahraini Premier,Sitra v Al-Shabbab (BRN),1-1,0.0,1.0,3.5,0,False,
+2026-01-02T13:30:00+00:00,Saudi Professional League,Al Najma Club v Al-Khaleej Saihat,2-2,1.0,0.0,4.3,0,False,
+2026-01-02T14:00:00+00:00,Algerian Ligue 2,Chelghoum Laid v MO Constantine,0-4,0.0,2.0,4.4,1,False,
+2026-01-02T14:00:00+00:00,Algerian Ligue 2,JS Bordj Menaiel v NC Magra,0-1,0.0,0.0,2.98,1,True,1
+2026-01-02T14:00:00+00:00,Algerian Ligue 2,AS Khroub v NRB Teleghma,1-0,0.0,0.0,3.05,1,True,1
+2026-01-02T14:00:00+00:00,Algerian Ligue 2,Msp Batna v JSD Jijel,1-3,1.0,2.0,2.92,1,False,
+2026-01-02T14:00:00+00:00,Algerian Ligue 2,Usm Annaba v CA Batna,0-1,0.0,1.0,3.0,1,False,
+2026-01-02T14:00:00+00:00,Algerian Ligue 2,CR Beni Thour v IB Khemis El Khechna,2-1,2.0,1.0,3.95,1,False,
+2026-01-02T14:00:00+00:00,Algerian Ligue 2,Beni Oualbane v Mo Bejaia,1-1,1.0,1.0,2.8,0,False,
+2026-01-02T14:00:00+00:00,Algerian Ligue 2,US Chaouia v US Biskra,2-0,2.0,0.0,2.68,1,False,
+2026-01-02T14:30:00+00:00,Qatari U23 League,Qatar SC U23 v Al-Arabi Doha U23,0-0,0.0,0.0,3.3,0,True,0
+2026-01-02T14:30:00+00:00,Qatari U23 League,Al Duhail U23 v Al-Ahli Doha U23,0-1,0.0,0.0,3.4,1,True,1
+2026-01-02T14:30:00+00:00,Qatari U23 League,Al-Shamal U23 v Al Shahaniya U23,0-0,0.0,0.0,3.2,0,True,0
+2026-01-02T14:35:00+00:00,Saudi Professional League,Al-Ettifaq v Al-Akhdoud,2-0,1.0,0.0,3.9,1,False,
+2026-01-02T15:40:00+00:00,Kuwaiti Premier League,Al-Shabab v Al Arabi Kuwait,0-5,0.0,2.0,4.6,1,False,
+2026-01-02T15:45:00+00:00,UAE Arabian Gulf League,Al Ain v Al Sharjah,1-0,1.0,0.0,3.75,1,False,
+2026-01-02T15:45:00+00:00,UAE Arabian Gulf League,Bani Yas v Al Nasr (UAE),1-2,1.0,2.0,4.1,1,False,
+2026-01-02T15:50:00+00:00,Omani Sultan Cup,Al Seeb v Saham,3-2,2.0,0.0,4.0,1,False,
+2026-01-02T16:00:00+00:00,Bahraini Premier,Al-Muharraq v Al Khalidiyah,0-1,0.0,1.0,3.45,1,False,
+2026-01-02T16:00:00+00:00,Algerian Ligue 1,Kabylie v MC Alger,1-1,0.0,1.0,3.1,0,False,
+2026-01-02T16:00:00+00:00,Bahraini Premier,Al Budaiya v Aali Club,0-1,0.0,0.0,3.35,1,True,1
+2026-01-02T16:30:00+00:00,Rwandan National Football League,Gicumbi v Al Hilal Omdurman,1-3,0.0,2.0,4.0,1,False,
+2026-01-02T17:00:00+00:00,Cypriot 1st Division,Omonia FC Aradippou v Digenis Ypsona,1-0,0.0,0.0,3.1,1,True,1
+2026-01-02T17:30:00+00:00,Saudi Professional League,Al Ahli v Al Nassr,3-2,3.0,2.0,4.5,1,False,
+2026-01-02T18:45:00+00:00,Portuguese Primeira Liga,Gil Vicente v Sporting Lisbon,1-1,0.0,1.0,4.5,0,False,
+2026-01-02T19:30:00+00:00,Spanish Segunda Division,Eibar v Mirandes,2-1,1.0,1.0,4.0,1,False,
+2026-01-02T19:45:00+00:00,Northern Irish Premiership,Larne v Coleraine,3-0,0.0,0.0,3.15,1,True,1
+2026-01-02T19:45:00+00:00,Italian Serie A,Cagliari v AC Milan,0-1,0.0,1.0,4.0,1,False,
+2026-01-02T19:45:00+00:00,English Isthmian Premier League,Aveley v Canvey Island,3-1,3.0,1.0,4.6,1,False,
+2026-01-02T19:45:00+00:00,French Ligue 1,Toulouse v Lens,0-3,0.0,1.0,3.35,1,False,
+2026-01-02T20:00:00+00:00,Spanish La Liga,Rayo Vallecano v Getafe,1-1,1.0,0.0,2.92,0,False,
+2026-01-02T20:45:00+00:00,Portuguese Primeira Liga,Guimaraes v CD Nacional Funchal,2-1,0.0,0.0,3.4,1,True,1
+2026-01-03T06:00:00+00:00,Australian A-League Women,Western Sydney Wanderers (W) v Canberra United (W),1-1,0.0,1.0,4.4,0,False,
+2026-01-03T08:00:00+00:00,Indonesian Liga 3,Dejan FC v Batavia FC,0-0,0.0,0.0,3.25,0,True,0
+2026-01-03T08:00:00+00:00,Indonesian Liga 3,RANS Nusantara FC v Persikutim United,2-0,1.0,0.0,3.7,1,False,
+2026-01-03T08:00:00+00:00,Algerian U20 League,Wifak Medea U20 v ESM Kolea U20,2-2,0.0,1.0,3.5,0,False,
+2026-01-03T08:00:00+00:00,Algerian U20 League,CR Zaouia U20 v Olympique de Medea U20,3-2,3.0,1.0,3.65,1,False,
+2026-01-03T08:00:00+00:00,Algerian U20 League,SKAF Khemis Miliana U20 v ASO Chlef U20,0-0,0.0,0.0,4.2,0,True,0
+2026-01-03T08:00:00+00:00,Algerian U20 League,USM Blida U20 v CRB Ain Oussara U20,5-2,3.0,1.0,4.7,1,False,
+2026-01-03T08:30:00+00:00,Bangladesh Premier League,Bangladesh Police v Rahmatganj MFS,1-1,1.0,1.0,3.4,0,False,
+2026-01-03T08:30:00+00:00,Bangladesh Premier League,Fortis FC Limited v PWD Sports Club,2-0,1.0,0.0,6.6,1,False,
+2026-01-03T08:30:00+00:00,Indonesian Championship,Persikad Depok v Psms Medan,1-0,1.0,0.0,3.2,1,False,
+2026-01-03T08:30:00+00:00,Indonesian Championship,Bekasi City v Persiraja Banda Aceh,0-0,0.0,0.0,3.45,0,True,0
+2026-01-03T08:30:00+00:00,Indonesian Championship,Persekat Kabupaten Tegal v Sumset United,1-1,1.0,0.0,3.4,0,False,
+2026-01-03T08:30:00+00:00,Indonesian Super League,Persija Jakarta v Persijap Jepara,2-0,0.0,0.0,6.8,1,True,1
+2026-01-03T08:30:00+00:00,Indonesian Super League,Pusamania Borneo FC v PSM Makassar,2-1,0.0,1.0,3.6,1,False,
+2026-01-03T08:35:00+00:00,Australian A-League Men,Melbourne City v Sydney FC,0-0,0.0,0.0,3.9,0,True,0
+2026-01-03T09:00:00+00:00,Myanmar Ladies League,Yangon City (W) v Thitsar Arman FC (W),1-3,1.0,2.0,4.5,1,False,
+2026-01-03T09:00:00+00:00,Myanmar Ladies League,Shan United FC (W) v Yangon United (W),1-2,1.0,0.0,3.9,1,False,
+2026-01-03T10:00:00+00:00,Ethiopian Premier League,Adama Kenema fc v Fasil Kenema,0-0,0.0,0.0,2.48,0,True,0
+2026-01-03T10:00:00+00:00,Italian Campionato Primavera,Juventus U20 v Parma U20,0-0,0.0,0.0,3.75,0,True,0
+2026-01-03T10:00:00+00:00,Australian A-League Women,Perth Glory (W) v Newcastle Jets (W),1-0,1.0,0.0,3.65,1,False,
+2026-01-03T11:00:00+00:00,Cambodian Premier League,ISI Dangkor Senchey FC v Angkor Tiger FC,2-2,0.0,1.0,5.2,0,False,
+2026-01-03T11:00:00+00:00,Portuguese Segunda Liga,Feirense v Leiria,2-2,1.0,2.0,3.15,0,False,
+2026-01-03T11:00:00+00:00,Spanish Primera Federación - Group 1,Lugo v Merida AD,1-0,1.0,0.0,3.0,1,False,
+2026-01-03T11:00:00+00:00,Cambodian Premier League,Ministry of Interior FA v Nagaworld FC,0-3,0.0,2.0,3.75,1,False,
+2026-01-03T11:30:00+00:00,Italian Serie A,Como v Udinese,1-0,1.0,0.0,3.65,1,False,
+2026-01-03T11:45:00+00:00,Spanish Tercera Division RFEF,AD San Juan v Beti Kozkor KE,0-0,0.0,0.0,3.6,0,True,0
+2026-01-03T12:00:00+00:00,Ethiopian Premier League,Saint George FC v Welayta Dicha,1-1,0.0,1.0,2.62,0,False,
+2026-01-03T12:00:00+00:00,Italian Campionato Primavera,AC Milan U20 v Roma U20,2-1,1.0,1.0,3.6,1,False,
+2026-01-03T12:00:00+00:00,Indonesian Super League,Madura Utd v Persebaya Surabaya,0-1,0.0,0.0,3.35,1,True,1
+2026-01-03T12:00:00+00:00,Indonesian Championship,PSIS Semarang v Persipal FC,2-0,1.0,0.0,3.8,1,False,
+2026-01-03T12:15:00+00:00,Malaysian Super League,Brunei DPMM FC v PDRM,3-1,1.0,0.0,6.4,1,False,
+2026-01-03T12:30:00+00:00,English Premier League,Aston Villa v Nottm Forest,3-1,2.0,0.0,3.45,1,False,
+2026-01-03T12:30:00+00:00,Scottish Premiership,Celtic v Rangers,1-3,1.0,2.0,4.4,1,False,
+2026-01-03T12:50:00+00:00,UAE Division 1,Masfut v Gulf United,0-2,0.0,0.0,3.65,1,True,1
+2026-01-03T12:55:00+00:00,UAE Arabian Gulf League,Ajman Club v Al-Ittihad Kalba,0-1,0.0,1.0,3.45,1,False,
+2026-01-03T12:55:00+00:00,UAE Division 1,City FC v Al Jazira Al Hamra,3-2,1.0,1.0,3.3,1,False,
+2026-01-03T12:55:00+00:00,UAE Arabian Gulf League,Al Bataeh v Dibba Al Fujairah,0-1,0.0,1.0,3.7,1,False,
+2026-01-03T13:00:00+00:00,Spanish Segunda Division,Leonesa v Sociedad B,1-1,0.0,1.0,3.55,0,False,
+2026-01-03T13:00:00+00:00,Ethiopian Premier League,Mebrat Hayl v Welwalo Adigrat University,0-0,0.0,0.0,2.72,0,True,0
+2026-01-03T13:00:00+00:00,French Ligue 2,ESTAC Troyes v Red Star,1-0,1.0,0.0,3.55,1,False,
+2026-01-03T13:00:00+00:00,Israeli Premier League,Hapoel Jerusalem v Maccabi Tel Aviv,1-3,1.0,2.0,4.7,1,False,
+2026-01-03T13:00:00+00:00,Algerian Ligue 1,ES Ben Aknoun v Belouizdad,0-2,0.0,0.0,3.2,1,True,1
+2026-01-03T13:00:00+00:00,Malaysian Super League,Terengganu v Pulau Pinang,0-2,0.0,0.0,4.6,1,True,1
+2026-01-03T13:00:00+00:00,Spanish La Liga,Celta Vigo v Valencia,4-1,2.0,0.0,3.3,1,False,
+2026-01-03T13:10:00+00:00,Saudi Professional League,Al-Fateh (KSA) v Al-Shabab (KSA),2-0,1.0,0.0,3.7,1,False,
+2026-01-03T13:15:00+00:00,Spanish Primera Federación - Group 2,Alcorcon v FC Cartagena,1-1,1.0,1.0,2.94,0,False,
+2026-01-03T13:25:00+00:00,Bahraini Premier,Al Najma (BRN) v Bahrain SC,2-1,1.0,0.0,3.8,1,False,
+2026-01-03T13:30:00+00:00,Italian Serie C,A.C. Trento S.C.S.D. v Giana Erminio,3-1,1.0,1.0,3.2,1,False,
+2026-01-03T13:30:00+00:00,Italian Serie C,Pontedera v Sassari Torres,1-3,1.0,3.0,3.15,1,False,
+2026-01-03T13:30:00+00:00,Italian Serie C,US Pianese v Ascoli,4-2,2.0,2.0,3.3,1,False,
+2026-01-03T13:30:00+00:00,Italian Serie C,Cittadella v SS Virtus Verona 1921,4-1,3.0,0.0,3.7,1,False,
+2026-01-03T13:30:00+00:00,Italian Serie C,Juventus B v Carpi,2-0,2.0,0.0,3.15,1,False,
+2026-01-03T14:00:00+00:00,Italian Serie A,Sassuolo v Parma,1-1,1.0,1.0,3.3,0,False,
+2026-01-03T14:00:00+00:00,Italian Serie A,Genoa v Pisa,1-1,1.0,1.0,3.2,0,False,
+2026-01-03T14:00:00+00:00,Portuguese Segunda Liga,Felgueiras v Oliveirense,1-0,1.0,0.0,4.0,1,False,
+2026-01-03T14:30:00+00:00,Welsh Premiership,Connahs Quay v Barry Town Utd,3-1,0.0,1.0,4.1,1,False,
+2026-01-03T14:55:00+00:00,Saudi Professional League,Al-Feiha v Al-Kholood Club,0-5,0.0,3.0,3.35,1,False,
+2026-01-03T15:00:00+00:00,Scottish League One,Stenhousemuir v Queen of South,2-0,1.0,0.0,3.25,1,False,
+2026-01-03T15:00:00+00:00,Scottish League Two,Clyde v Forfar,1-1,0.0,1.0,4.0,0,False,
+2026-01-03T15:00:00+00:00,Scottish Championship,Airdrieonians v Raith,0-0,0.0,0.0,3.3,0,True,0
+2026-01-03T15:00:00+00:00,Northern Irish Premiership,Crusaders v Dungannon,2-0,2.0,0.0,3.85,1,False,
+2026-01-03T15:00:00+00:00,Scottish League Two,Stranraer v Edinburgh City,1-1,0.0,1.0,3.95,0,False,
+2026-01-03T15:00:00+00:00,Scottish Premiership,Motherwell v St Mirren,2-0,2.0,0.0,3.55,1,False,
+2026-01-03T15:00:00+00:00,Scottish Championship,St Johnstone v Arbroath,1-0,1.0,0.0,5.3,1,False,
+2026-01-03T15:00:00+00:00,English Premier League,Brighton v Burnley,2-0,2.0,0.0,4.6,1,False,
+2026-01-03T15:00:00+00:00,Scottish League Two,Spartans v Dumbarton,2-0,1.0,0.0,4.1,1,False,
+2026-01-03T15:00:00+00:00,Scottish Premiership,Dundee Utd v Dundee,0-1,0.0,1.0,4.0,1,False,
+2026-01-03T15:00:00+00:00,Scottish League One,Kelty Hearts v Alloa,1-1,0.0,1.0,3.9,0,False,
+2026-01-03T15:00:00+00:00,Northern Irish Premiership,Linfield v Bangor,6-1,4.0,1.0,5.4,1,False,
+2026-01-03T15:00:00+00:00,Spanish Tercera Division RFEF,CD Varea v CD Pradejon,1-0,0.0,0.0,4.7,1,True,1
+2026-01-03T15:00:00+00:00,English National League South,Horsham FC v Maidenhead,1-2,1.0,1.0,3.55,1,False,
+2026-01-03T15:00:00+00:00,English National League South,Hemel Hempstead v Dag and Red,1-0,1.0,0.0,3.3,1,False,
+2026-01-03T15:00:00+00:00,English National League North,Southport v Scarborough Athletic,1-1,1.0,0.0,3.4,0,False,
+2026-01-03T15:00:00+00:00,Scottish Premiership,Kilmarnock v Hibernian,1-3,1.0,1.0,3.75,1,False,
+2026-01-03T15:00:00+00:00,Scottish Premiership,Falkirk v Aberdeen,1-0,0.0,0.0,3.6,1,True,1
+2026-01-03T15:00:00+00:00,English National League,Carlisle v Wealdstone,2-0,2.0,0.0,5.9,1,False,
+2026-01-03T15:00:00+00:00,English National League South,Slough Town v Eastbourne,2-1,2.0,1.0,3.65,1,False,
+2026-01-03T15:00:00+00:00,Scottish Premiership,Hearts v Livingston,1-0,1.0,0.0,7.0,1,False,
+2026-01-03T15:00:00+00:00,English National League North,Bedford Town v AFC Fylde,0-2,0.0,2.0,4.7,1,False,
+2026-01-03T15:00:00+00:00,Spanish Tercera Division RFEF,CD Aurrera de Vitoria v Club Portugalete,1-2,1.0,1.0,3.9,1,False,
+2026-01-03T15:00:00+00:00,Scottish Championship,Partick v Morton,3-2,1.0,2.0,4.0,1,False,
+2026-01-03T15:00:00+00:00,Ethiopian Premier League,Arba Minch v Hawassa Kima FC,0-0,0.0,0.0,2.76,0,True,0
+2026-01-03T15:00:00+00:00,Cypriot 1st Division,Ethnikos Achnas v A.E.L.,0-1,0.0,0.0,3.5,1,True,1
+2026-01-03T15:00:00+00:00,English National League North,Buxton v South Shields,1-1,0.0,1.0,4.1,0,False,
+2026-01-03T15:00:00+00:00,English National League,Tamworth FC v Gateshead,3-1,1.0,1.0,4.5,1,False,
+2026-01-03T15:00:00+00:00,English National League South,Worthing v Chippenham,2-2,0.0,1.0,7.0,0,False,
+2026-01-03T15:00:00+00:00,English Premier League,Wolves v West Ham,3-0,3.0,0.0,3.55,1,False,
+2026-01-03T15:00:00+00:00,English National League,Forest Green v FC Halifax Town,2-1,0.0,1.0,5.0,1,False,
+2026-01-03T15:00:00+00:00,English National League,Boston Utd v Eastleigh,1-2,1.0,2.0,3.45,1,False,
+2026-01-03T15:00:00+00:00,English National League North,Chester v Worksop Town,0-1,0.0,1.0,3.85,1,False,
+2026-01-03T15:00:00+00:00,English National League South,AFC Totton v Enfield Town,3-2,2.0,1.0,3.75,1,False,
+2026-01-03T15:00:00+00:00,Northern Irish Premiership,Carrick Rangers v Glentoran,0-7,0.0,7.0,3.9,1,False,
+2026-01-03T15:00:00+00:00,English National League North,Kidderminster v Curzon Ashton,1-0,1.0,0.0,4.4,1,False,
+2026-01-03T15:00:00+00:00,English National League South,Tonbridge Angels v Dorking Wanderers,2-2,1.0,1.0,4.3,0,False,
+2026-01-03T15:00:00+00:00,Greek Super Cup,Olympiakos v OFI,3-0,0.0,0.0,7.0,1,True,1
+2026-01-03T15:00:00+00:00,English National League South,Weston-super-Mare v Farnborough FC,4-1,2.0,0.0,4.3,1,False,
+2026-01-03T15:00:00+00:00,English National League North,Merthyr Town v Kings Lynn,1-0,1.0,0.0,3.9,1,False,
+2026-01-03T15:15:00+00:00,Spanish La Liga,Osasuna v Athletic Bilbao,1-1,1.0,0.0,3.05,0,False,
+2026-01-03T15:15:00+00:00,Spanish Segunda Division,CD Castellon v Huesca,4-1,3.0,1.0,4.4,1,False,
+2026-01-03T15:15:00+00:00,Spanish Segunda Division,Almeria v Granada,3-2,1.0,1.0,3.55,1,False,
+2026-01-03T15:30:00+00:00,Israeli Premier League,Bnei Sakhnin v Hapoel Beer Sheva,0-5,0.0,3.0,5.1,1,False,
+2026-01-03T15:30:00+00:00,Portuguese Primeira Liga,Tondela v Arouca,3-1,2.0,1.0,3.35,1,False,
+2026-01-03T15:30:00+00:00,Spanish Primera Federación - Group 1,Pontevedra CF v Racing de Ferrol,2-1,1.0,1.0,2.94,1,False,
+2026-01-03T15:45:00+00:00,UAE Arabian Gulf League,Al Jazira v Al Ahli (UAE),0-3,0.0,2.0,4.2,1,False,
+2026-01-03T16:00:00+00:00,Bahraini Premier,Al Riffa v Malkiya,2-0,2.0,0.0,4.0,1,False,
+2026-01-03T16:00:00+00:00,Cypriot 1st Division,APOEL v Enosis Neon Paralimni,3-0,2.0,0.0,15.0,1,False,
+2026-01-03T16:00:00+00:00,Gambian GFA League 1st Division,Gambia Ports Authority v BST Galaxy,0-0,0.0,0.0,1.1,0,True,0
+2026-01-03T16:00:00+00:00,Spanish Tercera Division RFEF,CD Bezana v CD Colindres,0-0,0.0,0.0,3.3,0,True,0
+2026-01-03T16:00:00+00:00,Africa Cup of Nations,Senegal v Sudan,3-1,2.0,1.0,10.0,1,False,
+2026-01-03T16:00:00+00:00,French Ligue 1,Monaco v Lyon,1-3,1.0,2.0,3.9,1,False,
+2026-01-03T16:30:00+00:00,Israeli Premier League,Ironi Tiberias v Maccabi Netanya,4-0,3.0,0.0,4.0,1,False,
+2026-01-03T16:30:00+00:00,Italian Serie C,Renate v Pergolettese,2-1,1.0,0.0,2.94,1,False,
+2026-01-03T16:30:00+00:00,Italian Serie C,AZ Picerno ASD v Audace Cerignola,1-1,0.0,1.0,3.1,0,False,
+2026-01-03T16:30:00+00:00,Italian Serie C,Pro Vercelli v Aurora Pro Patria 1919,1-0,1.0,0.0,3.5,1,False,
+2026-01-03T16:30:00+00:00,Italian Serie C,AC Ospitaletto v Lecco,1-1,1.0,1.0,2.98,0,False,
+2026-01-03T16:30:00+00:00,Italian Serie C,Forli v Arezzo,1-2,1.0,1.0,3.75,1,False,
+2026-01-03T17:00:00+00:00,Cypriot 1st Division,Akritas Chlorakas v Omonia,0-4,0.0,1.0,6.0,1,False,
+2026-01-03T17:00:00+00:00,Italian Serie A,Juventus v Lecce,1-1,1.0,1.0,6.2,0,False,
+2026-01-03T17:30:00+00:00,Israeli Premier League,Hapoel Petach Tikva v Maccabi Bnei Raina,4-1,3.0,1.0,4.0,1,False,
+2026-01-03T17:30:00+00:00,Spanish Segunda Division,Valladolid v Racing Santander,1-1,0.0,0.0,3.7,0,True,0
+2026-01-03T17:30:00+00:00,English Premier League,Bournemouth v Arsenal,2-3,1.0,2.0,4.8,1,False,
+2026-01-03T17:30:00+00:00,English National League,Yeovil v Braintree,3-1,1.0,0.0,3.65,1,False,
+2026-01-03T17:30:00+00:00,Spanish La Liga,Elche v Villarreal,1-3,1.0,2.0,3.6,1,False,
+2026-01-03T17:30:00+00:00,Spanish Tercera Division RFEF,Yague CF v CD Berceo,2-2,0.0,2.0,4.2,0,False,
+2026-01-03T17:30:00+00:00,Saudi Professional League,Al-Ittihad v Al-Taawoun Buraidah,1-0,1.0,0.0,5.4,1,False,
+2026-01-03T17:45:00+00:00,Spanish Primera Federación - Group 2,Algeciras v Sevilla B,3-0,2.0,0.0,3.0,1,False,
+2026-01-03T17:45:00+00:00,Spanish Primera Federación - Group 1,Barakaldo v Union de Salamanca,5-0,5.0,0.0,3.05,1,False,
+2026-01-03T17:45:00+00:00,Spanish Primera Federación - Group 1,Ourense CF v Real Aviles,2-1,0.0,1.0,3.1,1,False,
+2026-01-03T18:00:00+00:00,French Ligue 1,Nice v Strasbourg,1-1,1.0,1.0,3.45,0,False,
+2026-01-03T18:00:00+00:00,Portuguese Primeira Liga,Club Football Estrela v Braga,3-3,1.0,2.0,3.65,0,False,
+2026-01-03T18:00:00+00:00,Portuguese Primeira Liga,Benfica v Estoril Praia,3-1,2.0,1.0,8.0,1,False,
+2026-01-03T19:00:00+00:00,French Ligue 2,Le Mans v St Etienne,0-0,0.0,0.0,3.45,0,True,0
+2026-01-03T19:00:00+00:00,French Ligue 2,Guingamp v Boulogne,3-0,3.0,0.0,3.55,1,False,
+2026-01-03T19:00:00+00:00,French Ligue 2,Amiens v Nancy,1-2,0.0,2.0,3.3,1,False,
+2026-01-03T19:00:00+00:00,French Ligue 2,Clermont v Laval,4-1,2.0,0.0,3.15,1,False,
+2026-01-03T19:00:00+00:00,French Ligue 2,Bastia v Grenoble,1-0,1.0,0.0,3.2,1,False,
+2026-01-03T19:00:00+00:00,French Ligue 2,Reims v Annecy,2-1,2.0,1.0,3.8,1,False,
+2026-01-03T19:00:00+00:00,French Ligue 2,Pau v Rodez,3-3,3.0,2.0,3.7,0,False,
+2026-01-03T19:00:00+00:00,Africa Cup of Nations,Mali v Tunisia,1-1,0.0,0.0,2.72,0,True,0
+2026-01-03T19:30:00+00:00,Italian Serie C,Cavese 1919 v Sorrento,1-0,0.0,0.0,3.35,1,True,1
+2026-01-03T19:30:00+00:00,Italian Serie C,Pesaro v ASD Pineto Calcio,0-2,0.0,2.0,2.98,1,False,
+2026-01-03T19:45:00+00:00,Italian Serie A,Atalanta v Roma,1-0,1.0,0.0,3.15,1,False,
+2026-01-03T20:00:00+00:00,Spanish Segunda Division,Cordoba v Burgos,2-0,2.0,0.0,3.2,1,False,
+2026-01-03T20:00:00+00:00,Spanish La Liga,Espanyol v Barcelona,0-2,0.0,0.0,4.9,1,True,1
+2026-01-03T20:00:00+00:00,Spanish Primera Federación - Group 2,Hercules v Sabadell,1-5,1.0,2.0,2.9,1,False,
+2026-01-03T20:05:00+00:00,French Ligue 1,Lille v Rennes,0-2,0.0,2.0,4.0,1,False,
+2026-01-03T20:30:00+00:00,Portuguese Primeira Liga,AVS Futebol SAD v Moreirense,0-2,0.0,2.0,3.35,1,False,
+2026-01-03T20:30:00+00:00,Portuguese Segunda Liga,Farense v Portimonense,0-1,0.0,1.0,4.0,1,False,
+2026-01-03T22:00:00+00:00,Other Competitions Soccer,Central FC v AC Port Of Spain,1-1,1.0,1.0,4.2,0,False,
+2026-01-04T00:00:00+00:00,Friendly Matches,Universidad Guadalajara v Monterrey,0-3,0.0,3.0,4.6,1,False,
+2026-01-04T00:00:00+00:00,Other Competitions Soccer,San Juan Jabloteh v Defence Force FC,1-3,1.0,1.0,4.8,1,False,
+2026-01-04T00:00:00+00:00,Brazilian Sao Paulo Youth Cup,Athletic Club MG U20 v Guarani SP U20,1-0,1.0,0.0,3.7,1,False,
+2026-01-04T00:30:00+00:00,Brazilian Sao Paulo Youth Cup,Atletico Paranaense U20 v Oeste U20,1-1,1.0,0.0,3.9,0,False,
+2026-01-04T02:00:00+00:00,Japanese Women's Matches,Yamanashi Gakuin Univer v Tokyo International Uni,1-0,0.0,0.0,3.6,1,True,1
+2026-01-04T05:30:00+00:00,Hong Kong 2nd Division League,Wong Tai Sin v Fukien,0-0,0.0,0.0,3.45,0,True,0
+2026-01-04T05:30:00+00:00,Hong Kong 2nd Division League,Mutual FC v Yau Tsim Mong,0-2,0.0,1.0,4.0,1,False,
+2026-01-04T05:30:00+00:00,Hong Kong 2nd Division League,Leaper FC v Kowloon Cricket Club,2-0,0.0,0.0,9.0,1,True,1
+2026-01-04T05:50:00+00:00,Australian A-League Women,Adelaide United (W) v Central Coast Mariners (W),1-0,1.0,0.0,3.8,1,False,
+2026-01-04T06:00:00+00:00,Australian A-League Women,Melbourne City (W) v Sydney FC (W),1-0,1.0,0.0,6.0,1,False,
+2026-01-04T06:30:00+00:00,Indonesian Championship,Persipura Jayapura v Deltras Sidoarjo,1-0,0.0,0.0,4.2,1,True,1
+2026-01-04T07:30:00+00:00,Hong Kong 2nd Division League,Tsuen Wan v Wanchai,0-4,0.0,3.0,5.2,1,False,
+2026-01-04T07:30:00+00:00,Hong Kong 2nd Division League,Wing Yee v Sui Tung,2-1,2.0,1.0,3.8,1,False,
+2026-01-04T07:30:00+00:00,Hong Kong 2nd Division League,Kui Tan SC v Tuen Mun SA,4-0,2.0,0.0,12.0,1,False,
+2026-01-04T08:30:00+00:00,Indonesian Super League,Psim Yogyakarta v Semen Padang,1-0,0.0,0.0,4.1,1,True,1
+2026-01-04T08:30:00+00:00,Indonesian Championship,Sriwijaya v PSPS Pekanbaru,2-5,1.0,3.0,4.6,1,False,
+2026-01-04T08:30:00+00:00,Indonesian Championship,Adhyaksa FC v Garudayaksa FC,3-2,3.0,2.0,3.4,1,False,
+2026-01-04T08:30:00+00:00,Indonesian Super League,Persis Solo v Persita Tangerang,1-3,0.0,3.0,3.6,1,False,
+2026-01-04T08:35:00+00:00,Australian A-League Men,Adelaide United v Central Coast Mariners,0-4,0.0,4.0,3.95,1,False,
+2026-01-04T09:15:00+00:00,Malaysian Super League,Kuala Lumpur v Imigresen FC,4-2,1.0,1.0,5.8,1,False,
+2026-01-04T09:30:00+00:00,Hong Kong 2nd Division League,Kwai Tsing DFA v Kwong Wah,5-2,2.0,1.0,9.4,1,False,
+2026-01-04T10:00:00+00:00,Maltese FA Trophy,Pieta Hotspurs FC v Mtarfa FC,5-0,3.0,0.0,11.5,1,False,
+2026-01-04T10:00:00+00:00,Spanish Tercera Division RFEF,CE Constancia de Inca v UD Rotlet Molinar,3-0,1.0,0.0,4.3,1,False,
+2026-01-04T10:00:00+00:00,Italian Campionato Primavera,Lecce U20 v Inter Milan U20,3-1,3.0,0.0,3.85,1,False,
+2026-01-04T10:00:00+00:00,Ethiopian Premier League,Negele Arsi Ketema v Defence Force FC,2-0,2.0,0.0,2.7,1,False,
+2026-01-04T10:45:00+00:00,Spanish Tercera Division RFEF,Villarreal CF III v Atletico Levante UD,1-1,1.0,0.0,3.25,0,False,
+2026-01-04T11:00:00+00:00,Portuguese Liga 3,Santarem v 1 Dezembro,1-0,0.0,0.0,3.25,1,True,1
+2026-01-04T11:00:00+00:00,Spanish Tercera Division RFEF,CD Cayon v CD Tropezon,3-1,2.0,1.0,3.1,1,False,
+2026-01-04T11:00:00+00:00,Spanish Tercera Division RFEF,UD Montijo v CD Azuaga,2-1,2.0,0.0,3.0,1,False,
+2026-01-04T11:00:00+00:00,Spanish Primera Federación - Group 1,Talavera CF v Guadalajara,2-0,2.0,0.0,3.4,1,False,
+2026-01-04T11:00:00+00:00,Spanish Tercera Division RFEF,CD Badajoz v CD Calamonte,2-0,0.0,0.0,5.5,1,True,1
+2026-01-04T11:00:00+00:00,Portuguese Segunda Liga,Sporting Lisbon B v Academico de Viseu,1-2,1.0,1.0,3.25,1,False,
+2026-01-04T11:00:00+00:00,Spanish Tercera Division RFEF,CD Covadonga v CD Llanes,0-0,0.0,0.0,5.6,0,True,0
+2026-01-04T11:00:00+00:00,Thai League 1,Prachuap v Buriram Utd,1-1,0.0,1.0,4.1,0,False,
+2026-01-04T11:00:00+00:00,Spanish Primera Federación - Group 2,Ibiza Eivissa v Eldense,0-1,0.0,0.0,3.1,1,True,1
+2026-01-04T11:00:00+00:00,Portuguese Liga 3,Braga B v AD Marco 09,2-1,1.0,1.0,3.2,1,False,
+2026-01-04T11:00:00+00:00,Spanish Primera Federación - Group 1,Cacereno v Celta Vigo B,2-3,2.0,2.0,3.1,1,False,
+2026-01-04T11:00:00+00:00,Spanish Primera Federación - Group 1,Real Madrid Castilla v Arenteiro,2-0,0.0,0.0,3.6,1,True,1
+2026-01-04T11:00:00+00:00,Portuguese Segunda Liga,Penafiel v Pacos Ferreira,1-2,1.0,2.0,3.4,1,False,
+2026-01-04T11:00:00+00:00,Portuguese Liga 3,CD Trofense v Guimaraes B,0-1,0.0,1.0,3.15,1,False,
+2026-01-04T11:30:00+00:00,Italian Serie A,Lazio v Napoli,0-2,0.0,2.0,3.15,1,False,
+2026-01-04T11:30:00+00:00,Italian Serie C,Atalanta B v US Latina Calcio,1-2,0.0,0.0,3.65,1,True,1
+2026-01-04T11:30:00+00:00,Italian Serie C,Foggia v Catania,1-1,1.0,0.0,4.1,0,False,
+2026-01-04T12:00:00+00:00,Indonesian Championship,Persela Lamongan v Persiba Balikpapan,1-0,1.0,0.0,4.9,1,False,
+2026-01-04T12:00:00+00:00,English Sky Bet League 1,Bolton v Northampton,0-0,0.0,0.0,5.0,0,True,0
+2026-01-04T12:00:00+00:00,Indonesian Super League,Bali Utd Pusam v Arema Cronus,1-0,1.0,0.0,3.85,1,False,
+2026-01-04T12:00:00+00:00,English Sky Bet League 2,Cheltenham v Crawley Town,3-0,0.0,0.0,3.5,1,True,1
+2026-01-04T12:00:00+00:00,English Sky Bet League 2,MK Dons v Chesterfield,2-2,2.0,0.0,4.0,0,False,
+2026-01-04T12:00:00+00:00,English Sky Bet Championship,Birmingham v Coventry,3-2,2.0,2.0,3.65,1,False,
+2026-01-04T12:00:00+00:00,English Sky Bet Championship,QPR v Sheff Wed,3-0,1.0,0.0,5.7,1,False,
+2026-01-04T12:00:00+00:00,English Sky Bet League 1,Lincoln v Peterborough,5-2,4.0,2.0,3.65,1,False,
+2026-01-04T12:15:00+00:00,Malaysian Super League,Selangor FA v Johor Darul Takzim,0-2,0.0,1.0,6.0,1,False,
+2026-01-04T12:30:00+00:00,English Premier League,Leeds v Man Utd,1-1,0.0,0.0,3.5,0,True,0
+2026-01-04T12:55:00+00:00,UAE Division 1,Al-Ittifaq Maqaba v Dibba Al-Hisn,0-3,0.0,2.0,5.0,1,False,
+2026-01-04T12:55:00+00:00,UAE Division 1,Al-Arabi Umm Quwain v United FC,1-2,1.0,1.0,3.5,1,False,
+2026-01-04T12:55:00+00:00,UAE Division 1,Al Oruba v Emirates Club,2-0,2.0,0.0,3.45,1,False,
+2026-01-04T12:55:00+00:00,UAE Division 1,Al Hamriyah v Hatta,4-5,3.0,4.0,3.25,1,False,
+2026-01-04T12:55:00+00:00,UAE Division 1,Al-Thaid v Al-Fujairah FC,1-1,1.0,0.0,3.4,0,False,
+2026-01-04T13:00:00+00:00,Spanish La Liga,Sevilla v Levante,0-3,0.0,1.0,3.85,1,False,
+2026-01-04T13:00:00+00:00,Spanish Segunda Division,Sporting Gijon v Malaga,1-3,0.0,2.0,3.55,1,False,
+2026-01-04T13:15:00+00:00,Spanish Primera Federación - Group 1,CA Osasuna II v Tenerife,0-2,0.0,1.0,3.55,1,False,
+2026-01-04T13:30:00+00:00,Italian Serie C,Arzignanochiampo v Union Brescia,1-2,1.0,0.0,3.05,1,False,
+2026-01-04T13:30:00+00:00,Italian Serie C,Nuovo Campobasso v Ravenna,2-1,1.0,1.0,3.2,1,False,
+2026-01-04T13:30:00+00:00,Italian Serie C,Lumezzane v LR Vicenza Virtus,1-1,0.0,1.0,3.8,0,False,
+2026-01-04T13:30:00+00:00,Italian Serie C,Inter Milan (Res) v Novara,0-0,0.0,0.0,3.1,0,True,0
+2026-01-04T13:30:00+00:00,Italian Serie C,Potenza v FC Giugliano,0-0,0.0,0.0,3.35,0,True,0
+2026-01-04T13:30:00+00:00,Italian Serie C,Siracusa v Salernitana,3-1,3.0,1.0,3.4,1,False,
+2026-01-04T13:30:00+00:00,Spanish Tercera Division RFEF,CD Mensajero v Arucas CF,4-2,4.0,2.0,3.5,1,False,
+2026-01-04T14:00:00+00:00,Cypriot 1st Division,Olympiakos Nicosia FC v Aris FC Limassol,0-0,0.0,0.0,4.8,0,True,0
+2026-01-04T14:00:00+00:00,French Ligue 1,Marseille v Nantes,0-2,0.0,1.0,6.8,1,False,
+2026-01-04T14:00:00+00:00,Brazilian Sao Paulo Youth Cup,Sao Paulo U20 v CS Maruinense U20,2-0,1.0,0.0,21.0,1,False,
+2026-01-04T14:00:00+00:00,Italian Serie A,Fiorentina v US Cremonese,1-0,0.0,0.0,3.95,1,True,1
+2026-01-04T14:30:00+00:00,Elite Friendlies,St Pauli v Werder Bremen,0-0,0.0,0.0,3.6,0,True,0
+2026-01-04T15:00:00+00:00,English Sky Bet Championship,Derby v Wrexham,1-2,1.0,2.0,3.25,1,False,
+2026-01-04T15:00:00+00:00,Cypriot 1st Division,AEK Larnaca v Anorthosis,4-0,2.0,0.0,4.4,1,False,
+2026-01-04T15:00:00+00:00,English Sky Bet League 1,Wycombe v AFC Wimbledon,2-0,1.0,0.0,3.6,1,False,
+2026-01-04T15:00:00+00:00,English Sky Bet League 1,Cardiff v Wigan,1-0,1.0,0.0,4.3,1,False,
+2026-01-04T15:00:00+00:00,Spanish Tercera Division RFEF,AD Almudevar v CD Cuarte,0-2,0.0,2.0,2.68,1,False,
+2026-01-04T15:00:00+00:00,English Sky Bet Championship,Bristol City v Preston,0-2,0.0,1.0,3.9,1,False,
+2026-01-04T15:00:00+00:00,English Sky Bet Championship,Norwich v Stoke,0-2,0.0,0.0,3.8,1,True,1
+2026-01-04T15:00:00+00:00,English Sky Bet Championship,Middlesbrough v Southampton,4-0,2.0,0.0,3.85,1,False,
+2026-01-04T15:00:00+00:00,English Sky Bet Championship,Millwall v Swansea,2-1,1.0,1.0,3.3,1,False,
+2026-01-04T15:00:00+00:00,English Sky Bet Championship,Blackburn v Charlton,2-2,1.0,2.0,3.35,0,False,
+2026-01-04T15:00:00+00:00,Spanish Tercera Division RFEF,CD Diocesano v Don Benito,0-1,0.0,1.0,3.45,1,False,
+2026-01-04T15:00:00+00:00,Ghanain Premier League,Dreams FC v Basake Holy Stars FC,2-0,0.0,0.0,3.55,1,True,1
+2026-01-04T15:00:00+00:00,English Premier League,Newcastle v Crystal Palace,2-0,0.0,0.0,4.3,1,True,1
+2026-01-04T15:00:00+00:00,English Sky Bet League 1,Reading v Stockport,1-0,0.0,0.0,3.65,1,True,1
+2026-01-04T15:00:00+00:00,English Premier League,Tottenham v Sunderland,1-1,1.0,0.0,3.5,0,False,
+2026-01-04T15:00:00+00:00,English Sky Bet League 1,Huddersfield v Exeter,2-2,2.0,1.0,4.1,0,False,
+2026-01-04T15:00:00+00:00,English Sky Bet League 1,Plymouth v Burton Albion,3-0,1.0,0.0,4.0,1,False,
+2026-01-04T15:00:00+00:00,English Sky Bet League 1,Blackpool v Bradford,1-2,1.0,1.0,3.6,1,False,
+2026-01-04T15:00:00+00:00,English Premier League,Everton v Brentford,2-4,0.0,3.0,3.35,1,False,
+2026-01-04T15:00:00+00:00,Ghanain Premier League,Unations FC v Karela United FC,0-0,0.0,0.0,3.2,0,True,0
+2026-01-04T15:00:00+00:00,Egyptian League Cup,Haras El Hodood v Kahraba Ismailia,3-3,2.0,2.0,3.05,0,False,
+2026-01-04T15:00:00+00:00,Ghanain Premier League,Swedru All Blacks FC v Asante Kotoko,2-1,2.0,1.0,2.8,1,False,
+2026-01-04T15:00:00+00:00,Spanish Tercera Division RFEF,CD Leonesa B v SD Atletico Tordesillas,1-1,1.0,0.0,3.45,0,False,
+2026-01-04T15:00:00+00:00,Egyptian League Cup,El Geish v Pharco FC,1-0,1.0,0.0,2.86,1,False,
+2026-01-04T15:05:00+00:00,Saudi Professional League,Al-Hazm (KSA) v NEOM Sports Club,1-2,0.0,0.0,3.35,1,True,1
+2026-01-04T15:15:00+00:00,Spanish Segunda Division,AD Ceuta FC v Andorra CF,2-1,2.0,0.0,3.5,1,False,
+2026-01-04T15:15:00+00:00,Spanish La Liga,Real Madrid v Betis,5-1,3.0,0.0,4.7,1,False,
+2026-01-04T15:15:00+00:00,English Premier League,Fulham v Liverpool,2-2,1.0,1.0,3.85,0,False,
+2026-01-04T15:30:00+00:00,Spanish Primera Federación - Group 1,Athletic Bilbao B v Ponferradina,1-0,1.0,0.0,3.1,1,False,
+2026-01-04T15:30:00+00:00,Portuguese Primeira Liga,Rio Ave v Casa Pia,3-1,1.0,0.0,3.2,1,False,
+2026-01-04T15:30:00+00:00,Spanish Tercera Division RFEF,CD Soneja v CD Roda,0-1,0.0,0.0,2.92,1,True,1
+2026-01-04T15:30:00+00:00,Spanish Primera Federación - Group 1,Zamora v Arenas Club de Getxo,1-0,1.0,0.0,3.7,1,False,
+2026-01-04T15:30:00+00:00,Ghanain Premier League,Medeama SC v Hearts of Oak,1-0,0.0,0.0,2.98,1,True,1
+2026-01-04T16:00:00+00:00,Africa Cup of Nations,Morocco v Tanzania,1-0,0.0,0.0,8.8,1,True,1
+2026-01-04T16:15:00+00:00,French Ligue 1,Brest v Auxerre,2-0,1.0,0.0,3.5,1,False,
+2026-01-04T16:15:00+00:00,French Ligue 1,Lorient v Metz,1-1,0.0,1.0,3.75,0,False,
+2026-01-04T16:15:00+00:00,French Ligue 1,Le Havre v Angers,2-1,1.0,1.0,3.35,1,False,
+2026-01-04T16:30:00+00:00,Italian Serie C,Trapani v S.S.D. Casarano Calcio,1-0,0.0,0.0,3.4,1,True,1
+2026-01-04T16:30:00+00:00,Italian Serie C,AC Bra v Sambenedettese,2-2,1.0,2.0,3.15,0,False,
+2026-01-04T16:30:00+00:00,Italian Serie C,FC Guidonia Montecelio 1937 v Perugia,1-2,0.0,2.0,2.96,1,False,
+2026-01-04T16:30:00+00:00,Italian Serie C,SSD Dolomiti Bellunesi v Albinoleffe,2-0,1.0,0.0,3.15,1,False,
+2026-01-04T17:00:00+00:00,Mexican Liga MX Femenil,Guadalajara (W) v Atletico San Luis (W),2-0,0.0,0.0,7.6,1,True,1
+2026-01-04T17:00:00+00:00,Spanish Tercera Division RFEF,Moralo CP v CD Santa Amalia,2-0,1.0,0.0,3.65,1,False,
+2026-01-04T17:00:00+00:00,Italian Serie A,Verona v Torino,0-3,0.0,1.0,2.94,1,False,
+2026-01-04T17:00:00+00:00,Cypriot 1st Division,Apollon Limassol v Pafos FC,2-1,2.0,1.0,3.45,1,False,
+2026-01-04T17:30:00+00:00,Saudi Professional League,Al-Quadisiya (KSA) v Al Riyadh SC,4-0,3.0,0.0,7.4,1,False,
+2026-01-04T17:30:00+00:00,Spanish La Liga,Alaves v Oviedo,1-1,0.0,1.0,3.0,0,False,
+2026-01-04T17:30:00+00:00,Saudi Professional League,Dhamk v Al-Hilal,0-2,0.0,2.0,7.2,1,False,
+2026-01-04T17:30:00+00:00,Spanish La Liga,Mallorca v Girona,1-2,0.0,1.0,3.2,1,False,
+2026-01-04T17:30:00+00:00,Spanish Segunda Division,Albacete v Leganes,1-3,1.0,1.0,3.25,1,False,
+2026-01-04T17:30:00+00:00,Spanish Tercera Division RFEF,SD Atletico Albericia v UM Escobedo,2-1,1.0,1.0,3.35,1,False,
+2026-01-04T17:30:00+00:00,Spanish Segunda Division,Zaragoza v Las Palmas,1-2,1.0,1.0,2.96,1,False,
+2026-01-04T17:30:00+00:00,English Premier League,Man City v Chelsea,1-1,1.0,0.0,5.2,0,False,
+2026-01-04T17:45:00+00:00,Spanish Primera Federación - Group 2,Villarreal B v Marbella,3-1,3.0,0.0,3.25,1,False,
+2026-01-04T17:45:00+00:00,Spanish Primera Federación - Group 2,Betis B v CE Europa,2-2,1.0,0.0,3.1,0,False,
+2026-01-04T18:00:00+00:00,Spanish Tercera Division RFEF,CD Huetor Tajar v Martos CD,2-2,1.0,0.0,3.8,0,False,
+2026-01-04T18:00:00+00:00,Portuguese Primeira Liga,Santa Clara v Porto,0-1,0.0,1.0,4.0,1,False,
+2026-01-04T18:00:00+00:00,Egyptian League Cup,Modern Sport FC v Pyramids,0-1,0.0,0.0,6.2,1,True,1
+2026-01-04T18:00:00+00:00,Mexican Liga MX Femenil,Pumas UNAM (W) v Queretaro (W),4-1,4.0,1.0,5.8,1,False,
+2026-01-04T18:15:00+00:00,Israeli Premier League,Hapoel Tel Aviv v FC Ashdod,1-0,0.0,0.0,4.7,1,True,1
+2026-01-04T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Nautico Capibaribe U20 v Gremio Novorizontino U20,0-2,0.0,2.0,4.0,1,False,
+2026-01-04T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Criciuma U20 v XV de Piracicaba U20,0-2,0.0,2.0,4.2,1,False,
+2026-01-04T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Juventude U20 v Sao Jose Esporte Clube U20,0-0,0.0,0.0,4.8,0,True,0
+2026-01-04T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Vila Nova U20 v AA Portuguesa U20,0-1,0.0,1.0,3.7,1,False,
+2026-01-04T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Figueirense U20 v Red Bull Bragantino U20,1-6,0.0,5.0,5.7,1,False,
+2026-01-04T18:30:00+00:00,Israeli Premier League,Hapoel Kiryat Shmona v Beitar Jerusalem,1-2,0.0,1.0,4.6,1,False,
+2026-01-04T19:00:00+00:00,Africa Cup of Nations,South Africa v Cameroon,1-2,0.0,2.0,2.88,1,False,
+2026-01-04T19:15:00+00:00,Brazilian Sao Paulo Youth Cup,Cuiaba EC U20 v America RJ U20,2-0,1.0,0.0,4.5,1,False,
+2026-01-04T19:30:00+00:00,Italian Serie C,Ternana v Livorno,2-1,2.0,1.0,3.75,1,False,
+2026-01-04T19:45:00+00:00,Italian Serie A,Inter v Bologna,3-1,2.0,0.0,5.0,1,False,
+2026-01-04T19:45:00+00:00,French Ligue 1,Paris St-G v Paris FC,2-1,2.0,1.0,10.5,1,False,
+2026-01-04T20:00:00+00:00,Friendly Matches,Sousa EC v Potiguar,1-0,1.0,0.0,3.8,1,False,
+2026-01-04T20:00:00+00:00,Spanish Segunda Division,Deportivo v Cadiz,2-2,2.0,1.0,3.85,0,False,
+2026-01-04T20:00:00+00:00,Spanish Primera Federación - Group 2,Atletico Sanluqueno CF v Real Murcia,0-2,0.0,0.0,3.0,1,True,1
+2026-01-04T20:00:00+00:00,Spanish La Liga,Real Sociedad v Atletico Madrid,1-1,1.0,1.0,3.7,0,False,
+2026-01-04T20:00:00+00:00,Jamaican Premier League,Racing United FC v Waterhouse FC,0-0,0.0,0.0,3.35,0,True,0
+2026-01-04T20:00:00+00:00,Jamaican Premier League,Treasure Beach FC v Montego Bay United,0-1,0.0,1.0,4.2,1,False,
+2026-01-04T20:00:00+00:00,Jamaican Premier League,Chapelton v Harbour View FC,0-0,0.0,0.0,3.1,0,True,0
+2026-01-04T20:30:00+00:00,Portuguese Primeira Liga,Alverca v Famalicao,1-0,0.0,0.0,3.4,1,True,1
+2026-01-04T22:00:00+00:00,Mexican Liga MX Femenil,Club Necaxa (W) v Tigres (W),1-4,1.0,2.0,28.0,1,False,
+2026-01-04T22:30:00+00:00,Jamaican Premier League,Molynes United FC v Mount Pleasant FC,0-0,0.0,0.0,5.0,0,True,0
+2026-01-04T22:30:00+00:00,Honduras Liga Nacional,CD Marathon v CD Olimpia,2-2,1.0,1.0,3.25,0,False,
+2026-01-05T00:00:00+00:00,Mexican Liga MX Femenil,Monterrey (W) v Puebla FC (W),4-0,4.0,0.0,17.5,1,False,
+2026-01-05T00:30:00+00:00,Brazilian Sao Paulo Youth Cup,Atletico MG U20 v Uniao EC Rondonopolis (Res),4-2,1.0,1.0,11.5,1,False,
+2026-01-05T00:30:00+00:00,Friendly Matches,Atlas v Monterrey,1-2,1.0,0.0,4.0,1,False,
+2026-01-05T08:00:00+00:00,Indonesian Liga 3,Persikota Tangerang v Psgc Ciamis,0-3,0.0,2.0,3.05,1,False,
+2026-01-05T08:00:00+00:00,Indonesian Liga 3,Waanal Brothers FC v Persebata Lembata,1-1,0.0,1.0,3.1,0,False,
+2026-01-05T08:00:00+00:00,Australian A-League Men,Macarthur FC v Auckland FC,1-1,0.0,1.0,4.0,0,False,
+2026-01-05T08:30:00+00:00,Indonesian Super League,Bhayangkara FC v Dewa United FC,1-0,1.0,0.0,3.3,1,False,
+2026-01-05T08:30:00+00:00,Indonesian Championship,PS Barito Putera v Persiku Kudus,1-0,1.0,0.0,7.2,1,False,
+2026-01-05T09:00:00+00:00,Myanmar National League,Rakhine Utd v Dagon FC,0-2,0.0,0.0,7.2,1,True,1
+2026-01-05T09:30:00+00:00,Myanmar National League,Yarmanya United FC v Dagon Port FC,2-7,1.0,6.0,4.8,1,False,
+2026-01-05T12:00:00+00:00,Ethiopian Premier League,Bahir Dar FC v Dire Dawa Kima FC,0-0,0.0,0.0,3.0,0,True,0
+2026-01-05T12:00:00+00:00,Indonesian Super League,Persik Kediri v Persib Bandung,1-1,0.0,0.0,3.8,0,True,0
+2026-01-05T12:00:00+00:00,Indonesian Championship,Tornado FC v Pss Sleman,2-1,2.0,1.0,3.45,1,False,
+2026-01-05T12:05:00+00:00,Saudi 1st Division,Al Jubail v Al-Arabi Al-Saudi,2-0,1.0,0.0,3.2,1,False,
+2026-01-05T12:30:00+00:00,Egyptian Second Division B,Cascada SC v Fayoum FC,1-0,1.0,0.0,3.3,1,False,
+2026-01-05T12:30:00+00:00,Egyptian Second Division B,Diamond FC v Banha,2-1,1.0,1.0,3.3,1,False,
+2026-01-05T12:45:00+00:00,Saudi 1st Division,Abha v Al Draih,2-1,2.0,1.0,3.75,1,False,
+2026-01-05T13:00:00+00:00,Elite Friendlies,Stuttgart v Luzern,3-2,2.0,0.0,5.7,1,False,
+2026-01-05T13:00:00+00:00,Ethiopian Premier League,Ethiopian Medhin v Mekelle 70 Enderta,0-1,0.0,1.0,2.96,1,False,
+2026-01-05T14:00:00+00:00,Egyptian League Cup,Al Mokawloon v Ghazl El Mahallah,1-1,0.0,1.0,2.9,0,False,
+2026-01-05T14:00:00+00:00,Egyptian League Cup,Al-Masry v Smouha,2-0,1.0,0.0,2.9,1,False,
+2026-01-05T14:30:00+00:00,Elite Friendlies,FC Koln v Lugano,2-1,1.0,1.0,3.85,1,False,
+2026-01-05T15:00:00+00:00,Portuguese U19 Championship,Rio Ave U19 v Gil Vicente U19,3-0,2.0,0.0,3.65,1,False,
+2026-01-05T16:00:00+00:00,Bahraini 2nd Division,Qalali v Al-Ittihad (BRN),0-3,0.0,2.0,10.5,1,False,
+2026-01-05T16:00:00+00:00,Bahraini 2nd Division,Al-Ittifaq Maqaba v Al Hala,4-0,1.0,0.0,3.85,1,False,
+2026-01-05T16:00:00+00:00,Bahraini 2nd Division,Al Tadamun Buri v Busaiteen Club,0-1,0.0,0.0,4.3,1,True,1
+2026-01-05T16:00:00+00:00,Gambian GFA League 1st Division,Fortune FC v Bombada FC,2-3,2.0,1.0,2.7,1,False,
+2026-01-05T16:00:00+00:00,Gambian GFA League 1st Division,Medina United FC v Samger FC,0-0,0.0,0.0,2.76,0,True,0
+2026-01-05T16:00:00+00:00,Africa Cup of Nations,Egypt v Benin,3-1,0.0,0.0,4.5,1,True,1
+2026-01-05T16:45:00+00:00,Algerian Ligue 1,Kabylie v MB Rouissat,1-1,0.0,0.0,4.1,0,True,0
+2026-01-05T17:00:00+00:00,Israeli National League,SC Kiryat Yam v Hapoel Nof HaGalil,2-2,0.0,2.0,3.6,0,False,
+2026-01-05T17:00:00+00:00,Israeli National League,Ironi Modiin v Hapoel Eran Hadera,1-0,1.0,0.0,3.35,1,False,
+2026-01-05T17:00:00+00:00,Israeli National League,Hapoel Kfar Shelem v Bnei Yehuda,0-3,0.0,3.0,3.5,1,False,
+2026-01-05T17:30:00+00:00,Turkish Super Cup,Galatasaray v Trabzonspor,4-1,2.0,1.0,4.5,1,False,
+2026-01-05T18:00:00+00:00,Egyptian League Cup,National Bank v Wadi Degla,2-2,2.0,1.0,3.1,0,False,
+2026-01-05T18:00:00+00:00,Portuguese Segunda Liga,Benfica B v Porto B,1-1,1.0,0.0,3.85,0,False,
+2026-01-05T18:30:00+00:00,Israeli Premier League,Maccabi Haifa v Hapoel Haifa,2-0,2.0,0.0,5.3,1,False,
+2026-01-05T19:00:00+00:00,Africa Cup of Nations,Nigeria v Mozambique,4-0,3.0,0.0,5.8,1,False,
+2026-01-05T19:00:00+00:00,Algerian Ligue 1,MC Alger v CS Constantine,1-0,0.0,0.0,3.65,1,True,1
+2026-01-05T19:00:00+00:00,Brazilian Sao Paulo Youth Cup,Galvez EC U20 v Gremio FBPA U20,0-7,0.0,5.0,10.5,1,False,
+2026-01-05T19:30:00+00:00,Italian Serie C,Triestina v ASD Alcione,1-2,0.0,1.0,3.3,1,False,
+2026-01-05T19:30:00+00:00,Italian Serie C,Benevento v Crotone,2-1,0.0,0.0,4.0,1,True,1
+2026-01-05T19:30:00+00:00,Italian Serie C,Cosenza v Monopoli,0-2,0.0,0.0,3.65,1,True,1
+2026-01-05T19:45:00+00:00,French Ligue 2,Montpellier v Dunkerque,1-3,0.0,2.0,3.25,1,False,
+2026-01-05T20:00:00+00:00,English Sky Bet Championship,Leicester v West Brom,2-1,1.0,1.0,3.55,1,False,
+2026-01-05T20:00:00+00:00,Jamaican Premier League,Tivoli Gardens v Portmore Utd,2-2,1.0,1.0,2.92,0,False,
+2026-01-05T20:15:00+00:00,Brazilian Sao Paulo Youth Cup,Clube do Remo Belem U20 v Batalhao FC U20,2-0,2.0,0.0,4.0,1,False,
+2026-01-05T20:15:00+00:00,Portuguese Segunda Liga,Vizela v Torreense,0-1,0.0,0.0,3.5,1,True,1
+2026-01-05T21:15:00+00:00,Brazilian Sao Paulo Youth Cup,CA Votuporanguense U20 v Falcon FC U20,3-0,2.0,0.0,3.8,1,False,
+2026-01-05T21:30:00+00:00,Brazilian Sao Paulo Youth Cup,Mirassol U20 v CA Linense U20,1-0,0.0,0.0,4.5,1,True,1
+2026-01-05T22:15:00+00:00,Brazilian Sao Paulo Youth Cup,Sfera U20 v Brasiliense U20,0-1,0.0,0.0,1.01,1,True,1
+2026-01-05T22:30:00+00:00,Brazilian Sao Paulo Youth Cup,Palmeiras U20 v Monte Roraima U20,4-2,2.0,1.0,29.0,1,False,
+2026-01-05T23:45:00+00:00,Brazilian Sao Paulo Youth Cup,Forte FC U20 v Sport Club do Recife U20,1-1,0.0,1.0,7.4,0,False,
+2026-01-06T00:00:00+00:00,Mexican Liga MX Femenil,Toluca (W) v Club Tijuana (W),5-3,3.0,2.0,5.5,1,False,
+2026-01-06T00:00:00+00:00,Mexican Liga MX Femenil,Club Leon FC (W) v Cruz Azul (W),0-5,0.0,2.0,4.2,1,False,
+2026-01-06T00:30:00+00:00,Jamaican Premier League,Cavalier v Arnett Gardens FC,0-3,0.0,1.0,4.1,1,False,
+2026-01-06T00:30:00+00:00,Brazilian Sao Paulo Youth Cup,Fluminense U20 v Agua Santa U20,2-0,2.0,0.0,3.9,1,False,
+2026-01-06T02:00:00+00:00,Mexican Liga MX Femenil,Santos Laguna (W) v CF America (W),1-2,0.0,2.0,10.5,1,False,
+2026-01-06T08:00:00+00:00,Australian A-League Men,Melbourne City v Brisbane Roar,1-0,1.0,0.0,3.85,1,False,
+2026-01-06T09:00:00+00:00,Myanmar National League,Yangon United v Mahar United FC,4-0,1.0,0.0,9.4,1,False,
+2026-01-06T09:00:00+00:00,Myanmar National League,Shan United v Ispe FC,4-0,1.0,0.0,7.6,1,False,
+2026-01-06T09:00:00+00:00,Algerian Ladies Championnat Elite,RS Tissemsilt (W) v ASE Alger Centre (W),0-2,0.0,2.0,5.1,1,False,
+2026-01-06T09:00:00+00:00,Algerian Ladies Championnat Elite,CR Belouizdad (W) v AFAK Relizane (W),0-0,0.0,0.0,3.55,0,True,0
+2026-01-06T09:30:00+00:00,Myanmar National League,Ayeyawady United v Thitsar Arman FC,0-0,0.0,0.0,3.9,0,True,0
+2026-01-06T11:00:00+00:00,Spanish Tercera Division RFEF,C.D. Sonseca v Villarrubia CF,0-3,0.0,2.0,4.0,1,False,
+2026-01-06T11:00:00+00:00,Portuguese U23,Academico de Viseu U23 v SC Uniao Torreense U23,1-0,0.0,0.0,3.35,1,True,1
+2026-01-06T11:00:00+00:00,Algerian Ladies Championnat Elite,CS Constantine (W) v JS Kabylie (W),0-3,0.0,2.0,3.65,1,False,
+2026-01-06T11:30:00+00:00,AFC U23 Championship,Vietnam U23 v Jordan U23,2-0,2.0,0.0,3.65,1,False,
+2026-01-06T11:45:00+00:00,Brazilian Sao Paulo Youth Cup,America-SP U20 v Inter Limeira U20,0-0,0.0,0.0,4.3,0,True,0
+2026-01-06T12:30:00+00:00,Egyptian Second Division B,Al Ragaa v Horse Owners Club,0-0,0.0,0.0,3.8,0,True,0
+2026-01-06T12:35:00+00:00,Saudi 1st Division,Al Bukayriyah v Al Batin,5-1,2.0,1.0,3.4,1,False,
+2026-01-06T12:35:00+00:00,Saudi 1st Division,Al Jabalain v Al Faisaly ( KSA ),2-1,2.0,1.0,3.4,1,False,
+2026-01-06T12:55:00+00:00,Omani Professional League,Al-Khaboora v Samail,0-0,0.0,0.0,3.1,0,True,0
+2026-01-06T13:00:00+00:00,Ugandan Premier League,Buhimba Saints United v Maroons FC,1-0,1.0,0.0,3.4,1,False,
+2026-01-06T13:00:00+00:00,Greek Cup,Aris v Panaitolikos,2-0,2.0,0.0,4.1,1,False,
+2026-01-06T13:00:00+00:00,Ugandan Premier League,Uganda Police v Kampala City Council,2-0,1.0,0.0,3.2,1,False,
+2026-01-06T13:00:00+00:00,UAE Arabian Gulf League,Al Nasr (UAE) v Al Sharjah,2-4,2.0,2.0,3.75,1,False,
+2026-01-06T13:10:00+00:00,Kuwaiti Crown Prince Cup,Kuwait SC v Khaitan,3-0,1.0,0.0,17.0,1,False,
+2026-01-06T14:00:00+00:00,Friendly Matches,SV Darmstadt v Wehen Wiesbaden,0-1,0.0,1.0,4.1,1,False,
+2026-01-06T14:00:00+00:00,Elite Friendlies,FC Basel v Slavia Prague,4-3,1.0,2.0,3.9,1,False,
+2026-01-06T14:00:00+00:00,Friendly Matches,Crvena Zvezda v Waldhof Mannheim,2-0,1.0,0.0,5.2,1,False,
+2026-01-06T14:00:00+00:00,Elite Friendlies,Red Bull Salzburg v Bayern Munich,0-5,0.0,1.0,7.2,1,False,
+2026-01-06T14:00:00+00:00,Italian Serie A,Pisa v Como,0-3,0.0,0.0,3.65,1,True,1
+2026-01-06T14:00:00+00:00,Brazilian Sao Paulo Youth Cup,CSA U20 v Bahia EC U20,0-0,0.0,0.0,5.0,0,True,0
+2026-01-06T14:30:00+00:00,Qatari Stars League,Umm Salal v Al Gharafa,2-3,0.0,2.0,4.3,1,False,
+2026-01-06T15:00:00+00:00,Portuguese U23,Vizela U23 v Rio Ave FC U23,0-1,0.0,1.0,3.8,1,False,
+2026-01-06T15:00:00+00:00,Egyptian League Cup,ENPPI v Ceramica Cleopatra,2-0,1.0,0.0,3.0,1,False,
+2026-01-06T15:00:00+00:00,Egyptian League Cup,El Gounah v Petrojet,1-3,0.0,1.0,2.74,1,False,
+2026-01-06T15:20:00+00:00,Omani Professional League,Sohar v Al-Nasr,1-0,0.0,0.0,2.9,1,True,1
+2026-01-06T15:30:00+00:00,Greek Cup,NFC Volos v Kifisia,0-1,0.0,0.0,3.3,1,True,1
+2026-01-06T15:35:00+00:00,Saudi 1st Division,Al-Wahda (KSA) v Al Orubah,1-2,0.0,2.0,3.45,1,False,
+2026-01-06T15:45:00+00:00,Brazilian Sao Paulo Youth Cup,Flamengo de Guarulhos U20 v Capivariano U20,0-0,0.0,0.0,3.3,0,True,0
+2026-01-06T15:45:00+00:00,UAE Arabian Gulf League,Al Wahda (Abu Dhabi) v Bani Yas,3-0,3.0,0.0,4.8,1,False,
+2026-01-06T16:00:00+00:00,Elite Friendlies,FC Groningen v Bodo Glimt,0-4,0.0,3.0,4.1,1,False,
+2026-01-06T16:00:00+00:00,Bahraini Premier,Sitra v Al-Muharraq,0-4,0.0,3.0,3.85,1,False,
+2026-01-06T16:00:00+00:00,Brazilian Sao Paulo Youth Cup,Tanabi EC (Res) v America RN U20,0-5,0.0,2.0,3.55,1,False,
+2026-01-06T16:00:00+00:00,Portuguese U19 Championship,Sport Lisboa Benfica U19 v Sporting CP U19,1-0,1.0,0.0,3.75,1,False,
+2026-01-06T16:00:00+00:00,Brazilian Sao Paulo Youth Cup,Bandeirante U20 v Botafogo SP U20,1-3,1.0,2.0,4.2,1,False,
+2026-01-06T16:00:00+00:00,Brazilian Sao Paulo Youth Cup,CA Juventus U20 v Sao Bento U20,2-0,1.0,0.0,4.0,1,False,
+2026-01-06T16:00:00+00:00,AFC U23 Championship,Saudi Arabia U23 v Kyrgyzstan U23,1-0,0.0,0.0,6.6,1,True,1
+2026-01-06T16:00:00+00:00,Brazilian Sao Paulo Youth Cup,Santa Fe U20 v Volta Redonda RJ U20,1-1,1.0,1.0,4.2,0,False,
+2026-01-06T16:00:00+00:00,Africa Cup of Nations,Algeria v DR Congo,1-0,0.0,0.0,3.2,1,True,1
+2026-01-06T16:10:00+00:00,Kuwaiti Crown Prince Cup,Al Salmiyah v Al Tadhamon,1-2,0.0,0.0,3.85,1,True,1
+2026-01-06T16:30:00+00:00,Qatari Stars League,Al Sailiya v Al Rayyan,1-3,0.0,2.0,6.2,1,False,
+2026-01-06T17:00:00+00:00,Italian Serie A,Lecce v Roma,0-2,0.0,1.0,3.5,1,False,
+2026-01-06T17:00:00+00:00,Ugandan Premier League,Vipers SC v Mbarara City FC,2-0,2.0,0.0,7.2,1,False,
+2026-01-06T17:00:00+00:00,Portuguese U23,GD Estoril Praia U23 v Estrela U23,3-2,3.0,0.0,3.6,1,False,
+2026-01-06T17:15:00+00:00,Tanzanian Matches,Young Africans v Tabora United FC,1-0,1.0,0.0,9.6,1,False,
+2026-01-06T17:30:00+00:00,Turkish Super Cup,Fenerbahce v Samsunspor,2-0,1.0,0.0,3.8,1,False,
+2026-01-06T17:30:00+00:00,Maltese Premier League,Paola Hibernians FC v Gzira United FC,4-1,3.0,0.0,3.45,1,False,
+2026-01-06T18:00:00+00:00,Spanish Copa del Rey,Granada v Rayo Vallecano,1-3,1.0,1.0,3.55,1,False,
+2026-01-06T18:00:00+00:00,Brazilian Sao Paulo Youth Cup,Guanabara City U20 v Vasco da Gama U20,3-1,1.0,1.0,3.75,1,False,
+2026-01-06T18:00:00+00:00,Egyptian League Cup,Al Ittihad (EGY) v ZED FC,1-1,1.0,1.0,2.86,0,False,
+2026-01-06T18:00:00+00:00,Brazilian Sao Paulo Youth Cup,Rio Branco ES Youth v Vitoria BA U20,0-2,0.0,1.0,4.1,1,False,
+2026-01-06T18:00:00+00:00,Greek Cup,PAOK v Atromitos,1-1,1.0,1.0,6.8,0,False,
+2026-01-06T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Tuna Luso U20 v Santa Cruz FC U20,1-1,1.0,1.0,3.25,0,False,
+2026-01-06T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Cascavel PR U20 v Retro U20,0-2,0.0,0.0,3.7,1,True,1
+2026-01-06T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Alagoinhas BA U20 v Chapecoense U20,1-1,0.0,1.0,4.0,0,False,
+2026-01-06T19:00:00+00:00,Africa Cup of Nations,Ivory Coast v Burkina Faso,3-0,2.0,0.0,3.1,1,False,
+2026-01-06T19:00:00+00:00,English U21 Premier League Cup,Derby U21 v Sheff Utd U21,1-2,1.0,1.0,4.2,1,False,
+2026-01-06T19:45:00+00:00,Scottish Challenge Cup,Airdrieonians v Montrose,3-1,2.0,0.0,4.5,1,False,
+2026-01-06T19:45:00+00:00,English National League North,Macclesfield v Radcliffe Borough,2-1,2.0,0.0,3.95,1,False,
+2026-01-06T19:45:00+00:00,Italian Serie A,Sassuolo v Juventus,0-3,0.0,1.0,3.8,1,False,
+2026-01-06T19:45:00+00:00,Scottish Challenge Cup,Raith v Queen of South,1-0,1.0,0.0,4.9,1,False,
+2026-01-06T19:45:00+00:00,Welsh Premiership,The New Saints v Bala Town,2-1,1.0,1.0,11.5,1,False,
+2026-01-06T19:45:00+00:00,English National League South,Eastbourne v Horsham FC,0-2,0.0,1.0,3.5,1,False,
+2026-01-06T20:00:00+00:00,Scottish Premiership,Rangers v Aberdeen,2-0,2.0,0.0,5.7,1,False,
+2026-01-06T20:00:00+00:00,English Premier League,West Ham v Nottm Forest,1-2,1.0,1.0,3.6,1,False,
+2026-01-06T20:00:00+00:00,Maltese Premier League,Sliema Wanderers FC v Marsaxlokk FC,0-0,0.0,0.0,3.05,0,True,0
+2026-01-06T20:00:00+00:00,Portuguese League Cup,Sporting Lisbon v Guimaraes,1-2,1.0,0.0,5.6,1,False,
+2026-01-06T20:15:00+00:00,Brazilian Sao Paulo Youth Cup,XV Jau U20 v Trindade AC U20,2-1,2.0,0.0,3.35,1,False,
+2026-01-06T21:00:00+00:00,Brazilian Sao Paulo Youth Cup,Comercial FC U20 v EC Noroeste U20,2-0,1.0,0.0,4.8,1,False,
+2026-01-06T21:15:00+00:00,Brazilian Sao Paulo Youth Cup,Francana U20 v Barra SE U20,1-0,1.0,0.0,3.5,1,False,
+2026-01-06T21:45:00+00:00,Brazilian Sao Paulo Youth Cup,Aracatuba FC U20 v Oeste U20,1-2,0.0,2.0,8.2,1,False,
+2026-01-06T21:45:00+00:00,Brazilian Sao Paulo Youth Cup,CA Assisense U20 v Guarani SP U20,0-3,0.0,1.0,5.9,1,False,
+2026-01-06T22:00:00+00:00,Brazilian Catarinense Matches,Chapecoense v Brusque FC,1-1,1.0,1.0,3.8,0,False,
+2026-01-06T22:15:00+00:00,Brazilian Sao Paulo Youth Cup,Gremio Prudente U20 v Olimpico Itabaianinha U20,4-0,4.0,0.0,5.8,1,False,
+2026-01-06T22:30:00+00:00,Brazilian Sao Paulo Youth Cup,Luverdense U20 v Corinthians U20,0-0,0.0,0.0,8.4,0,True,0
+2026-01-06T23:00:00+00:00,Brazilian Catarinense Matches,Santa Catarina FC v Camboriu,2-2,1.0,2.0,3.55,0,False,
+2026-01-06T23:15:00+00:00,Brazilian Sao Paulo Youth Cup,Atletico PI U20 v America MG U20,0-2,0.0,2.0,4.7,1,False,
+2026-01-06T23:30:00+00:00,Brazilian Sao Paulo Youth Cup,Esporte de Patos U20 v Cruzeiro U20,0-1,0.0,0.0,10.5,1,True,1
+2026-01-07T00:00:00+00:00,Brazilian Sao Paulo Youth Cup,Marica RJ U20 v Atletico Paranaense U20,0-1,0.0,1.0,4.2,1,False,
+2026-01-07T00:30:00+00:00,Brazilian Sao Paulo Youth Cup,Carajas EC U20 v Ceara SC U20,0-3,0.0,2.0,4.2,1,False,
+2026-01-07T01:00:00+00:00,Mexican Liga MX Femenil,FC Atlas (W) v Pachuca (W),0-3,0.0,2.0,6.0,1,False,
+2026-01-07T03:06:00+00:00,Mexican Liga MX Femenil,Mazatlan FC(W) v FC Juarez (W),3-2,3.0,2.0,7.2,1,False,
+2026-01-07T06:00:00+00:00,Indonesian Liga 4,Psbi Blitar v Akor FC Jombang,0-2,0.0,1.0,1.24,1,False,
+2026-01-07T06:00:00+00:00,Indonesian Liga 4,PSID Jombang v Persepon Ponorogo,5-2,1.0,2.0,3.55,1,False,
+2026-01-07T06:00:00+00:00,Indonesian Liga 4,Perseta Tulungagung v Persedikab Kediri,0-1,0.0,0.0,1.24,1,True,1
+2026-01-07T08:00:00+00:00,Thai League 3,Udon Banjan United v Customs United,6-0,4.0,0.0,3.3,1,False,
+2026-01-07T08:00:00+00:00,Indonesian Liga 4,Persida Sidoarjo v Persinga Ngawi,2-1,0.0,1.0,3.0,1,False,
+2026-01-07T08:00:00+00:00,Thai League 3,Kasem Bundit University v Satun United FC,0-1,0.0,1.0,3.45,1,False,
+2026-01-07T08:00:00+00:00,Indonesian Liga 4,Persenga Nganjuk v PSMP Mojokerto,1-0,0.0,0.0,1.26,1,True,1
+2026-01-07T08:00:00+00:00,Indonesian Liga 4,PS Hizbul Wathan v Persema Malang,0-0,0.0,0.0,1.26,0,True,0
+2026-01-07T08:00:00+00:00,Thai League 3,Royal Thai Air Force Acade v Samut Songkhram City,1-1,0.0,0.0,2.8,0,True,0
+2026-01-07T09:00:00+00:00,Myanmar Ladies League,Ayeyawady United FC (W) v Yangon United (W),1-0,1.0,0.0,3.3,1,False,
+2026-01-07T09:30:00+00:00,Myanmar National League,Yadanarbon v Hanthawaddy United FC,1-4,1.0,1.0,5.1,1,False,
+2026-01-07T10:00:00+00:00,Italia Campionato Primavera,Sassuolo U20 v Lecce U20,3-0,1.0,0.0,3.65,1,False,
+2026-01-07T10:00:00+00:00,Thai League 3,Samut Sakhon City FC v Prime Bangkok,4-0,2.0,0.0,3.55,1,False,
+2026-01-07T10:00:00+00:00,Italia Campionato Primavera,Hellas Verona U20 v Lazio U20,1-1,1.0,0.0,3.35,0,False,
+2026-01-07T10:30:00+00:00,Italia Campionato Primavera,Fiorentina U20 v Napoli U20,3-1,2.0,1.0,3.8,1,False,
+2026-01-07T10:45:00+00:00,Hong Kong U22,Kowloon City U22 v Eastern District U22,2-2,2.0,1.0,3.1,0,False,
+2026-01-07T11:00:00+00:00,Italia Campionato Primavera,Juventus U20 v Frosinone Calcio U20,2-1,1.0,1.0,3.35,1,False,
+2026-01-07T11:30:00+00:00,AFC U23 Championship,Japan U23 v Syria U23,5-0,1.0,0.0,5.9,1,False,
+2026-01-07T11:30:00+00:00,AFC U23 Championship,South Korea U23 v Iran U23,0-0,0.0,0.0,3.2,0,True,0
+2026-01-07T11:45:00+00:00,Brazilian Sao Paulo Youth Cup,Nacional SP U20 v AA Portuguesa S U20,0-0,0.0,0.0,3.15,0,True,0
+2026-01-07T12:30:00+00:00,Saudi 1st Division,Al-Zulfi SC v Jeddah Club,1-2,1.0,2.0,3.3,1,False,
+2026-01-07T12:30:00+00:00,Saudi 1st Division,Al-Raed (KSA) v Al-Ula FC,3-2,0.0,2.0,4.0,1,False,
+2026-01-07T12:40:00+00:00,Saudi 1st Division,Al-Jndal v Al Taee,1-1,1.0,1.0,3.2,0,False,
+2026-01-07T12:45:00+00:00,Hong Kong U22,HK Rangers U22 v Hong Kong FC U22,3-0,2.0,0.0,3.65,1,False,
+2026-01-07T12:55:00+00:00,Omani Professional League,Al Shabab v Sur Club,3-1,2.0,1.0,3.95,1,False,
+2026-01-07T13:00:00+00:00,Ugandan Premier League,Airtel Kitara FC v UPDF FC,2-1,2.0,0.0,5.1,1,False,
+2026-01-07T13:00:00+00:00,UAE Arabian Gulf League,Al-Ittihad Kalba v Al Wasl,2-2,0.0,1.0,4.3,0,False,
+2026-01-07T13:00:00+00:00,Ugandan Premier League,Calvary FC v Bul FC,0-1,0.0,1.0,3.3,1,False,
+2026-01-07T13:10:00+00:00,Kuwaiti Crown Prince Cup,Al Arabi Kuwait v Al Yarmouk,2-1,2.0,0.0,8.0,1,False,
+2026-01-07T13:30:00+00:00,Italia Campionato Primavera,AC Milan U20 v Parma U20,0-1,0.0,1.0,3.55,1,False,
+2026-01-07T14:00:00+00:00,Friendly Matches,Holstein Kiel v Servette,1-1,1.0,0.0,4.2,0,False,
+2026-01-07T14:00:00+00:00,Friendly Matches,Young Boys v Dinamo Bucharest,0-2,0.0,2.0,3.75,1,False,
+2026-01-07T14:00:00+00:00,Italia Campionato Primavera,Roma U20 v Monza U20,2-0,2.0,0.0,5.0,1,False,
+2026-01-07T14:00:00+00:00,Friendly Matches,Jahn Regensburg v WSG Wattens,2-0,0.0,0.0,3.9,1,True,1
+2026-01-07T14:00:00+00:00,AFC U23 Championship,Uzbekistan U23 v Lebanon U23,3-2,3.0,0.0,4.7,1,False,
+2026-01-07T14:30:00+00:00,Qatari Stars League,Al Ahli (QAT) v Al Shamal,4-2,3.0,2.0,4.0,1,False,
+2026-01-07T14:35:00+00:00,Omani Professional League,Dhufar v Al Nahdha,0-2,0.0,2.0,3.65,1,False,
+2026-01-07T15:00:00+00:00,Greek Cup,OFI v Asteras Tripolis,2-0,2.0,0.0,3.4,1,False,
+2026-01-07T15:00:00+00:00,Spanish Tercera Division RFEF,Villarreal CF III v Hercules CF II,0-1,0.0,0.0,4.7,1,True,1
+2026-01-07T15:00:00+00:00,Cypriot Cup,APOEL v Apea Akrotiriou,1-0,1.0,0.0,18.5,1,False,
+2026-01-07T15:00:00+00:00,Cypriot Cup,Pafos FC v Akritas Chlorakas,2-1,1.0,0.0,15.5,1,False,
+2026-01-07T15:00:00+00:00,Cypriot Cup,Ethnikos Achnas v Enosis Neon Paralimni,1-2,1.0,1.0,4.2,1,False,
+2026-01-07T15:45:00+00:00,UAE Arabian Gulf League,Al Bataeh v Al Ahli (UAE),0-4,0.0,4.0,5.1,1,False,
+2026-01-07T15:55:00+00:00,Omani Professional League,Al Seeb v Al-Rustaq,1-0,0.0,0.0,5.8,1,True,1
+2026-01-07T16:00:00+00:00,Spanish Segunda Federación - Group 3,Torrent CF v UD Poblense,1-1,0.0,1.0,2.9,0,False,
+2026-01-07T16:00:00+00:00,Brazilian Sao Paulo Youth Cup,Referencia FC U20 v Ituano FC U20,1-2,1.0,1.0,4.0,1,False,
+2026-01-07T16:00:00+00:00,Brazilian Sao Paulo Youth Cup,Paulinia FC U20 v AA Portuguesa U20,1-3,0.0,2.0,5.4,1,False,
+2026-01-07T16:00:00+00:00,Brazilian Sao Paulo Youth Cup,Comercial FC Tiete U20 v XV de Piracicaba U20,1-0,0.0,0.0,4.0,1,True,1
+2026-01-07T16:00:00+00:00,Brazilian Sao Paulo Youth Cup,Cosmopolitano Sports U20 v Red Bull Bragantino U20,1-4,1.0,3.0,9.8,1,False,
+2026-01-07T16:00:00+00:00,Brazilian Sao Paulo Youth Cup,UM das Cruzes U20 v AD Centro Olimpico U20 (W),1-0,1.0,0.0,3.35,1,False,
+2026-01-07T16:10:00+00:00,Kuwaiti Crown Prince Cup,Al-Shabab v Al-Qadsia,0-2,0.0,2.0,4.1,1,False,
+2026-01-07T16:15:00+00:00,Brazilian Sao Paulo Youth Cup,Ferroviario CE U20 v Bangu U20,0-0,0.0,0.0,3.65,0,True,0
+2026-01-07T16:30:00+00:00,Senegalese Premier League,AS Pikine v Sonacos,2-0,2.0,0.0,2.76,1,False,
+2026-01-07T16:30:00+00:00,AFC U23 Championship,Qatar U23 v United Arab Emirates U23,0-2,0.0,2.0,3.2,1,False,
+2026-01-07T16:30:00+00:00,Senegalese Premier League,US Goree v AS Camberene,3-0,0.0,0.0,1.22,1,True,1
+2026-01-07T16:30:00+00:00,Senegalese Premier League,Teungueth FC v US Ouakam,0-0,0.0,0.0,2.32,0,True,0
+2026-01-07T16:30:00+00:00,Qatari Stars League,Al-Wakra v Al Arabi (QAT),0-1,0.0,1.0,4.3,1,False,
+2026-01-07T17:00:00+00:00,Ugandan Premier League,NEC FC v Lugazi FC,1-0,0.0,0.0,4.4,1,True,1
+2026-01-07T17:00:00+00:00,Senegalese Premier League,ASC Walidaan v Dakar Sacre Couer,1-1,0.0,0.0,2.6,0,True,0
+2026-01-07T17:00:00+00:00,Brazilian Sao Paulo Youth Cup,Ferroviaria DE U20 v America RJ U20,2-1,2.0,1.0,4.3,1,False,
+2026-01-07T17:30:00+00:00,Italian Serie A,Bologna v Atalanta,0-2,0.0,2.0,3.4,1,False,
+2026-01-07T17:30:00+00:00,Italian Serie A,Napoli v Verona,2-2,1.0,2.0,5.4,0,False,
+2026-01-07T18:00:00+00:00,Brazilian Sao Paulo Youth Cup,Independente EC U20 v Sao Paulo U20,0-2,0.0,2.0,21.0,1,False,
+2026-01-07T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Canaa Esporte Clube U20 v Criciuma U20,0-3,0.0,2.0,4.3,1,False,
+2026-01-07T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Nacional FC AM U20 v Juventude U20,0-3,0.0,2.0,4.2,1,False,
+2026-01-07T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Confianca PB U20 v Fortaleza FC U20,2-4,1.0,3.0,8.4,1,False,
+2026-01-07T18:15:00+00:00,Brazilian Sao Paulo Youth Cup,Operario Ferroviario EC U20 v Vila Nova U20,1-1,1.0,0.0,3.65,0,False,
+2026-01-07T19:00:00+00:00,Spanish Super Cup,Barcelona v Athletic Bilbao,5-0,5.0,0.0,4.7,1,False,
+2026-01-07T19:00:00+00:00,English U21 Premier League Cup,Blackburn U21 v Coventry City U21,0-1,0.0,1.0,4.4,1,False,
+2026-01-07T19:00:00+00:00,Spanish Tercera Division RFEF,Huetor Vega CD v CP Mijas Las Lagunas,1-2,1.0,2.0,3.0,1,False,
+2026-01-07T19:00:00+00:00,Maltese Premier League,Valletta v Birkirkara,2-0,2.0,0.0,3.85,1,False,
+2026-01-07T19:00:00+00:00,Maltese Premier League,Floriana v Hamrun Spartans FC,0-2,0.0,0.0,3.25,1,True,1
+2026-01-07T19:30:00+00:00,English Premier League,Crystal Palace v Aston Villa,0-0,0.0,0.0,3.4,0,True,0
+2026-01-07T19:30:00+00:00,English Premier League,Brentford v Sunderland,3-0,1.0,0.0,3.3,1,False,
+2026-01-07T19:30:00+00:00,English Premier League,Man City v Brighton,1-1,1.0,1.0,4.8,0,False,
+2026-01-07T19:30:00+00:00,English Premier League,Everton v Wolves,1-1,1.0,0.0,3.65,0,False,
+2026-01-07T19:30:00+00:00,English Premier League,Fulham v Chelsea,2-1,1.0,0.0,3.75,1,False,
+2026-01-07T19:30:00+00:00,English Premier League,Bournemouth v Tottenham,3-2,2.0,1.0,3.75,1,False,
+2026-01-07T19:45:00+00:00,Italian Serie A,Torino v Udinese,1-2,0.0,1.0,3.05,1,False,
+2026-01-07T19:45:00+00:00,Italian Serie A,Parma v Inter,0-2,0.0,1.0,5.6,1,False,
+2026-01-07T19:45:00+00:00,Italian Serie A,Lazio v Fiorentina,2-2,1.0,1.0,3.15,0,False,
+2026-01-07T20:00:00+00:00,Jamaican Premier League,Treasure Beach FC v Dunbeholden FC,0-4,0.0,3.0,3.05,1,False,
+2026-01-07T20:00:00+00:00,Portuguese League Cup,Benfica v Braga,1-3,0.0,2.0,3.3,1,False,
+2026-01-07T20:15:00+00:00,English Premier League,Burnley v Man Utd,2-2,1.0,2.0,4.0,0,False,
+2026-01-07T20:15:00+00:00,Brazilian Sao Paulo Youth Cup,Gremio Desportivo Sao-Carl v Real Brasilia FC U20,1-1,1.0,0.0,3.4,0,False,
+2026-01-07T20:15:00+00:00,English Premier League,Newcastle v Leeds,4-3,2.0,2.0,4.1,1,False,
+2026-01-07T21:45:00+00:00,Brazilian Sao Paulo Youth Cup,Audax U20 v Uniao EC Rondonopolis (Res),6-0,1.0,0.0,3.75,1,False,
+2026-01-07T22:00:00+00:00,Brazilian Catarinense Matches,Marcilio v Criciuma,2-0,1.0,0.0,3.3,1,False,
+2026-01-07T22:15:00+00:00,Brazilian Sao Paulo Youth Cup,Taubate U20 v Aguia de Maraba FC U20,1-2,1.0,2.0,3.1,1,False,
+2026-01-07T23:00:00+00:00,Brazilian Catarinense Matches,Joinville v Figueirense,2-3,1.0,1.0,3.0,1,False,
+2026-01-08T00:30:00+00:00,Brazilian Catarinense Matches,Avai v Barra FC,2-1,2.0,1.0,3.2,1,False,
+2026-01-08T00:30:00+00:00,Brazilian Sao Paulo Youth Cup,Estrela de Marco U20 v Botafogo FR U20,0-1,0.0,1.0,7.2,1,False,
+2026-01-08T01:00:00+00:00,Honduras Liga Nacional,CD Olimpia v CD Marathon,1-0,1.0,0.0,3.25,1,False,
+2026-01-08T07:30:00+00:00,Indian Bengal Super League,Medinipur v North 24 Parganas,1-2,1.0,2.0,4.2,1,False,
+2026-01-08T08:00:00+00:00,Indonesian Liga 3,Pekanbaru FC v Tri Brata Rafflesia FC,1-3,1.0,3.0,3.65,1,False,
+2026-01-08T08:00:00+00:00,Indonesian Liga 3,Gresik United v Persekabtas FC,0-1,0.0,1.0,3.15,1,False,
+2026-01-08T09:00:00+00:00,Myanmar National League 2,Glory Goal FC v Yangon City,0-3,0.0,1.0,12.5,1,False,
+2026-01-08T09:00:00+00:00,Myanmar National League 2,Kachin United v University FC,2-1,2.0,1.0,3.55,1,False,
+2026-01-08T10:00:00+00:00,Arena Cup,Lokomotiva v KSV 1919,1-1,1.0,1.0,6.6,0,False,
+2026-01-08T10:00:00+00:00,Ethiopian Premier League,Suhul Shire v Negele Arsi Ketema,0-1,0.0,1.0,2.98,1,False,
+2026-01-08T10:00:00+00:00,Arena Cup,Slaven Belupo v Primorje,2-1,1.0,1.0,3.75,1,False,
+2026-01-08T10:30:00+00:00,Indian Bengal Super League,Sundarban Bengal Auto FC v Burdwan Blasters,0-1,0.0,1.0,3.5,1,False,
+2026-01-08T11:30:00+00:00,AFC U23 Championship,Australia U23 v Thailand U23,2-1,2.0,1.0,6.2,1,False,
+2026-01-08T12:00:00+00:00,Indonesian Liga 3,Persikota Tangerang v Persitara Jakarta Utara,0-0,0.0,0.0,3.2,0,True,0
+2026-01-08T12:30:00+00:00,Egyptian 2nd Division,El Mansurah v Abo Qair Semads,1-1,1.0,1.0,2.92,0,False,
+2026-01-08T12:30:00+00:00,Egyptian 2nd Division,Tersana SC v El Seka Elhadeed,1-2,1.0,2.0,2.88,1,False,
+2026-01-08T12:30:00+00:00,Egyptian 2nd Division,Telecom Egypt SC v Olympic El Qanal,0-1,0.0,0.0,2.68,1,True,1
+2026-01-08T12:30:00+00:00,Egyptian 2nd Division,Raya Sporting FC v El Entag El Harby,1-3,0.0,1.0,2.84,1,False,
+2026-01-08T12:30:00+00:00,Egyptian Cup,Haras El Hodood v Smouha,1-1,1.0,0.0,2.86,0,False,
+2026-01-08T13:00:00+00:00,Ethiopian Premier League,Welwalo Adigrat University v Adama Kenema fc,1-1,1.0,0.0,2.76,0,False,
+2026-01-08T13:00:00+00:00,Ethiopian Premier League,Cafe Sidama v Arba Minch,0-0,0.0,0.0,2.94,0,True,0
+2026-01-08T13:00:00+00:00,UAE Arabian Gulf League,Al Jazira v Ajman Club,3-0,3.0,0.0,3.95,1,False,
+2026-01-08T13:00:00+00:00,Algerian Ligue 1,MC El Bayadh v ES Mostaganem,1-0,0.0,0.0,3.25,1,True,1
+2026-01-08T13:00:00+00:00,Algerian Ligue 1,ES Ben Aknoun v Olympique Akbou,2-2,2.0,1.0,3.05,0,False,
+2026-01-08T13:00:00+00:00,UAE Arabian Gulf League,Dibba Al Fujairah v Al-Khaleej Khor Fakkan,1-0,1.0,0.0,3.65,1,False,
+2026-01-08T13:30:00+00:00,Arena Cup,Velez Mostar v Odra Opole,1-2,1.0,2.0,3.5,1,False,
+2026-01-08T13:30:00+00:00,Arena Cup,Vukovar v KF Aresimi 1973,4-0,2.0,0.0,5.6,1,False,
+2026-01-08T14:00:00+00:00,AFC U23 Championship,Iraq U23 v China U23,0-0,0.0,0.0,3.1,0,True,0
+2026-01-08T14:30:00+00:00,Elite Friendlies,Club Brugge v Sturm Graz,2-2,2.0,2.0,4.8,0,False,
+2026-01-08T14:30:00+00:00,Qatari Stars League,Al Shahaniya v Al-Duhail SC,0-0,0.0,0.0,4.9,0,True,0
+2026-01-08T14:55:00+00:00,Saudi Professional League,Al-Hilal v Al-Hazm (KSA),3-0,2.0,0.0,9.4,1,False,
+2026-01-08T15:00:00+00:00,Cypriot Cup,Olympiakos Nicosia FC v Omonia FC Aradippou,3-4,1.0,1.0,3.45,1,False,
+2026-01-08T15:45:00+00:00,UAE Arabian Gulf League,Al Dhafra v Al Ain,1-2,1.0,0.0,5.3,1,False,
+2026-01-08T16:00:00+00:00,Bahraini Premier,Al-Shabbab (BRN) v Al Hidd,0-2,0.0,1.0,3.75,1,False,
+2026-01-08T16:00:00+00:00,Bahraini Premier,Al Ahli (BRN) v Al Budaiya,2-3,2.0,0.0,3.4,1,False,
+2026-01-08T16:30:00+00:00,Qatari Stars League,Qatar SC v Al-Sadd,2-3,2.0,3.0,5.3,1,False,
+2026-01-08T16:30:00+00:00,Senegalese Premier League,ASC Jaraaf v Generation Foot,1-1,0.0,1.0,2.8,0,False,
+2026-01-08T16:45:00+00:00,Algerian Ligue 1,ES Setif v Paradou,2-2,2.0,1.0,2.98,0,False,
+2026-01-08T17:15:00+00:00,Tanzanian Matches,Azam FC v Simba,1-0,0.0,0.0,2.92,1,True,1
+2026-01-08T17:30:00+00:00,Italian Serie A,US Cremonese v Cagliari,2-2,2.0,1.0,2.98,0,False,
+2026-01-08T17:30:00+00:00,Saudi Professional League,Al Najma Club v Al-Ettifaq,3-4,0.0,3.0,3.65,1,False,
+2026-01-08T17:30:00+00:00,Saudi Professional League,Al Nassr v Al-Quadisiya (KSA),1-2,0.0,1.0,4.9,1,False,
+2026-01-08T17:30:00+00:00,Maltese Premier League,Mosta v Tarxien Rainbows FC,2-2,2.0,1.0,3.55,0,False,
+2026-01-08T18:00:00+00:00,French Super Cup,Paris St-G v Marseille,2-2,1.0,0.0,4.5,0,False,
+2026-01-08T19:00:00+00:00,Icelandic Reykjavik Cup,Throttur v Valur,3-1,3.0,1.0,6.0,1,False,

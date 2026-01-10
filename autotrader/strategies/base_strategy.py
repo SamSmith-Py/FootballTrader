@@ -104,6 +104,9 @@ class BaseStrategy:
         matched = ev.get(f"{prefix}_matched") or 0.0
         price = ev.get(f"{prefix}_price") or 0.0
         cur_d_lay_price = ev.get("d_lay_price") or 0.0
+        remaining = ev.get(f"{prefix}_remaining") or 0.0
+        cur_liab = ev.get("liability") or 0.0
+        status = ev.get("e_status") or 0.0
         
 
         if PAPER_MODE:
@@ -111,9 +114,9 @@ class BaseStrategy:
             if stake <= 0 or matched == stake or stake == None:
                 return None 
             # For LAY side Strats 
-            if cur_d_lay_price <= price:
+            if cur_d_lay_price <= price and status in ('PAPER_EXECUTED', 'PAPER_SECOND'):
                 # Calculate liability
-                liab = max(0.0, (float(price) - 1.0) * stake)
+                liab = max(0.0, (float(price) - 1.0) * remaining) + cur_liab
                 # Update current tables
                 db.update_current(
                     ev["event_id"],

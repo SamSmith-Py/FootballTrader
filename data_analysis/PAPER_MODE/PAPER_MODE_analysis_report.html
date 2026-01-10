@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LTD60 PAPER MODE Analysis Report</title>
+    <style>
+      :root {
+        color-scheme: light;
+      }
+      body {
+        margin: 0;
+        font-family: "Garamond", "Book Antiqua", "Palatino Linotype", serif;
+        background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 45%, #f1f3f6 100%);
+        color: #1d1d1f;
+      }
+      .page {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 32px 20px 48px;
+      }
+      h1 {
+        font-size: 32px;
+        margin: 0 0 16px;
+        letter-spacing: 0.5px;
+      }
+      h2 {
+        font-size: 20px;
+        margin: 24px 0 10px;
+        color: #2b2b2b;
+      }
+      th {
+        cursor: pointer;
+        user-select: none;
+      }
+      .pnl-pos {
+        color: #0a7a2f;
+        font-weight: 600;
+      }
+      .pnl-neg {
+        color: #b00020;
+        font-weight: 600;
+      }
+      .table-wrap {
+        max-height: 70vh;
+        overflow: auto;
+        border: 1px solid #dcdfe6;
+        border-radius: 10px;
+        background: #ffffff;
+        box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+      }
+      table.dataframe {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      table.dataframe th,
+      table.dataframe td {
+        padding: 6px 8px;
+        border: 1px solid #e5e7eb;
+        text-align: right;
+      }
+      table.dataframe th:first-child,
+      table.dataframe td:first-child {
+        text-align: left;
+      }
+      .chart-wrap {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 12px;
+        background: #ffffff;
+        border: 1px solid #dcdfe6;
+        box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+        padding: 8px 12px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>LTD60 PAPER MODE Analysis Report</h1>
+      <h2>Competition Summary</h2>
+      <div class="table-wrap">
+      <table border="0" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>comp</th>
+      <th>matches</th>
+      <th>pnl_sum</th>
+      <th>pnl_avg</th>
+      <th>win_rate</th>
+      <th>max_drawdown</th>
+      <th>max_win_streak</th>
+      <th>max_loss_streak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Saudi Professional League</td>
+      <td>20</td>
+      <td>770.0</td>
+      <td>38.50</td>
+      <td>85.00</td>
+      <td>-600.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>English Sky Bet League 2</td>
+      <td>26</td>
+      <td>740.0</td>
+      <td>28.46</td>
+      <td>80.77</td>
+      <td>-340.0</td>
+      <td>9.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Northern Irish Premiership</td>
+      <td>10</td>
+      <td>250.0</td>
+      <td>25.00</td>
+      <td>80.00</td>
+      <td>-550.0</td>
+      <td>4.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Malaysian Super League</td>
+      <td>5</td>
+      <td>200.0</td>
+      <td>40.00</td>
+      <td>40.00</td>
+      <td>0.0</td>
+      <td>2.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Indonesian Super League</td>
+      <td>16</td>
+      <td>140.0</td>
+      <td>8.75</td>
+      <td>81.25</td>
+      <td>-620.0</td>
+      <td>9.0</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>Cypriot 1st Division</td>
+      <td>8</td>
+      <td>100.0</td>
+      <td>12.50</td>
+      <td>87.50</td>
+      <td>-600.0</td>
+      <td>4.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>English U21 Pro Development League</td>
+      <td>1</td>
+      <td>100.0</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Portuguese Primeira Liga</td>
+      <td>1</td>
+      <td>100.0</td>
+      <td>100.00</td>
+      <td>100.00</td>
+      <td>0.0</td>
+      <td>1.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>French Ligue 1</td>
+      <td>9</td>
+      <td>75.0</td>
+      <td>8.33</td>
+      <td>66.67</td>
+      <td>-280.0</td>
+      <td>3.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Mexican Liga MX</td>
+      <td>3</td>
+      <td>-65.0</td>
+      <td>-21.67</td>
+      <td>66.67</td>
+      <td>-265.0</td>
+      <td>2.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Scottish League One</td>
+      <td>2</td>
+      <td>-190.0</td>
+      <td>-95.00</td>
+      <td>50.00</td>
+      <td>-290.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>English Sky Bet League 1</td>
+      <td>34</td>
+      <td>-320.0</td>
+      <td>-9.41</td>
+      <td>70.59</td>
+      <td>-1395.0</td>
+      <td>6.0</td>
+      <td>3.0</td>
+    </tr>
+    <tr>
+      <td>English WSL</td>
+      <td>1</td>
+      <td>-350.0</td>
+      <td>-350.00</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>English National League North</td>
+      <td>19</td>
+      <td>-430.0</td>
+      <td>-22.63</td>
+      <td>68.42</td>
+      <td>-1030.0</td>
+      <td>6.0</td>
+      <td>2.0</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <h2>Cumulative PnL (By Match)</h2>
+      <div class="chart-wrap">
+      <svg width="100%" height="360" viewBox="0 0 1000 360" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cumulative PnL chart"><rect x="0" y="0" width="1000" height="360" fill="white" /><line x1="40" y1="40.00" x2="960" y2="40.00" stroke="#e6e6e6" /><line x1="40" y1="75.00" x2="960" y2="75.00" stroke="#e6e6e6" /><line x1="40" y1="110.00" x2="960" y2="110.00" stroke="#e6e6e6" /><line x1="40" y1="145.00" x2="960" y2="145.00" stroke="#e6e6e6" /><line x1="40" y1="180.00" x2="960" y2="180.00" stroke="#e6e6e6" /><line x1="40" y1="215.00" x2="960" y2="215.00" stroke="#e6e6e6" /><line x1="40" y1="250.00" x2="960" y2="250.00" stroke="#e6e6e6" /><line x1="40" y1="285.00" x2="960" y2="285.00" stroke="#e6e6e6" /><line x1="40" y1="320.00" x2="960" y2="320.00" stroke="#e6e6e6" /><line x1="40.00" y1="40" x2="40.00" y2="320" stroke="#e6e6e6" /><line x1="155.00" y1="40" x2="155.00" y2="320" stroke="#e6e6e6" /><line x1="270.00" y1="40" x2="270.00" y2="320" stroke="#e6e6e6" /><line x1="385.00" y1="40" x2="385.00" y2="320" stroke="#e6e6e6" /><line x1="500.00" y1="40" x2="500.00" y2="320" stroke="#e6e6e6" /><line x1="615.00" y1="40" x2="615.00" y2="320" stroke="#e6e6e6" /><line x1="730.00" y1="40" x2="730.00" y2="320" stroke="#e6e6e6" /><line x1="845.00" y1="40" x2="845.00" y2="320" stroke="#e6e6e6" /><line x1="960.00" y1="40" x2="960.00" y2="320" stroke="#e6e6e6" /><line x1="40" y1="320" x2="960" y2="320" stroke="#999" /><line x1="40" y1="40" x2="40" y2="320" stroke="#999" /><text x="32" y="44.00" text-anchor="end" font-family="Garamond, serif" font-size="11" fill="#555">1470</text><text x="32" y="100.00" text-anchor="end" font-family="Garamond, serif" font-size="11" fill="#555">935</text><text x="32" y="156.00" text-anchor="end" font-family="Garamond, serif" font-size="11" fill="#555">400</text><text x="32" y="212.00" text-anchor="end" font-family="Garamond, serif" font-size="11" fill="#555">-135</text><text x="32" y="268.00" text-anchor="end" font-family="Garamond, serif" font-size="11" fill="#555">-670</text><text x="32" y="324.00" text-anchor="end" font-family="Garamond, serif" font-size="11" fill="#555">-1205</text><text x="40.00" y="336" text-anchor="middle" font-family="Garamond, serif" font-size="11" fill="#555">1</text><text x="224.00" y="336" text-anchor="middle" font-family="Garamond, serif" font-size="11" fill="#555">32</text><text x="408.00" y="336" text-anchor="middle" font-family="Garamond, serif" font-size="11" fill="#555">63</text><text x="592.00" y="336" text-anchor="middle" font-family="Garamond, serif" font-size="11" fill="#555">93</text><text x="776.00" y="336" text-anchor="middle" font-family="Garamond, serif" font-size="11" fill="#555">124</text><text x="960.00" y="336" text-anchor="middle" font-family="Garamond, serif" font-size="11" fill="#555">155</text><polyline fill="none" stroke="#1f5fbf" stroke-width="2.5" points="40.00,183.40 45.97,210.09 51.95,274.99 57.92,264.52 63.90,254.06 69.87,243.59 75.84,233.12 81.82,222.65 87.79,212.19 93.77,201.72 99.74,191.25 105.71,180.79 111.69,212.19 117.66,201.72 123.64,226.84 129.61,216.37 135.58,205.91 141.56,195.44 147.53,184.97 153.51,174.50 159.48,164.04 165.45,153.57 171.43,143.10 177.40,170.32 183.38,159.85 189.35,149.38 195.32,177.64 201.30,167.18 207.27,194.92 213.25,184.45 219.22,173.98 225.19,163.51 231.17,153.05 237.14,215.85 243.12,205.38 249.09,194.92 255.06,184.45 261.04,215.85 267.01,243.59 272.99,233.12 278.96,270.80 284.94,297.50 290.91,287.03 296.88,276.56 302.86,266.09 308.83,255.63 314.81,245.16 320.78,234.69 326.75,224.22 332.73,251.96 338.70,241.50 344.68,231.03 350.65,260.86 356.62,250.39 362.60,239.93 368.57,229.46 374.55,257.20 380.52,246.73 386.49,236.26 392.47,262.43 398.44,251.96 404.42,283.36 410.39,272.90 416.36,299.07 422.34,288.60 428.31,314.77 434.29,304.30 440.26,293.83 446.23,320.00 452.21,309.53 458.18,299.07 464.16,288.60 470.13,278.13 476.10,267.66 482.08,257.20 488.05,246.73 494.03,236.26 500.00,225.79 505.97,215.33 511.95,244.64 517.92,279.18 523.90,268.71 529.87,258.24 535.84,247.78 541.82,237.31 547.79,226.84 553.77,216.37 559.74,205.91 565.71,195.44 571.69,184.97 577.66,174.50 583.64,164.04 589.61,153.57 595.58,183.93 601.56,173.46 607.53,198.58 613.51,188.11 619.48,177.64 625.45,210.09 631.43,199.63 637.40,189.16 643.38,178.69 649.35,168.22 655.32,157.76 661.30,147.29 667.27,136.82 673.25,126.36 679.22,152.00 685.19,141.53 691.17,131.07 697.14,120.60 703.12,162.47 709.09,152.00 715.06,141.53 721.04,172.93 727.01,162.47 732.99,225.27 738.96,214.80 744.94,204.34 750.91,193.87 756.88,183.40 762.86,162.47 768.83,193.87 774.81,183.40 780.78,172.93 786.75,162.47 792.73,152.00 798.70,181.31 804.68,170.84 810.65,160.37 816.62,149.91 822.60,139.44 828.57,139.44 834.55,128.97 840.52,158.80 846.49,148.34 852.47,137.87 858.44,127.40 864.42,127.40 870.39,116.93 876.36,106.47 882.34,96.00 888.31,85.53 894.29,85.53 900.26,75.07 906.23,64.60 912.21,92.34 918.18,81.87 924.16,71.40 930.13,60.93 936.10,60.93 942.08,50.47 948.05,40.00 954.03,76.64 960.00,76.64" /><text x="500.00" y="354" text-anchor="middle" font-family="Garamond, serif" font-size="12" fill="#333">Match Number</text><text x="12" y="180.00" text-anchor="middle" transform="rotate(-90, 12, 180.00)" font-family="Garamond, serif" font-size="12" fill="#333">Cumulative PnL</text><rect x="46" y="16" width="150" height="22" fill="#fff" stroke="#ddd" /><line x1="54" y1="27" x2="82" y2="27" stroke="#1f5fbf" stroke-width="2.5" /><text x="90" y="31" font-family="Garamond, serif" font-size="12" fill="#333">Cumulative PnL</text></svg>
+      </div>
+      <h2>Overall Summary</h2>
+      <div class="table-wrap">
+      <table border="0" class="dataframe dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>matches</th>
+      <th>ltd60_pnl_sum</th>
+      <th>win_rate</th>
+      <th>max_drawdown</th>
+      <th>max_win_streak</th>
+      <th>max_loss_streak</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>155</td>
+      <td>1120.0</td>
+      <td>74.84</td>
+      <td>-1305.0</td>
+      <td>14.0</td>
+      <td>3.0</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+    </div>
+    <script>
+      (function () {
+        const table = document.querySelector("table.dataframe");
+        if (!table) return;
+
+        const headerCells = Array.from(table.querySelectorAll("thead th"));
+        const pnlIndex = headerCells.findIndex((th) => th.textContent.trim() === "pnl_sum");
+
+        if (pnlIndex >= 0) {
+          const rows = Array.from(table.querySelectorAll("tbody tr"));
+          rows.forEach((row) => {
+            const cell = row.children[pnlIndex];
+            if (!cell) return;
+            const val = parseFloat(cell.textContent);
+            if (Number.isNaN(val)) return;
+            cell.classList.add(val >= 0 ? "pnl-pos" : "pnl-neg");
+          });
+        }
+
+        function parseCell(cell) {
+          const text = cell.textContent.trim();
+          const num = parseFloat(text);
+          return Number.isNaN(num) ? text.toLowerCase() : num;
+        }
+
+        function sortTable(colIndex, dir) {
+          const tbody = table.querySelector("tbody");
+          const rows = Array.from(tbody.querySelectorAll("tr"));
+          rows.sort((a, b) => {
+            const aVal = parseCell(a.children[colIndex]);
+            const bVal = parseCell(b.children[colIndex]);
+            if (aVal < bVal) return dir === "asc" ? -1 : 1;
+            if (aVal > bVal) return dir === "asc" ? 1 : -1;
+            return 0;
+          });
+          rows.forEach((row) => tbody.appendChild(row));
+        }
+
+        headerCells.forEach((th, idx) => {
+          th.addEventListener("click", () => {
+            const current = th.getAttribute("data-sort-dir") || "desc";
+            const next = current === "asc" ? "desc" : "asc";
+            headerCells.forEach((h) => h.removeAttribute("data-sort-dir"));
+            th.setAttribute("data-sort-dir", next);
+            sortTable(idx, next);
+          });
+        });
+      })();
+    </script>
+  </body>
+</html>

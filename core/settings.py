@@ -14,6 +14,8 @@ CONFIG_PATH =  BASE_DIR / "config" / "config.ini"
 BACKTEST_DIR          = BASE_DIR / "data_analysis"
 FILTERED_LEAGUES_CSV  = BACKTEST_DIR / "filtered_leagues_2.csv"
 LATE_GOAL_LEAGUES_CSV = BACKTEST_DIR / "late_goal_leagues_2.csv"
+FILTERED_LEAGUES_CSV_V3  = BACKTEST_DIR / "filtered_leagues_3.csv"
+LATE_GOAL_LEAGUES_CSV_V3 = BACKTEST_DIR / "late_goal_leagues_3.csv"
 
 # ================= LOGGING ==================
 LOG_DIR = BASE_DIR / "logs"
@@ -48,11 +50,11 @@ STRAT_LTD60 = "LTD60"
 
 # Stakes (live/paper)
 STAKE_LTD_PAPER = 100.0
-STAKE_LTD_LIVE  = 3.0
+STAKE_LTD_LIVE  = 4.0
 
 # LTD60 config
-LTD60_MAX_ODDS_ACCEPT = 4.0        # max draw odds for entry
-LTD60_MAX_SECOND_ENTRY_ODDS = 2.0      # assumed odds for second lay at 60'
+LTD60_MAX_ODDS_ACCEPT = 4.5        # max draw odds for entry
+LTD60_MAX_SECOND_ENTRY_ODDS = 2.5      # assumed odds for second lay at 60'
 LTD60_FT_COMMISSION = 0.02         # 2% commission
 LTD60_KO_WINDOW_MINUTES = 12 
 
@@ -65,3 +67,11 @@ PRICE_EPSILON = 1e-6      # float “changed” tolerance
 
 # ==============SELECTION ID===================
 DRAW_SELECTION_ID = 58805
+
+# ============= BACK TEST ====================
+BACKTEST_STAKE = 200
+BACKTEST_MAX_PRICE = 4.5
+BACKTEST_MAX_PRICE_ENTRY_2 = 2.5
+BACKTEST_DECISIVE_COMP_MIN = 76
+BACKTEST_LATE_GOAL_COMP_MIN = 70
+MATCHES_MIN_PLAYED = 20

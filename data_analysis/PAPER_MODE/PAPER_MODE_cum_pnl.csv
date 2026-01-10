@@ -1,0 +1,156 @@
+event_id,kickoff,comp,event_name,strategy,paper,pnl,cum_pnl
+35081132,2025-12-28T20:30:00+00:00,Portuguese Primeira Liga,Sporting Lisbon v Rio Ave,LTD60,1,100.0,100.0
+35082240,2025-12-29T08:30:00+00:00,Indonesian Super League,Bali Utd Pusam v Dewa United FC,LTD60,1,-254.99999999999997,-154.99999999999997
+35085355,2025-12-29T08:30:00+00:00,Indonesian Super League,Psim Yogyakarta v PSBS Biak Numfor,LTD60,1,-620.0,-775.0
+35083132,2025-12-29T12:00:00+00:00,Indonesian Super League,Persija Jakarta v Bhayangkara FC,LTD60,1,100.0,-675.0
+35093052,2025-12-29T14:35:00+00:00,Saudi Professional League,Al-Khaleej Saihat v Al-Fateh (KSA),LTD60,1,100.0,-575.0
+35090077,2025-12-29T17:30:00+00:00,Saudi Professional League,Al Riyadh SC v Al-Hazm (KSA),LTD60,1,100.0,-475.0
+35092390,2025-12-29T17:30:00+00:00,Saudi Professional League,Al-Taawoun Buraidah v Al Najma Club,LTD60,1,100.0,-375.0
+35084875,2025-12-29T19:30:00+00:00,English Sky Bet League 2,Newport County v Crewe,LTD60,1,100.0,-275.0
+35084877,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Bristol Rovers v Barnet,LTD60,1,100.0,-175.0
+35084879,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Bolton v Mansfield,LTD60,1,100.0,-75.0
+35084855,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Burton Albion v Wigan,LTD60,1,100.0,25.0
+35084792,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Grimsby v Shrewsbury,LTD60,1,100.0,125.0
+35084888,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Salford City v Fleetwood Town,LTD60,1,-300.0,-175.0
+35084714,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Crawley Town v Bromley,LTD60,1,100.0,-75.0
+35084720,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Gillingham v Colchester,LTD60,1,-240.0,-315.0
+35084761,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Barnsley v Lincoln,LTD60,1,100.0,-215.0
+35084885,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Accrington v Harrogate Town,LTD60,1,100.0,-115.0
+35084712,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Luton v Leyton Orient,LTD60,1,100.0,-15.0
+35084876,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Tranmere v Barrow,LTD60,1,100.0,85.0
+35084886,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Stockport v Doncaster,LTD60,1,100.0,185.0
+35084880,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Huddersfield v Northampton,LTD60,1,100.0,285.0
+35084881,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Cheltenham v Swindon,LTD60,1,100.0,385.0
+35084887,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Chesterfield v Cambridge Utd,LTD60,1,100.0,485.0
+35084709,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Peterborough v Reading,LTD60,1,-260.0,225.0
+35084719,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Cardiff v Stevenage,LTD60,1,100.0,325.0
+35090167,2025-12-29T19:45:00+00:00,English Sky Bet League 2,Walsall v Oldham,LTD60,1,100.0,425.0
+35084830,2025-12-29T19:45:00+00:00,English Sky Bet League 2,MK Dons v Notts Co,LTD60,1,-270.0,155.0
+35084722,2025-12-29T19:45:00+00:00,English Sky Bet League 1,AFC Wimbledon v Exeter,LTD60,1,100.0,255.0
+35084878,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Plymouth v Wycombe,LTD60,1,-265.0,-10.0
+35084715,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Blackpool v Rotherham,LTD60,1,100.0,90.0
+35084766,2025-12-29T19:45:00+00:00,English Sky Bet League 1,Bradford v Port Vale,LTD60,1,100.0,190.0
+35085175,2025-12-30T08:30:00+00:00,Indonesian Super League,Arema Cronus v Persita Tangerang,LTD60,1,100.0,290.0
+35091642,2025-12-30T15:30:00+00:00,Saudi Professional League,Al Ahli v Al-Feiha,LTD60,1,100.0,390.0
+35094822,2025-12-30T17:30:00+00:00,Saudi Professional League,Al-Ettifaq v Al Nassr,LTD60,1,-600.0,-210.0
+35093378,2025-12-30T17:30:00+00:00,Saudi Professional League,Al-Akhdoud v Dhamk,LTD60,1,100.0,-110.0
+35092566,2025-12-30T19:45:00+00:00,Northern Irish Premiership,Bangor v Ballymena,LTD60,1,100.0,-10.0
+35092593,2025-12-30T19:45:00+00:00,Northern Irish Premiership,Coleraine v Linfield,LTD60,1,100.0,90.0
+35095737,2025-12-30T19:45:00+00:00,English National League North,Radcliffe Borough v AFC Fylde,LTD60,1,-300.0,-210.0
+35095730,2025-12-30T19:45:00+00:00,English National League North,Peterborough Sports FC v Oxford City,LTD60,1,-265.0,-475.0
+35095745,2025-12-30T19:45:00+00:00,English National League North,Southport v Curzon Ashton,LTD60,1,100.0,-375.0
+35095727,2025-12-30T19:45:00+00:00,English National League North,Merthyr Town v Hereford FC,LTD60,1,-359.99999999999994,-735.0
+35095784,2025-12-30T19:45:00+00:00,English National League North,Spennymoor Town v Scarborough Athletic,LTD60,1,-254.99999999999997,-990.0
+35095747,2025-12-30T19:45:00+00:00,English National League North,Chorley v Marine FC,LTD60,1,100.0,-890.0
+35095731,2025-12-30T19:45:00+00:00,English National League North,Alfreton Town v Leamington,LTD60,1,100.0,-790.0
+35092594,2025-12-30T19:45:00+00:00,Northern Irish Premiership,Glentoran v Portadown,LTD60,1,100.0,-690.0
+35095739,2025-12-30T19:45:00+00:00,English National League North,Darlington v South Shields,LTD60,1,100.0,-590.0
+35095738,2025-12-30T19:45:00+00:00,English National League North,Bedford Town v Kings Lynn,LTD60,1,100.0,-490.0
+35092571,2025-12-30T19:45:00+00:00,Northern Irish Premiership,Glenavon v Dungannon,LTD60,1,100.0,-390.0
+35095748,2025-12-30T19:45:00+00:00,English National League North,Buxton v Worksop Town,LTD60,1,100.0,-290.0
+35092596,2025-12-30T19:45:00+00:00,Northern Irish Premiership,Larne v Cliftonville,LTD60,1,-265.0,-555.0
+35095751,2025-12-30T19:45:00+00:00,English National League North,Kidderminster v AFC Telford,LTD60,1,100.0,-455.0
+35095746,2025-12-30T19:45:00+00:00,English National League North,Chester v Macclesfield,LTD60,1,100.0,-355.0
+35092565,2025-12-30T19:45:00+00:00,Northern Irish Premiership,Crusaders v Carrick Rangers,LTD60,1,-285.0,-640.0
+35094349,2025-12-31T15:25:00+00:00,Saudi Professional League,NEOM Sports Club v Al-Ittihad,LTD60,1,100.0,-540.0
+35093382,2025-12-31T17:30:00+00:00,Saudi Professional League,Al-Shabab (KSA) v Al-Quadisiya (KSA),LTD60,1,100.0,-440.0
+35093171,2025-12-31T17:30:00+00:00,Saudi Professional League,Al-Kholood Club v Al-Hilal,LTD60,1,100.0,-340.0
+35101679,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Northampton v Stockport,LTD60,1,-265.0,-605.0
+35096636,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Mansfield v Bradford,LTD60,1,100.0,-505.0
+35096089,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Barrow v Salford City,LTD60,1,100.0,-405.0
+35096625,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Stevenage v Plymouth,LTD60,1,-250.0,-655.0
+35096091,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Swindon v Gillingham,LTD60,1,100.0,-555.0
+35096641,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Doncaster v Bolton,LTD60,1,-300.0,-855.0
+35096631,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Exeter v Luton,LTD60,1,100.0,-755.0
+35096083,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Oldham v Chesterfield,LTD60,1,-250.0,-1005.0
+35096085,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Bromley v Newport County,LTD60,1,100.0,-905.0
+35096632,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Wigan v Barnsley,LTD60,1,-250.0,-1155.0
+35096092,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Harrogate Town v Tranmere,LTD60,1,100.0,-1055.0
+35096626,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Leyton Orient v AFC Wimbledon,LTD60,1,100.0,-955.0
+35096635,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Lincoln v Huddersfield,LTD60,1,-250.0,-1205.0
+35096628,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Port Vale v Blackpool,LTD60,1,100.0,-1105.0
+35096086,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Crewe v Cheltenham,LTD60,1,100.0,-1005.0
+35096630,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Rotherham v Peterborough,LTD60,1,100.0,-905.0
+35096087,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Fleetwood Town v Grimsby,LTD60,1,100.0,-805.0
+35096629,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Reading v Burton Albion,LTD60,1,100.0,-705.0
+35096096,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Notts Co v Accrington,LTD60,1,100.0,-605.0
+35096090,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Colchester v MK Dons,LTD60,1,100.0,-505.0
+35096098,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Shrewsbury v Bristol Rovers,LTD60,1,100.0,-405.0
+35096084,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Barnet v Crawley Town,LTD60,1,100.0,-305.0
+35096088,2026-01-01T15:00:00+00:00,English Sky Bet League 2,Cambridge Utd v Walsall,LTD60,1,100.0,-205.0
+35096640,2026-01-01T15:00:00+00:00,English Sky Bet League 1,Wycombe v Cardiff,LTD60,1,-280.0,-485.0
+35099562,2026-01-02T13:30:00+00:00,Saudi Professional League,Al Najma Club v Al-Khaleej Saihat,LTD60,1,-330.0,-815.0
+35100419,2026-01-02T14:35:00+00:00,Saudi Professional League,Al-Ettifaq v Al-Akhdoud,LTD60,1,100.0,-715.0
+35082980,2026-01-02T17:00:00+00:00,Cypriot 1st Division,Omonia FC Aradippou v Digenis Ypsona,LTD60,1,100.0,-615.0
+35100424,2026-01-02T17:30:00+00:00,Saudi Professional League,Al Ahli v Al Nassr,LTD60,1,100.0,-515.0
+35098229,2026-01-02T19:45:00+00:00,Northern Irish Premiership,Larne v Coleraine,LTD60,1,100.0,-415.0
+35041775,2026-01-02T19:45:00+00:00,French Ligue 1,Toulouse v Lens,LTD60,1,100.0,-315.0
+35098528,2026-01-03T08:30:00+00:00,Indonesian Super League,Persija Jakarta v Persijap Jepara,LTD60,1,100.0,-215.0
+35095612,2026-01-03T08:30:00+00:00,Indonesian Super League,Pusamania Borneo FC v PSM Makassar,LTD60,1,100.0,-115.0
+35095935,2026-01-03T12:00:00+00:00,Indonesian Super League,Madura Utd v Persebaya Surabaya,LTD60,1,100.0,-15.0
+35103747,2026-01-03T13:10:00+00:00,Saudi Professional League,Al-Fateh (KSA) v Al-Shabab (KSA),LTD60,1,100.0,85.0
+35104384,2026-01-03T14:55:00+00:00,Saudi Professional League,Al-Feiha v Al-Kholood Club,LTD60,1,100.0,185.0
+35094788,2026-01-03T15:00:00+00:00,Scottish League One,Stenhousemuir v Queen of South,LTD60,1,100.0,285.0
+35100470,2026-01-03T15:00:00+00:00,Northern Irish Premiership,Crusaders v Dungannon,LTD60,1,100.0,385.0
+35094817,2026-01-03T15:00:00+00:00,Scottish League One,Kelty Hearts v Alloa,LTD60,1,-290.0,95.0
+35100472,2026-01-03T15:00:00+00:00,Northern Irish Premiership,Linfield v Bangor,LTD60,1,100.0,195.0
+35103251,2026-01-03T15:00:00+00:00,English National League North,Southport v Scarborough Athletic,LTD60,1,-240.0,-45.0
+35103256,2026-01-03T15:00:00+00:00,English National League North,Bedford Town v AFC Fylde,LTD60,1,100.0,55.0
+35082939,2026-01-03T15:00:00+00:00,Cypriot 1st Division,Ethnikos Achnas v A.E.L.,LTD60,1,100.0,155.0
+35103738,2026-01-03T15:00:00+00:00,English National League North,Buxton v South Shields,LTD60,1,-309.99999999999994,-154.99999999999994
+35103729,2026-01-03T15:00:00+00:00,English National League North,Chester v Worksop Town,LTD60,1,100.0,-54.99999999999994
+35100468,2026-01-03T15:00:00+00:00,Northern Irish Premiership,Carrick Rangers v Glentoran,LTD60,1,100.0,45.00000000000006
+35103254,2026-01-03T15:00:00+00:00,English National League North,Kidderminster v Curzon Ashton,LTD60,1,100.0,145.00000000000006
+35103257,2026-01-03T15:00:00+00:00,English National League North,Merthyr Town v Kings Lynn,LTD60,1,100.0,245.00000000000006
+35082972,2026-01-03T16:00:00+00:00,Cypriot 1st Division,APOEL v Enosis Neon Paralimni,LTD60,1,100.0,345.00000000000006
+35041767,2026-01-03T16:00:00+00:00,French Ligue 1,Monaco v Lyon,LTD60,1,100.0,445.00000000000006
+35082978,2026-01-03T17:00:00+00:00,Cypriot 1st Division,Akritas Chlorakas v Omonia,LTD60,1,100.0,545.0
+35104079,2026-01-03T17:30:00+00:00,Saudi Professional League,Al-Ittihad v Al-Taawoun Buraidah,LTD60,1,100.0,645.0
+35041773,2026-01-03T18:00:00+00:00,French Ligue 1,Nice v Strasbourg,LTD60,1,-245.00000000000003,400.0
+35041763,2026-01-03T20:05:00+00:00,French Ligue 1,Lille v Rennes,LTD60,1,100.0,500.0
+35098309,2026-01-04T08:30:00+00:00,Indonesian Super League,Psim Yogyakarta v Semen Padang,LTD60,1,100.0,600.0
+35100524,2026-01-04T08:30:00+00:00,Indonesian Super League,Persis Solo v Persita Tangerang,LTD60,1,100.0,700.0
+35101211,2026-01-04T12:00:00+00:00,English Sky Bet League 1,Bolton v Northampton,LTD60,1,-400.0,300.0
+35100529,2026-01-04T12:00:00+00:00,Indonesian Super League,Bali Utd Pusam v Arema Cronus,LTD60,1,100.0,400.0
+35099533,2026-01-04T12:00:00+00:00,English Sky Bet League 2,Cheltenham v Crawley Town,LTD60,1,100.0,500.0
+35100490,2026-01-04T12:00:00+00:00,English Sky Bet League 2,MK Dons v Chesterfield,LTD60,1,-300.0,200.0
+35101190,2026-01-04T12:00:00+00:00,English Sky Bet League 1,Lincoln v Peterborough,LTD60,1,100.0,300.0
+35082985,2026-01-04T14:00:00+00:00,Cypriot 1st Division,Olympiakos Nicosia FC v Aris FC Limassol,LTD60,1,-600.0,-300.0
+35041779,2026-01-04T14:00:00+00:00,French Ligue 1,Marseille v Nantes,LTD60,1,100.0,-200.0
+35083003,2026-01-04T15:00:00+00:00,Cypriot 1st Division,AEK Larnaca v Anorthosis,LTD60,1,100.0,-100.0
+35101191,2026-01-04T15:00:00+00:00,English Sky Bet League 1,Wycombe v AFC Wimbledon,LTD60,1,100.0,0.0
+35101188,2026-01-04T15:00:00+00:00,English Sky Bet League 1,Cardiff v Wigan,LTD60,1,100.0,100.0
+35101193,2026-01-04T15:00:00+00:00,English Sky Bet League 1,Reading v Stockport,LTD60,1,200.0,300.0
+35101187,2026-01-04T15:00:00+00:00,English Sky Bet League 1,Huddersfield v Exeter,LTD60,1,-300.0,0.0
+35101185,2026-01-04T15:00:00+00:00,English Sky Bet League 1,Plymouth v Burton Albion,LTD60,1,100.0,100.0
+35101189,2026-01-04T15:00:00+00:00,English Sky Bet League 1,Blackpool v Bradford,LTD60,1,100.0,200.0
+35104078,2026-01-04T15:05:00+00:00,Saudi Professional League,Al-Hazm (KSA) v NEOM Sports Club,LTD60,1,100.0,300.0
+35041766,2026-01-04T16:15:00+00:00,French Ligue 1,Brest v Auxerre,LTD60,1,100.0,400.0
+35041772,2026-01-04T16:15:00+00:00,French Ligue 1,Lorient v Metz,LTD60,1,-280.0,120.0
+35042053,2026-01-04T16:15:00+00:00,French Ligue 1,Le Havre v Angers,LTD60,1,100.0,220.0
+35082991,2026-01-04T17:00:00+00:00,Cypriot 1st Division,Apollon Limassol v Pafos FC,LTD60,1,100.0,320.0
+35104441,2026-01-04T17:30:00+00:00,Saudi Professional League,Al-Quadisiya (KSA) v Al Riyadh SC,LTD60,1,100.0,420.0
+35104380,2026-01-04T17:30:00+00:00,Saudi Professional League,Dhamk v Al-Hilal,LTD60,1,100.0,520.0
+35041769,2026-01-04T19:45:00+00:00,French Ligue 1,Paris St-G v Paris FC,LTD60,1,0.0,520.0
+35098531,2026-01-05T08:30:00+00:00,Indonesian Super League,Bhayangkara FC v Dewa United FC,LTD60,1,100.0,620.0
+35099040,2026-01-05T12:00:00+00:00,Indonesian Super League,Persik Kediri v Persib Bandung,LTD60,1,-285.0,335.0
+35115739,2026-01-06T19:45:00+00:00,English National League North,Macclesfield v Radcliffe Borough,LTD60,1,100.0,435.0
+35114957,2026-01-09T08:30:00+00:00,Indonesian Super League,Persita Tangerang v Pusamania Borneo FC,LTD60,1,100.0,535.0
+35115502,2026-01-09T12:00:00+00:00,Indonesian Super League,PSM Makassar v Bali Utd Pusam,LTD60,1,100.0,635.0
+35128013,2026-01-09T12:15:00+00:00,Malaysian Super League,Sabah FA v Kuala Lumpur,LTD60,1,0.0,635.0
+35128331,2026-01-09T13:00:00+00:00,English U21 Pro Development League,Colchester United U21 v Millwall U21,LTD60,1,100.0,735.0
+35128025,2026-01-09T13:00:00+00:00,Malaysian Super League,Negeri Sembilan v Johor Darul Takzim,LTD60,1,100.0,835.0
+35113522,2026-01-09T15:05:00+00:00,Saudi Professional League,Al-Taawoun Buraidah v Al-Shabab (KSA),LTD60,1,100.0,935.0
+35113432,2026-01-09T17:00:00+00:00,Cypriot 1st Division,A.E.L. v Omonia,LTD60,1,100.0,1035.0
+35113521,2026-01-09T17:30:00+00:00,Saudi Professional League,Al-Kholood Club v Al-Ittihad,LTD60,1,0.0,1035.0
+35074096,2026-01-10T01:00:00+00:00,Mexican Liga MX,Mazatlan FC v FC Juarez,LTD60,1,100.0,1135.0
+35074114,2026-01-10T03:00:00+00:00,Mexican Liga MX,Atlas v Puebla,LTD60,1,100.0,1235.0
+35074097,2026-01-10T03:00:00+00:00,Mexican Liga MX,Tijuana v CF America,LTD60,1,-265.0,970.0
+35114759,2026-01-10T08:30:00+00:00,Indonesian Super League,Persebaya Surabaya v Malut United,LTD60,1,100.0,1070.0
+35130804,2026-01-10T09:00:00+00:00,Malaysian Super League,Imigresen FC v Kelantan United,LTD60,1,100.0,1170.0
+35114963,2026-01-10T12:00:00+00:00,Indonesian Super League,Madura Utd v Psim Yogyakarta,LTD60,1,100.0,1270.0
+35130793,2026-01-10T12:15:00+00:00,Malaysian Super League,Brunei DPMM FC v Selangor FA,LTD60,1,0.0,1270.0
+35115123,2026-01-10T12:30:00+00:00,English Sky Bet League 1,Luton v Stevenage,LTD60,1,100.0,1370.0
+35115126,2026-01-10T12:30:00+00:00,English Sky Bet League 1,Stockport v Huddersfield,LTD60,1,100.0,1470.0
+35113396,2026-01-10T12:30:00+00:00,English WSL,Arsenal (W) v Man Utd (W),LTD60,1,-350.0,1120.0
+35130817,2026-01-10T13:00:00+00:00,Malaysian Super League,PDRM v Terengganu,LTD60,1,0.0,1120.0

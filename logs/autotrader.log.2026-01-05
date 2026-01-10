@@ -1,0 +1,1723 @@
+2026-01-05 00:00:14,126 [INFO] AutoTrader | FINISH | 35114981 | Treasure Beach FC v Montego Bay United | FT=None | result=1 | pnl=None | strat=None | remaining_current=35
+2026-01-05 00:00:14,276 [INFO] AutoTrader | FINISH | 35114980 | Chapelton v Harbour View FC | FT=None | result=0 | pnl=None | strat=None | remaining_current=34
+2026-01-05 00:01:05,049 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=2 with_strategy=16
+2026-01-05 00:02:10,893 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=2 with_strategy=16
+2026-01-05 00:02:57,894 [INFO] AutoTrader | KICKOFF | Mexican Liga MX Femenil | Monterrey (W) v Puebla FC (W) | SP(H/D/A)=1.070/17.500/32.000 | fav=1 | strat=None
+2026-01-05 00:03:15,928 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:04:21,051 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:05:24,159 [INFO] AutoTrader | BAND 75' | 75 | Honduras Liga Nacional | CD Marathon v CD Olimpia | 1-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 00:05:24,313 [INFO] AutoTrader | BAND 75' | 75 | Jamaican Premier League | Molynes United FC v Mount Pleasant FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 00:05:26,160 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:06:31,045 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:07:35,827 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:08:40,902 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:09:45,790 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:10:50,225 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:11:55,295 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:13:00,152 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:14:05,100 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:15:09,974 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:16:14,856 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:17:19,594 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:18:24,180 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:18:38,686 [INFO] AutoTrader | BAND 15' | 15 | Mexican Liga MX Femenil | Monterrey (W) v Puebla FC (W) | 3-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 00:19:28,687 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:20:15,084 [INFO] AutoTrader | BAND 90' | 90 | Honduras Liga Nacional | CD Marathon v CD Olimpia | 2-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 00:20:33,303 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:21:20,037 [INFO] AutoTrader | BAND 90' | 90 | Jamaican Premier League | Molynes United FC v Mount Pleasant FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 00:21:38,116 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:22:42,954 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=3 with_strategy=16
+2026-01-05 00:23:50,454 [INFO] AutoTrader | HEARTBEAT | total=39 inplay=3 with_strategy=17
+2026-01-05 00:24:58,269 [INFO] AutoTrader | HEARTBEAT | total=39 inplay=3 with_strategy=17
+2026-01-05 00:26:06,708 [INFO] AutoTrader | HEARTBEAT | total=39 inplay=3 with_strategy=17
+2026-01-05 00:27:11,947 [INFO] AutoTrader | FINISH | Jamaican Premier League | Molynes United FC v Mount Pleasant FC | FT=0-0 | result=0 | pnl=None | strat=None | remaining_current=38
+2026-01-05 00:27:14,628 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=2 with_strategy=17
+2026-01-05 00:28:21,957 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=2 with_strategy=17
+2026-01-05 00:29:09,852 [INFO] AutoTrader | FINISH | Honduras Liga Nacional | CD Marathon v CD Olimpia | FT=2-2 | result=0 | pnl=None | strat=None | remaining_current=37
+2026-01-05 00:29:29,014 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:30:35,511 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:31:41,851 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:32:48,554 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:33:19,392 [INFO] AutoTrader | BAND 30' | 30 | Mexican Liga MX Femenil | Monterrey (W) v Puebla FC (W) | 3-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 00:33:55,155 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:35:01,210 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:36:07,946 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:37:14,227 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:38:20,516 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:39:26,630 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:40:32,999 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:41:39,345 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:42:45,984 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=1 with_strategy=17
+2026-01-05 00:43:00,332 [INFO] AutoTrader | KICKOFF | Friendly Matches | Atlas v Monterrey | SP(H/D/A)=4.200/4.000/1.870 | fav=2 | strat=None
+2026-01-05 00:43:50,476 [INFO] AutoTrader | KICKOFF | Brazilian Sao Paulo Youth Cup | Atletico MG U20 v Uniao EC Rondonopolis (Res) | SP(H/D/A)=1.100/11.500/21.000 | fav=1 | strat=None
+2026-01-05 00:43:52,693 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=17
+2026-01-05 00:44:59,109 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=17
+2026-01-05 00:46:05,225 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=17
+2026-01-05 00:47:11,578 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=17
+2026-01-05 00:48:17,930 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=17
+2026-01-05 00:48:32,093 [INFO] AutoTrader | BAND 45' | 45 | Mexican Liga MX Femenil | Monterrey (W) v Puebla FC (W) | 4-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 00:49:05,644 [INFO] AutoTrader | BAND 15' | 15 | Brazilian Sao Paulo Youth Cup | Atletico MG U20 v Uniao EC Rondonopolis (Res) | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 00:49:24,211 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=17
+2026-01-05 00:50:30,362 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=17
+2026-01-05 00:51:36,640 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=17
+2026-01-05 00:52:43,090 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=3 with_strategy=17
+2026-01-05 00:53:50,422 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 00:54:57,570 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 00:56:04,639 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 00:56:52,594 [INFO] AutoTrader | BAND 15' | 15 | Friendly Matches | Atlas v Monterrey | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 00:57:11,710 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 00:58:18,362 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 00:59:25,173 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:00:31,810 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:01:38,968 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:02:45,900 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:03:52,925 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:04:23,799 [INFO] AutoTrader | BAND 30' | 30 | Brazilian Sao Paulo Youth Cup | Atletico MG U20 v Uniao EC Rondonopolis (Res) | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 01:04:59,222 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:06:06,598 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:07:13,226 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:08:20,606 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:09:28,097 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:10:34,901 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:11:41,724 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:12:12,633 [INFO] AutoTrader | BAND 30' | 30 | Friendly Matches | Atlas v Monterrey | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 01:12:48,238 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:13:55,267 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:15:02,137 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:16:09,072 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:17:15,625 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:18:22,171 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:19:09,914 [INFO] AutoTrader | BAND 45' | 45 | Brazilian Sao Paulo Youth Cup | Atletico MG U20 v Uniao EC Rondonopolis (Res) | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 01:19:28,669 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:20:35,639 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:21:42,591 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:22:49,513 [INFO] AutoTrader | HEARTBEAT | total=38 inplay=3 with_strategy=17
+2026-01-05 01:23:57,281 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:25:05,976 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:25:19,994 [INFO] AutoTrader | BAND 60' | 60 | Mexican Liga MX Femenil | Monterrey (W) v Puebla FC (W) | 4-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 01:26:14,214 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:27:22,723 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:28:31,247 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:29:39,806 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:30:48,392 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:31:56,950 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:33:05,146 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:34:13,586 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:35:22,382 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:36:30,968 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:37:39,487 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:38:47,734 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:39:56,378 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:40:27,578 [INFO] AutoTrader | BAND 75' | 75 | Mexican Liga MX Femenil | Monterrey (W) v Puebla FC (W) | 4-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 01:41:04,741 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:42:12,890 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:43:21,292 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:44:09,788 [INFO] AutoTrader | BAND 45' | 45 | Friendly Matches | Atlas v Monterrey | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 01:44:29,588 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:45:37,932 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:46:46,116 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:47:54,089 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:49:02,306 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:50:10,721 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:51:19,187 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:52:27,291 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:53:35,274 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:54:43,328 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:55:48,337 [INFO] AutoTrader | BAND 90' | 90 | Mexican Liga MX Femenil | Monterrey (W) v Puebla FC (W) | 4-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 01:55:48,623 [INFO] AutoTrader | BAND 60' | 60 | Brazilian Sao Paulo Youth Cup | Atletico MG U20 v Uniao EC Rondonopolis (Res) | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 01:55:51,302 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:56:59,524 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:58:07,530 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=3 with_strategy=17
+2026-01-05 01:58:55,614 [INFO] AutoTrader | FINISH | Mexican Liga MX Femenil | Monterrey (W) v Puebla FC (W) | FT=4-0 | result=1 | pnl=None | strat=None | remaining_current=40
+2026-01-05 01:59:12,760 [INFO] AutoTrader | BAND 60' | 60 | Friendly Matches | Atlas v Monterrey | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 01:59:15,591 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:00:23,455 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:01:31,139 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:02:38,397 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:03:46,196 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:04:54,084 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:06:01,870 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:07:10,050 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:08:17,919 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:09:25,710 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:10:33,542 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:10:47,914 [INFO] AutoTrader | BAND 75' | 75 | Brazilian Sao Paulo Youth Cup | Atletico MG U20 v Uniao EC Rondonopolis (Res) | 3-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 02:11:41,642 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:12:49,736 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:13:57,744 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:14:11,801 [INFO] AutoTrader | BAND 75' | 75 | Friendly Matches | Atlas v Monterrey | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 02:15:05,453 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:16:13,014 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:17:20,742 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:18:28,063 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:19:35,582 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:20:43,271 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:21:50,902 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:22:58,304 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=2 with_strategy=17
+2026-01-05 02:24:06,218 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=2 with_strategy=17
+2026-01-05 02:25:12,066 [INFO] AutoTrader | BAND 90' | 90 | Brazilian Sao Paulo Youth Cup | Atletico MG U20 v Uniao EC Rondonopolis (Res) | 3-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 02:25:15,066 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=2 with_strategy=17
+2026-01-05 02:26:23,998 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=2 with_strategy=17
+2026-01-05 02:27:33,222 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=2 with_strategy=17
+2026-01-05 02:28:41,866 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=2 with_strategy=17
+2026-01-05 02:29:13,194 [INFO] AutoTrader | BAND 90' | 90 | Friendly Matches | Atlas v Monterrey | 1-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 02:29:50,783 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=2 with_strategy=17
+2026-01-05 02:30:56,920 [INFO] AutoTrader | FINISH | Brazilian Sao Paulo Youth Cup | Atletico MG U20 v Uniao EC Rondonopolis (Res) | FT=4-2 | result=1 | pnl=None | strat=None | remaining_current=41
+2026-01-05 02:30:59,983 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=1 with_strategy=17
+2026-01-05 02:31:31,074 [INFO] AutoTrader | FINISH | Friendly Matches | Atlas v Monterrey | FT=1-2 | result=1 | pnl=None | strat=None | remaining_current=40
+2026-01-05 02:32:07,829 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:33:15,549 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:34:22,978 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:35:30,552 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:36:38,375 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:37:46,483 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:38:54,263 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:40:02,100 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:41:09,694 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:42:16,946 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:43:24,758 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:44:32,231 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:45:39,831 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:46:47,369 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:47:55,374 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:49:03,266 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:50:11,251 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:51:20,243 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:52:28,078 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:53:35,887 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=0 with_strategy=17
+2026-01-05 02:54:43,877 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 02:55:51,967 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 02:57:00,233 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 02:58:08,432 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 02:59:16,671 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:00:25,260 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:01:34,131 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:02:42,460 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:03:50,905 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:04:59,102 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:06:07,029 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:07:15,298 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:08:23,781 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:09:32,187 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:10:40,487 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:11:48,430 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:12:56,902 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:14:04,908 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:15:12,724 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:16:20,722 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:17:29,097 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:18:37,272 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:19:45,648 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:20:53,730 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:22:01,870 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:23:10,113 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:24:18,710 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=0 with_strategy=17
+2026-01-05 03:25:27,470 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:26:35,845 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:27:44,427 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:28:52,845 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:30:01,179 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:31:09,819 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:32:18,403 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:33:27,221 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:34:35,988 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:35:44,584 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:36:53,128 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:38:01,484 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:39:10,221 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:40:18,671 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:41:27,383 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:42:36,009 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:43:44,621 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:44:53,233 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:46:02,021 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:47:10,533 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:48:19,453 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:49:27,880 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:50:36,690 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:51:44,941 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:52:53,553 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:54:03,550 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:55:11,710 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:56:20,386 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:57:28,992 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:58:37,911 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 03:59:46,333 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:00:55,207 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:02:03,922 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:03:12,628 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:04:21,944 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:05:30,537 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:06:39,042 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:07:47,371 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:08:55,791 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:10:04,218 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:11:12,778 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:12:21,482 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:13:29,990 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:14:38,842 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:15:47,691 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:16:56,475 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:18:05,009 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:19:13,426 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:20:22,847 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:21:31,701 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:22:40,064 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:23:48,836 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:24:57,239 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=0 with_strategy=17
+2026-01-05 04:26:09,426 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:27:21,132 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:28:32,425 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:29:44,024 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:30:55,520 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:32:07,469 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:33:19,780 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:34:31,968 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:35:44,077 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:36:55,764 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:38:07,887 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:39:20,149 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:40:32,307 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:41:44,576 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:42:56,724 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:44:09,108 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:45:21,232 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:46:33,275 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:47:45,216 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:48:57,221 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:50:09,019 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:51:20,874 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:52:32,374 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:53:44,078 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:54:56,186 [INFO] AutoTrader | HEARTBEAT | total=48 inplay=0 with_strategy=17
+2026-01-05 04:56:08,770 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 04:57:21,404 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 04:58:33,766 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 04:59:46,196 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:00:58,572 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:02:11,722 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:03:23,962 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:04:36,434 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:05:48,899 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:07:01,280 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:08:14,004 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:09:26,393 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:10:38,873 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:11:51,146 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:13:03,777 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:14:15,962 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:15:28,253 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:16:41,049 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:17:53,444 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:19:05,764 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:20:18,273 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:21:31,380 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:22:43,591 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:23:55,769 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:25:08,523 [INFO] AutoTrader | HEARTBEAT | total=49 inplay=0 with_strategy=17
+2026-01-05 05:26:22,294 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:27:36,406 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:28:50,685 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:30:04,783 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:31:18,992 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:32:32,972 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:33:46,664 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:35:00,754 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:36:14,608 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:37:28,188 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:38:42,129 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:39:56,286 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:41:10,378 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:42:24,621 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:43:38,887 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:44:53,391 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:46:08,017 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:47:21,967 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:48:36,325 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:49:50,036 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:51:04,076 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:52:18,606 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:53:33,259 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:54:47,524 [INFO] AutoTrader | HEARTBEAT | total=52 inplay=0 with_strategy=17
+2026-01-05 05:56:01,516 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 05:57:16,464 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 05:58:31,119 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 05:59:45,824 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:01:00,895 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:02:15,908 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:03:30,992 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:04:45,800 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:06:01,001 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:07:15,796 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:08:30,753 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:09:45,476 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:11:00,414 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:12:15,572 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:13:30,113 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:14:45,039 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:16:00,021 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:17:15,419 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:18:30,050 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:19:44,625 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:20:59,287 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:22:14,586 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:23:29,302 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:24:44,353 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:25:59,153 [INFO] AutoTrader | HEARTBEAT | total=53 inplay=0 with_strategy=17
+2026-01-05 06:27:15,197 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=17
+2026-01-05 06:28:31,274 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=17
+2026-01-05 06:29:47,099 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=17
+2026-01-05 06:30:16,168 [INFO] AutoTrader | AutoTrader | PURGED stale rows | count=1
+2026-01-05 06:31:02,341 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:32:17,618 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:33:33,069 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:34:48,825 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:36:04,273 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:37:20,199 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:38:35,571 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:39:50,893 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:41:06,070 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:42:21,370 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:43:36,519 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:44:51,674 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:46:07,383 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:47:22,979 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:48:38,604 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:49:54,129 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:51:09,905 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:52:24,944 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:53:40,042 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:54:55,377 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:56:10,597 [INFO] AutoTrader | HEARTBEAT | total=54 inplay=0 with_strategy=16
+2026-01-05 06:57:26,934 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 06:58:42,743 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 06:59:58,730 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:01:14,999 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:02:31,498 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:03:47,731 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:05:04,525 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:06:20,288 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:07:35,903 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:08:51,648 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:10:07,597 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:11:23,834 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:12:40,336 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:13:56,606 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:15:13,005 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:16:29,242 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:17:45,054 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:19:01,084 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:20:17,731 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:21:33,583 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:22:50,001 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:24:06,915 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:25:23,346 [INFO] AutoTrader | HEARTBEAT | total=55 inplay=0 with_strategy=16
+2026-01-05 07:26:40,175 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:27:58,121 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:29:15,975 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:30:34,055 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:31:52,432 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:33:10,214 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:34:27,455 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:35:45,293 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:37:03,328 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:38:21,041 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:39:38,868 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:40:56,901 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:42:14,768 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:43:32,551 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:44:50,819 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:46:08,809 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:47:26,781 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:48:44,905 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:50:03,131 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:51:21,667 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:52:40,090 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:53:58,767 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:55:17,406 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:56:35,801 [INFO] AutoTrader | HEARTBEAT | total=58 inplay=0 with_strategy=16
+2026-01-05 07:57:38,639 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=0 with_strategy=16
+2026-01-05 07:58:39,745 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=0 with_strategy=16
+2026-01-05 07:59:40,706 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=0 with_strategy=16
+2026-01-05 08:00:15,929 [INFO] AutoTrader | KICKOFF | Indonesian Liga 3 | Persikota Tangerang v Psgc Ciamis | SP(H/D/A)=3.350/3.050/2.260 | fav=2 | strat=None
+2026-01-05 08:00:36,114 [INFO] AutoTrader | KICKOFF | Indonesian Liga 3 | Waanal Brothers FC v Persebata Lembata | SP(H/D/A)=2.540/3.100/1.640 | fav=2 | strat=None
+2026-01-05 08:00:41,730 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=2 with_strategy=16
+2026-01-05 08:01:42,773 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=2 with_strategy=16
+2026-01-05 08:02:43,580 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=2 with_strategy=16
+2026-01-05 08:03:44,639 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=2 with_strategy=16
+2026-01-05 08:04:45,518 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=2 with_strategy=16
+2026-01-05 08:05:40,487 [INFO] AutoTrader | KICKOFF | Australian A-League Men | Macarthur FC v Auckland FC | SP(H/D/A)=3.800/4.000/2.040 | fav=2 | strat=None
+2026-01-05 08:05:46,421 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:06:47,344 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:07:47,706 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:08:49,002 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:09:50,191 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:10:50,940 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:11:51,781 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:12:52,670 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:13:53,889 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:14:54,654 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:15:29,543 [INFO] AutoTrader | BAND 15' | 15 | Indonesian Liga 3 | Waanal Brothers FC v Persebata Lembata | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:15:29,687 [INFO] AutoTrader | BAND 15' | 15 | Indonesian Liga 3 | Persikota Tangerang v Psgc Ciamis | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:15:55,711 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:16:56,545 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:17:57,683 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:18:58,783 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:19:59,644 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:20:55,010 [INFO] AutoTrader | BAND 15' | 15 | Australian A-League Men | Macarthur FC v Auckland FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:21:00,820 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:22:02,108 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:23:03,574 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:24:05,016 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:25:05,845 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:26:07,072 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:27:08,310 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=3 with_strategy=16
+2026-01-05 08:28:10,496 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=3 with_strategy=16
+2026-01-05 08:29:12,735 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=3 with_strategy=16
+2026-01-05 08:30:14,929 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=3 with_strategy=16
+2026-01-05 08:30:29,584 [INFO] AutoTrader | BAND 30' | 30 | Indonesian Liga 3 | Waanal Brothers FC v Persebata Lembata | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:30:29,885 [INFO] AutoTrader | KICKOFF | Indonesian Championship | PS Barito Putera v Persiku Kudus | SP(H/D/A)=1.210/7.200/20.000 | fav=1 | strat=None
+2026-01-05 08:30:30,052 [INFO] AutoTrader | KICKOFF | Indonesian Super League | Bhayangkara FC v Dewa United FC | SP(H/D/A)=3.500/3.300/2.420 | fav=2 | strat=LTD60
+2026-01-05 08:30:50,448 [INFO] AutoTrader | BAND 30' | 30 | Indonesian Liga 3 | Persikota Tangerang v Psgc Ciamis | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:31:17,356 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:32:20,337 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:33:23,194 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:34:26,956 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:35:29,741 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:35:44,518 [INFO] AutoTrader | BAND 30' | 30 | Australian A-League Men | Macarthur FC v Auckland FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:36:33,149 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:37:36,081 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:38:39,152 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:39:41,984 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:40:45,333 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:41:48,158 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:42:51,070 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:43:53,853 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:44:56,395 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:45:32,099 [INFO] AutoTrader | BAND 45' | 45 | Indonesian Liga 3 | Waanal Brothers FC v Persebata Lembata | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:45:32,260 [INFO] AutoTrader | BAND 45' | 45 | Indonesian Liga 3 | Persikota Tangerang v Psgc Ciamis | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:45:32,402 [INFO] AutoTrader | BAND 15' | 15 | Indonesian Championship | PS Barito Putera v Persiku Kudus | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:45:32,547 [INFO] AutoTrader | BAND 15' | 15 | Indonesian Super League | Bhayangkara FC v Dewa United FC | 0-0 | RC(H/A)=0/0 | strat=LTD60
+2026-01-05 08:45:59,569 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:47:02,424 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:48:05,344 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:49:08,191 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:50:11,611 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:50:47,404 [INFO] AutoTrader | BAND 45' | 45 | Australian A-League Men | Macarthur FC v Auckland FC | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 08:51:14,692 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:52:17,903 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:53:21,096 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:54:24,234 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:55:28,281 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:56:31,221 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:57:33,755 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:58:36,958 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 08:59:40,791 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:00:44,659 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:00:59,799 [INFO] AutoTrader | BAND 30' | 30 | Indonesian Championship | PS Barito Putera v Persiku Kudus | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:00:59,940 [INFO] AutoTrader | BAND 30' | 30 | Indonesian Super League | Bhayangkara FC v Dewa United FC | 0-0 | RC(H/A)=0/0 | strat=LTD60
+2026-01-05 09:01:48,518 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:02:52,434 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:03:55,817 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:04:59,519 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:06:05,584 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:07:09,378 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:08:12,994 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:09:16,599 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:10:20,215 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:11:23,919 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:12:28,731 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:13:32,505 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:14:35,445 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:15:38,815 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=5 with_strategy=16
+2026-01-05 09:15:53,781 [INFO] AutoTrader | BAND 45' | 45 | Indonesian Championship | PS Barito Putera v Persiku Kudus | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:15:53,950 [INFO] AutoTrader | BAND 45' | 45 | Indonesian Super League | Bhayangkara FC v Dewa United FC | 1-0 | RC(H/A)=0/0 | strat=LTD60
+2026-01-05 09:15:54,174 [INFO] AutoTrader | KICKOFF | Myanmar National League | Rakhine Utd v Dagon FC | SP(H/D/A)=8.400/7.200/1.260 | fav=2 | strat=None
+2026-01-05 09:15:54,174 [INFO] AutoTrader | BAND 15' | 15 | Myanmar National League | Rakhine Utd v Dagon FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:16:42,150 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:17:45,506 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:18:48,735 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:19:03,385 [INFO] AutoTrader | BAND 60' | 60 | Indonesian Liga 3 | Persikota Tangerang v Psgc Ciamis | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:19:51,772 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:20:06,586 [INFO] AutoTrader | BAND 60' | 60 | Indonesian Liga 3 | Waanal Brothers FC v Persebata Lembata | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:20:55,350 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:21:58,779 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:22:55,765 [INFO] AutoTrader | BAND 60' | 60 | Australian A-League Men | Macarthur FC v Auckland FC | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:23:02,247 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:24:06,149 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:25:10,156 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:26:14,052 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:27:17,531 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:28:23,235 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=16
+2026-01-05 09:29:26,830 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=16
+2026-01-05 09:30:25,826 [INFO] AutoTrader | KICKOFF | Myanmar National League | Yarmanya United FC v Dagon Port FC | SP(H/D/A)=4.800/4.800/1.200 | fav=2 | strat=None
+2026-01-05 09:30:31,648 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:31:08,586 [INFO] AutoTrader | BAND 30' | 30 | Myanmar National League | Rakhine Utd v Dagon FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:31:35,969 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:32:39,857 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:33:43,857 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:34:20,133 [INFO] AutoTrader | BAND 75' | 75 | Indonesian Liga 3 | Persikota Tangerang v Psgc Ciamis | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:34:48,411 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:35:03,218 [INFO] AutoTrader | BAND 75' | 75 | Indonesian Liga 3 | Waanal Brothers FC v Persebata Lembata | 1-1 | RC(H/A)=1/0 | strat=None
+2026-01-05 09:35:52,671 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:36:57,044 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:38:01,081 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:38:15,908 [INFO] AutoTrader | BAND 75' | 75 | Australian A-League Men | Macarthur FC v Auckland FC | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:39:05,511 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:40:09,851 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:41:14,727 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:42:18,961 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:43:22,970 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:44:27,521 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:45:25,783 [INFO] AutoTrader | BAND 15' | 15 | Myanmar National League | Yarmanya United FC v Dagon Port FC | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:45:31,683 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:45:47,047 [INFO] AutoTrader | BAND 45' | 45 | Myanmar National League | Rakhine Utd v Dagon FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:46:35,819 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:47:39,968 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:48:44,154 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:48:58,993 [INFO] AutoTrader | BAND 90' | 90 | Indonesian Liga 3 | Persikota Tangerang v Psgc Ciamis | 0-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:49:48,070 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:50:02,824 [INFO] AutoTrader | BAND 90' | 90 | Indonesian Liga 3 | Waanal Brothers FC v Persebata Lembata | 1-1 | RC(H/A)=1/0 | strat=None
+2026-01-05 09:50:24,380 [INFO] AutoTrader | BAND 60' | 60 | Indonesian Championship | PS Barito Putera v Persiku Kudus | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:50:52,407 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:51:50,292 [INFO] AutoTrader | BAND 60' | 60 | Indonesian Super League | Bhayangkara FC v Dewa United FC | 1-0 | RC(H/A)=1/0 | strat=LTD60
+2026-01-05 09:51:56,359 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:52:53,925 [INFO] AutoTrader | BAND 90' | 90 | Australian A-League Men | Macarthur FC v Auckland FC | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 09:53:00,550 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=16
+2026-01-05 09:53:37,883 [INFO] AutoTrader | FINISH | Indonesian Liga 3 | Persikota Tangerang v Psgc Ciamis | FT=0-3 | result=1 | pnl=None | strat=None | remaining_current=66
+2026-01-05 09:54:06,348 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:55:09,988 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=6 with_strategy=16
+2026-01-05 09:56:06,883 [INFO] AutoTrader | FINISH | Indonesian Liga 3 | Waanal Brothers FC v Persebata Lembata | FT=1-1 | result=0 | pnl=None | strat=None | remaining_current=65
+2026-01-05 09:56:13,313 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=5 with_strategy=16
+2026-01-05 09:56:49,386 [INFO] AutoTrader | FINISH | Australian A-League Men | Macarthur FC v Auckland FC | FT=1-1 | result=0 | pnl=None | strat=None | remaining_current=64
+2026-01-05 09:57:16,807 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=4 with_strategy=16
+2026-01-05 09:58:20,377 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 09:59:23,788 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:00:21,623 [INFO] AutoTrader | BAND 30' | 30 | Myanmar National League | Yarmanya United FC v Dagon Port FC | 0-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 10:00:27,472 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:01:31,611 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:02:35,474 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:03:38,868 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:04:42,506 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:05:39,706 [INFO] AutoTrader | BAND 75' | 75 | Indonesian Championship | PS Barito Putera v Persiku Kudus | 1-0 | RC(H/A)=1/0 | strat=None
+2026-01-05 10:05:46,224 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:06:01,022 [INFO] AutoTrader | BAND 75' | 75 | Indonesian Super League | Bhayangkara FC v Dewa United FC | 1-0 | RC(H/A)=1/0 | strat=LTD60
+2026-01-05 10:06:50,013 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:07:53,298 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:08:57,248 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:10:00,696 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:11:04,520 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:12:08,984 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:13:12,711 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:14:16,935 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:15:20,633 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:15:35,815 [INFO] AutoTrader | BAND 45' | 45 | Myanmar National League | Yarmanya United FC v Dagon Port FC | 1-4 | RC(H/A)=0/0 | strat=None
+2026-01-05 10:16:24,353 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:17:28,017 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:18:31,504 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:19:07,733 [INFO] AutoTrader | BAND 60' | 60 | Myanmar National League | Rakhine Utd v Dagon FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 10:19:34,998 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:20:11,198 [INFO] AutoTrader | BAND 90' | 90 | Indonesian Championship | PS Barito Putera v Persiku Kudus | 1-0 | RC(H/A)=1/0 | strat=None
+2026-01-05 10:20:39,222 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:21:15,456 [INFO] AutoTrader | BAND 90' | 90 | Indonesian Super League | Bhayangkara FC v Dewa United FC | 1-0 | RC(H/A)=1/0 | strat=LTD60
+2026-01-05 10:21:43,453 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:22:46,956 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:23:50,948 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:24:54,766 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:25:58,674 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:27:02,802 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:28:06,579 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=16
+2026-01-05 10:29:10,529 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=16
+2026-01-05 10:30:14,653 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=16
+2026-01-05 10:31:19,680 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=4 with_strategy=16
+2026-01-05 10:31:56,054 [INFO] AutoTrader | FINISH | Indonesian Super League | Bhayangkara FC v Dewa United FC | FT=1-0 | result=1 | pnl=100.0 | strat=LTD60 | remaining_current=65
+2026-01-05 10:32:23,560 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=3 with_strategy=15
+2026-01-05 10:33:27,666 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=3 with_strategy=15
+2026-01-05 10:34:24,713 [INFO] AutoTrader | FINISH | Indonesian Championship | PS Barito Putera v Persiku Kudus | FT=1-0 | result=1 | pnl=None | strat=None | remaining_current=64
+2026-01-05 10:34:24,867 [INFO] AutoTrader | BAND 75' | 75 | Myanmar National League | Rakhine Utd v Dagon FC | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 10:34:31,164 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:35:34,340 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:36:37,440 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:37:43,578 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:38:47,468 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:39:50,975 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:40:53,914 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:41:56,897 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:42:59,878 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:44:02,752 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:45:06,702 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:46:10,035 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:47:13,103 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:48:16,387 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:48:52,465 [INFO] AutoTrader | BAND 60' | 60 | Myanmar National League | Yarmanya United FC v Dagon Port FC | 1-6 | RC(H/A)=0/0 | strat=None
+2026-01-05 10:49:20,215 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:49:35,089 [INFO] AutoTrader | BAND 90' | 90 | Myanmar National League | Rakhine Utd v Dagon FC | 0-1 | RC(H/A)=1/0 | strat=None
+2026-01-05 10:50:23,558 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:51:26,831 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:52:29,875 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:53:32,981 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:54:35,641 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=2 with_strategy=15
+2026-01-05 10:55:11,263 [INFO] AutoTrader | FINISH | Myanmar National League | Rakhine Utd v Dagon FC | FT=0-2 | result=1 | pnl=None | strat=None | remaining_current=63
+2026-01-05 10:55:38,586 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 10:56:40,993 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 10:57:43,825 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 10:58:46,423 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 10:59:50,100 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=1 with_strategy=15
+2026-01-05 11:00:00,108 [INFO] AutoTrader | AutoTrader | PURGED stale rows | count=1
+2026-01-05 11:00:53,810 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:01:57,219 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:03:00,144 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:03:36,604 [INFO] AutoTrader | BAND 75' | 75 | Myanmar National League | Yarmanya United FC v Dagon Port FC | 1-6 | RC(H/A)=0/0 | strat=None
+2026-01-05 11:04:03,934 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:05:07,463 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:06:10,651 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:07:13,041 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:08:15,635 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:09:18,501 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:10:21,625 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:11:24,410 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:12:27,594 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:13:30,774 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:14:33,514 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:15:36,875 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:16:39,663 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:17:43,000 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:18:39,147 [INFO] AutoTrader | BAND 90' | 90 | Myanmar National League | Yarmanya United FC v Dagon Port FC | 2-7 | RC(H/A)=0/0 | strat=None
+2026-01-05 11:18:45,582 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:19:48,398 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:20:52,738 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:21:54,992 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=1 with_strategy=15
+2026-01-05 11:22:09,537 [INFO] AutoTrader | FINISH | Myanmar National League | Yarmanya United FC v Dagon Port FC | FT=2-7 | result=1 | pnl=None | strat=None | remaining_current=62
+2026-01-05 11:22:57,427 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:23:59,744 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:25:02,168 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:26:04,881 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:27:07,216 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:28:09,390 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:29:11,899 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:30:14,320 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:31:16,782 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:32:19,245 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:33:22,233 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:34:24,745 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:35:27,650 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:36:29,835 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:37:32,379 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:38:34,550 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:39:36,969 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:40:39,749 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:41:41,968 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:42:44,135 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:43:47,519 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:44:50,206 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:45:52,625 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:46:55,517 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:47:58,088 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:49:00,649 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:50:03,052 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:51:06,329 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:52:08,368 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:53:11,078 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:54:13,171 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:55:15,141 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:56:18,096 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:57:21,085 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:58:24,076 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 11:59:27,331 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=0 with_strategy=15
+2026-01-05 12:00:20,761 [INFO] AutoTrader | AutoTrader | PURGED stale rows | count=1
+2026-01-05 12:00:25,348 [INFO] AutoTrader | KICKOFF | Indonesian Championship | Tornado FC v Pss Sleman | SP(H/D/A)=2.520/3.450/3.050 | fav=1 | strat=None
+2026-01-05 12:00:25,684 [INFO] AutoTrader | KICKOFF | Indonesian Super League | Persik Kediri v Persib Bandung | SP(H/D/A)=5.400/3.800/1.800 | fav=2 | strat=LTD60
+2026-01-05 12:00:32,379 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=2 with_strategy=15
+2026-01-05 12:01:36,945 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=2 with_strategy=15
+2026-01-05 12:02:42,502 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=2 with_strategy=15
+2026-01-05 12:03:46,966 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=2 with_strategy=15
+2026-01-05 12:04:52,993 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=2 with_strategy=15
+2026-01-05 12:05:29,737 [INFO] AutoTrader | KICKOFF | Saudi 1st Division | Al Jubail v Al-Arabi Al-Saudi | SP(H/D/A)=3.250/3.200/2.560 | fav=2 | strat=None
+2026-01-05 12:05:57,138 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=3 with_strategy=15
+2026-01-05 12:07:00,798 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=3 with_strategy=15
+2026-01-05 12:08:05,650 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=3 with_strategy=15
+2026-01-05 12:09:09,588 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=3 with_strategy=15
+2026-01-05 12:10:13,587 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=3 with_strategy=15
+2026-01-05 12:11:19,667 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=3 with_strategy=15
+2026-01-05 12:12:24,017 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=3 with_strategy=15
+2026-01-05 12:13:23,178 [INFO] AutoTrader | KICKOFF | Ethiopian Premier League | Bahir Dar FC v Dire Dawa Kima FC | SP(H/D/A)=2.000/3.000/4.800 | fav=1 | strat=None
+2026-01-05 12:13:29,741 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:14:34,544 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:15:32,716 [INFO] AutoTrader | BAND 15' | 15 | Indonesian Super League | Persik Kediri v Persib Bandung | 0-0 | RC(H/A)=0/0 | strat=LTD60
+2026-01-05 12:15:39,508 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:15:53,971 [INFO] AutoTrader | BAND 15' | 15 | Indonesian Championship | Tornado FC v Pss Sleman | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:16:38,227 [INFO] AutoTrader | BAND 15' | 15 | Ethiopian Premier League | Bahir Dar FC v Dire Dawa Kima FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:16:45,173 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:17:49,657 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:18:54,084 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:19:57,398 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:20:33,961 [INFO] AutoTrader | BAND 15' | 15 | Saudi 1st Division | Al Jubail v Al-Arabi Al-Saudi | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:21:01,617 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:22:05,912 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:23:09,936 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:24:13,746 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:25:17,819 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:26:21,993 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:27:25,951 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:28:30,207 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:29:34,543 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=4 with_strategy=15
+2026-01-05 12:30:32,726 [INFO] AutoTrader | BAND 30' | 30 | Indonesian Super League | Persik Kediri v Persib Bandung | 0-0 | RC(H/A)=0/0 | strat=LTD60
+2026-01-05 12:30:33,261 [INFO] AutoTrader | KICKOFF | Egyptian Second Division B | Cascada SC v Fayoum FC | SP(H/D/A)=1.760/3.300/5.800 | fav=1 | strat=None
+2026-01-05 12:30:39,747 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=5 with_strategy=15
+2026-01-05 12:30:54,245 [INFO] AutoTrader | BAND 30' | 30 | Indonesian Championship | Tornado FC v Pss Sleman | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:31:45,339 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=5 with_strategy=15
+2026-01-05 12:32:21,821 [INFO] AutoTrader | BAND 30' | 30 | Ethiopian Premier League | Bahir Dar FC v Dire Dawa Kima FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:32:50,421 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=5 with_strategy=15
+2026-01-05 12:33:05,553 [INFO] AutoTrader | KICKOFF | Egyptian Second Division B | Diamond FC v Banha | SP(H/D/A)=2.100/3.300/3.850 | fav=1 | strat=None
+2026-01-05 12:33:55,235 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:35:00,636 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:35:37,212 [INFO] AutoTrader | BAND 30' | 30 | Saudi 1st Division | Al Jubail v Al-Arabi Al-Saudi | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:36:05,259 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:37:10,081 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:38:14,817 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:39:20,215 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:40:25,464 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:41:30,567 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:42:35,584 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:43:39,784 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:44:44,942 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:45:21,237 [INFO] AutoTrader | BAND 45' | 45 | Indonesian Super League | Persik Kediri v Persib Bandung | 0-0 | RC(H/A)=0/0 | strat=LTD60
+2026-01-05 12:45:42,597 [INFO] AutoTrader | BAND 45' | 45 | Indonesian Championship | Tornado FC v Pss Sleman | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:45:43,418 [INFO] AutoTrader | BAND 15' | 15 | Egyptian Second Division B | Cascada SC v Fayoum FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:45:49,942 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:46:55,410 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:47:10,126 [INFO] AutoTrader | BAND 45' | 45 | Ethiopian Premier League | Bahir Dar FC v Dire Dawa Kima FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:48:00,451 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:48:15,479 [INFO] AutoTrader | BAND 15' | 15 | Egyptian Second Division B | Diamond FC v Banha | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:49:05,534 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:50:12,040 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=6 with_strategy=15
+2026-01-05 12:50:27,110 [INFO] AutoTrader | BAND 45' | 45 | Saudi 1st Division | Al Jubail v Al-Arabi Al-Saudi | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 12:50:27,732 [INFO] AutoTrader | KICKOFF | Saudi 1st Division | Abha v Al Draih | SP(H/D/A)=2.700/3.750/2.640 | fav=2 | strat=None
+2026-01-05 12:51:17,165 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=15
+2026-01-05 12:52:21,902 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=15
+2026-01-05 12:53:26,213 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=15
+2026-01-05 12:54:31,494 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=15
+2026-01-05 12:55:37,587 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=15
+2026-01-05 12:56:42,911 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=15
+2026-01-05 12:57:49,047 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=15
+2026-01-05 12:58:53,851 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=15
+2026-01-05 12:59:58,467 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=7 with_strategy=15
+2026-01-05 13:00:14,199 [INFO] AutoTrader | KICKOFF | Ethiopian Premier League | Ethiopian Medhin v Mekelle 70 Enderta | SP(H/D/A)=2.320/2.960/3.550 | fav=1 | strat=None
+2026-01-05 13:00:57,900 [INFO] AutoTrader | BAND 30' | 30 | Egyptian Second Division B | Cascada SC v Fayoum FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:00:58,249 [INFO] AutoTrader | BAND 15' | 15 | Saudi 1st Division | Abha v Al Draih | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:01:04,827 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=8 with_strategy=15
+2026-01-05 13:02:10,436 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=8 with_strategy=15
+2026-01-05 13:02:26,141 [INFO] AutoTrader | KICKOFF | Elite Friendlies | Stuttgart v Luzern | SP(H/D/A)=1.400/5.700/8.000 | fav=1 | strat=None
+2026-01-05 13:03:09,303 [INFO] AutoTrader | BAND 30' | 30 | Egyptian Second Division B | Diamond FC v Banha | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:03:16,205 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:04:22,484 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:05:29,740 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:06:35,700 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:07:42,215 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:08:48,227 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:09:54,082 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:10:59,935 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:12:05,826 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:13:11,720 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:14:17,169 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:15:23,737 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:15:39,305 [INFO] AutoTrader | BAND 45' | 45 | Egyptian Second Division B | Cascada SC v Fayoum FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:15:39,607 [INFO] AutoTrader | BAND 30' | 30 | Saudi 1st Division | Abha v Al Draih | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:16:01,785 [INFO] AutoTrader | BAND 15' | 15 | Ethiopian Premier League | Ethiopian Medhin v Mekelle 70 Enderta | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:16:30,855 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:17:30,522 [INFO] AutoTrader | BAND 15' | 15 | Elite Friendlies | Stuttgart v Luzern | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:17:37,533 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:18:14,886 [INFO] AutoTrader | BAND 45' | 45 | Egyptian Second Division B | Diamond FC v Banha | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:18:36,945 [INFO] AutoTrader | BAND 60' | 60 | Indonesian Super League | Persik Kediri v Persib Bandung | 0-0 | RC(H/A)=0/0 | strat=LTD60
+2026-01-05 13:18:44,385 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:18:58,987 [INFO] AutoTrader | BAND 60' | 60 | Ethiopian Premier League | Bahir Dar FC v Dire Dawa Kima FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:19:50,865 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:20:56,950 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:22:03,396 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:23:09,429 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:24:16,648 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:24:31,051 [INFO] AutoTrader | BAND 60' | 61 | Indonesian Championship | Tornado FC v Pss Sleman | 2-1 | RC(H/A)=0/1 | strat=None
+2026-01-05 13:24:31,583 [INFO] AutoTrader | BAND 60' | 60 | Saudi 1st Division | Al Jubail v Al-Arabi Al-Saudi | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:25:22,053 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:26:27,472 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:27:33,497 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:28:39,186 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:29:44,898 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:30:00,555 [INFO] AutoTrader | BAND 30' | 30 | Ethiopian Premier League | Ethiopian Medhin v Mekelle 70 Enderta | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:30:44,918 [INFO] AutoTrader | BAND 45' | 45 | Saudi 1st Division | Abha v Al Draih | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:30:51,176 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:31:57,386 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:32:56,265 [INFO] AutoTrader | BAND 60' | 61 | Egyptian Second Division B | Cascada SC v Fayoum FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:32:56,935 [INFO] AutoTrader | BAND 30' | 30 | Elite Friendlies | Stuttgart v Luzern | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:33:03,132 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:33:39,904 [INFO] AutoTrader | BAND 75' | 75 | Ethiopian Premier League | Bahir Dar FC v Dire Dawa Kima FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:34:09,224 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:34:45,856 [INFO] AutoTrader | BAND 75' | 76 | Indonesian Super League | Persik Kediri v Persib Bandung | 0-1 | RC(H/A)=0/0 | strat=LTD60
+2026-01-05 13:35:14,937 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:36:21,170 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:37:27,256 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:38:26,163 [INFO] AutoTrader | BAND 75' | 75 | Indonesian Championship | Tornado FC v Pss Sleman | 2-1 | RC(H/A)=0/1 | strat=None
+2026-01-05 13:38:34,877 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:39:34,544 [INFO] AutoTrader | BAND 75' | 75 | Saudi 1st Division | Al Jubail v Al-Arabi Al-Saudi | 1-0 | RC(H/A)=0/1 | strat=None
+2026-01-05 13:39:41,553 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:40:48,257 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:41:03,721 [INFO] AutoTrader | BAND 45' | 45 | Egyptian Second Division B | Cascada SC v Fayoum FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:41:54,418 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:43:00,918 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:44:07,050 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:45:13,712 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:45:29,725 [INFO] AutoTrader | BAND 45' | 45 | Ethiopian Premier League | Ethiopian Medhin v Mekelle 70 Enderta | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:46:22,787 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:47:29,098 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:48:05,954 [INFO] AutoTrader | BAND 90' | 90 | Indonesian Super League | Persik Kediri v Persib Bandung | 0-1 | RC(H/A)=0/1 | strat=LTD60
+2026-01-05 13:48:36,145 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:48:50,597 [INFO] AutoTrader | BAND 90' | 90 | Ethiopian Premier League | Bahir Dar FC v Dire Dawa Kima FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:49:42,123 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:50:48,607 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:51:55,083 [INFO] AutoTrader | HEARTBEAT | total=69 inplay=9 with_strategy=15
+2026-01-05 13:52:53,368 [INFO] AutoTrader | FINISH | Ethiopian Premier League | Bahir Dar FC v Dire Dawa Kima FC | FT=0-0 | result=0 | pnl=None | strat=None | remaining_current=68
+2026-01-05 13:53:00,731 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=8 with_strategy=15
+2026-01-05 13:53:15,188 [INFO] AutoTrader | BAND 90' | 90 | Indonesian Championship | Tornado FC v Pss Sleman | 2-1 | RC(H/A)=0/1 | strat=None
+2026-01-05 13:54:07,160 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=8 with_strategy=15
+2026-01-05 13:54:22,122 [INFO] AutoTrader | BAND 90' | 90 | Saudi 1st Division | Al Jubail v Al-Arabi Al-Saudi | 2-0 | RC(H/A)=0/1 | strat=None
+2026-01-05 13:55:12,759 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=8 with_strategy=15
+2026-01-05 13:55:49,622 [INFO] AutoTrader | BAND 60' | 60 | Egyptian Second Division B | Cascada SC v Fayoum FC | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:56:18,465 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=8 with_strategy=15
+2026-01-05 13:57:23,940 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=8 with_strategy=15
+2026-01-05 13:58:01,004 [INFO] AutoTrader | BAND 60' | 60 | Egyptian Second Division B | Diamond FC v Banha | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 13:58:29,814 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=8 with_strategy=15
+2026-01-05 13:59:35,589 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=8 with_strategy=15
+2026-01-05 14:00:36,000 [INFO] AutoTrader | KICKOFF | Egyptian League Cup | Al-Masry v Smouha | SP(H/D/A)=2.460/2.900/3.800 | fav=1 | strat=None
+2026-01-05 14:00:41,846 [INFO] AutoTrader | HEARTBEAT | total=68 inplay=9 with_strategy=15
+2026-01-05 14:01:42,755 [INFO] AutoTrader | FINISH | Indonesian Super League | Persik Kediri v Persib Bandung | FT=1-1 | result=0 | pnl=-285.0 | strat=LTD60 | remaining_current=67
+2026-01-05 14:01:44,350 [INFO] AutoTrader | KICKOFF | Egyptian League Cup | Al Mokawloon v Ghazl El Mahallah | SP(H/D/A)=2.100/2.900/5.100 | fav=1 | strat=None
+2026-01-05 14:01:49,982 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=9 with_strategy=14
+2026-01-05 14:02:47,984 [INFO] AutoTrader | FINISH | Indonesian Championship | Tornado FC v Pss Sleman | FT=2-1 | result=1 | pnl=None | strat=None | remaining_current=66
+2026-01-05 14:02:55,175 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:03:53,758 [INFO] AutoTrader | BAND 60' | 60 | Saudi 1st Division | Abha v Al Draih | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:04:00,326 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:04:37,273 [INFO] AutoTrader | BAND 45' | 45 | Elite Friendlies | Stuttgart v Luzern | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:05:05,279 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:06:10,192 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:07:14,927 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:08:20,780 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:09:25,451 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:10:30,344 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:11:06,982 [INFO] AutoTrader | BAND 75' | 75 | Egyptian Second Division B | Cascada SC v Fayoum FC | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:11:35,177 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:12:33,243 [INFO] AutoTrader | BAND 75' | 75 | Egyptian Second Division B | Diamond FC v Banha | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:12:40,311 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:13:45,232 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:14:50,452 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:15:56,740 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:16:12,375 [INFO] AutoTrader | BAND 15' | 15 | Egyptian League Cup | Al-Masry v Smouha | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:17:01,457 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:17:17,229 [INFO] AutoTrader | BAND 15' | 15 | Egyptian League Cup | Al Mokawloon v Ghazl El Mahallah | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:18:06,469 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:18:43,260 [INFO] AutoTrader | BAND 60' | 60 | Ethiopian Premier League | Ethiopian Medhin v Mekelle 70 Enderta | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:19:04,380 [INFO] AutoTrader | BAND 75' | 75 | Saudi 1st Division | Abha v Al Draih | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:19:10,979 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:19:47,807 [INFO] AutoTrader | BAND 60' | 60 | Elite Friendlies | Stuttgart v Luzern | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:20:15,714 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:21:20,358 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:22:25,126 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:23:29,423 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:24:34,796 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:25:40,050 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:26:16,738 [INFO] AutoTrader | BAND 90' | 90 | Egyptian Second Division B | Cascada SC v Fayoum FC | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:26:45,389 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:27:43,343 [INFO] AutoTrader | BAND 90' | 90 | Egyptian Second Division B | Diamond FC v Banha | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:27:50,400 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:28:55,342 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:29:59,675 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=8 with_strategy=14
+2026-01-05 14:31:00,515 [INFO] AutoTrader | BAND 30' | 30 | Egyptian League Cup | Al-Masry v Smouha | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:31:06,548 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=8 with_strategy=14
+2026-01-05 14:32:05,999 [INFO] AutoTrader | BAND 30' | 30 | Egyptian League Cup | Al Mokawloon v Ghazl El Mahallah | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:32:11,991 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=8 with_strategy=14
+2026-01-05 14:33:18,173 [INFO] AutoTrader | HEARTBEAT | total=67 inplay=8 with_strategy=14
+2026-01-05 14:33:54,712 [INFO] AutoTrader | FINISH | Egyptian Second Division B | Cascada SC v Fayoum FC | FT=1-0 | result=1 | pnl=None | strat=None | remaining_current=66
+2026-01-05 14:33:55,044 [INFO] AutoTrader | BAND 90' | 90 | Saudi 1st Division | Abha v Al Draih | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:33:55,189 [INFO] AutoTrader | BAND 75' | 75 | Ethiopian Premier League | Ethiopian Medhin v Mekelle 70 Enderta | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:34:23,194 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=7 with_strategy=14
+2026-01-05 14:35:28,302 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=7 with_strategy=14
+2026-01-05 14:36:05,150 [INFO] AutoTrader | BAND 75' | 76 | Elite Friendlies | Stuttgart v Luzern | 3-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:36:33,198 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=7 with_strategy=14
+2026-01-05 14:37:38,429 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=7 with_strategy=14
+2026-01-05 14:38:43,125 [INFO] AutoTrader | HEARTBEAT | total=66 inplay=7 with_strategy=14
+2026-01-05 14:38:57,634 [INFO] AutoTrader | FINISH | Egyptian Second Division B | Diamond FC v Banha | FT=2-1 | result=1 | pnl=None | strat=None | remaining_current=65
+2026-01-05 14:39:47,979 [INFO] AutoTrader | HEARTBEAT | total=65 inplay=6 with_strategy=14
+2026-01-05 14:40:02,757 [INFO] AutoTrader | FINISH | Saudi 1st Division | Abha v Al Draih | FT=2-1 | result=1 | pnl=None | strat=None | remaining_current=64
+2026-01-05 14:40:51,991 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=5 with_strategy=14
+2026-01-05 14:41:56,664 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=5 with_strategy=14
+2026-01-05 14:42:33,701 [INFO] AutoTrader | KICKOFF | Elite Friendlies | FC Koln v Lugano | SP(H/D/A)=1.970/3.850/4.100 | fav=1 | strat=None
+2026-01-05 14:43:00,647 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=6 with_strategy=14
+2026-01-05 14:44:04,398 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=6 with_strategy=14
+2026-01-05 14:45:08,545 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=6 with_strategy=14
+2026-01-05 14:45:23,838 [INFO] AutoTrader | BAND 45' | 45 | Egyptian League Cup | Al-Masry v Smouha | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:46:12,679 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=6 with_strategy=14
+2026-01-05 14:47:10,713 [INFO] AutoTrader | BAND 45' | 45 | Egyptian League Cup | Al Mokawloon v Ghazl El Mahallah | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:47:16,494 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=6 with_strategy=14
+2026-01-05 14:48:19,722 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=6 with_strategy=14
+2026-01-05 14:48:55,864 [INFO] AutoTrader | BAND 90' | 90 | Ethiopian Premier League | Ethiopian Medhin v Mekelle 70 Enderta | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:49:23,594 [INFO] AutoTrader | HEARTBEAT | total=64 inplay=6 with_strategy=14
+2026-01-05 14:49:59,771 [INFO] AutoTrader | FINISH | Elite Friendlies | Stuttgart v Luzern | FT=3-2 | result=1 | pnl=None | strat=None | remaining_current=63
+2026-01-05 14:50:27,351 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=5 with_strategy=14
+2026-01-05 14:51:30,751 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=5 with_strategy=14
+2026-01-05 14:52:33,563 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=5 with_strategy=14
+2026-01-05 14:53:37,017 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=5 with_strategy=14
+2026-01-05 14:54:13,591 [INFO] AutoTrader | BAND 15' | 15 | Elite Friendlies | FC Koln v Lugano | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 14:54:40,355 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=5 with_strategy=14
+2026-01-05 14:55:44,407 [INFO] AutoTrader | HEARTBEAT | total=63 inplay=5 with_strategy=14
+2026-01-05 14:56:41,680 [INFO] AutoTrader | FINISH | Ethiopian Premier League | Ethiopian Medhin v Mekelle 70 Enderta | FT=0-1 | result=1 | pnl=None | strat=None | remaining_current=62
+2026-01-05 14:56:48,015 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=4 with_strategy=14
+2026-01-05 14:57:51,107 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=4 with_strategy=14
+2026-01-05 14:58:54,239 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=4 with_strategy=14
+2026-01-05 14:59:09,621 [INFO] AutoTrader | KICKOFF | Portuguese U19 Championship | Rio Ave U19 v Gil Vicente U19 | SP(H/D/A)=1.010/3.650/1.010 | fav=0 | strat=None
+2026-01-05 14:59:57,482 [INFO] AutoTrader | HEARTBEAT | total=62 inplay=5 with_strategy=14
+2026-01-05 15:00:07,506 [INFO] AutoTrader | AutoTrader | PURGED stale rows | count=16
+2026-01-05 15:01:07,730 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:02:17,455 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:03:27,353 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:04:37,685 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:05:48,046 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:06:58,249 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:08:08,612 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:09:18,619 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:09:30,598 [INFO] AutoTrader | BAND 30' | 30 | Elite Friendlies | FC Koln v Lugano | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:10:30,045 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:11:41,130 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:12:51,399 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:14:01,725 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:14:48,698 [INFO] AutoTrader | BAND 15' | 15 | Portuguese U19 Championship | Rio Ave U19 v Gil Vicente U19 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:15:11,791 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:16:22,157 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:17:32,273 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:18:42,201 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:19:52,359 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:21:02,896 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:22:13,292 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:23:25,849 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:24:12,915 [INFO] AutoTrader | BAND 60' | 60 | Egyptian League Cup | Al Mokawloon v Ghazl El Mahallah | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:24:36,400 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:25:46,617 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:26:33,058 [INFO] AutoTrader | BAND 60' | 60 | Egyptian League Cup | Al-Masry v Smouha | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:26:56,516 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:28:07,305 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:29:17,663 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:29:46,827 [INFO] AutoTrader | BAND 30' | 30 | Portuguese U19 Championship | Rio Ave U19 v Gil Vicente U19 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:30:27,635 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:31:37,830 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:32:47,793 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:33:59,256 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:35:09,717 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:36:19,636 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:37:30,901 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:38:17,356 [INFO] AutoTrader | BAND 75' | 75 | Egyptian League Cup | Al Mokawloon v Ghazl El Mahallah | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:38:40,794 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:39:50,325 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:40:36,996 [INFO] AutoTrader | BAND 45' | 45 | Elite Friendlies | FC Koln v Lugano | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:41:00,352 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:41:11,722 [INFO] AutoTrader | BAND 75' | 75 | Egyptian League Cup | Al-Masry v Smouha | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:42:10,024 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:43:19,798 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:44:29,499 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:44:41,361 [INFO] AutoTrader | BAND 45' | 45 | Portuguese U19 Championship | Rio Ave U19 v Gil Vicente U19 | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:45:39,122 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:46:49,037 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:47:59,098 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:49:08,977 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:50:19,094 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:51:29,524 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:52:39,281 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:53:49,050 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:54:00,536 [INFO] AutoTrader | BAND 90' | 90 | Egyptian League Cup | Al Mokawloon v Ghazl El Mahallah | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:55:00,025 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:55:29,299 [INFO] AutoTrader | BAND 60' | 60 | Elite Friendlies | FC Koln v Lugano | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:56:03,561 [INFO] AutoTrader | BAND 90' | 90 | Egyptian League Cup | Al-Masry v Smouha | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 15:56:09,498 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:57:19,692 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:58:29,394 [INFO] AutoTrader | HEARTBEAT | total=46 inplay=5 with_strategy=0
+2026-01-05 15:58:40,947 [INFO] AutoTrader | FINISH | Egyptian League Cup | Al Mokawloon v Ghazl El Mahallah | FT=1-1 | result=0 | pnl=None | strat=None | remaining_current=45
+2026-01-05 15:59:39,101 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=4 with_strategy=0
+2026-01-05 16:00:26,205 [INFO] AutoTrader | KICKOFF | Africa Cup of Nations | Egypt v Benin | SP(H/D/A)=1.430/4.500/12.000 | fav=1 | strat=None
+2026-01-05 16:00:26,523 [INFO] AutoTrader | KICKOFF | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | SP(H/D/A)=11.000/10.500/1.050 | fav=2 | strat=None
+2026-01-05 16:00:26,697 [INFO] AutoTrader | KICKOFF | Gambian GFA League 1st Division | Fortune FC v Bombada FC | SP(H/D/A)=2.260/2.700/4.500 | fav=1 | strat=None
+2026-01-05 16:00:43,727 [INFO] AutoTrader | KICKOFF | Bahraini 2nd Division | Al-Ittifaq Maqaba v Al Hala | SP(H/D/A)=1.690/3.850/5.400 | fav=1 | strat=None
+2026-01-05 16:00:48,756 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=8 with_strategy=0
+2026-01-05 16:01:00,654 [INFO] AutoTrader | KICKOFF | Bahraini 2nd Division | Al Tadamun Buri v Busaiteen Club | SP(H/D/A)=7.600/4.300/1.530 | fav=2 | strat=None
+2026-01-05 16:01:58,251 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=9 with_strategy=0
+2026-01-05 16:03:07,888 [INFO] AutoTrader | HEARTBEAT | total=45 inplay=9 with_strategy=0
+2026-01-05 16:03:38,499 [INFO] AutoTrader | KICKOFF | Gambian GFA League 1st Division | Medina United FC v Samger FC | SP(H/D/A)=2.800/2.760/3.200 | fav=1 | strat=None
+2026-01-05 16:04:12,450 [INFO] AutoTrader | FINISH | Egyptian League Cup | Al-Masry v Smouha | FT=2-0 | result=1 | pnl=None | strat=None | remaining_current=44
+2026-01-05 16:04:18,695 [INFO] AutoTrader | HEARTBEAT | total=44 inplay=9 with_strategy=0
+2026-01-05 16:05:04,131 [INFO] AutoTrader | FINISH | 35115518 | Al Jubail v Al-Arabi Al-Saudi | FT=None | result=1 | pnl=None | strat=None | remaining_current=43
+2026-01-05 16:05:27,327 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:06:35,299 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:07:44,112 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:08:52,386 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:10:00,114 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:10:28,436 [INFO] AutoTrader | BAND 75' | 75 | Elite Friendlies | FC Koln v Lugano | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:11:08,547 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:12:17,033 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:13:25,170 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:14:33,759 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:15:20,585 [INFO] AutoTrader | BAND 15' | 15 | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:15:42,459 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:15:54,514 [INFO] AutoTrader | BAND 15' | 15 | Africa Cup of Nations | Egypt v Benin | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:15:54,674 [INFO] AutoTrader | BAND 15' | 15 | Bahraini 2nd Division | Al-Ittifaq Maqaba v Al Hala | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:16:13,307 [INFO] AutoTrader | BAND 15' | 15 | Gambian GFA League 1st Division | Fortune FC v Bombada FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:16:46,671 [INFO] AutoTrader | BAND 15' | 15 | Bahraini 2nd Division | Al Tadamun Buri v Busaiteen Club | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:16:52,193 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:17:03,621 [INFO] AutoTrader | BAND 60' | 60 | Portuguese U19 Championship | Rio Ave U19 v Gil Vicente U19 | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:18:00,469 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:18:47,130 [INFO] AutoTrader | BAND 15' | 15 | Gambian GFA League 1st Division | Medina United FC v Samger FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:19:10,004 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:20:18,723 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:21:27,657 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:22:35,961 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:23:44,693 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:24:52,329 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:25:20,875 [INFO] AutoTrader | BAND 90' | 90 | Elite Friendlies | FC Koln v Lugano | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:26:00,825 [INFO] AutoTrader | HEARTBEAT | total=43 inplay=8 with_strategy=0
+2026-01-05 16:26:29,264 [INFO] AutoTrader | FINISH | Elite Friendlies | FC Koln v Lugano | FT=2-1 | result=1 | pnl=None | strat=None | remaining_current=42
+2026-01-05 16:27:08,600 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:28:15,868 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:29:23,738 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:30:10,308 [INFO] AutoTrader | BAND 30' | 30 | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:30:32,134 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:31:17,801 [INFO] AutoTrader | BAND 30' | 30 | Africa Cup of Nations | Egypt v Benin | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:31:18,008 [INFO] AutoTrader | BAND 30' | 30 | Bahraini 2nd Division | Al-Ittifaq Maqaba v Al Hala | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:31:18,344 [INFO] AutoTrader | BAND 30' | 30 | Gambian GFA League 1st Division | Fortune FC v Bombada FC | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:31:34,758 [INFO] AutoTrader | BAND 30' | 30 | Bahraini 2nd Division | Al Tadamun Buri v Busaiteen Club | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:31:40,194 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:32:47,827 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:33:15,913 [INFO] AutoTrader | BAND 75' | 76 | Portuguese U19 Championship | Rio Ave U19 v Gil Vicente U19 | 3-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:33:50,490 [INFO] AutoTrader | BAND 30' | 30 | Gambian GFA League 1st Division | Medina United FC v Samger FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:33:55,719 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:34:07,320 [INFO] AutoTrader | BAND 15' | 29 | Gambian GFA League 1st Division | Medina United FC v Samger FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:34:24,278 [INFO] AutoTrader | BAND 30' | 30 | Gambian GFA League 1st Division | Medina United FC v Samger FC | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:35:03,626 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:36:11,304 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:37:19,544 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:38:26,955 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:39:34,588 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:40:42,178 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:41:49,788 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:42:57,778 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=7 with_strategy=0
+2026-01-05 16:44:00,947 [INFO] AutoTrader | KICKOFF | Algerian Ligue 1 | Kabylie v MB Rouissat | SP(H/D/A)=1.510/4.100/10.000 | fav=1 | strat=None
+2026-01-05 16:44:05,707 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=8 with_strategy=0
+2026-01-05 16:45:14,295 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=8 with_strategy=0
+2026-01-05 16:45:59,429 [INFO] AutoTrader | BAND 45' | 45 | Bahraini 2nd Division | Al Tadamun Buri v Busaiteen Club | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:45:59,724 [INFO] AutoTrader | BAND 45' | 45 | Africa Cup of Nations | Egypt v Benin | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:45:59,872 [INFO] AutoTrader | BAND 45' | 45 | Bahraini 2nd Division | Al-Ittifaq Maqaba v Al Hala | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:46:00,009 [INFO] AutoTrader | BAND 45' | 45 | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:46:00,165 [INFO] AutoTrader | BAND 45' | 45 | Gambian GFA League 1st Division | Fortune FC v Bombada FC | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:46:16,733 [INFO] AutoTrader | BAND 30' | 44 | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:46:21,514 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=8 with_strategy=0
+2026-01-05 16:46:33,580 [INFO] AutoTrader | BAND 45' | 45 | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:47:29,175 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=8 with_strategy=0
+2026-01-05 16:47:40,472 [INFO] AutoTrader | BAND 90' | 90 | Portuguese U19 Championship | Rio Ave U19 v Gil Vicente U19 | 3-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:48:36,735 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=8 with_strategy=0
+2026-01-05 16:48:48,186 [INFO] AutoTrader | BAND 45' | 45 | Gambian GFA League 1st Division | Medina United FC v Samger FC | 0-0 | RC(H/A)=1/0 | strat=None
+2026-01-05 16:49:44,337 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=8 with_strategy=0
+2026-01-05 16:50:51,870 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=8 with_strategy=0
+2026-01-05 16:51:03,112 [INFO] AutoTrader | FINISH | Portuguese U19 Championship | Rio Ave U19 v Gil Vicente U19 | FT=3-0 | result=1 | pnl=None | strat=None | remaining_current=41
+2026-01-05 16:51:59,030 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=7 with_strategy=0
+2026-01-05 16:53:05,699 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=7 with_strategy=0
+2026-01-05 16:54:13,936 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=7 with_strategy=0
+2026-01-05 16:55:20,696 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=7 with_strategy=0
+2026-01-05 16:56:27,673 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=7 with_strategy=0
+2026-01-05 16:57:33,863 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=7 with_strategy=0
+2026-01-05 16:58:40,392 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=7 with_strategy=0
+2026-01-05 16:59:25,725 [INFO] AutoTrader | BAND 15' | 15 | Algerian Ligue 1 | Kabylie v MB Rouissat | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 16:59:46,813 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=7 with_strategy=0
+2026-01-05 17:00:33,223 [INFO] AutoTrader | KICKOFF | Israeli National League | Ironi Modiin v Hapoel Eran Hadera | SP(H/D/A)=2.560/3.350/2.940 | fav=1 | strat=None
+2026-01-05 17:00:49,494 [INFO] AutoTrader | KICKOFF | Israeli National League | SC Kiryat Yam v Hapoel Nof HaGalil | SP(H/D/A)=1.930/3.600/4.300 | fav=1 | strat=None
+2026-01-05 17:00:49,671 [INFO] AutoTrader | KICKOFF | Israeli National League | Hapoel Kfar Shelem v Bnei Yehuda | SP(H/D/A)=2.720/3.500/2.720 | fav=0 | strat=None
+2026-01-05 17:00:53,749 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:02:01,110 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:03:07,730 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:04:15,742 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:05:23,052 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:06:32,127 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:07:38,909 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:08:45,690 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:09:52,788 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:10:59,727 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:12:06,749 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:13:13,825 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:14:20,549 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:15:22,917 [INFO] AutoTrader | BAND 15' | 15 | Israeli National League | SC Kiryat Yam v Hapoel Nof HaGalil | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:15:27,206 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:15:39,352 [INFO] AutoTrader | BAND 30' | 31 | Algerian Ligue 1 | Kabylie v MB Rouissat | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:16:13,037 [INFO] AutoTrader | BAND 15' | 15 | Israeli National League | Hapoel Kfar Shelem v Bnei Yehuda | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:16:13,200 [INFO] AutoTrader | BAND 15' | 15 | Israeli National League | Ironi Modiin v Hapoel Eran Hadera | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:16:34,141 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:17:40,570 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:18:47,012 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:19:32,353 [INFO] AutoTrader | BAND 60' | 60 | Gambian GFA League 1st Division | Fortune FC v Bombada FC | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:19:53,514 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:20:05,674 [INFO] AutoTrader | BAND 60' | 60 | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:20:22,024 [INFO] AutoTrader | BAND 60' | 60 | Bahraini 2nd Division | Al-Ittifaq Maqaba v Al Hala | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:20:38,051 [INFO] AutoTrader | BAND 60' | 60 | Bahraini 2nd Division | Al Tadamun Buri v Busaiteen Club | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:21:00,076 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:21:28,232 [INFO] AutoTrader | BAND 60' | 60 | Africa Cup of Nations | Egypt v Benin | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:22:06,414 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:23:07,156 [INFO] AutoTrader | BAND 60' | 60 | Gambian GFA League 1st Division | Medina United FC v Samger FC | 0-0 | RC(H/A)=1/0 | strat=None
+2026-01-05 17:23:12,490 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:24:18,476 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:25:25,235 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:26:31,848 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:27:38,106 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:28:44,339 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:29:29,709 [INFO] AutoTrader | BAND 45' | 45 | Algerian Ligue 1 | Kabylie v MB Rouissat | 0-0 | RC(H/A)=1/0 | strat=None
+2026-01-05 17:29:50,968 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:30:36,844 [INFO] AutoTrader | BAND 30' | 30 | Israeli National League | SC Kiryat Yam v Hapoel Nof HaGalil | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:30:37,147 [INFO] AutoTrader | BAND 30' | 30 | Israeli National League | Ironi Modiin v Hapoel Eran Hadera | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:30:53,516 [INFO] AutoTrader | BAND 30' | 30 | Israeli National League | Hapoel Kfar Shelem v Bnei Yehuda | 0-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:30:57,576 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:32:04,628 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:33:07,496 [INFO] AutoTrader | KICKOFF | Turkish Super Cup | Galatasaray v Trabzonspor | SP(H/D/A)=1.570/4.500/6.800 | fav=1 | strat=None
+2026-01-05 17:33:11,678 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:34:13,860 [INFO] AutoTrader | BAND 75' | 75 | Gambian GFA League 1st Division | Fortune FC v Bombada FC | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:34:18,594 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:35:25,945 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:35:53,927 [INFO] AutoTrader | BAND 75' | 75 | Bahraini 2nd Division | Al Tadamun Buri v Busaiteen Club | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:36:27,903 [INFO] AutoTrader | BAND 75' | 76 | Bahraini 2nd Division | Al-Ittifaq Maqaba v Al Hala | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:36:32,977 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:36:44,567 [INFO] AutoTrader | BAND 75' | 75 | Africa Cup of Nations | Egypt v Benin | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:36:44,877 [INFO] AutoTrader | BAND 75' | 77 | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:37:40,843 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:38:25,693 [INFO] AutoTrader | BAND 75' | 75 | Gambian GFA League 1st Division | Medina United FC v Samger FC | 0-0 | RC(H/A)=1/0 | strat=None
+2026-01-05 17:38:47,559 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:39:54,467 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:41:01,686 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:42:08,268 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:43:15,569 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:44:22,675 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:45:25,125 [INFO] AutoTrader | BAND 45' | 45 | Israeli National League | SC Kiryat Yam v Hapoel Nof HaGalil | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:45:29,569 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:45:42,158 [INFO] AutoTrader | BAND 45' | 45 | Israeli National League | Ironi Modiin v Hapoel Eran Hadera | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:45:58,947 [INFO] AutoTrader | BAND 45' | 45 | Israeli National League | Hapoel Kfar Shelem v Bnei Yehuda | 0-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:46:37,128 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:47:44,738 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:48:51,385 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:49:03,487 [INFO] AutoTrader | BAND 90' | 90 | Gambian GFA League 1st Division | Fortune FC v Bombada FC | 2-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:49:36,557 [INFO] AutoTrader | BAND 90' | 90 | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | 0-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:49:37,494 [INFO] AutoTrader | BAND 15' | 16 | Turkish Super Cup | Galatasaray v Trabzonspor | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:49:53,237 [INFO] AutoTrader | BAND 90' | 90 | Bahraini 2nd Division | Al-Ittifaq Maqaba v Al Hala | 4-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:49:58,159 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:50:43,010 [INFO] AutoTrader | BAND 90' | 90 | Bahraini 2nd Division | Al Tadamun Buri v Busaiteen Club | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:51:05,502 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:52:07,096 [INFO] AutoTrader | BAND 90' | 90 | Africa Cup of Nations | Egypt v Benin | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 17:52:12,521 [INFO] AutoTrader | HEARTBEAT | total=42 inplay=11 with_strategy=0
+2026-01-05 17:52:41,012 [INFO] AutoTrader | FINISH | Bahraini 2nd Division | Qalali v Al-Ittihad (BRN) | FT=0-3 | result=1 | pnl=None | strat=None | remaining_current=41
+2026-01-05 17:53:14,125 [INFO] AutoTrader | BAND 90' | 90 | Gambian GFA League 1st Division | Medina United FC v Samger FC | 0-0 | RC(H/A)=1/0 | strat=None
+2026-01-05 17:53:19,555 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:54:25,442 [INFO] AutoTrader | HEARTBEAT | total=41 inplay=10 with_strategy=0
+2026-01-05 17:55:10,212 [INFO] AutoTrader | FINISH | Bahraini 2nd Division | Al-Ittifaq Maqaba v Al Hala | FT=4-0 | result=1 | pnl=None | strat=None | remaining_current=40
+2026-01-05 17:55:31,399 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=9 with_strategy=0
+2026-01-05 17:56:37,071 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=9 with_strategy=0
+2026-01-05 17:57:42,765 [INFO] AutoTrader | HEARTBEAT | total=40 inplay=9 with_strategy=0
+2026-01-05 17:57:54,069 [INFO] AutoTrader | FINISH | Bahraini 2nd Division | Al Tadamun Buri v Busaiteen Club | FT=0-1 | result=1 | pnl=None | strat=None | remaining_current=39
+2026-01-05 17:58:10,810 [INFO] AutoTrader | FINISH | Gambian GFA League 1st Division | Fortune FC v Bombada FC | FT=2-3 | result=1 | pnl=None | strat=None | remaining_current=38
+2026-01-05 17:58:43,193 [INFO] AutoTrader | FINISH | Gambian GFA League 1st Division | Medina United FC v Samger FC | FT=0-0 | result=0 | pnl=None | strat=None | remaining_current=37
+2026-01-05 17:58:48,181 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=5 with_strategy=0
+2026-01-05 17:59:52,689 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=5 with_strategy=0
+2026-01-05 18:00:56,890 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=5 with_strategy=0
+2026-01-05 18:01:41,209 [INFO] AutoTrader | KICKOFF | Egyptian League Cup | National Bank v Wadi Degla | SP(H/D/A)=2.420/3.100/3.600 | fav=1 | strat=None
+2026-01-05 18:02:01,105 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=6 with_strategy=0
+2026-01-05 18:03:04,708 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=6 with_strategy=0
+2026-01-05 18:03:17,082 [INFO] AutoTrader | KICKOFF | Portuguese Segunda Liga | Benfica B v Porto B | SP(H/D/A)=1.960/3.850/4.300 | fav=1 | strat=None
+2026-01-05 18:03:32,925 [INFO] AutoTrader | BAND 30' | 30 | Turkish Super Cup | Galatasaray v Trabzonspor | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:04:09,087 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=7 with_strategy=0
+2026-01-05 18:05:13,340 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:06:17,083 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:07:21,398 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:08:25,280 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:09:29,360 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:10:33,543 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:10:44,962 [INFO] AutoTrader | BAND 60' | 61 | Algerian Ligue 1 | Kabylie v MB Rouissat | 0-1 | RC(H/A)=1/0 | strat=None
+2026-01-05 18:11:38,287 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:12:42,624 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:13:46,696 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:14:50,867 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:15:55,131 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:16:59,095 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:17:27,409 [INFO] AutoTrader | BAND 15' | 15 | Egyptian League Cup | National Bank v Wadi Degla | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:18:02,721 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:18:30,435 [INFO] AutoTrader | BAND 60' | 60 | Israeli National League | SC Kiryat Yam v Hapoel Nof HaGalil | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:18:30,896 [INFO] AutoTrader | BAND 45' | 45 | Turkish Super Cup | Galatasaray v Trabzonspor | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:18:31,073 [INFO] AutoTrader | BAND 15' | 15 | Portuguese Segunda Liga | Benfica B v Porto B | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:19:06,753 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:19:50,234 [INFO] AutoTrader | BAND 60' | 60 | Israeli National League | Ironi Modiin v Hapoel Eran Hadera | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:20:10,184 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:21:14,543 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:22:18,630 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:23:22,720 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:23:50,328 [INFO] AutoTrader | BAND 60' | 60 | Israeli National League | Hapoel Kfar Shelem v Bnei Yehuda | 0-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:24:26,924 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:24:54,044 [INFO] AutoTrader | BAND 75' | 75 | Algerian Ligue 1 | Kabylie v MB Rouissat | 0-1 | RC(H/A)=1/0 | strat=None
+2026-01-05 18:25:30,799 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:26:34,634 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:27:38,520 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:28:41,860 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:29:45,137 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:30:49,061 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=8 with_strategy=0
+2026-01-05 18:31:01,778 [INFO] AutoTrader | KICKOFF | Israeli Premier League | Maccabi Haifa v Hapoel Haifa | SP(H/D/A)=1.490/5.300/6.600 | fav=1 | strat=None
+2026-01-05 18:31:33,510 [INFO] AutoTrader | BAND 30' | 30 | Egyptian League Cup | National Bank v Wadi Degla | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:31:52,982 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:32:56,753 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:33:08,350 [INFO] AutoTrader | BAND 75' | 75 | Israeli National League | SC Kiryat Yam v Hapoel Nof HaGalil | 2-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:33:40,875 [INFO] AutoTrader | BAND 30' | 30 | Portuguese Segunda Liga | Benfica B v Porto B | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:34:00,377 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:34:44,474 [INFO] AutoTrader | BAND 75' | 75 | Israeli National League | Ironi Modiin v Hapoel Eran Hadera | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:35:04,693 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:36:08,625 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:37:12,612 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:38:16,548 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:38:28,229 [INFO] AutoTrader | BAND 75' | 75 | Israeli National League | Hapoel Kfar Shelem v Bnei Yehuda | 0-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:39:20,673 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:40:24,500 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:40:52,060 [INFO] AutoTrader | BAND 90' | 91 | Algerian Ligue 1 | Kabylie v MB Rouissat | 1-1 | RC(H/A)=1/0 | strat=None
+2026-01-05 18:41:29,978 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:42:33,949 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:43:38,014 [INFO] AutoTrader | HEARTBEAT | total=37 inplay=9 with_strategy=0
+2026-01-05 18:43:49,287 [INFO] AutoTrader | FINISH | Africa Cup of Nations | Egypt v Benin | FT=3-1 | result=1 | pnl=None | strat=None | remaining_current=36
+2026-01-05 18:44:41,933 [INFO] AutoTrader | HEARTBEAT | total=36 inplay=8 with_strategy=0
+2026-01-05 18:45:45,122 [INFO] AutoTrader | HEARTBEAT | total=36 inplay=8 with_strategy=0
+2026-01-05 18:46:44,484 [INFO] AutoTrader | BAND 45' | 45 | Egyptian League Cup | National Bank v Wadi Degla | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:46:44,644 [INFO] AutoTrader | BAND 15' | 15 | Israeli Premier League | Maccabi Haifa v Hapoel Haifa | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:46:48,215 [INFO] AutoTrader | HEARTBEAT | total=36 inplay=8 with_strategy=0
+2026-01-05 18:47:47,235 [INFO] AutoTrader | BAND 90' | 90 | Israeli National League | SC Kiryat Yam v Hapoel Nof HaGalil | 2-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:47:51,598 [INFO] AutoTrader | HEARTBEAT | total=36 inplay=8 with_strategy=0
+2026-01-05 18:48:35,268 [INFO] AutoTrader | BAND 45' | 45 | Portuguese Segunda Liga | Benfica B v Porto B | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:48:54,698 [INFO] AutoTrader | HEARTBEAT | total=36 inplay=8 with_strategy=0
+2026-01-05 18:49:54,131 [INFO] AutoTrader | BAND 90' | 90 | Israeli National League | Ironi Modiin v Hapoel Eran Hadera | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:49:58,152 [INFO] AutoTrader | HEARTBEAT | total=36 inplay=8 with_strategy=0
+2026-01-05 18:51:01,450 [INFO] AutoTrader | HEARTBEAT | total=36 inplay=8 with_strategy=0
+2026-01-05 18:52:04,869 [INFO] AutoTrader | HEARTBEAT | total=36 inplay=8 with_strategy=0
+2026-01-05 18:52:16,076 [INFO] AutoTrader | FINISH | Algerian Ligue 1 | Kabylie v MB Rouissat | FT=1-1 | result=0 | pnl=None | strat=None | remaining_current=35
+2026-01-05 18:52:47,446 [INFO] AutoTrader | BAND 90' | 90 | Israeli National League | Hapoel Kfar Shelem v Bnei Yehuda | 0-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:53:07,316 [INFO] AutoTrader | HEARTBEAT | total=35 inplay=7 with_strategy=0
+2026-01-05 18:54:09,713 [INFO] AutoTrader | HEARTBEAT | total=35 inplay=7 with_strategy=0
+2026-01-05 18:54:36,695 [INFO] AutoTrader | FINISH | Israeli National League | SC Kiryat Yam v Hapoel Nof HaGalil | FT=2-2 | result=0 | pnl=None | strat=None | remaining_current=34
+2026-01-05 18:55:12,400 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=6 with_strategy=0
+2026-01-05 18:55:39,391 [INFO] AutoTrader | BAND 60' | 60 | Turkish Super Cup | Galatasaray v Trabzonspor | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 18:56:14,334 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=6 with_strategy=0
+2026-01-05 18:57:16,275 [INFO] AutoTrader | HEARTBEAT | total=34 inplay=6 with_strategy=0
+2026-01-05 18:57:43,225 [INFO] AutoTrader | FINISH | Israeli National League | Ironi Modiin v Hapoel Eran Hadera | FT=1-0 | result=1 | pnl=None | strat=None | remaining_current=33
+2026-01-05 18:58:18,140 [INFO] AutoTrader | HEARTBEAT | total=33 inplay=5 with_strategy=0
+2026-01-05 18:59:15,123 [INFO] AutoTrader | FINISH | Israeli National League | Hapoel Kfar Shelem v Bnei Yehuda | FT=0-3 | result=1 | pnl=None | strat=None | remaining_current=32
+2026-01-05 18:59:19,252 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=4 with_strategy=0
+2026-01-05 19:00:20,482 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=4 with_strategy=0
+2026-01-05 19:01:03,271 [INFO] AutoTrader | KICKOFF | Algerian Ligue 1 | MC Alger v CS Constantine | SP(H/D/A)=1.550/3.650/10.000 | fav=1 | strat=None
+2026-01-05 19:01:21,898 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=5 with_strategy=0
+2026-01-05 19:01:33,513 [INFO] AutoTrader | BAND 30' | 30 | Israeli Premier League | Maccabi Haifa v Hapoel Haifa | 0-0 | RC(H/A)=0/1 | strat=None
+2026-01-05 19:02:22,820 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=5 with_strategy=0
+2026-01-05 19:02:34,868 [INFO] AutoTrader | KICKOFF | Brazilian Sao Paulo Youth Cup | Galvez EC U20 v Gremio FBPA U20 | SP(H/D/A)=23.000/10.500/1.110 | fav=2 | strat=None
+2026-01-05 19:03:23,820 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=6 with_strategy=0
+2026-01-05 19:03:51,230 [INFO] AutoTrader | KICKOFF | Africa Cup of Nations | Nigeria v Mozambique | SP(H/D/A)=1.310/5.800/14.000 | fav=1 | strat=None
+2026-01-05 19:04:24,820 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:05:25,156 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:06:26,071 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:07:27,507 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:08:28,467 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:09:28,997 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:10:29,744 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:10:40,918 [INFO] AutoTrader | BAND 75' | 75 | Turkish Super Cup | Galatasaray v Trabzonspor | 3-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:11:30,370 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:12:31,266 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:13:31,912 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:14:33,419 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:15:34,456 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:16:16,933 [INFO] AutoTrader | BAND 45' | 45 | Israeli Premier League | Maccabi Haifa v Hapoel Haifa | 1-0 | RC(H/A)=0/1 | strat=None
+2026-01-05 19:16:17,103 [INFO] AutoTrader | BAND 15' | 15 | Algerian Ligue 1 | MC Alger v CS Constantine | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:16:35,855 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:16:47,887 [INFO] AutoTrader | BAND 15' | 15 | Brazilian Sao Paulo Youth Cup | Galvez EC U20 v Gremio FBPA U20 | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:17:36,691 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:18:37,506 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:18:49,677 [INFO] AutoTrader | BAND 15' | 15 | Africa Cup of Nations | Nigeria v Mozambique | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:19:38,125 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:20:39,131 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:21:40,067 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:22:40,968 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:23:23,321 [INFO] AutoTrader | BAND 60' | 60 | Egyptian League Cup | National Bank v Wadi Degla | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:23:41,961 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:24:43,418 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:25:24,958 [INFO] AutoTrader | BAND 90' | 90 | Turkish Super Cup | Galatasaray v Trabzonspor | 4-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:25:44,300 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:26:25,868 [INFO] AutoTrader | BAND 60' | 60 | Portuguese Segunda Liga | Benfica B v Porto B | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:26:45,022 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:27:45,850 [INFO] AutoTrader | HEARTBEAT | total=32 inplay=7 with_strategy=0
+2026-01-05 19:28:43,782 [INFO] AutoTrader | FINISH | Turkish Super Cup | Galatasaray v Trabzonspor | FT=4-1 | result=1 | pnl=None | strat=None | remaining_current=31
+2026-01-05 19:28:47,701 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=6 with_strategy=0
+2026-01-05 19:29:48,101 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=6 with_strategy=0
+2026-01-05 19:30:48,676 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=6 with_strategy=0
+2026-01-05 19:31:30,849 [INFO] AutoTrader | BAND 30' | 30 | Algerian Ligue 1 | MC Alger v CS Constantine | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:31:31,662 [INFO] AutoTrader | KICKOFF | Italian Serie C | Triestina v ASD Alcione | SP(H/D/A)=2.240/3.300/3.900 | fav=1 | strat=None
+2026-01-05 19:31:45,960 [INFO] AutoTrader | BAND 30' | 30 | Brazilian Sao Paulo Youth Cup | Galvez EC U20 v Gremio FBPA U20 | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:31:49,213 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=7 with_strategy=0
+2026-01-05 19:32:49,891 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=7 with_strategy=0
+2026-01-05 19:33:31,972 [INFO] AutoTrader | KICKOFF | Italian Serie C | Benevento v Crotone | SP(H/D/A)=1.590/4.000/7.600 | fav=1 | strat=None
+2026-01-05 19:33:49,894 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=8 with_strategy=0
+2026-01-05 19:34:16,855 [INFO] AutoTrader | BAND 30' | 30 | Africa Cup of Nations | Nigeria v Mozambique | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:35:04,907 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=8 with_strategy=0
+2026-01-05 19:35:32,310 [INFO] AutoTrader | KICKOFF | Italian Serie C | Cosenza v Monopoli | SP(H/D/A)=1.790/3.650/5.600 | fav=1 | strat=None
+2026-01-05 19:36:05,142 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:37:06,032 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:38:06,073 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:39:03,461 [INFO] AutoTrader | BAND 75' | 75 | Egyptian League Cup | National Bank v Wadi Degla | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:39:07,083 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:40:08,552 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:41:05,513 [INFO] AutoTrader | BAND 75' | 75 | Portuguese Segunda Liga | Benfica B v Porto B | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:41:09,366 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:42:10,331 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:43:10,915 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:44:11,679 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:45:12,530 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:46:13,010 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=9 with_strategy=0
+2026-01-05 19:46:25,729 [INFO] AutoTrader | KICKOFF | French Ligue 2 | Montpellier v Dunkerque | SP(H/D/A)=2.660/3.250/3.100 | fav=1 | strat=None
+2026-01-05 19:46:39,796 [INFO] AutoTrader | BAND 45' | 45 | Algerian Ligue 1 | MC Alger v CS Constantine | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:46:39,941 [INFO] AutoTrader | BAND 45' | 45 | Brazilian Sao Paulo Youth Cup | Galvez EC U20 v Gremio FBPA U20 | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:47:13,807 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:47:26,415 [INFO] AutoTrader | BAND 15' | 15 | Italian Serie C | Triestina v ASD Alcione | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:48:14,496 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:48:41,767 [INFO] AutoTrader | BAND 45' | 45 | Africa Cup of Nations | Nigeria v Mozambique | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:49:12,161 [INFO] AutoTrader | BAND 15' | 15 | Italian Serie C | Benevento v Crotone | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:49:15,085 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:50:15,910 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:51:16,481 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:51:43,985 [INFO] AutoTrader | BAND 15' | 16 | Italian Serie C | Cosenza v Monopoli | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:52:17,037 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:53:17,512 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:53:59,591 [INFO] AutoTrader | BAND 90' | 90 | Egyptian League Cup | National Bank v Wadi Degla | 2-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:54:18,985 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:55:20,060 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:56:17,128 [INFO] AutoTrader | BAND 90' | 90 | Portuguese Segunda Liga | Benfica B v Porto B | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 19:56:21,016 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:57:22,095 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:58:22,617 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:59:24,568 [INFO] AutoTrader | HEARTBEAT | total=31 inplay=10 with_strategy=0
+2026-01-05 19:59:51,196 [INFO] AutoTrader | FINISH | Egyptian League Cup | National Bank v Wadi Degla | FT=2-2 | result=0 | pnl=None | strat=None | remaining_current=30
+2026-01-05 19:59:51,370 [INFO] AutoTrader | BAND 60' | 62 | Israeli Premier League | Maccabi Haifa v Hapoel Haifa | 2-0 | RC(H/A)=0/1 | strat=None
+2026-01-05 20:00:05,016 [INFO] AutoTrader | AutoTrader | PURGED stale rows | count=1
+2026-01-05 20:00:25,257 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=9 with_strategy=0
+2026-01-05 20:00:53,673 [INFO] AutoTrader | KICKOFF | English Sky Bet Championship | Leicester v West Brom | SP(H/D/A)=2.960/3.550/2.580 | fav=2 | strat=None
+2026-01-05 20:01:22,409 [INFO] AutoTrader | FINISH | Portuguese Segunda Liga | Benfica B v Porto B | FT=1-1 | result=0 | pnl=None | strat=None | remaining_current=28
+2026-01-05 20:01:26,505 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=9 with_strategy=0
+2026-01-05 20:01:38,890 [INFO] AutoTrader | BAND 15' | 15 | French Ligue 2 | Montpellier v Dunkerque | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:02:23,001 [INFO] AutoTrader | BAND 30' | 30 | Italian Serie C | Triestina v ASD Alcione | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:02:38,387 [INFO] AutoTrader | KICKOFF | Jamaican Premier League | Tivoli Gardens v Portmore Utd | SP(H/D/A)=3.500/2.920/2.480 | fav=2 | strat=None
+2026-01-05 20:02:40,346 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=10 with_strategy=0
+2026-01-05 20:03:53,697 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=10 with_strategy=0
+2026-01-05 20:04:05,458 [INFO] AutoTrader | BAND 30' | 30 | Italian Serie C | Benevento v Crotone | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:05:08,337 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:06:05,644 [INFO] AutoTrader | BAND 30' | 30 | Italian Serie C | Cosenza v Monopoli | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:06:08,938 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:07:09,476 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:08:24,251 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:09:24,406 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:10:39,095 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:11:39,455 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:12:54,266 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:13:50,308 [INFO] AutoTrader | BAND 75' | 75 | Israeli Premier League | Maccabi Haifa v Hapoel Haifa | 2-0 | RC(H/A)=0/1 | strat=None
+2026-01-05 20:13:54,377 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:14:54,727 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=10 with_strategy=0
+2026-01-05 20:15:22,852 [INFO] AutoTrader | KICKOFF | Brazilian Sao Paulo Youth Cup | Clube do Remo Belem U20 v Batalhao FC U20 | SP(H/D/A)=1.660/4.000/5.800 | fav=1 | strat=None
+2026-01-05 20:15:52,315 [INFO] AutoTrader | BAND 15' | 15 | English Sky Bet Championship | Leicester v West Brom | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:16:09,749 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=11 with_strategy=0
+2026-01-05 20:16:51,750 [INFO] AutoTrader | BAND 45' | 45 | Italian Serie C | Triestina v ASD Alcione | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:16:52,052 [INFO] AutoTrader | BAND 30' | 30 | French Ligue 2 | Montpellier v Dunkerque | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:17:24,303 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=11 with_strategy=0
+2026-01-05 20:17:51,717 [INFO] AutoTrader | BAND 15' | 15 | Jamaican Premier League | Tivoli Gardens v Portmore Utd | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:18:06,765 [INFO] AutoTrader | KICKOFF | Portuguese Segunda Liga | Vizela v Torreense | SP(H/D/A)=2.100/3.500/4.100 | fav=1 | strat=None
+2026-01-05 20:18:35,486 [INFO] AutoTrader | BAND 45' | 45 | Italian Serie C | Benevento v Crotone | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:18:38,681 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:19:53,445 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:20:35,376 [INFO] AutoTrader | BAND 45' | 45 | Italian Serie C | Cosenza v Monopoli | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:21:07,881 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:21:33,721 [INFO] AutoTrader | BAND 60' | 60 | Algerian Ligue 1 | MC Alger v CS Constantine | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:22:21,931 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:23:35,880 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:24:49,721 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:25:16,580 [INFO] AutoTrader | BAND 60' | 60 | Africa Cup of Nations | Nigeria v Mozambique | 3-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:25:31,387 [INFO] AutoTrader | BAND 60' | 60 | Brazilian Sao Paulo Youth Cup | Galvez EC U20 v Gremio FBPA U20 | 0-5 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:25:50,589 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:27:05,037 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:28:01,060 [INFO] AutoTrader | BAND 90' | 90 | Israeli Premier League | Maccabi Haifa v Hapoel Haifa | 2-0 | RC(H/A)=0/1 | strat=None
+2026-01-05 20:28:19,530 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:29:17,511 [INFO] AutoTrader | BAND 15' | 15 | Brazilian Sao Paulo Youth Cup | Clube do Remo Belem U20 v Batalhao FC U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:29:34,292 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:30:48,590 [INFO] AutoTrader | HEARTBEAT | total=29 inplay=12 with_strategy=0
+2026-01-05 20:31:01,032 [INFO] AutoTrader | BAND 30' | 30 | English Sky Bet Championship | Leicester v West Brom | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:31:30,836 [INFO] AutoTrader | BAND 45' | 45 | French Ligue 2 | Montpellier v Dunkerque | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:31:58,854 [INFO] AutoTrader | FINISH | Israeli Premier League | Maccabi Haifa v Hapoel Haifa | FT=2-0 | result=1 | pnl=None | strat=None | remaining_current=28
+2026-01-05 20:32:02,550 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:32:29,617 [INFO] AutoTrader | BAND 30' | 30 | Jamaican Premier League | Tivoli Gardens v Portmore Utd | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:33:15,567 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:34:28,856 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:35:25,717 [INFO] AutoTrader | BAND 15' | 17 | Portuguese Segunda Liga | Vizela v Torreense | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:35:42,583 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:36:38,314 [INFO] AutoTrader | BAND 75' | 75 | Algerian Ligue 1 | MC Alger v CS Constantine | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:36:52,922 [INFO] AutoTrader | BAND 60' | 74 | Algerian Ligue 1 | MC Alger v CS Constantine | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:36:56,763 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:37:07,860 [INFO] AutoTrader | BAND 75' | 75 | Algerian Ligue 1 | MC Alger v CS Constantine | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:38:09,959 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:39:23,031 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:40:18,336 [INFO] AutoTrader | BAND 75' | 75 | Africa Cup of Nations | Nigeria v Mozambique | 4-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:40:36,045 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:41:16,613 [INFO] AutoTrader | BAND 75' | 75 | Brazilian Sao Paulo Youth Cup | Galvez EC U20 v Gremio FBPA U20 | 0-6 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:41:49,304 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:42:01,327 [WARNING] AutoTrader | Skipping live update for 35114985: SportsAPING/v1.0/listMarketBook 
+Params: {'marketIds': ['1.252346386'], 'priceProjection': {'priceData': ['EX_ALL_OFFERS']}} 
+Exception: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-01-05 20:43:02,645 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:44:15,309 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:44:57,391 [INFO] AutoTrader | BAND 30' | 30 | Brazilian Sao Paulo Youth Cup | Clube do Remo Belem U20 v Batalhao FC U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:45:28,410 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:45:40,725 [INFO] AutoTrader | BAND 45' | 45 | English Sky Bet Championship | Leicester v West Brom | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:46:37,739 [WARNING] AutoTrader | Skipping live update for 35116010: SportsAPING/v1.0/listMarketBook 
+Params: {'marketIds': ['1.252366667'], 'priceProjection': {'priceData': ['EX_ALL_OFFERS']}} 
+Exception: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-01-05 20:46:41,745 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:47:52,382 [INFO] AutoTrader | BAND 45' | 45 | Jamaican Premier League | Tivoli Gardens v Portmore Utd | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:47:54,442 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:49:07,824 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:49:35,115 [INFO] AutoTrader | BAND 30' | 31 | Portuguese Segunda Liga | Vizela v Torreense | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:49:49,030 [INFO] AutoTrader | BAND 60' | 60 | Italian Serie C | Triestina v ASD Alcione | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:50:21,199 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:51:33,809 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:51:44,853 [INFO] AutoTrader | BAND 90' | 90 | Algerian Ligue 1 | MC Alger v CS Constantine | 0-0 | RC(H/A)=0/1 | strat=None
+2026-01-05 20:52:47,312 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:54:00,166 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:54:26,126 [INFO] AutoTrader | BAND 60' | 60 | Italian Serie C | Benevento v Crotone | 0-0 | RC(H/A)=0/1 | strat=None
+2026-01-05 20:55:09,504 [INFO] AutoTrader | BAND 90' | 90 | Africa Cup of Nations | Nigeria v Mozambique | 4-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:55:12,513 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:55:23,725 [INFO] AutoTrader | BAND 90' | 90 | Brazilian Sao Paulo Youth Cup | Galvez EC U20 v Gremio FBPA U20 | 0-6 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:56:25,339 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:57:38,531 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=11 with_strategy=0
+2026-01-05 20:58:04,449 [INFO] AutoTrader | FINISH | Africa Cup of Nations | Nigeria v Mozambique | FT=4-0 | result=1 | pnl=None | strat=None | remaining_current=27
+2026-01-05 20:58:04,781 [INFO] AutoTrader | BAND 60' | 60 | Italian Serie C | Cosenza v Monopoli | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 20:58:51,167 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=10 with_strategy=0
+2026-01-05 20:59:16,656 [INFO] AutoTrader | FINISH | Algerian Ligue 1 | MC Alger v CS Constantine | FT=1-0 | result=1 | pnl=None | strat=None | remaining_current=26
+2026-01-05 20:59:18,303 [INFO] AutoTrader | BAND 45' | 45 | Brazilian Sao Paulo Youth Cup | Clube do Remo Belem U20 v Batalhao FC U20 | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:00:03,183 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=9 with_strategy=0
+2026-01-05 21:01:14,951 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=9 with_strategy=0
+2026-01-05 21:01:26,116 [INFO] AutoTrader | FINISH | Brazilian Sao Paulo Youth Cup | Galvez EC U20 v Gremio FBPA U20 | FT=0-7 | result=1 | pnl=None | strat=None | remaining_current=25
+2026-01-05 21:02:26,185 [INFO] AutoTrader | HEARTBEAT | total=25 inplay=8 with_strategy=0
+2026-01-05 21:03:20,416 [INFO] AutoTrader | BAND 45' | 45 | Portuguese Segunda Liga | Vizela v Torreense | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:03:36,552 [INFO] AutoTrader | HEARTBEAT | total=25 inplay=8 with_strategy=0
+2026-01-05 21:04:46,921 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:05:27,353 [INFO] AutoTrader | BAND 75' | 75 | Italian Serie C | Triestina v ASD Alcione | 1-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:05:59,442 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:07:09,956 [INFO] AutoTrader | BAND 60' | 61 | French Ligue 2 | Montpellier v Dunkerque | 0-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:07:12,991 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:08:26,478 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:09:21,188 [INFO] AutoTrader | BAND 75' | 75 | Italian Serie C | Benevento v Crotone | 0-1 | RC(H/A)=0/1 | strat=None
+2026-01-05 21:09:39,345 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:10:52,228 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:12:04,721 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:12:30,369 [INFO] AutoTrader | BAND 75' | 75 | Italian Serie C | Cosenza v Monopoli | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:13:18,549 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:14:31,055 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:15:43,747 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:16:57,293 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=8 with_strategy=0
+2026-01-05 21:17:39,049 [INFO] AutoTrader | KICKOFF | Brazilian Sao Paulo Youth Cup | CA Votuporanguense U20 v Falcon FC U20 | SP(H/D/A)=1.680/3.800/5.200 | fav=1 | strat=None
+2026-01-05 21:18:10,388 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=9 with_strategy=0
+2026-01-05 21:19:23,273 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=9 with_strategy=0
+2026-01-05 21:19:34,603 [INFO] AutoTrader | BAND 90' | 90 | Italian Serie C | Triestina v ASD Alcione | 1-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:19:35,102 [INFO] AutoTrader | BAND 60' | 60 | English Sky Bet Championship | Leicester v West Brom | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:20:36,415 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=9 with_strategy=0
+2026-01-05 21:21:49,115 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=9 with_strategy=0
+2026-01-05 21:22:00,819 [INFO] AutoTrader | BAND 75' | 75 | French Ligue 2 | Montpellier v Dunkerque | 0-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:23:01,539 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=9 with_strategy=0
+2026-01-05 21:23:28,016 [INFO] AutoTrader | BAND 60' | 60 | Jamaican Premier League | Tivoli Gardens v Portmore Utd | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:23:56,339 [INFO] AutoTrader | BAND 90' | 90 | Italian Serie C | Benevento v Crotone | 1-1 | RC(H/A)=0/1 | strat=None
+2026-01-05 21:24:14,415 [INFO] AutoTrader | HEARTBEAT | total=28 inplay=9 with_strategy=0
+2026-01-05 21:25:09,606 [INFO] AutoTrader | FINISH | Italian Serie C | Triestina v ASD Alcione | FT=1-2 | result=1 | pnl=None | strat=None | remaining_current=27
+2026-01-05 21:25:27,405 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=8 with_strategy=0
+2026-01-05 21:26:39,460 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=8 with_strategy=0
+2026-01-05 21:27:34,359 [INFO] AutoTrader | BAND 90' | 90 | Italian Serie C | Cosenza v Monopoli | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:27:51,984 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=8 with_strategy=0
+2026-01-05 21:29:05,348 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=8 with_strategy=0
+2026-01-05 21:30:15,807 [INFO] AutoTrader | KICKOFF | Brazilian Sao Paulo Youth Cup | Mirassol U20 v CA Linense U20 | SP(H/D/A)=1.500/4.500/5.900 | fav=1 | strat=None
+2026-01-05 21:30:17,839 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=9 with_strategy=0
+2026-01-05 21:31:28,780 [INFO] AutoTrader | BAND 15' | 15 | Brazilian Sao Paulo Youth Cup | CA Votuporanguense U20 v Falcon FC U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:31:30,861 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=9 with_strategy=0
+2026-01-05 21:32:43,184 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=9 with_strategy=0
+2026-01-05 21:33:55,275 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=9 with_strategy=0
+2026-01-05 21:34:50,579 [INFO] AutoTrader | BAND 75' | 75 | English Sky Bet Championship | Leicester v West Brom | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:35:07,806 [INFO] AutoTrader | HEARTBEAT | total=27 inplay=9 with_strategy=0
+2026-01-05 21:36:16,913 [INFO] AutoTrader | FINISH | Italian Serie C | Benevento v Crotone | FT=2-1 | result=1 | pnl=None | strat=None | remaining_current=26
+2026-01-05 21:36:17,358 [INFO] AutoTrader | BAND 90' | 90 | French Ligue 2 | Montpellier v Dunkerque | 1-3 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:36:20,231 [INFO] AutoTrader | HEARTBEAT | total=26 inplay=8 with_strategy=0
+2026-01-05 21:36:31,427 [INFO] AutoTrader | FINISH | Italian Serie C | Cosenza v Monopoli | FT=0-2 | result=1 | pnl=None | strat=None | remaining_current=25
+2026-01-05 21:36:46,669 [INFO] AutoTrader | BAND 60' | 60 | Brazilian Sao Paulo Youth Cup | Clube do Remo Belem U20 v Batalhao FC U20 | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:37:29,584 [INFO] AutoTrader | BAND 60' | 60 | Portuguese Segunda Liga | Vizela v Torreense | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:37:32,064 [INFO] AutoTrader | HEARTBEAT | total=25 inplay=7 with_strategy=0
+2026-01-05 21:38:39,940 [INFO] AutoTrader | BAND 75' | 75 | Jamaican Premier League | Tivoli Gardens v Portmore Utd | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:38:42,490 [INFO] AutoTrader | HEARTBEAT | total=25 inplay=7 with_strategy=0
+2026-01-05 21:39:53,049 [INFO] AutoTrader | HEARTBEAT | total=25 inplay=7 with_strategy=0
+2026-01-05 21:40:04,326 [INFO] AutoTrader | FINISH | French Ligue 2 | Montpellier v Dunkerque | FT=1-3 | result=1 | pnl=None | strat=None | remaining_current=24
+2026-01-05 21:41:03,195 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:42:12,800 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:43:22,188 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:44:31,864 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:45:11,751 [INFO] AutoTrader | BAND 15' | 15 | Brazilian Sao Paulo Youth Cup | Mirassol U20 v CA Linense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:45:41,349 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:46:20,694 [INFO] AutoTrader | BAND 30' | 30 | Brazilian Sao Paulo Youth Cup | CA Votuporanguense U20 v Falcon FC U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:46:50,658 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:48:00,203 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:49:09,582 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:49:20,771 [INFO] AutoTrader | BAND 90' | 90 | English Sky Bet Championship | Leicester v West Brom | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:50:19,869 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:51:29,761 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:51:41,415 [INFO] AutoTrader | BAND 75' | 75 | Brazilian Sao Paulo Youth Cup | Clube do Remo Belem U20 v Batalhao FC U20 | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:52:09,304 [INFO] AutoTrader | BAND 75' | 75 | Portuguese Segunda Liga | Vizela v Torreense | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:52:39,614 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:53:32,819 [INFO] AutoTrader | BAND 90' | 90 | Jamaican Premier League | Tivoli Gardens v Portmore Utd | 1-2 | RC(H/A)=0/0 | strat=None
+2026-01-05 21:53:49,299 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:54:59,232 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:56:09,234 [INFO] AutoTrader | HEARTBEAT | total=24 inplay=6 with_strategy=0
+2026-01-05 21:56:20,442 [INFO] AutoTrader | FINISH | English Sky Bet Championship | Leicester v West Brom | FT=2-1 | result=1 | pnl=None | strat=None | remaining_current=23
+2026-01-05 21:57:17,930 [INFO] AutoTrader | HEARTBEAT | total=23 inplay=5 with_strategy=0
+2026-01-05 21:58:23,887 [INFO] AutoTrader | FINISH | Jamaican Premier League | Tivoli Gardens v Portmore Utd | FT=2-2 | result=0 | pnl=None | strat=None | remaining_current=22
+2026-01-05 21:58:26,459 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 21:59:34,169 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:00:27,008 [INFO] AutoTrader | BAND 30' | 30 | Brazilian Sao Paulo Youth Cup | Mirassol U20 v CA Linense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:00:42,699 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:01:35,270 [INFO] AutoTrader | BAND 45' | 45 | Brazilian Sao Paulo Youth Cup | CA Votuporanguense U20 v Falcon FC U20 | 1-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:01:51,026 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:02:59,369 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:04:07,642 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:05:16,177 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:06:08,995 [INFO] AutoTrader | BAND 90' | 90 | Brazilian Sao Paulo Youth Cup | Clube do Remo Belem U20 v Batalhao FC U20 | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:06:24,911 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:06:49,800 [INFO] AutoTrader | BAND 90' | 90 | Portuguese Segunda Liga | Vizela v Torreense | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:07:33,237 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:08:40,839 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:09:48,818 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:10:57,763 [INFO] AutoTrader | HEARTBEAT | total=22 inplay=4 with_strategy=0
+2026-01-05 22:12:03,532 [INFO] AutoTrader | FINISH | Brazilian Sao Paulo Youth Cup | Clube do Remo Belem U20 v Batalhao FC U20 | FT=2-0 | result=1 | pnl=None | strat=None | remaining_current=21
+2026-01-05 22:12:05,990 [INFO] AutoTrader | HEARTBEAT | total=21 inplay=3 with_strategy=0
+2026-01-05 22:12:57,638 [INFO] AutoTrader | FINISH | Portuguese Segunda Liga | Vizela v Torreense | FT=0-1 | result=1 | pnl=None | strat=None | remaining_current=20
+2026-01-05 22:13:13,066 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 22:14:19,531 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 22:15:11,132 [INFO] AutoTrader | BAND 45' | 45 | Brazilian Sao Paulo Youth Cup | Mirassol U20 v CA Linense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:15:26,207 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 22:16:32,902 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 22:17:39,572 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 22:18:45,911 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 22:19:52,252 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 22:20:17,198 [INFO] AutoTrader | KICKOFF | Brazilian Sao Paulo Youth Cup | Sfera U20 v Brasiliense U20 | SP(H/D/A)=1.040/1.010/1.040 | fav=0 | strat=None
+2026-01-05 22:20:58,705 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:22:05,082 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:23:11,477 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:24:18,152 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:25:24,448 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:26:30,880 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:27:37,119 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:28:43,494 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:29:08,289 [INFO] AutoTrader | BAND 15' | 15 | Brazilian Sao Paulo Youth Cup | Sfera U20 v Brasiliense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:29:49,680 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:31:02,713 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:32:09,471 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:33:16,092 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 22:33:27,736 [INFO] AutoTrader | KICKOFF | Brazilian Sao Paulo Youth Cup | Palmeiras U20 v Monte Roraima U20 | SP(H/D/A)=1.030/29.000/120.000 | fav=1 | strat=None
+2026-01-05 22:34:22,448 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:35:29,113 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:36:35,734 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:37:26,517 [INFO] AutoTrader | BAND 60' | 60 | Brazilian Sao Paulo Youth Cup | CA Votuporanguense U20 v Falcon FC U20 | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:37:41,888 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:38:48,168 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:39:54,353 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:41:00,179 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:42:06,918 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:43:13,938 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:44:05,027 [INFO] AutoTrader | BAND 30' | 30 | Brazilian Sao Paulo Youth Cup | Sfera U20 v Brasiliense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:44:19,739 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:45:26,598 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:46:32,688 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:47:38,623 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:48:44,882 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:48:56,471 [INFO] AutoTrader | BAND 15' | 15 | Brazilian Sao Paulo Youth Cup | Palmeiras U20 v Monte Roraima U20 | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:49:50,800 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:50:54,739 [INFO] AutoTrader | BAND 60' | 60 | Brazilian Sao Paulo Youth Cup | Mirassol U20 v CA Linense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:50:56,543 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:52:02,902 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:52:27,309 [INFO] AutoTrader | BAND 75' | 75 | Brazilian Sao Paulo Youth Cup | CA Votuporanguense U20 v Falcon FC U20 | 2-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:53:09,164 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:54:15,183 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:55:21,183 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:56:26,868 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:57:32,809 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:58:38,825 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 22:59:03,603 [INFO] AutoTrader | BAND 45' | 45 | Brazilian Sao Paulo Youth Cup | Sfera U20 v Brasiliense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 22:59:44,986 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 23:00:50,898 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 23:01:57,590 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 23:03:03,662 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 23:04:08,175 [INFO] AutoTrader | BAND 30' | 30 | Brazilian Sao Paulo Youth Cup | Palmeiras U20 v Monte Roraima U20 | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 23:04:09,724 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 23:05:15,859 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=4 with_strategy=0
+2026-01-05 23:05:40,346 [INFO] AutoTrader | BAND 75' | 75 | Brazilian Sao Paulo Youth Cup | Mirassol U20 v CA Linense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 23:06:22,267 [INFO] AutoTrader | HEARTBEAT | total=21 inplay=4 with_strategy=0
+2026-01-05 23:07:26,541 [INFO] AutoTrader | BAND 90' | 90 | Brazilian Sao Paulo Youth Cup | CA Votuporanguense U20 v Falcon FC U20 | 3-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 23:07:28,725 [INFO] AutoTrader | HEARTBEAT | total=21 inplay=4 with_strategy=0
+2026-01-05 23:08:35,257 [INFO] AutoTrader | HEARTBEAT | total=21 inplay=4 with_strategy=0
+2026-01-05 23:09:41,784 [INFO] AutoTrader | HEARTBEAT | total=21 inplay=4 with_strategy=0
+2026-01-05 23:10:46,425 [INFO] AutoTrader | FINISH | Brazilian Sao Paulo Youth Cup | CA Votuporanguense U20 v Falcon FC U20 | FT=3-0 | result=1 | pnl=None | strat=None | remaining_current=20
+2026-01-05 23:10:48,563 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:11:54,499 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:13:00,189 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:14:06,317 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:15:12,061 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:16:18,014 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:17:23,719 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:18:30,491 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:18:41,912 [INFO] AutoTrader | BAND 45' | 45 | Brazilian Sao Paulo Youth Cup | Palmeiras U20 v Monte Roraima U20 | 1-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 23:19:36,250 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:20:39,964 [INFO] AutoTrader | BAND 90' | 90 | Brazilian Sao Paulo Youth Cup | Mirassol U20 v CA Linense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 23:20:41,934 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:21:47,408 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:22:52,911 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:23:58,365 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:25:04,012 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:26:10,112 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:27:15,825 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:27:40,018 [INFO] AutoTrader | FINISH | Brazilian Sao Paulo Youth Cup | Mirassol U20 v CA Linense U20 | FT=1-0 | result=1 | pnl=None | strat=None | remaining_current=19
+2026-01-05 23:28:20,884 [INFO] AutoTrader | HEARTBEAT | total=19 inplay=2 with_strategy=0
+2026-01-05 23:29:25,957 [INFO] AutoTrader | HEARTBEAT | total=19 inplay=2 with_strategy=0
+2026-01-05 23:30:31,032 [INFO] AutoTrader | HEARTBEAT | total=19 inplay=2 with_strategy=0
+2026-01-05 23:31:35,997 [INFO] AutoTrader | HEARTBEAT | total=19 inplay=2 with_strategy=0
+2026-01-05 23:32:40,877 [INFO] AutoTrader | HEARTBEAT | total=19 inplay=2 with_strategy=0
+2026-01-05 23:33:46,079 [INFO] AutoTrader | HEARTBEAT | total=19 inplay=2 with_strategy=0
+2026-01-05 23:34:10,330 [INFO] AutoTrader | BAND 60' | 60 | Brazilian Sao Paulo Youth Cup | Sfera U20 v Brasiliense U20 | 0-0 | RC(H/A)=0/0 | strat=None
+2026-01-05 23:34:51,136 [INFO] AutoTrader | HEARTBEAT | total=19 inplay=2 with_strategy=0
+2026-01-05 23:35:56,025 [INFO] AutoTrader | HEARTBEAT | total=19 inplay=2 with_strategy=0
+2026-01-05 23:37:01,557 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 23:38:07,348 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 23:39:13,072 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 23:40:18,756 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 23:41:24,669 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 23:42:30,216 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 23:43:36,071 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 23:44:41,630 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=2 with_strategy=0
+2026-01-05 23:45:06,110 [INFO] AutoTrader | KICKOFF | Brazilian Sao Paulo Youth Cup | Forte FC U20 v Sport Club do Recife U20 | SP(H/D/A)=15.000/7.400/1.220 | fav=2 | strat=None
+2026-01-05 23:45:47,027 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:46:52,564 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:47:57,837 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:49:03,374 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:49:27,683 [INFO] AutoTrader | BAND 75' | 75 | Brazilian Sao Paulo Youth Cup | Sfera U20 v Brasiliense U20 | 0-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 23:50:09,050 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:51:14,717 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:52:20,111 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:53:26,184 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:54:31,542 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:55:37,105 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:56:42,525 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:56:53,756 [INFO] AutoTrader | BAND 60' | 60 | Brazilian Sao Paulo Youth Cup | Palmeiras U20 v Monte Roraima U20 | 2-1 | RC(H/A)=0/0 | strat=None
+2026-01-05 23:57:47,527 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:58:52,717 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
+2026-01-05 23:59:58,178 [INFO] AutoTrader | HEARTBEAT | total=20 inplay=3 with_strategy=0
