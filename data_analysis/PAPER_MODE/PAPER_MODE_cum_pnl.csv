@@ -179,3 +179,14 @@ event_id,kickoff,comp,event_name,strategy,paper,pnl,cum_pnl
 35115142,2026-01-11T08:30:00+00:00,Indonesian Super League,Semen Padang v Persis Solo,LTD60,1,100.0,1475.0
 35118782,2026-01-11T08:30:00+00:00,Indonesian Super League,Arema Cronus v Persik Kediri,LTD60,1,100.0,1575.0
 35134719,2026-01-11T09:00:00+00:00,Malaysian Super League,Pulau Pinang v Melaka FC,LTD60,1,0.0,1575.0
+35115829,2026-01-11T12:00:00+00:00,English WSL,Aston Villa (W) v Brighton (W),LTD60,1,100.0,1675.0
+35115828,2026-01-11T12:00:00+00:00,English WSL,Tottenham (W) v Leicester City (W),LTD60,1,100.0,1775.0
+35115827,2026-01-11T12:00:00+00:00,English WSL,Man City (W) v Everton (W),LTD60,1,0.0,1775.0
+35115830,2026-01-11T12:00:00+00:00,English WSL,Chelsea (W) v West Ham United (W),LTD60,1,100.0,1875.0
+35060608,2026-01-11T14:00:00+00:00,Greek Super League,Levadiakos v NFC Volos,LTD60,1,100.0,1975.0
+35116068,2026-01-11T14:30:00+00:00,English WSL,Liverpool (W) v London City Lionesses,LTD60,1,-280.0,1695.0
+35116127,2026-01-11T15:00:00+00:00,Cypriot 1st Division,Enosis Neon Paralimni v Apollon Limassol,LTD60,1,0.0,1695.0
+35115909,2026-01-11T15:00:00+00:00,Cypriot 1st Division,Anorthosis v Ethnikos Achnas,LTD60,1,100.0,1795.0
+35060613,2026-01-11T15:30:00+00:00,Greek Super League,OFI v Asteras Tripolis,LTD60,1,100.0,1895.0
+35131639,2026-01-11T15:45:00+00:00,UAE Arabian Gulf League,Al Ahli (UAE) v Al Wasl,LTD60,1,100.0,1995.0
+35060607,2026-01-11T17:30:00+00:00,Greek Super League,Aris v AEK Athens,LTD60,1,-250.0,1745.0
